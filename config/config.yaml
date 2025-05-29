@@ -17,6 +17,31 @@ playfields:
     tags: default
     default_source_device: bd_trough
     
+keyboard:
+  a:
+    switch: s_left_flipper
+  d:
+    switch: s_right_flipper
+  s:
+    switch: s_startButton
+  1:
+    switch: s_trough1
+    toggle: true
+  2:
+    switch: s_trough2
+    toggle: true
+  3:
+    switch: s_trough3
+    toggle: true
+  4:
+    switch: s_trough4
+    toggle: true
+  5:
+    switch: s_trough5
+    toggle: true
+  p:
+    switch: s_plunger
+    toggle: true
 
 switches:
   s_left_flipper:
