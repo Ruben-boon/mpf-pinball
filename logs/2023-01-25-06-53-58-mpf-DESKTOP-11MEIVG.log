@@ -1,0 +1,95 @@
+2023-01-25 06:53:58,909 : INFO : root : Loading config.
+2023-01-25 06:53:58,919 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-25 06:53:58,919 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2023-01-25 06:53:58,919 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2023-01-25 06:53:59,019 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-25 06:53:59,019 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2023-01-25 06:53:59,019 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2023-01-25 06:53:59,035 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-01-25 06:53:59,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 06:53:59,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 06:53:59,120 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-01-25 06:53:59,120 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-25-06-53-58-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-25 06:53:59,120 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-01-25 06:53:59,120 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-01-25 06:53:59,120 : INFO : Machine : Platform: win32
+2023-01-25 06:53:59,120 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-01-25 06:53:59,120 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-01-25 06:53:59,120 : INFO : Machine : Initialise MPF.
+2023-01-25 06:53:59,213 : INFO : OPP : Connecting to com3 at 115200bps
+2023-01-25 06:53:59,351 : INFO : OPP : Init of OPP board 1 done
+2023-01-25 06:53:59,351 : INFO : OPP : Connecting to com4 at 115200bps
+2023-01-25 06:53:59,436 : INFO : OPP : Init of OPP board 0 done
+2023-01-25 06:53:59,436 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,521 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,521 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,521 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,521 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 06:53:59,536 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 06:53:59,552 : ERROR : asyncio : Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<SystemWideDevice.device_added_system_wide() done, defined at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py:15> exception=AssertionError('Failed to configure driver c_flipper_left_main in platform. See error above')>
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\driver.py", line 118, in _initialize
+    self.hw_driver = self.platform.configure_driver(config, self.config['number'], platform_settings)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 820, in configure_driver
+    self.raise_config_error("A request was made to configure an OPP solenoid "
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: A request was made to configure an OPP solenoid with number 0-0- which doesn't exist Error Code: CFE-OPP-5 (https://docs.missionpinball.org/en/0.56/logs/CFE-OPP-5.html)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\driver.py", line 120, in _initialize
+    raise AssertionError("Failed to configure driver {} in platform. See error above".format(self.name)) from e
+AssertionError: Failed to configure driver c_flipper_left_main in platform. See error above
+2023-01-25 06:53:59,568 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 06:53:59,568 : INFO : Machine : Starting the main run loop.
+2023-01-25 06:53:59,568 : INFO : Machine : Shutting down...
+2023-01-25 06:53:59,568 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 06:53:59,568 : ERROR : OPP : Stop called on serial connection com3
+2023-01-25 06:53:59,568 : ERROR : OPP : Stop called on serial connection com4
+2023-01-25 06:53:59,604 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 06:53:59,604 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 06:53:59,604 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...te 'number'")>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...te 'number'")>)>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 744, in _queue_task_done
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 657, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\driver.py", line 56, in _check_duplicate_coil_numbers
+    key = (coil.config['platform'], coil.hw_driver.number)
+AttributeError: 'NoneType' object has no attribute 'number'
+2023-01-25 06:54:00,618 : ERROR : asyncio : Task was destroyed but it is pending!
+task: <Task pending name='Task-34' coro=<IocpProactor.accept.<locals>.accept_coro() running at C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py:571> wait_for=<_OverlappedFuture cancelled>>
+2023-01-25 06:54:00,624 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\driver.py", line 118, in _initialize
+    self.hw_driver = self.platform.configure_driver(config, self.config['number'], platform_settings)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 820, in configure_driver
+    self.raise_config_error("A request was made to configure an OPP solenoid "
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: A request was made to configure an OPP solenoid with number 0-0- which doesn't exist Error Code: CFE-OPP-5 (https://docs.missionpinball.org/en/0.56/logs/CFE-OPP-5.html)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\driver.py", line 120, in _initialize
+    raise AssertionError("Failed to configure driver {} in platform. See error above".format(self.name)) from e
+AssertionError: Failed to configure driver c_flipper_left_main in platform. See error above
+2023-01-25 06:54:11,577 : INFO : root : MPF run loop ended.

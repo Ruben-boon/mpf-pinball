@@ -1,0 +1,208 @@
+2023-02-12 08:01:39,780 : INFO : root : Loading config.
+2023-02-12 08:01:39,796 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-02-12 08:01:39,796 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-02-12 08:01:39,921 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-02-12 08:01:39,921 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-02-12 08:01:39,921 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-02-12 08:01:39,921 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-02-12-08-01-39-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-02-12 08:01:39,921 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-02-12 08:01:39,921 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-02-12 08:01:39,921 : INFO : Machine : Platform: win32
+2023-02-12 08:01:39,921 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-02-12 08:01:39,921 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-02-12 08:01:39,937 : INFO : Machine : Initialise MPF.
+2023-02-12 08:01:40,249 : INFO : OPP : Connecting to com3 at 115200bps
+2023-02-12 08:01:40,421 : INFO : OPP : Init of OPP board 1 done
+2023-02-12 08:01:40,421 : INFO : OPP : Connecting to com4 at 115200bps
+2023-02-12 08:01:40,515 : INFO : OPP : Init of OPP board 0 done
+2023-02-12 08:01:40,516 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,609 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,609 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,609 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,609 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,609 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,632 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,632 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,632 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,633 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,633 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-02-12 08:01:40,633 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-02-12 08:01:40,664 : INFO : EventManager : Event: ======'drop_target_bank_vuk_bank_up'====== Args={}
+2023-02-12 08:01:40,665 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-02-12 08:01:40,669 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2023-02-12 08:01:40,672 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2023-02-12 08:01:43,216 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2023-02-12 08:01:43,220 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2023-02-12 08:01:43,257 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2023-02-12 08:01:43,258 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,259 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,264 : INFO : ball_device.bd_trough : State: idle
+2023-02-12 08:01:43,294 : INFO : ball_device.bd_scoop_lower : BCH: Initial count: 0
+2023-02-12 08:01:43,295 : INFO : ball_device.bd_scoop_lower : State: idle
+2023-02-12 08:01:43,312 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-02-12 08:01:43,316 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-02-12 08:01:43,317 : INFO : BallController : Initial balls found: 0
+2023-02-12 08:01:43,319 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 40, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,319 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 62, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,320 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 40}, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,320 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_bank1'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,320 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1283, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,320 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 202, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,321 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 285, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,321 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 277, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,321 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 224, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,322 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1354, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,322 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,322 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 190, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,322 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 173, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,323 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,323 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 198, 'prev_value': None, 'change': True}
+2023-02-12 08:01:43,325 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-02-12 08:01:43,342 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-02-12 08:01:43,343 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-02-12 08:01:43,356 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2023-02-12 08:01:43,360 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2023-02-12 08:01:43,362 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-02-12 08:01:43,364 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-02-12 08:01:43,365 : INFO : drop_target_bank.vuk_bank : All targets are already up. Will not reset bank.
+2023-02-12 08:01:43,365 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2023-02-12 08:01:43,366 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-02-12 08:01:43,367 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-02-12 08:01:43,368 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-02-12 08:01:43,368 : INFO : Mode.attract : Started. Priority: 10
+2023-02-12 08:01:43,368 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-02-12 08:01:43,368 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-02-12 08:01:43,369 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-02-12 08:01:43,401 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2023-02-12 08:01:43,402 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2023-02-12 08:01:43,402 : INFO : Machine : Starting the main run loop.
+2023-02-12 08:01:48,820 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:01:48,911 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:01:48,912 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:01:48,912 : INFO : BallController : Known balls: 0
+2023-02-12 08:01:48,912 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:01:48,912 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:01:48,912 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:01:48,912 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:01:48,912 : INFO : BallController : Triggering ball search.
+2023-02-12 08:01:49,562 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:01:49,655 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:01:49,655 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:01:49,656 : INFO : BallController : Known balls: 0
+2023-02-12 08:01:49,656 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:01:49,656 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:01:49,656 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:01:49,656 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:01:49,656 : INFO : BallController : Triggering ball search.
+2023-02-12 08:01:49,792 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:01:49,883 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:01:49,884 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:01:49,884 : INFO : BallController : Known balls: 0
+2023-02-12 08:01:49,884 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:01:49,884 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:01:49,885 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:01:49,885 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:01:49,885 : INFO : BallController : Triggering ball search.
+2023-02-12 08:01:49,954 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:01:50,071 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:01:50,071 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:01:50,072 : INFO : BallController : Known balls: 0
+2023-02-12 08:01:50,072 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:01:50,072 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:01:50,072 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:01:50,072 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:01:50,073 : INFO : BallController : Triggering ball search.
+2023-02-12 08:02:19,843 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-02-12 08:02:20,090 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-02-12 08:02:20,229 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-02-12 08:02:20,372 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-02-12 08:02:20,481 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-02-12 08:02:20,574 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-02-12 08:02:21,700 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-02-12 08:02:21,854 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-02-12 08:02:21,949 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-02-12 08:02:22,031 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-02-12 08:02:22,122 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-02-12 08:02:22,201 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-02-12 08:02:22,318 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-02-12 08:02:22,395 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-02-12 08:02:23,640 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2023-02-12 08:02:23,656 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2023-02-12 08:02:23,704 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2023-02-12 08:02:23,813 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2023-02-12 08:02:23,970 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2023-02-12 08:02:24,112 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2023-02-12 08:02:24,283 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2023-02-12 08:02:24,455 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2023-02-12 08:02:24,581 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2023-02-12 08:02:24,675 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2023-02-12 08:02:39,137 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:02:39,317 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:02:39,317 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:02:39,318 : INFO : BallController : Known balls: 0
+2023-02-12 08:02:39,318 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:02:39,318 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:02:39,318 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:02:39,318 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:02:39,318 : INFO : BallController : Triggering ball search.
+2023-02-12 08:02:39,945 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:02:40,125 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:02:40,125 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:02:40,125 : INFO : BallController : Known balls: 0
+2023-02-12 08:02:40,126 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:02:40,126 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:02:40,126 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:02:40,126 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:02:40,126 : INFO : BallController : Triggering ball search.
+2023-02-12 08:02:40,311 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:02:40,435 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:02:40,436 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:02:40,436 : INFO : BallController : Known balls: 0
+2023-02-12 08:02:40,437 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:02:40,437 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:02:40,437 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:02:40,437 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:02:40,437 : INFO : BallController : Triggering ball search.
+2023-02-12 08:02:40,561 : INFO : SwitchController : <<<<<<< 's_startButton' active >>>>>>>
+2023-02-12 08:02:40,621 : INFO : SwitchController : <<<<<<< 's_startButton' inactive >>>>>>>
+2023-02-12 08:02:40,622 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-02-12 08:02:40,622 : INFO : BallController : Known balls: 0
+2023-02-12 08:02:40,623 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-02-12 08:02:40,623 : INFO : BallController : bd_scoop_lower contains 0 balls. Tags []
+2023-02-12 08:02:40,623 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-02-12 08:02:40,623 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-02-12 08:02:40,623 : INFO : BallController : Triggering ball search.
+2023-02-12 08:02:53,048 : INFO : Machine : Shutting down...
+2023-02-12 08:02:53,049 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-02-12 08:02:53,067 : ERROR : OPP : Stop called on serial connection com3
+2023-02-12 08:02:53,074 : ERROR : OPP : Stop called on serial connection com4
+2023-02-12 08:02:53,074 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2023-02-12 08:02:53,394 : WARNING : OPP : Poll took more than 250.0ms for 0
+2023-02-12 08:02:53,394 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 964, in _poll_sender
+    self.send_to_processor(chain_serial, self.read_input_msg[chain_serial])
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 345, in send_to_processor
+    self.opp_connection[chain_serial].send(msg)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 160, in send
+    self.writer.write(msg)
+AttributeError: 'NoneType' object has no attribute 'write'
+2023-02-12 08:02:53,394 : INFO : root : MPF run loop ended.

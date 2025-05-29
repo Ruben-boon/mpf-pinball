@@ -1,0 +1,127 @@
+2023-01-25 06:52:02,638 : INFO : root : Loading config.
+2023-01-25 06:52:02,648 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-25 06:52:02,648 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2023-01-25 06:52:02,648 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2023-01-25 06:52:02,748 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-25 06:52:02,748 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2023-01-25 06:52:02,748 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2023-01-25 06:52:02,763 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-01-25 06:52:02,848 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 06:52:02,848 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 06:52:02,848 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-01-25 06:52:02,848 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-25-06-52-02-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-25 06:52:02,848 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-01-25 06:52:02,848 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-01-25 06:52:02,848 : INFO : Machine : Platform: win32
+2023-01-25 06:52:02,848 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-01-25 06:52:02,848 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-01-25 06:52:02,848 : INFO : Machine : Initialise MPF.
+2023-01-25 06:52:02,948 : INFO : OPP : Connecting to com3 at 115200bps
+2023-01-25 06:52:03,111 : INFO : OPP : Init of OPP board 1 done
+2023-01-25 06:52:03,111 : INFO : OPP : Connecting to com4 at 115200bps
+2023-01-25 06:52:03,212 : INFO : OPP : Init of OPP board 0 done
+2023-01-25 06:52:03,212 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,296 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,296 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,296 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,296 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,312 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 06:52:03,327 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-01-25 06:52:03,350 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-01-25 06:52:03,365 : INFO : Mode.attract : Started. Priority: 10
+2023-01-25 06:52:03,365 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-01-25 06:52:03,365 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-01-25 06:52:03,365 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-01-25 06:52:03,365 : INFO : Machine : Starting the main run loop.
+2023-01-25 06:52:09,398 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:09,429 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:10,585 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:10,585 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:11,018 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:11,087 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:11,604 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:11,620 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:14,481 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:14,528 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:14,945 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:14,960 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:32,781 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:32,897 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:33,314 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:33,368 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:36,677 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:36,708 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:37,009 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:37,063 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:38,197 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:38,266 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:38,467 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:38,514 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:38,752 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:38,846 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:39,285 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:39,332 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:40,636 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:40,636 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:40,990 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:41,053 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:41,708 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:41,723 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:41,723 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 06:52:41,755 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 06:52:41,893 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2023-01-25 06:52:42,009 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2023-01-25 06:52:52,941 : INFO : Machine : Shutting down...
+2023-01-25 06:52:52,941 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 06:52:52,941 : ERROR : OPP : Stop called on serial connection com3
+2023-01-25 06:52:52,957 : ERROR : OPP : Stop called on serial connection com4
+2023-01-25 06:52:52,957 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2023-01-25 06:52:53,211 : WARNING : OPP : Poll took more than 250.0ms for 0
+2023-01-25 06:52:53,211 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 964, in _poll_sender
+    self.send_to_processor(chain_serial, self.read_input_msg[chain_serial])
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 345, in send_to_processor
+    self.opp_connection[chain_serial].send(msg)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 160, in send
+    self.writer.write(msg)
+AttributeError: 'NoneType' object has no attribute 'write'
+2023-01-25 06:52:53,211 : INFO : root : MPF run loop ended.

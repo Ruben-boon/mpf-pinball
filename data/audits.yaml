@@ -1,0 +1,31 @@
+events:
+  game_ended: 50
+  game_started: 76
+player:
+  score:
+    average: 0.0
+    top:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    total: 50
+switches:
+  s_drop_bank1: 140
+  s_left_flipper: 1988
+  s_left_slingshot: 290
+  s_pop_bot: 426
+  s_pop_mid: 351
+  s_pop_top: 302
+  s_right_flipper: 2005
+  s_right_inlane: 0
+  s_right_slingshot: 255
+  s_scoop_lower: 220
+  s_startButton: 11
+  s_trough1: 302

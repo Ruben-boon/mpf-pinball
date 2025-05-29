@@ -1,0 +1,117 @@
+2023-01-25 07:07:06,064 : kivy : Factory: 189 symbols loaded
+2023-01-25 07:07:06,261 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2023-01-25 07:07:06,261 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2023-01-25 07:07:06,310 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2023-01-25 07:07:06,310 : kivy : Video: Provider: gstplayer
+2023-01-25 07:07:06,475 : kivy : Loading MPF-MC controller
+2023-01-25 07:07:06,480 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-01-25 07:07:06,480 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2023-01-25 07:07:06,481 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-01-25 07:07:06,539 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2023-01-25 07:07:06,540 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2023-01-25 07:07:06,556 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2023-01-25 07:07:06,559 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2023-01-25 07:07:06,568 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 07:07:06,569 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 07:07:06,571 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2023-01-25 07:07:06,571 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2023-01-25 07:07:06,572 : mpfmc : Machine path: C:\pinball\my_machine
+2023-01-25 07:07:06,572 : mpfmc : Starting clock at 60.0Hz
+2023-01-25 07:07:06,589 : kivy : Text: Provider: sdl2
+2023-01-25 07:07:06,638 : kivy : Window: Provider: sdl2
+2023-01-25 07:07:07,709 : kivy : GL: Using the "OpenGL" graphics system
+2023-01-25 07:07:07,718 : kivy : GL: GLEW initialization succeeded
+2023-01-25 07:07:07,718 : kivy : GL: Backend used <glew>
+2023-01-25 07:07:07,719 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 376.54'>
+2023-01-25 07:07:07,719 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2023-01-25 07:07:07,720 : kivy : GL: OpenGL renderer <b'GeForce GT 630M/PCIe/SSE2'>
+2023-01-25 07:07:07,720 : kivy : GL: OpenGL parsed version: 4, 5
+2023-01-25 07:07:07,722 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2023-01-25 07:07:07,723 : kivy : GL: Texture max size <16384>
+2023-01-25 07:07:07,725 : kivy : GL: Texture max units <32>
+2023-01-25 07:07:07,754 : kivy : Window: auto add sdl2 input provider
+2023-01-25 07:07:07,755 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-01-25 07:07:07,765 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2023-01-25 07:07:08,093 : AudioInterface : Initialized
+2023-01-25 07:07:08,093 : AudioInterface : Loaded SDL 2.0.20
+2023-01-25 07:07:08,094 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2023-01-25 07:07:08,097 : AudioInterface : Loaded GStreamer 1.18.5.0
+2023-01-25 07:07:08,098 : AudioInterface : Loaded GLib 2.62.6
+2023-01-25 07:07:08,098 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2023-01-25 07:07:08,099 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2023-01-25 07:07:08,099 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2023-01-25 07:07:08,100 : SoundSystem : Setting master volume to 0.0
+2023-01-25 07:07:08,100 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2023-01-25 07:07:08,101 : AudioInterface : Enabling audio playback
+2023-01-25 07:07:08,104 : kivy : Base: Start application main loop
+2023-01-25 07:07:08,105 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2023-01-25 07:07:08,118 : mpfmc : Display: Setting 'window' as default display
+2023-01-25 07:07:08,127 : EventManager : Event: ======'displays_initialized'====== Args={}
+2023-01-25 07:07:08,130 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2023-01-25 07:07:08,131 : EventManager : Event: ======'display_window_ready'====== Args={}
+2023-01-25 07:07:08,151 : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 07:07:08,160 : EventManager : Event: ======'mc_ready'====== Args={}
+2023-01-25 07:07:08,160 : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 07:07:08,164 : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 07:07:08,165 : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 07:07:08,166 : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-25 07:07:08,167 : EventManager : Event: ======'init_done'====== Args={}
+2023-01-25 07:07:08,169 : MPF-MC BCP Server : Starting up on localhost port 5050
+2023-01-25 07:07:08,175 : MPF-MC BCP Server : Waiting for a connection...
+2023-01-25 07:07:08,175 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2023-01-25 07:07:08,263 : kivy : GL: NPOT texture support is available
+2023-01-25 07:07:08,266 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-01-25 07:07:08,270 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-01-25 07:07:08,275 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2023-01-25 07:07:31,076 : MPF-MC BCP Server : Received connection from: 127.0.0.1:51455
+2023-01-25 07:07:31,085 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 51455}
+2023-01-25 07:07:31,129 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,129 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,134 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,136 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,138 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,141 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,143 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,145 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,145 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,146 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,146 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,147 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,147 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,148 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,148 : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,149 : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,150 : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,150 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2023-01-25 07:07:31,151 : EventManager : Event: ======'slides_play'====== Args={'settings': {'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'init_done', 'priority': 0}
+2023-01-25 07:07:31,151 : EventManager : Event: ======'mc_reset_phase_1'====== Args={}
+2023-01-25 07:07:31,152 : SoundSystem : Setting master volume to 0.5
+2023-01-25 07:07:31,156 : mpfmc : SlidePlayer: Play called with settings={'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-01-25 07:07:31,157 : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={}
+2023-01-25 07:07:31,162 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-01-25 07:07:31,163 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
+2023-01-25 07:07:31,163 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
+2023-01-25 07:07:31,164 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2023-01-25 07:07:31,166 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-01-25 07:07:31,707 : EventManager : Event: ======'slides_play'====== Args={'settings': {'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'mode_attract_started', 'priority': 0}
+2023-01-25 07:07:31,708 : mpfmc : SlidePlayer: Play called with settings={'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-01-25 07:07:31,717 : EventManager : Event: ======'slide_attract_started_created'====== Args={}
+2023-01-25 07:07:31,721 : EventManager : Event: ======'slide_attract_started_active'====== Args={}
+2023-01-25 07:07:42,134 : mpfmc : Shutting down due to child thread crash
+2023-01-25 07:07:42,135 : mpfmc : Crash details: Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\core\bcp_server.py", line 153, in run
+    data_read = self.connection.recv(8192)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+2023-01-25 07:07:42,137 : mpfmc : Stopping...
+2023-01-25 07:07:42,140 : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 07:07:42,141 : AudioInterface : Disabling audio playback
+2023-01-25 07:07:42,298 : mpfmc : Loop rate 75.07 Hz
+2023-01-25 07:07:42,299 : kivy : Base: Leaving application in progress...
+2023-01-25 07:07:42,334 : mpfmc : Stopping...
+2023-01-25 07:07:42,335 : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 07:07:42,336 : mpfmc : Loop rate 74.99 Hz
+2023-01-25 07:07:42,338 : kivy : MC run loop ended.
+2023-01-25 07:07:42,340 : kivy : Stopping child threads... (1 remaining)
+2023-01-25 07:07:42,727 : MPF-MC BCP Server : Stopping BCP sending thread
+2023-01-25 07:07:42,741 : kivy : All child threads stopped.

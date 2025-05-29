@@ -1,0 +1,396 @@
+2023-01-25 09:26:23,795 : INFO : root : Loading config.
+2023-01-25 09:26:24,346 : INFO : ConfigProcessor : Config spec file cache created: C:\Users\ruben\AppData\Local\Temp\config_spec.mpf_cache
+2023-01-25 09:26:24,346 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-25 09:26:24,346 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2023-01-25 09:26:24,455 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-25 09:26:24,455 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2023-01-25 09:26:24,471 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2023-01-25 09:26:24,487 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-01-25 09:26:24,596 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2023-01-25 09:26:24,596 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2023-01-25 09:26:24,596 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 09:26:24,596 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\game\config\game.yaml.
+2023-01-25 09:26:24,611 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\game\config\game.yaml
+2023-01-25 09:26:24,611 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 09:26:24,611 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-01-25 09:26:24,611 : INFO : Machine : Command line arguments: {'no_load_cache': True, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-25-09-26-23-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-25 09:26:24,611 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-01-25 09:26:24,611 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-01-25 09:26:24,611 : INFO : Machine : Platform: win32
+2023-01-25 09:26:24,611 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-01-25 09:26:24,611 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-01-25 09:26:24,611 : INFO : Machine : Initialise MPF.
+2023-01-25 09:26:24,736 : INFO : OPP : Connecting to com3 at 115200bps
+2023-01-25 09:26:24,846 : INFO : OPP : Init of OPP board 1 done
+2023-01-25 09:26:24,846 : INFO : OPP : Connecting to com4 at 115200bps
+2023-01-25 09:26:24,955 : INFO : OPP : Init of OPP board 0 done
+2023-01-25 09:26:24,955 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,055 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,055 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,055 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,055 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,071 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 09:26:25,102 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 09:26:25,102 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2023-01-25 09:26:25,102 : INFO : ball_device.bd_trough : State: idle
+2023-01-25 09:26:25,118 : INFO : ball_device.bd_scoop_lower : BCH: Initial count: 0
+2023-01-25 09:26:25,118 : INFO : ball_device.bd_scoop_lower : State: idle
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 09:26:25,133 : INFO : BallController : Initial balls found: 0
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0, 'top': [], 'total': 0}, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 19, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-01-25 09:26:25,133 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-01-25 09:26:25,149 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-01-25 09:26:25,149 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-01-25 09:26:25,149 : INFO : Mode.attract : Started. Priority: 10
+2023-01-25 09:26:25,149 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-01-25 09:26:25,149 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-01-25 09:26:25,149 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-01-25 09:26:25,149 : INFO : Machine : Starting the main run loop.
+2023-01-25 09:26:28,791 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:26:28,823 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:26:29,073 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:26:29,073 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:26:29,870 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:26:29,885 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:26:32,749 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:32,827 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:36,269 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:36,363 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:36,847 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:36,925 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:37,379 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:37,425 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:38,004 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:38,066 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:38,566 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:38,566 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:38,582 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:38,629 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:39,769 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:39,832 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:41,118 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:41,118 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:43,430 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:43,446 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:45,576 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:45,591 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:45,919 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:26:45,919 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:26:47,013 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:47,107 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:47,591 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:26:47,591 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:26:49,497 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:49,497 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:52,362 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:52,362 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:52,987 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:52,987 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:53,908 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:53,908 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:54,143 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:54,174 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:57,538 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:57,538 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:58,116 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:58,147 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:58,991 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:59,007 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:26:59,366 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:26:59,397 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:27:00,074 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:27:00,105 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:27:01,136 : INFO : SwitchController : <<<<<<< 's_pop_bot' active >>>>>>>
+2023-01-25 09:27:01,168 : INFO : SwitchController : <<<<<<< 's_pop_bot' inactive >>>>>>>
+2023-01-25 09:27:05,110 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:27:05,125 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:27:05,172 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:27:05,188 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:27:07,860 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:27:07,860 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:27:14,722 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:14,738 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:14,956 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,056 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:15,165 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,227 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:15,431 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,477 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:15,634 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,649 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:15,681 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,712 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:15,884 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:15,962 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:16,196 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2023-01-25 09:27:16,290 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2023-01-25 09:27:16,977 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:27:16,977 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:27:17,181 : INFO : SwitchController : <<<<<<< 's_pop_mid' active >>>>>>>
+2023-01-25 09:27:17,259 : INFO : SwitchController : <<<<<<< 's_pop_mid' inactive >>>>>>>
+2023-01-25 09:29:19,665 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:19,868 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:29,705 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:29,705 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:29,752 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:29,877 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:37,559 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:37,559 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:37,575 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:37,762 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:37,778 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:38,153 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:38,153 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:38,434 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:43,626 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:43,767 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:46,428 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:46,537 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:52,589 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:52,682 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:52,807 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:53,167 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:53,182 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:53,214 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:53,339 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:53,339 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:53,417 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:53,417 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:29:53,432 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:29:53,792 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:02,738 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:02,785 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:02,879 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:02,973 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:03,004 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:03,020 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:04,598 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:04,691 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:06,009 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:06,321 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:06,337 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:06,384 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:06,930 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:06,993 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:07,009 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:07,087 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:07,102 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:07,165 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:07,785 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:08,116 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:08,116 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:08,209 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:08,225 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:08,241 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:08,256 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:08,740 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:10,058 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:10,214 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:30:24,561 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:30:25,164 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:32:51,155 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:32:51,186 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:32:51,905 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:32:51,921 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:32:52,421 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:32:52,436 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:33:00,899 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:33:00,930 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:34:10,940 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:34:11,143 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:34:38,747 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:34:38,950 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:34:45,037 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:34:45,740 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:33,896 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:33,959 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:34,099 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:34,099 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:34,521 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:34,995 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:36,776 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:36,792 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:38,651 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:38,870 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:38,885 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:38,885 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:38,885 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:39,010 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:39,057 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:39,151 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:39,151 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:39,167 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:39,198 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:39,432 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:40,265 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:40,297 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:40,312 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:40,312 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:40,328 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:40,437 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:40,453 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:40,500 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:40,719 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:40,922 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:43,640 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:43,687 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:51,571 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:51,587 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:51,821 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:51,837 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:37:57,123 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:37:57,279 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:07,038 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:08,075 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:11,462 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:11,477 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:11,571 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:11,587 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:11,602 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:11,696 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:12,477 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:12,540 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:12,868 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:12,884 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:12,899 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:12,977 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:13,149 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:14,681 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:15,092 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:15,185 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:17,701 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:17,936 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:18,873 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:18,889 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:18,904 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:18,904 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:18,920 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:18,936 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:18,982 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:18,998 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:18,998 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:18,998 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,014 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,014 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,014 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,045 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,123 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,170 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,170 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,295 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,311 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,342 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,357 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,451 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,467 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:19,529 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:19,935 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:20,190 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:20,284 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:20,284 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:20,284 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:20,284 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:20,331 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:20,331 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:20,346 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:20,362 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:20,456 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:21,440 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:21,487 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:21,503 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:22,721 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:23,674 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:24,956 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:25,679 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:27,945 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:28,211 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:28,492 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:28,711 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:29,211 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:29,211 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:29,226 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:29,978 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,014 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,061 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,186 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,232 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,232 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,248 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,264 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,467 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,873 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,889 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,936 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:30,936 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:30,951 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:31,217 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:31,592 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:31,842 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:32,107 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:32,264 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:34,076 : INFO : SwitchController : <<<<<<< 's_pop_top' active >>>>>>>
+2023-01-25 09:38:34,232 : INFO : SwitchController : <<<<<<< 's_pop_top' inactive >>>>>>>
+2023-01-25 09:38:37,368 : ERROR : asyncio : Exception in callback SerialTransport._poll_read()
+handle: <TimerHandle when=14834.0625 SerialTransport._poll_read()>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial_asyncio\__init__.py", line 275, in _poll_read
+    if self.serial.in_waiting:
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2023-01-25 09:38:37,430 : INFO : Machine : Shutting down...
+2023-01-25 09:38:37,430 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 09:38:37,430 : ERROR : OPP : Stop called on serial connection com3
+2023-01-25 09:38:37,430 : ERROR : OPP : Stop called on serial connection com4
+2023-01-25 09:38:37,430 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2023-01-25 09:38:37,430 : ERROR : asyncio : Exception in callback SerialTransport._call_connection_lost(None)
+handle: <Handle SerialTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial_asyncio\__init__.py", line 390, in _call_connection_lost
+    self._serial.flush()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\serialwin32.py", line 345, in flush
+    while self.out_waiting:
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\serialwin32.py", line 447, in out_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))

@@ -1,0 +1,211 @@
+2023-02-25 11:25:48,309 : kivy : Factory: 189 symbols loaded
+2023-02-25 11:25:49,349 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2023-02-25 11:25:49,349 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2023-02-25 11:25:49,738 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2023-02-25 11:25:49,738 : kivy : Video: Provider: gstplayer
+2023-02-25 11:25:50,159 : kivy : Loading MPF-MC controller
+2023-02-25 11:25:50,164 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-02-25 11:25:50,165 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2023-02-25 11:25:50,165 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-02-25 11:25:50,235 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2023-02-25 11:25:50,236 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2023-02-25 11:25:50,273 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2023-02-25 11:25:50,274 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2023-02-25 11:25:50,275 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-02-25 11:25:50,276 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-02-25 11:25:50,277 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2023-02-25 11:25:50,277 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2023-02-25 11:25:50,277 : mpfmc : Machine path: C:\pinball\my_machine
+2023-02-25 11:25:50,277 : mpfmc : Starting clock at 60.0Hz
+2023-02-25 11:25:50,374 : kivy : Text: Provider: sdl2
+2023-02-25 11:25:50,530 : kivy : Window: Provider: sdl2
+2023-02-25 11:25:51,981 : kivy : GL: Using the "OpenGL" graphics system
+2023-02-25 11:25:51,995 : kivy : GL: GLEW initialization succeeded
+2023-02-25 11:25:51,995 : kivy : GL: Backend used <glew>
+2023-02-25 11:25:51,996 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 376.54'>
+2023-02-25 11:25:51,996 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2023-02-25 11:25:51,996 : kivy : GL: OpenGL renderer <b'GeForce GT 630M/PCIe/SSE2'>
+2023-02-25 11:25:51,996 : kivy : GL: OpenGL parsed version: 4, 5
+2023-02-25 11:25:51,996 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2023-02-25 11:25:51,996 : kivy : GL: Texture max size <16384>
+2023-02-25 11:25:51,997 : kivy : GL: Texture max units <32>
+2023-02-25 11:25:52,105 : kivy : Window: auto add sdl2 input provider
+2023-02-25 11:25:52,105 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-02-25 11:25:52,128 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2023-02-25 11:25:54,971 : AudioInterface : Initialized
+2023-02-25 11:25:54,971 : AudioInterface : Loaded SDL 2.0.20
+2023-02-25 11:25:54,971 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2023-02-25 11:25:54,971 : AudioInterface : Loaded GStreamer 1.18.5.0
+2023-02-25 11:25:54,972 : AudioInterface : Loaded GLib 2.62.6
+2023-02-25 11:25:54,972 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2023-02-25 11:25:54,972 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2023-02-25 11:25:54,972 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2023-02-25 11:25:54,972 : SoundSystem : Setting master volume to 0.0
+2023-02-25 11:25:54,973 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2023-02-25 11:25:54,973 : AudioInterface : Enabling audio playback
+2023-02-25 11:25:54,975 : kivy : Base: Start application main loop
+2023-02-25 11:25:54,976 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2023-02-25 11:25:54,984 : mpfmc : Display: Setting 'window' as default display
+2023-02-25 11:25:54,999 : EventManager : Event: ======'displays_initialized'====== Args={}
+2023-02-25 11:25:55,002 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2023-02-25 11:25:55,002 : EventManager : Event: ======'display_window_ready'====== Args={}
+2023-02-25 11:25:55,029 : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-02-25 11:25:55,036 : EventManager : Event: ======'mc_ready'====== Args={}
+2023-02-25 11:25:55,036 : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-02-25 11:25:55,041 : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-02-25 11:25:55,043 : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-02-25 11:25:55,043 : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-02-25 11:25:55,043 : EventManager : Event: ======'init_done'====== Args={}
+2023-02-25 11:25:55,043 : MPF-MC BCP Server : Starting up on localhost port 5050
+2023-02-25 11:25:55,051 : MPF-MC BCP Server : Waiting for a connection...
+2023-02-25 11:25:55,051 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2023-02-25 11:25:55,269 : kivy : GL: NPOT texture support is available
+2023-02-25 11:25:55,269 : MPF-MC BCP Server : Received connection from: 127.0.0.1:54006
+2023-02-25 11:25:55,272 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-02-25 11:25:55,276 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-02-25 11:25:55,287 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2023-02-25 11:25:55,288 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 54006}
+2023-02-25 11:25:55,314 : EventManager : Event: ======'slides_play'====== Args={'settings': {'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'init_done', 'priority': 0}
+2023-02-25 11:25:55,314 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,314 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,315 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 50, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 75, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 50}, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_switches_s_drop_bank1'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1957, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 284, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,316 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 421, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 348, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 296, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1989, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 251, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 220, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,317 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 300, 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,318 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,318 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2023-02-25 11:25:55,318 : EventManager : Event: ======'mc_reset_phase_1'====== Args={}
+2023-02-25 11:25:55,318 : mpfmc : SlidePlayer: Play called with settings={'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-02-25 11:25:55,318 : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={}
+2023-02-25 11:25:55,323 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-02-25 11:25:55,324 : SoundSystem : Setting master volume to 0.5
+2023-02-25 11:25:55,324 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
+2023-02-25 11:25:55,324 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
+2023-02-25 11:25:55,324 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2023-02-25 11:25:55,325 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-02-25 11:25:55,342 : EventManager : Event: ======'slides_play'====== Args={'settings': {'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'mode_attract_started', 'priority': 0}
+2023-02-25 11:25:55,342 : mpfmc : SlidePlayer: Play called with settings={'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-02-25 11:25:55,347 : EventManager : Event: ======'slide_attract_started_created'====== Args={}
+2023-02-25 11:25:55,349 : EventManager : Event: ======'slide_attract_started_active'====== Args={}
+2023-02-25 11:26:28,462 : EventManager : Event: ======'game_started'====== Args={}
+2023-02-25 11:26:28,498 : EventManager : Event: ======'player_added'====== Args={'player': <Player 1>, 'num': 1}
+2023-02-25 11:26:28,498 : EventManager : Event: ======'player_index'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2023-02-25 11:26:28,499 : EventManager : Event: ======'player_number'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2023-02-25 11:26:28,499 : EventManager : Event: ======'player_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2023-02-25 11:26:28,547 : EventManager : Event: ======'player_ball'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2023-02-25 11:26:28,547 : EventManager : Event: ======'player_turn_start'====== Args={'number': 1, 'player': <Player 1>}
+2023-02-25 11:26:28,560 : EventManager : Event: ======'slides_play'====== Args={'settings': {'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'ball_started', 'priority': 0, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2023-02-25 11:26:28,560 : mpfmc : SlidePlayer: Play called with settings={'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-02-25 11:26:28,567 : EventManager : Event: ======'slide__global.slide_player-ball_started_created'====== Args={}
+2023-02-25 11:26:28,570 : EventManager : Event: ======'slide__global.slide_player-ball_started_active'====== Args={}
+2023-02-25 11:26:32,727 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1958, 'prev_value': 1957, 'change': 1}
+2023-02-25 11:26:33,012 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1959, 'prev_value': 1958, 'change': 1}
+2023-02-25 11:26:33,246 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1960, 'prev_value': 1959, 'change': 1}
+2023-02-25 11:26:33,470 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1961, 'prev_value': 1960, 'change': 1}
+2023-02-25 11:26:35,741 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1990, 'prev_value': 1989, 'change': 1}
+2023-02-25 11:26:41,120 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 252, 'prev_value': 251, 'change': 1}
+2023-02-25 11:26:45,046 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1991, 'prev_value': 1990, 'change': 1}
+2023-02-25 11:26:47,278 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1992, 'prev_value': 1991, 'change': 1}
+2023-02-25 11:26:48,872 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1962, 'prev_value': 1961, 'change': 1}
+2023-02-25 11:26:49,958 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 253, 'prev_value': 252, 'change': 1}
+2023-02-25 11:26:52,212 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1963, 'prev_value': 1962, 'change': 1}
+2023-02-25 11:26:53,617 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1964, 'prev_value': 1963, 'change': 1}
+2023-02-25 11:26:54,447 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1965, 'prev_value': 1964, 'change': 1}
+2023-02-25 11:26:56,495 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1993, 'prev_value': 1992, 'change': 1}
+2023-02-25 11:26:58,712 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1994, 'prev_value': 1993, 'change': 1}
+2023-02-25 11:26:58,887 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1966, 'prev_value': 1965, 'change': 1}
+2023-02-25 11:27:01,647 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1995, 'prev_value': 1994, 'change': 1}
+2023-02-25 11:27:03,965 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 285, 'prev_value': 284, 'change': 1}
+2023-02-25 11:27:04,062 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 254, 'prev_value': 253, 'change': 1}
+2023-02-25 11:27:06,199 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 286, 'prev_value': 285, 'change': 1}
+2023-02-25 11:27:07,817 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1967, 'prev_value': 1966, 'change': 1}
+2023-02-25 11:27:08,662 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1968, 'prev_value': 1967, 'change': 1}
+2023-02-25 11:27:09,671 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 301, 'prev_value': 300, 'change': 1}
+2023-02-25 11:27:09,732 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 302, 'prev_value': 301, 'change': 1}
+2023-02-25 11:27:10,241 : EventManager : Event: ======'player_ball'====== Args={'value': 2, 'prev_value': 1, 'change': 1, 'player_num': 1}
+2023-02-25 11:27:10,766 : EventManager : Event: ======'slides_play'====== Args={'settings': {'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'ball_started', 'priority': 0, 'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2023-02-25 11:27:10,767 : mpfmc : SlidePlayer: Play called with settings={'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-02-25 11:27:10,767 : EventManager : Event: ======'slide__global.slide_player-ball_started_removed'====== Args={}
+2023-02-25 11:27:10,771 : EventManager : Event: ======'slide__global.slide_player-ball_started_created'====== Args={}
+2023-02-25 11:27:10,773 : EventManager : Event: ======'slide__global.slide_player-ball_started_active'====== Args={}
+2023-02-25 11:27:19,610 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1996, 'prev_value': 1995, 'change': 1}
+2023-02-25 11:27:20,233 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1969, 'prev_value': 1968, 'change': 1}
+2023-02-25 11:27:20,257 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 287, 'prev_value': 286, 'change': 1}
+2023-02-25 11:27:20,703 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1970, 'prev_value': 1969, 'change': 1}
+2023-02-25 11:27:20,973 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1997, 'prev_value': 1996, 'change': 1}
+2023-02-25 11:27:26,613 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1998, 'prev_value': 1997, 'change': 1}
+2023-02-25 11:27:29,565 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1971, 'prev_value': 1970, 'change': 1}
+2023-02-25 11:27:31,107 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1972, 'prev_value': 1971, 'change': 1}
+2023-02-25 11:27:31,494 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1973, 'prev_value': 1972, 'change': 1}
+2023-02-25 11:27:32,024 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1974, 'prev_value': 1973, 'change': 1}
+2023-02-25 11:27:39,432 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1975, 'prev_value': 1974, 'change': 1}
+2023-02-25 11:27:44,087 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1976, 'prev_value': 1975, 'change': 1}
+2023-02-25 11:27:44,941 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1977, 'prev_value': 1976, 'change': 1}
+2023-02-25 11:27:45,399 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 288, 'prev_value': 287, 'change': 1}
+2023-02-25 11:27:46,276 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1978, 'prev_value': 1977, 'change': 1}
+2023-02-25 11:27:47,588 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1999, 'prev_value': 1998, 'change': 1}
+2023-02-25 11:27:48,432 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2000, 'prev_value': 1999, 'change': 1}
+2023-02-25 11:27:53,685 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1979, 'prev_value': 1978, 'change': 1}
+2023-02-25 11:27:55,494 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2001, 'prev_value': 2000, 'change': 1}
+2023-02-25 11:27:55,729 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1980, 'prev_value': 1979, 'change': 1}
+2023-02-25 11:27:56,394 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1981, 'prev_value': 1980, 'change': 1}
+2023-02-25 11:27:59,951 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2002, 'prev_value': 2001, 'change': 1}
+2023-02-25 11:28:00,644 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 289, 'prev_value': 288, 'change': 1}
+2023-02-25 11:28:00,645 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1982, 'prev_value': 1981, 'change': 1}
+2023-02-25 11:28:01,992 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1983, 'prev_value': 1982, 'change': 1}
+2023-02-25 11:28:03,796 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1984, 'prev_value': 1983, 'change': 1}
+2023-02-25 11:28:05,432 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1985, 'prev_value': 1984, 'change': 1}
+2023-02-25 11:28:06,608 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2003, 'prev_value': 2002, 'change': 1}
+2023-02-25 11:28:07,835 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1986, 'prev_value': 1985, 'change': 1}
+2023-02-25 11:28:12,369 : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 349, 'prev_value': 348, 'change': 1}
+2023-02-25 11:28:12,491 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 297, 'prev_value': 296, 'change': 1}
+2023-02-25 11:28:12,879 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 422, 'prev_value': 421, 'change': 1}
+2023-02-25 11:28:13,412 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 423, 'prev_value': 422, 'change': 1}
+2023-02-25 11:28:13,920 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 424, 'prev_value': 423, 'change': 1}
+2023-02-25 11:28:14,749 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 425, 'prev_value': 424, 'change': 1}
+2023-02-25 11:28:16,722 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1987, 'prev_value': 1986, 'change': 1}
+2023-02-25 11:28:23,544 : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 350, 'prev_value': 349, 'change': 1}
+2023-02-25 11:28:23,766 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 298, 'prev_value': 297, 'change': 1}
+2023-02-25 11:28:23,965 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 299, 'prev_value': 298, 'change': 1}
+2023-02-25 11:28:24,137 : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 351, 'prev_value': 350, 'change': 1}
+2023-02-25 11:28:24,262 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 300, 'prev_value': 299, 'change': 1}
+2023-02-25 11:28:24,486 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 301, 'prev_value': 300, 'change': 1}
+2023-02-25 11:28:24,673 : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 302, 'prev_value': 301, 'change': 1}
+2023-02-25 11:28:25,520 : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 426, 'prev_value': 425, 'change': 1}
+2023-02-25 11:28:32,351 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2004, 'prev_value': 2003, 'change': 1}
+2023-02-25 11:28:32,401 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1988, 'prev_value': 1987, 'change': 1}
+2023-02-25 11:28:33,976 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 290, 'prev_value': 289, 'change': 1}
+2023-02-25 11:28:34,101 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 255, 'prev_value': 254, 'change': 1}
+2023-02-25 11:28:35,204 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2005, 'prev_value': 2004, 'change': 1}
+2023-02-25 11:28:44,471 : kivy : Base: Leaving application in progress...
+2023-02-25 11:28:44,472 : mpfmc : Stopping...
+2023-02-25 11:28:44,472 : EventManager : Event: ======'shutdown'====== Args={}
+2023-02-25 11:28:44,472 : AudioInterface : Disabling audio playback
+2023-02-25 11:28:44,630 : mpfmc : Loop rate 79.69 Hz
+2023-02-25 11:28:44,630 : kivy : MC run loop ended.
+2023-02-25 11:28:44,630 : kivy : Stopping child threads... (3 remaining)
+2023-02-25 11:28:45,323 : mpfmc : Stopping...
+2023-02-25 11:28:45,323 : EventManager : Event: ======'shutdown'====== Args={}
+2023-02-25 11:28:45,323 : mpfmc : Loop rate 79.37 Hz
+2023-02-25 11:28:45,334 : MPF-MC BCP Server : Stopping BCP sending thread
+2023-02-25 11:28:45,432 : kivy : All child threads stopped.

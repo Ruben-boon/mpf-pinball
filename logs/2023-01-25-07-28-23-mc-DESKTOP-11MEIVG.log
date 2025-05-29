@@ -1,0 +1,125 @@
+2023-01-25 07:28:23,969 : kivy : Factory: 189 symbols loaded
+2023-01-25 07:28:24,198 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2023-01-25 07:28:24,198 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2023-01-25 07:28:24,246 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2023-01-25 07:28:24,246 : kivy : Video: Provider: gstplayer
+2023-01-25 07:28:24,427 : kivy : Loading MPF-MC controller
+2023-01-25 07:28:24,431 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-01-25 07:28:24,432 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2023-01-25 07:28:24,433 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-01-25 07:28:24,497 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2023-01-25 07:28:24,498 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2023-01-25 07:28:24,519 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2023-01-25 07:28:24,520 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2023-01-25 07:28:24,529 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 07:28:24,530 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 07:28:24,531 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2023-01-25 07:28:24,531 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2023-01-25 07:28:24,531 : mpfmc : Machine path: C:\pinball\my_machine
+2023-01-25 07:28:24,531 : mpfmc : Starting clock at 60.0Hz
+2023-01-25 07:28:24,548 : kivy : Text: Provider: sdl2
+2023-01-25 07:28:24,599 : kivy : Window: Provider: sdl2
+2023-01-25 07:28:25,741 : kivy : GL: Using the "OpenGL" graphics system
+2023-01-25 07:28:25,749 : kivy : GL: GLEW initialization succeeded
+2023-01-25 07:28:25,749 : kivy : GL: Backend used <glew>
+2023-01-25 07:28:25,749 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 376.54'>
+2023-01-25 07:28:25,749 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2023-01-25 07:28:25,749 : kivy : GL: OpenGL renderer <b'GeForce GT 630M/PCIe/SSE2'>
+2023-01-25 07:28:25,749 : kivy : GL: OpenGL parsed version: 4, 5
+2023-01-25 07:28:25,749 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2023-01-25 07:28:25,750 : kivy : GL: Texture max size <16384>
+2023-01-25 07:28:25,750 : kivy : GL: Texture max units <32>
+2023-01-25 07:28:25,777 : kivy : Window: auto add sdl2 input provider
+2023-01-25 07:28:25,777 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-01-25 07:28:25,788 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2023-01-25 07:28:26,116 : AudioInterface : Initialized
+2023-01-25 07:28:26,116 : AudioInterface : Loaded SDL 2.0.20
+2023-01-25 07:28:26,116 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2023-01-25 07:28:26,117 : AudioInterface : Loaded GStreamer 1.18.5.0
+2023-01-25 07:28:26,117 : AudioInterface : Loaded GLib 2.62.6
+2023-01-25 07:28:26,117 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2023-01-25 07:28:26,117 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2023-01-25 07:28:26,117 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2023-01-25 07:28:26,117 : SoundSystem : Setting master volume to 0.0
+2023-01-25 07:28:26,117 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2023-01-25 07:28:26,117 : AudioInterface : Enabling audio playback
+2023-01-25 07:28:26,120 : kivy : Base: Start application main loop
+2023-01-25 07:28:26,120 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2023-01-25 07:28:26,133 : mpfmc : Display: Setting 'window' as default display
+2023-01-25 07:28:26,142 : EventManager : Event: ======'displays_initialized'====== Args={}
+2023-01-25 07:28:26,145 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2023-01-25 07:28:26,145 : EventManager : Event: ======'display_window_ready'====== Args={}
+2023-01-25 07:28:26,163 : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 07:28:26,172 : EventManager : Event: ======'mc_ready'====== Args={}
+2023-01-25 07:28:26,173 : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 07:28:26,175 : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 07:28:26,176 : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 07:28:26,176 : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-25 07:28:26,176 : EventManager : Event: ======'init_done'====== Args={}
+2023-01-25 07:28:26,177 : MPF-MC BCP Server : Starting up on localhost port 5050
+2023-01-25 07:28:26,182 : MPF-MC BCP Server : Waiting for a connection...
+2023-01-25 07:28:26,182 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2023-01-25 07:28:26,249 : kivy : GL: NPOT texture support is available
+2023-01-25 07:28:26,251 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-01-25 07:28:26,255 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-01-25 07:28:26,260 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2023-01-25 07:28:26,561 : MPF-MC BCP Server : Received connection from: 127.0.0.1:51533
+2023-01-25 07:28:26,568 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 51533}
+2023-01-25 07:28:26,617 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,618 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,619 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,619 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,620 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,620 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,620 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,621 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,621 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,622 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,622 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,622 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,623 : SoundSystem : Setting master volume to 0.5
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,709 : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,710 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2023-01-25 07:28:26,721 : EventManager : Event: ======'slides_play'====== Args={'settings': {'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'init_done', 'priority': 0}
+2023-01-25 07:28:26,721 : EventManager : Event: ======'mc_reset_phase_1'====== Args={}
+2023-01-25 07:28:26,721 : mpfmc : SlidePlayer: Play called with settings={'welcome_slide': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-01-25 07:28:26,721 : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={}
+2023-01-25 07:28:26,725 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-01-25 07:28:26,726 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
+2023-01-25 07:28:26,726 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
+2023-01-25 07:28:26,726 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2023-01-25 07:28:26,727 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-01-25 07:28:26,746 : EventManager : Event: ======'slides_play'====== Args={'settings': {'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'mode_attract_started', 'priority': 0}
+2023-01-25 07:28:26,746 : mpfmc : SlidePlayer: Play called with settings={'attract_started': {'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-01-25 07:28:26,752 : EventManager : Event: ======'slide_attract_started_created'====== Args={}
+2023-01-25 07:28:26,753 : EventManager : Event: ======'slide_attract_started_active'====== Args={}
+2023-01-25 07:28:47,873 : EventManager : Event: ======'game_started'====== Args={}
+2023-01-25 07:28:47,909 : EventManager : Event: ======'player_added'====== Args={'player': <Player 1>, 'num': 1}
+2023-01-25 07:28:47,909 : EventManager : Event: ======'player_index'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2023-01-25 07:28:47,909 : EventManager : Event: ======'player_number'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2023-01-25 07:28:47,910 : EventManager : Event: ======'player_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2023-01-25 07:28:47,933 : EventManager : Event: ======'player_ball'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2023-01-25 07:28:47,933 : EventManager : Event: ======'player_turn_start'====== Args={'number': 1, 'player': <Player 1>}
+2023-01-25 07:28:47,958 : EventManager : Event: ======'slides_play'====== Args={'settings': {'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}, 'context': '_global', 'calling_context': 'ball_started', 'priority': 0, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2023-01-25 07:28:47,958 : mpfmc : SlidePlayer: Play called with settings={'widgets': {'widgets': [{'type': 'text', 'text': 'PLAYER (number) BALL (ball)', '_default_settings': ['type', 'text'], 'x': None, 'y': None, 'anchor_x': 'center', 'anchor_y': 'center', 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': {}, 'color': [1.0, 1.0, 1.0, 1.0], 'style': [], 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'widget': None, 'events_when_added': [], 'events_when_removed': [], 'font_size': 15, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}}
+2023-01-25 07:28:47,962 : EventManager : Event: ======'slide__global.slide_player-ball_started_created'====== Args={}
+2023-01-25 07:28:47,964 : EventManager : Event: ======'slide__global.slide_player-ball_started_active'====== Args={}
+2023-01-25 07:28:48,493 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 1, 'prev_value': 0, 'change': 1}
+2023-01-25 07:28:56,235 : kivy : Base: Leaving application in progress...
+2023-01-25 07:28:56,236 : mpfmc : Stopping...
+2023-01-25 07:28:56,236 : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 07:28:56,236 : AudioInterface : Disabling audio playback
+2023-01-25 07:28:56,373 : mpfmc : Loop rate 78.1 Hz
+2023-01-25 07:28:56,373 : kivy : MC run loop ended.
+2023-01-25 07:28:56,373 : kivy : Stopping child threads... (3 remaining)
+2023-01-25 07:28:56,936 : mpfmc : Stopping...
+2023-01-25 07:28:56,936 : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 07:28:56,937 : mpfmc : Loop rate 76.67 Hz
+2023-01-25 07:28:56,953 : MPF-MC BCP Server : Stopping BCP sending thread
+2023-01-25 07:28:56,976 : kivy : All child threads stopped.

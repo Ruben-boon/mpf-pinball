@@ -1,0 +1,148 @@
+2023-01-25 07:25:01,682 : INFO : root : Loading config.
+2023-01-25 07:25:01,690 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-25 07:25:01,690 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2023-01-25 07:25:01,690 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2023-01-25 07:25:01,690 : DEBUG : YAML File Interface : Loading file: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-25 07:25:01,800 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2023-01-25 07:25:01,800 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2023-01-25 07:25:01,800 : DEBUG : YAML File Interface : Loading file: C:\pinball\my_machine\config\config.yaml
+2023-01-25 07:25:01,816 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2023-01-25 07:25:01,816 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-01-25 07:25:01,900 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2023-01-25 07:25:01,900 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-25 07:25:01,900 : DEBUG : YamlMultifileConfigLoader : Loading mode game from C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\modes\game\config\game.yaml
+2023-01-25 07:25:01,900 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-25 07:25:01,916 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-01-25 07:25:01,916 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-25-07-25-01-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-25 07:25:01,916 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-01-25 07:25:01,916 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-01-25 07:25:01,916 : INFO : Machine : Platform: win32
+2023-01-25 07:25:01,916 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-01-25 07:25:01,916 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-01-25 07:25:01,916 : DEBUG : asyncio : Using proactor: IocpProactor
+2023-01-25 07:25:01,916 : INFO : Machine : Initialise MPF.
+2023-01-25 07:25:02,001 : INFO : OPP : Connecting to com3 at 115200bps
+2023-01-25 07:25:02,079 : DEBUG : OPP : Sending EOM command to port 'com3'
+2023-01-25 07:25:02,094 : DEBUG : OPP : Got ID response:  0xff
+2023-01-25 07:25:02,094 : DEBUG : OPP : Sending inventory command:  0xf0 0xff
+2023-01-25 07:25:02,101 : DEBUG : OPP : Sending get Gen2 Cfg command:  0x20 0x0d 0x00 0x00 0x00 0x00 0x60 0xff
+2023-01-25 07:25:02,101 : DEBUG : OPPSolenoid 32 on 1 : Creating OPP Solenoid at hardware address: 0x20
+2023-01-25 07:25:02,101 : DEBUG : OPPInputCard 32 on 1 : Creating OPP Input at hardware address: 0x20
+2023-01-25 07:25:02,101 : DEBUG : OPPMatrixCard 32 on 1 : Creating OPP Matrix Input at hardware address: 0x20
+2023-01-25 07:25:02,101 : DEBUG : OPPNeopixel 32 on 1 : Creating OPP Neopixel card at hardware address: 0x20
+2023-01-25 07:25:02,101 : DEBUG : OPP : Sending get version command:  0x20 0x02 0x00 0x00 0x00 0x00 0x50 0xff
+2023-01-25 07:25:02,101 : DEBUG : OPP : Getting initial inputs states for 1
+2023-01-25 07:25:02,101 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,101 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,101 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,101 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,101 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,117 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,117 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,117 : DEBUG : OPP : Waiting for another 1 cards
+2023-01-25 07:25:02,117 : INFO : OPP : Init of OPP board 1 done
+2023-01-25 07:25:02,117 : INFO : OPP : Connecting to com4 at 115200bps
+2023-01-25 07:25:02,132 : DEBUG : OPP : Sending EOM command to port 'com4'
+2023-01-25 07:25:02,132 : DEBUG : OPP : Got ID response:  0xff
+2023-01-25 07:25:02,132 : DEBUG : OPP : Sending inventory command:  0xf0 0xff
+2023-01-25 07:25:02,132 : DEBUG : OPP : Sending get Gen2 Cfg command:  0x20 0x0d 0x00 0x00 0x00 0x00 0x60 0xff
+2023-01-25 07:25:02,148 : DEBUG : OPPSolenoid 32 on 0 : Creating OPP Solenoid at hardware address: 0x20
+2023-01-25 07:25:02,148 : DEBUG : OPPInputCard 32 on 0 : Creating OPP Input at hardware address: 0x20
+2023-01-25 07:25:02,148 : DEBUG : OPPNeopixel 32 on 0 : Creating OPP Neopixel card at hardware address: 0x20
+2023-01-25 07:25:02,148 : DEBUG : OPP : Sending get version command:  0x20 0x02 0x00 0x00 0x00 0x00 0x50 0xff
+2023-01-25 07:25:02,148 : DEBUG : OPP : Getting initial inputs states for 0
+2023-01-25 07:25:02,148 : INFO : OPP : Init of OPP board 0 done
+2023-01-25 07:25:02,148 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,217 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,217 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,217 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,217 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,233 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-01-25 07:25:02,248 : DEBUG : ModeController : Loaded mode attract
+2023-01-25 07:25:02,248 : DEBUG : ModeController : Loaded mode game
+2023-01-25 07:25:02,264 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-01-25 07:25:02,264 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2023-01-25 07:25:02,264 : INFO : ball_device.bd_trough : State: idle
+2023-01-25 07:25:02,264 : DEBUG : Machine : "info_lights:" section not found in machine configuration, so the Info Lights plugin will not be used.
+2023-01-25 07:25:02,264 : DEBUG : Machine : "switch_player:" section not found in machine configuration, so the Switch Playerplugin will not be used.
+2023-01-25 07:25:02,264 : DEBUG : twitch_client : "twitch_client:" section not found in machine configuration, so the Twitch Clientplugin will not be used.
+2023-01-25 07:25:02,264 : DEBUG : virtual_segment_display_connector : "virtual_segment_display_connector:" section not found in machine configuration, so the Virtual Segment Display Connector plugin will not be used.
+2023-01-25 07:25:02,264 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-01-25 07:25:02,279 : INFO : BallController : Initial balls found: 0
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-01-25 07:25:02,279 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-01-25 07:25:02,295 : INFO : Mode.attract : Started. Priority: 10
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-01-25 07:25:02,295 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-01-25 07:25:02,295 : INFO : Machine : Starting the main run loop.
+2023-01-25 07:25:34,539 : INFO : SwitchController : <<<<<<< 's_trough1' active >>>>>>>
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 1}
+2023-01-25 07:25:35,024 : INFO : ball_device.bd_trough : Received unexpected ball
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': -1, 'change': -1}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': 1}
+2023-01-25 07:25:35,024 : INFO : BallController : Found a new ball which was captured from playfield. Known balls: 1
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'found_new_ball'====== Args={}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_trough>}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_trough>, 'balls': 1}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2023-01-25 07:25:35,024 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_trough>}
+2023-01-25 07:25:56,611 : INFO : Machine : Shutting down...
+2023-01-25 07:25:56,611 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-25 07:25:56,627 : ERROR : OPP : Stop called on serial connection com3
+2023-01-25 07:25:56,627 : ERROR : OPP : Stop called on serial connection com4
+2023-01-25 07:25:56,627 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2023-01-25 07:25:56,881 : WARNING : OPP : Poll took more than 250.0ms for 0
+2023-01-25 07:25:56,881 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 964, in _poll_sender
+    self.send_to_processor(chain_serial, self.read_input_msg[chain_serial])
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 345, in send_to_processor
+    self.opp_connection[chain_serial].send(msg)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 160, in send
+    self.writer.write(msg)
+AttributeError: 'NoneType' object has no attribute 'write'
+2023-01-25 07:25:56,881 : INFO : root : MPF run loop ended.

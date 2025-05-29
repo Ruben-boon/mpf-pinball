@@ -1,0 +1,178 @@
+#config_version=5
+
+hardware:
+  platform: opp
+  driverboards: gen2
+
+opp:
+  #Use the USB ports defined by your OS for the two STM32 boards
+  ports: com3, com4
+
+psus:
+  default:
+    release_wait_ms: 50
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_trough
+    
+
+switches:
+  s_left_flipper:
+    number: 0-0-27
+    tags: left_flipper
+  s_right_flipper:
+    number: 0-0-26
+    tags: right_flipper
+
+  s_left_slingshot:
+    number: 0-0-19
+    tags: left_slingshot
+  s_right_slingshot:
+    number: 0-0-18
+    tags: right_slingshot
+
+  s_pop_top:
+    number: 1-0-3
+  s_pop_mid:
+    number: 1-0-1
+  s_pop_bot:
+    number: 1-0-2
+
+  s_scoop_lower:
+    number: 0-0-17
+    tags: scoop
+  s_drop_bank1:
+    number: 1-0-8
+    tags: dropBank
+  s_startButton:
+    number: 0-0-25
+    tags: start
+  s_trough1:
+    number: 0-0-16
+  s_right_inlane:
+    number: 0-0-11
+    tags: playfield_active
+
+coils:
+  c_flipper_left_main:
+    number: 0-0-1
+    default_pulse_ms: 25
+  c_flipper_left_hold:
+    number: 0-0-3
+    allow_enable: true
+  c_flipper_right_main:
+    number: 0-0-2
+    default_pulse_ms: 25
+  c_flipper_right_hold:
+    number: 0-0-4
+    allow_enable: true
+
+  c_left_slingshot:
+    number: 0-0-5
+    default_pulse_ms: 15
+    default_pulse_power: 0.75
+  c_right_slingshot:
+    number: 0-0-6
+    default_pulse_ms: 15
+    default_pulse_power: 0.75
+
+  c_scoop_lower:
+    number: 0-0-7
+    default_pulse_ms: 40
+  
+  c_drop_bank:
+    number: 1-0-4
+    default_pulse_power: 0.75
+    default_pulse_ms: 15
+  c_pop_top:
+    number: 1-0-3
+    default_pulse_ms: 20
+  c_pop_mid:
+    number: 1-0-2
+    default_pulse_ms: 20
+  c_pop_bot:
+    number: 1-0-1
+    default_pulse_ms: 20
+
+  c_trough_eject:
+    number: 0-0-15
+    default_pulse_ms: 35
+
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+
+  pop_top:
+    coil: c_pop_top
+    switch: s_pop_top
+  pop_mid:
+    coil: c_pop_mid
+    switch: s_pop_mid
+  pop_bot:
+    coil: c_pop_bot
+    switch: s_pop_bot
+
+drop_targets:
+  d_drop_target:
+    switch: s_drop_bank1
+drop_target_banks:
+  vuk_bank:
+    drop_targets: d_drop_target
+    reset_coils: c_drop_bank
+    reset_on_complete: 1s
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+  bd_scoop_lower:
+    ball_switches: s_scoop_lower
+    eject_coil: c_scoop_lower
+    eject_timeouts: 3s
+
+displays:
+  window:
+    width: 800
+    height: 600
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: Disenchantment
+        font_size: 96
+        color: purple
+      - type: rectangle
+        width: 740
+        height: 120
+  attract_started:
+    widgets:
+      - text: ATTRACT MODE
+        type: text
+
+slide_player:
+  init_done: welcome_slide
+  mode_attract_started: attract_started
+  ball_started:
+    widgets:
+      type: text
+      text: PLAYER (number) BALL (ball)

@@ -1,0 +1,87 @@
+2023-01-30 06:45:44,998 : INFO : root : Loading config.
+2023-01-30 06:45:45,013 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-01-30 06:45:45,013 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2023-01-30 06:45:45,189 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2023-01-30 06:45:45,189 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2023-01-30 06:45:45,205 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-01-30 06:45:45,205 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-01-30-06-45-44-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-01-30 06:45:45,205 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-01-30 06:45:45,205 : INFO : Machine : Machine path: C:\pinball\my_machine
+2023-01-30 06:45:45,205 : INFO : Machine : Platform: win32
+2023-01-30 06:45:45,205 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-01-30 06:45:45,205 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-01-30 06:45:45,205 : INFO : Machine : Initialise MPF.
+2023-01-30 06:45:45,677 : INFO : OPP : Connecting to com3 at 115200bps
+2023-01-30 06:45:45,693 : INFO : Machine : Shutting down...
+2023-01-30 06:45:45,693 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-01-30 06:45:45,693 : ERROR : Machine : Failed to initialise MPF
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 679, in initialise_mpf
+    raise init.exception()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 246, in initialise
+    await self.initialise_core_and_hardware()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 242, in initialise_core_and_hardware
+    await self._initialize_platforms()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 333, in _initialize_platforms
+    result.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 107, in initialize
+    await self._connect_to_hardware()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 308, in _connect_to_hardware
+    await comm.connect()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 47, in connect
+    await self._connect_to_hardware(self.port, self.baud, self.xonxoff)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 56, in _connect_to_hardware
+    self.reader, self.writer = await connector
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\clock.py", line 152, in open_serial_connection
+    transport, _ = await create_serial_connection(
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\coroutines.py", line 124, in coro
+    res = func(*args, **kw)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial_asyncio\__init__.py", line 410, in create_serial_connection
+    ser = serial.serial_for_url(*args, **kwargs)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2023-01-30 06:46:24,440 : ERROR : root : 
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 679, in initialise_mpf
+    raise init.exception()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 246, in initialise
+    await self.initialise_core_and_hardware()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 242, in initialise_core_and_hardware
+    await self._initialize_platforms()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 333, in _initialize_platforms
+    result.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 107, in initialize
+    await self._connect_to_hardware()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 308, in _connect_to_hardware
+    await comm.connect()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 47, in connect
+    await self._connect_to_hardware(self.port, self.baud, self.xonxoff)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 56, in _connect_to_hardware
+    self.reader, self.writer = await connector
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\clock.py", line 152, in open_serial_connection
+    transport, _ = await create_serial_connection(
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\coroutines.py", line 124, in coro
+    res = func(*args, **kw)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial_asyncio\__init__.py", line 410, in create_serial_connection
+    ser = serial.serial_for_url(*args, **kwargs)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com3': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\commands\game.py", line 239, in __init__
+    self.machine.run()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 689, in run
+    if not self.initialise_mpf():
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 682, in initialise_mpf
+    report_crash(init.exception(), "init_exception", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError
