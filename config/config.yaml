@@ -16,7 +16,7 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_trough
-    
+
 keyboard:
   a:
     switch: s_left_flipper
@@ -65,22 +65,42 @@ switches:
   s_pop_bot:
     number: 1-0-2
 
-  s_scoop_lower:
+  s_scoop_center:
     number: 0-0-17
     tags: scoop
+  s_scoop_right:
+    number: 0-0-16
+    tags: scoop
+
   s_drop_bank1:
     number: 1-0-8
     tags: dropBank
   s_startButton:
     number: 0-0-25
     tags: start
+
   s_trough1:
-    number: 0-0-16
+    number: 0-0-1
+    tags: trough
+  s_trough2:
+    number: 0-0-2
+    tags: trough
+  s_trough3:
+    number: 0-0-3
+    tags: trough
+  s_trough4:
+    number: 0-0-4
+    tags: trough
+  s_trough5:
+    number: 0-0-5
+    tags: trough
+
   s_right_inlane:
     number: 0-0-11
     tags: playfield_active
 
 coils:
+# cable group 2
   c_flipper_left_main:
     number: 0-0-1
     default_pulse_ms: 25
@@ -103,10 +123,14 @@ coils:
     default_pulse_ms: 15
     default_pulse_power: 0.75
 
-  c_scoop_lower:
+  c_scoop_center:
     number: 0-0-7
     default_pulse_ms: 40
-  
+  c_scoop_right:
+    number: 0-0-15
+    default_pulse_ms: 40
+
+# cable group 1
   c_drop_bank:
     number: 1-0-4
     default_pulse_power: 0.75
@@ -117,13 +141,11 @@ coils:
   c_pop_mid:
     number: 1-0-2
     default_pulse_ms: 20
-  c_pop_bot:
-    number: 1-0-1
-    default_pulse_ms: 20
 
   c_trough_eject:
-    number: 0-0-15
-    default_pulse_ms: 35
+    number: 1-0-1
+    default_pulse_ms: 10
+ 
 
 
 flippers:
@@ -151,9 +173,6 @@ autofire_coils:
   pop_mid:
     coil: c_pop_mid
     switch: s_pop_mid
-  pop_bot:
-    coil: c_pop_bot
-    switch: s_pop_bot
 
 drop_targets:
   d_drop_target:
@@ -169,10 +188,14 @@ ball_devices:
     ball_switches: s_trough1
     eject_coil: c_trough_eject
     tags: trough, home, drain
-  bd_scoop_lower:
-    ball_switches: s_scoop_lower
-    eject_coil: c_scoop_lower
-    eject_timeouts: 3s
+  bd_scoop_center:
+    ball_switches: s_scoop_center
+    eject_coil: c_scoop_center
+    eject_timeouts: 2s
+  bd_scoop_right:
+    ball_switches: s_scoop_right
+    eject_coil: c_scoop_right
+    eject_timeouts: 2s
 
 displays:
   window:
@@ -183,7 +206,7 @@ slides:
   welcome_slide:
     widgets:
       - type: text
-        text: Disenchantment
+        text: Addams family
         font_size: 96
         color: purple
       - type: rectangle

@@ -1,0 +1,147 @@
+2025-05-30 06:28:52,133 : INFO : root : Loading config.
+2025-05-30 06:28:52,140 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-05-30 06:28:52,141 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2025-05-30 06:28:52,142 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-05-30 06:28:52,264 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-05-30 06:28:52,265 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-05-30 06:28:52,320 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-05-30 06:28:52,323 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-05-30 06:28:52,447 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-05-30 06:28:52,449 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-05-30 06:28:52,450 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2025-05-30 06:28:52,450 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2025-05-30-06-28-52-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-05-30 06:28:52,451 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2025-05-30 06:28:52,451 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-05-30 06:28:52,451 : INFO : Machine : Platform: win32
+2025-05-30 06:28:52,451 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2025-05-30 06:28:52,451 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-05-30 06:28:52,454 : INFO : Machine : Initialise MPF.
+2025-05-30 06:28:52,694 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,800 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,800 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,800 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,800 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,800 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,815 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,815 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,815 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,815 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,816 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-05-30 06:28:52,816 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-05-30 06:28:52,840 : INFO : EventManager : Event: ======'drop_target_bank_vuk_bank_up'====== Args={}
+2025-05-30 06:28:52,840 : ERROR : asyncio : Task exception was never retrieved
+future: <Task finished name='Task-43' coro=<SystemWideDevice.device_added_system_wide() done, defined at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py:15> exception=ConfigFileError('Config validation error: Entry ball_device_ejector_pulse:ball_device_ejector_pulse:eject_coil = "c_trough_eject" is not valid. Device "c_trough_eject" not found in "coils:" section in your config.')>
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 90, in _initialize
+    self._configure_targets()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 385, in _configure_targets
+    self.ejector = ejector_class(ejector_config, self, self.machine)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\pulse_coil_ejector.py", line 26, in __init__
+    self.config = self.machine.config_validator.validate_config("ball_device_ejector_pulse", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 205, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 244, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 696, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 407, in _validate_type_machine
+    return self.validation_error(item, validation_failure_info,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 713, in validation_error
+    raise ConfigFileError("Config validation error: Entry {} = \"{}\" is not valid. {}".format(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry ball_device_ejector_pulse:ball_device_ejector_pulse:eject_coil = "c_trough_eject" is not valid. Device "c_trough_eject" not found in "coils:" section in your config. Error Code: CFE-ConfigValidator-6 (https://docs.missionpinball.org/en/0.56/logs/CFE-ConfigValidator-6.html)
+2025-05-30 06:28:52,897 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-05-30 06:28:52,897 : INFO : Machine : Starting the main run loop.
+2025-05-30 06:28:52,898 : INFO : Machine : Shutting down...
+2025-05-30 06:28:52,898 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-05-30 06:28:52,902 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-05-30 06:28:52,905 : ERROR : asyncio : Exception in callback EventManager.process_event_queue()
+handle: <Handle EventManager.process_event_queue()>
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 704, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\text_ui.py", line 453, in _bcp_connection_attempt
+    self._pending_bcp_connection = PopUpDialog(self.screen,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\asciimatics\widgets.py", line 3401, in __init__
+    string_len = wcswidth if screen.unicode_aware else len
+AttributeError: 'NoneType' object has no attribute 'unicode_aware'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 795, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 757, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 706, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connection_attempt of <mpf.core.text_ui.TextUi object at 0x000002D58D40AD50>>, priority=1, kwargs={}, key=UUID('a2893a9e-31bf-4771-8ac0-d3de86b33012'), condition=None, blocking_facility=None) for event bcp_connection_attempt. 'NoneType' object has no attribute 'unicode_aware'
+2025-05-30 06:28:52,978 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-05-30 06:28:53,918 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 90, in _initialize
+    self._configure_targets()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 385, in _configure_targets
+    self.ejector = ejector_class(ejector_config, self, self.machine)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\pulse_coil_ejector.py", line 26, in __init__
+    self.config = self.machine.config_validator.validate_config("ball_device_ejector_pulse", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 205, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 244, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 696, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 407, in _validate_type_machine
+    return self.validation_error(item, validation_failure_info,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 713, in validation_error
+    raise ConfigFileError("Config validation error: Entry {} = \"{}\" is not valid. {}".format(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry ball_device_ejector_pulse:ball_device_ejector_pulse:eject_coil = "c_trough_eject" is not valid. Device "c_trough_eject" not found in "coils:" section in your config. Error Code: CFE-ConfigValidator-6 (https://docs.missionpinball.org/en/0.56/logs/CFE-ConfigValidator-6.html)
+2025-05-30 06:31:04,520 : ERROR : root : 
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 90, in _initialize
+    self._configure_targets()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\ball_device.py", line 385, in _configure_targets
+    self.ejector = ejector_class(ejector_config, self, self.machine)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\ball_device\pulse_coil_ejector.py", line 26, in __init__
+    self.config = self.machine.config_validator.validate_config("ball_device_ejector_pulse", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 205, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 244, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 696, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 407, in _validate_type_machine
+    return self.validation_error(item, validation_failure_info,
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\config_validator.py", line 713, in validation_error
+    raise ConfigFileError("Config validation error: Entry {} = \"{}\" is not valid. {}".format(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry ball_device_ejector_pulse:ball_device_ejector_pulse:eject_coil = "c_trough_eject" is not valid. Device "c_trough_eject" not found in "coils:" section in your config. Error Code: CFE-ConfigValidator-6 (https://docs.missionpinball.org/en/0.56/logs/CFE-ConfigValidator-6.html)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\commands\game.py", line 239, in __init__
+    self.machine.run()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 693, in run
+    self._run_loop()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 800, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError
