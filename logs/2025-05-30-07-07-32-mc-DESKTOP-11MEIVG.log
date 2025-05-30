@@ -1,0 +1,12 @@
+2025-05-30 07:07:32,836 : kivy : Factory: 189 symbols loaded
+2025-05-30 07:07:33,091 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2025-05-30 07:07:33,091 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-05-30 07:07:33,157 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-05-30 07:07:33,157 : kivy : Video: Provider: gstplayer
+2025-05-30 07:07:33,373 : kivy : Loading MPF-MC controller
+2025-05-30 07:07:33,377 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-05-30 07:07:33,378 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2025-05-30 07:07:33,379 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-05-30 07:07:33,431 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-05-30 07:07:33,431 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2025-05-30 07:07:33,473 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config

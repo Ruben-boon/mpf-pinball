@@ -1,6 +1,6 @@
 events:
   game_ended: 50
-  game_started: 77
+  game_started: 89
 player:
   score:
     average: 0.0
@@ -18,14 +18,21 @@ player:
     total: 50
 switches:
   s_drop_bank1: 140
-  s_left_flipper: 2003
+  s_left_flipper: 2279
   s_left_slingshot: 290
+  s_plunger: 5
   s_pop_bot: 426
   s_pop_mid: 351
   s_pop_top: 302
-  s_right_flipper: 2020
-  s_right_inlane: 0
+  s_right_flipper: 2328
+  s_right_inlane: 57
   s_right_slingshot: 255
+  s_scoop_center: 0
   s_scoop_lower: 220
-  s_startButton: 11
-  s_trough1: 302
+  s_scoop_right: 0
+  s_startButton: 34
+  s_trough1: 303
+  s_trough2: 1
+  s_trough3: 1
+  s_trough4: 1
+  s_trough5: 0
