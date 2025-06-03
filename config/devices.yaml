@@ -1,0 +1,46 @@
+#config_version=6
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+
+  pop1:
+    coil: c_pop1
+    switch: s_pop1
+  pop2:
+    coil: c_pop2
+    switch: s_pop2
+  pop3:
+    coil: c_pop3
+    switch: s_pop3
+  pop4:
+    coil: c_pop4
+    switch: s_pop4
+  pop5:
+    coil: c_pop5
+    switch: s_pop5
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+  # bd_scoop_lower:
+  #   ball_switches: s_scoop_lower
+  #   eject_coil: c_scoop_lower
+  #   eject_timeouts: 3s

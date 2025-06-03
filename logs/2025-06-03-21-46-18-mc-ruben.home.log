@@ -1,0 +1,27 @@
+2025-06-03 21:46:18,348 : kivy : Kivy: v2.2.1
+2025-06-03 21:46:18,348 : kivy : Kivy: Installed at "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/kivy/__init__.py"
+2025-06-03 21:46:18,348 : kivy : Python: v3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) 
+[Clang 13.0.0 (clang-1300.0.29.30)]
+2025-06-03 21:46:18,348 : kivy : Python: Interpreter at "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"
+2025-06-03 21:46:18,353 : kivy : Factory: 190 symbols loaded
+2025-06-03 21:46:18,441 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-06-03 21:46:18,442 : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-06-03 21:46:18,510 : kivy : VideoFFPy: Using ffpyplayer 4.5.1
+2025-06-03 21:46:18,511 : kivy : Video: Provider: ffpyplayer(['video_ffmpeg'] ignored)
+2025-06-03 21:46:18,527 : root : Loading MPF-MC controller
+2025-06-03 21:46:18,534 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-06-03 21:46:18,534 : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/config/config
+2025-06-03 21:46:18,534 : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpfmc/mcconfig.yaml.
+2025-06-03 21:46:18,538 : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpfmc/mcconfig.yaml
+2025-06-03 21:46:18,539 : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/config/config.
+2025-06-03 21:46:18,539 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/config
+2025-06-03 21:46:18,539 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/hardware.yaml
+2025-06-03 21:46:18,540 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/switches.yaml
+2025-06-03 21:46:18,541 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/coils.yaml
+2025-06-03 21:46:18,541 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/devices.yaml
+2025-06-03 21:46:18,541 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/displays.yaml
+2025-06-03 21:46:18,542 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/slides.yaml
+2025-06-03 21:46:18,543 : ConfigProcessor : Config file cache created: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/195f11bb22def72033a5ba91cfdec8f0.mpf_cache
+2025-06-03 21:46:18,543 : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/c7af4841f7c2cabb0f971746daddf284.mpf_cache
+2025-06-03 21:46:18,543 : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/edcc5f1d3215b377c9faab88c62e4ce0.mpf_cache
+2025-06-03 21:46:18,543 : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/base/config/base.yaml.

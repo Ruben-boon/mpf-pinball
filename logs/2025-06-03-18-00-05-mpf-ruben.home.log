@@ -1,0 +1,6 @@
+2025-06-03 18:00:05,505 : INFO : root : Loading config.
+2025-06-03 18:00:05,533 : INFO : ConfigProcessor : Config spec file cache created: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/config_spec.mpf_cache
+2025-06-03 18:00:05,533 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-03 18:00:05,533 : INFO : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml.
+2025-06-03 18:00:05,539 : INFO : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml
+2025-06-03 18:00:05,539 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/config/config.yaml.

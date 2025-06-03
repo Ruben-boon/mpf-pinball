@@ -1,0 +1,17 @@
+2025-06-03 20:55:02,112 : kivy : Kivy: v2.2.1
+2025-06-03 20:55:02,112 : kivy : Kivy: Installed at "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/kivy/__init__.py"
+2025-06-03 20:55:02,112 : kivy : Python: v3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) 
+[Clang 13.0.0 (clang-1300.0.29.30)]
+2025-06-03 20:55:02,112 : kivy : Python: Interpreter at "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"
+2025-06-03 20:55:02,117 : kivy : Factory: 190 symbols loaded
+2025-06-03 20:55:02,204 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-06-03 20:55:02,204 : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-06-03 20:55:02,271 : kivy : VideoFFPy: Using ffpyplayer 4.5.1
+2025-06-03 20:55:02,271 : kivy : Video: Provider: ffpyplayer(['video_ffmpeg'] ignored)
+2025-06-03 20:55:02,288 : root : Loading MPF-MC controller
+2025-06-03 20:55:02,295 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-06-03 20:55:02,295 : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/config/config
+2025-06-03 20:55:02,295 : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpfmc/mcconfig.yaml.
+2025-06-03 20:55:02,299 : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpfmc/mcconfig.yaml
+2025-06-03 20:55:02,300 : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/config/config.
+2025-06-03 20:55:02,302 : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/config

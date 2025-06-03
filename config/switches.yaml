@@ -1,0 +1,73 @@
+#config_version=6
+
+switches:
+# flippers
+  s_left_flipper:
+    number: 0-0-27
+    tags: left_flipper
+  s_right_flipper:
+    number: 0-0-26
+    tags: right_flipper
+
+# slingshots
+  s_left_slingshot:
+    number: 0-0-19
+    tags: left_slingshot
+  s_right_slingshot:
+    number: 0-0-18
+    tags: right_slingshot
+
+# pop bumpers
+  s_pop1:
+    number:
+  s_pop2:
+    number:
+  s_pop3:
+    number:
+  s_pop4:
+    number:
+  s_pop5:
+    number:
+
+# scoops
+  s_scoop_center:
+    number:
+    tags: scoop
+  s_scoop_right:
+    number:
+    tags: scoop
+
+# outlanes
+  s_left_outlane:
+    number:
+  s_left_inlane1:
+    number:
+  s_left_inlane2:
+    number:
+  s_right_outlane:
+    number:
+  s_right_inlane:
+    number:
+
+
+# trough
+  s_trough1:
+    number:
+  s_trough2:
+    number:
+  s_trough3:
+    number:
+  s_trough4:
+    number:
+  s_trough5:
+    number:
+
+  
+
+# miscellaneous
+  s_startButton:
+    number: 0-0-25
+    tags: start
+  s_shooter_lane:
+    number:
+    tags: playfield_active

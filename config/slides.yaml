@@ -1,0 +1,25 @@
+#config_version=6
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: Addams family
+        font_size: 96
+        color: purple
+      - type: rectangle
+        width: 740
+        height: 120
+        color: white
+  attract_started:
+    widgets:
+      - text: ATTRACT MODE
+        type: text
+
+slide_player:
+  init_done: welcome_slide
+  mode_attract_started: attract_started
+  ball_started:
+    widgets:
+      type: text
+      text: PLAYER (number) BALL (ball)

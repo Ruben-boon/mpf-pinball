@@ -1,0 +1,6 @@
+2025-06-03 21:46:18,289 : INFO : root : Loading config.
+2025-06-03 21:46:18,291 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-03 21:46:18,291 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/1941ac2cbc7f60a15b77e866ee64bff5.mpf_cache
+2025-06-03 21:46:18,310 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/c7af4841f7c2cabb0f971746daddf284.mpf_cache
+2025-06-03 21:46:18,310 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/edcc5f1d3215b377c9faab88c62e4ce0.mpf_cache
+2025-06-03 21:46:18,310 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/base/config/base.yaml.
