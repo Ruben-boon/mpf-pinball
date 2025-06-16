@@ -1,4 +1,4 @@
-#config_version=6
+#config_version=5
 
 flippers:
   left_flipper:
@@ -15,29 +15,35 @@ autofire_coils:
   left_slingshot:
     coil: c_left_slingshot
     switch: s_left_slingshot
+    enable_events: machine_reset_phase_3
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
-
+    enable_events: machine_reset_phase_3
   pop1:
     coil: c_pop1
     switch: s_pop1
+    enable_events: machine_reset_phase_3
   pop2:
     coil: c_pop2
     switch: s_pop2
+    enable_events: machine_reset_phase_3
   pop3:
     coil: c_pop3
     switch: s_pop3
+    enable_events: machine_reset_phase_3
   pop4:
     coil: c_pop4
     switch: s_pop4
+    enable_events: machine_reset_phase_3
   pop5:
     coil: c_pop5
     switch: s_pop5
-
+    enable_events: machine_reset_phase_3
+    
 ball_devices:
   bd_trough:
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
+    ball_switches: s_trough1
     eject_coil: c_trough_eject
     tags: trough, home, drain
   # bd_scoop_lower:

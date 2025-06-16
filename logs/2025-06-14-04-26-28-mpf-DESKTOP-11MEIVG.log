@@ -1,0 +1,17 @@
+2025-06-14 04:26:28,499 : INFO : root : Loading config.
+2025-06-14 04:26:28,506 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-14 04:26:28,507 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2025-06-14 04:26:28,507 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-14 04:26:28,635 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-14 04:26:28,636 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-14 04:26:28,640 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-14 04:26:28,642 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-14 04:26:28,656 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-14 04:26:28,666 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-14 04:26:28,677 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-14 04:26:28,680 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-14 04:26:28,688 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-14 04:26:28,691 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-14 04:26:28,859 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-14 04:26:28,873 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-14 04:26:28,884 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\modes\base\config\base.yaml.

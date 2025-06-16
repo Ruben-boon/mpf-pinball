@@ -1,4 +1,4 @@
-#config_version=6
+#config_version=5
 
 coils:
 # flippers
@@ -18,37 +18,37 @@ coils:
 # slingshots
   c_left_slingshot:
     number: 0-0-5
-    default_pulse_ms: 15
-    default_pulse_power: 0.75
+    default_pulse_ms: 12
+    default_pulse_power: 0.70
   c_right_slingshot:
     number: 0-0-6
-    default_pulse_ms: 15
-    default_pulse_power: 0.75
+    default_pulse_ms: 12
+    default_pulse_power: 0.70
 
 # pop bumpers
   c_pop1:
-    number:
+    number: 1-0-1
     default_pulse_ms: 20
   c_pop2:
-    number:
+    number: 1-0-2
     default_pulse_ms: 20
-  c_pop3:
-    number:
+  c_pop3: 
+    number: 1=0=3
     default_pulse_ms: 20
   c_pop4:
-    number:
+    number: 1-0-4
     default_pulse_ms: 20
   c_pop5:
-    number:
+    number: 1-0-5
     default_pulse_ms: 20
 
-# scoops
-  c_scoop_center:
-    number:
-    default_pulse_ms: 40
-  c_scoop_right:
-    number:
-    default_pulse_ms: 40
+# # scoops
+#   c_scoop_center:
+#     number:
+#     default_pulse_ms: 40
+#   c_scoop_right:
+#     number:
+#     default_pulse_ms: 40
 
 # trough
   c_trough_eject:

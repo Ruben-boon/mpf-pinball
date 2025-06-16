@@ -1,0 +1,395 @@
+2025-06-14 04:52:35,831 : INFO : root : Loading config.
+2025-06-14 04:52:35,831 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-14 04:52:35,831 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-14 04:52:35,846 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\coils.yaml
+2025-06-14 04:52:35,846 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-14 04:52:36,078 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-14 04:52:36,078 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-14 04:52:36,078 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-14 04:52:36,078 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-14 04:52:36,094 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-14 04:52:36,094 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-14 04:52:36,109 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-14 04:52:36,109 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-14 04:52:36,109 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-14 04:52:36,125 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-14 04:52:36,234 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-14 04:52:36,234 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-14 04:52:36,250 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-14 04:52:36,250 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2025-06-14 04:52:36,250 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-14-04-52-35-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-14 04:52:36,250 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2025-06-14 04:52:36,250 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-14 04:52:36,250 : INFO : Machine : Platform: win32
+2025-06-14 04:52:36,250 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2025-06-14 04:52:36,250 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-14 04:52:36,250 : INFO : Machine : Initialise MPF.
+2025-06-14 04:52:36,492 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-14 04:52:36,645 : INFO : OPP : Init of OPP board 1 done
+2025-06-14 04:52:36,645 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-14 04:52:36,743 : INFO : OPP : Init of OPP board 0 done
+2025-06-14 04:52:36,744 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,831 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,831 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,832 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,832 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,832 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,846 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,847 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,847 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,847 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,847 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-14 04:52:36,847 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-14 04:52:36,872 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-14 04:52:36,875 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-14 04:52:36,877 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-14 04:52:39,441 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-06-14 04:52:39,444 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-06-14 04:52:39,483 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2025-06-14 04:52:39,485 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,485 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,492 : INFO : ball_device.bd_trough : State: idle
+2025-06-14 04:52:39,546 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-14 04:52:39,550 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-14 04:52:39,551 : INFO : BallController : Initial balls found: 0
+2025-06-14 04:52:39,552 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 50, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,553 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 98, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane1'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane2'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_outlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,555 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_slingshot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,555 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,555 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop2'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,556 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop3'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,556 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop4'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,557 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,557 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_inlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,557 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_outlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_slingshot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_scoop_center'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_scoop_right'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,559 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_startButton'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,559 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,559 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,559 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,559 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough4'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,560 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,560 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 50}, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,560 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_bank1'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,561 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 2280, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,561 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,561 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,561 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,562 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 290, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,562 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,562 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,562 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,563 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,563 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,563 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,564 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 426, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,564 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 351, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,564 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 302, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,565 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2332, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,565 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 57, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,565 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,566 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 255, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,566 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_center'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,567 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 220, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,567 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_right'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,567 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_shooter_lane'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,568 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,568 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 303, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,569 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,569 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,569 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,570 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-14 04:52:39,571 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-06-14 04:52:39,574 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2025-06-14 04:52:39,576 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2025-06-14 04:52:39,581 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2025-06-14 04:52:39,586 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2025-06-14 04:52:39,589 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2025-06-14 04:52:39,590 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2025-06-14 04:52:39,591 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2025-06-14 04:52:39,593 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2025-06-14 04:52:39,594 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2025-06-14 04:52:39,595 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2025-06-14 04:52:39,595 : INFO : Mode.attract : Started. Priority: 10
+2025-06-14 04:52:39,595 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2025-06-14 04:52:39,595 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2025-06-14 04:52:39,596 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2025-06-14 04:52:39,607 : INFO : Machine : Starting the main run loop.
+2025-06-14 04:52:39,609 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2025-06-14 04:52:39,610 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2025-06-14 04:52:42,640 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:42,641 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:42,641 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:42,649 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:52:42,822 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:52:42,823 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:42,823 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:42,841 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:52:46,006 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:46,007 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:46,007 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:46,027 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:52:48,215 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:48,215 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:48,216 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:48,235 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:52:48,378 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:52:48,378 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:48,378 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:48,388 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:52:50,728 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:52:50,728 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:50,728 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:50,738 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:52:50,901 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:50,901 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:50,901 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:50,916 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:52:54,028 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:54,029 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:54,029 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:54,041 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:52:58,875 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:52:58,875 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:52:58,875 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:52:58,893 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:01,815 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:01,816 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:01,816 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:01,832 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:05,336 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:05,337 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:05,337 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:05,349 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:14,865 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:14,866 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:14,866 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:14,884 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:15,531 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:15,531 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:15,531 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:15,536 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:18,419 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:18,419 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:18,420 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:18,424 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:22,765 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:22,765 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:22,765 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:22,775 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:26,281 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:26,281 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:26,281 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:26,307 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:26,400 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:26,401 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:26,401 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:26,417 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:30,852 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:30,853 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:30,853 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:30,873 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:31,040 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:31,041 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:31,041 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:31,053 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:33,509 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:33,510 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:33,510 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:33,520 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:33,616 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:33,616 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:33,617 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:33,635 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:36,168 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:36,169 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:36,170 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:36,184 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:40,241 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:40,241 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:40,241 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:40,256 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:49,492 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:49,492 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:49,492 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:49,505 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:50,183 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:50,183 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:50,184 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:50,196 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:50,909 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:50,909 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:50,909 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:50,940 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:51,627 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:51,627 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:51,628 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:51,646 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:56,947 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:53:56,948 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:56,948 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:56,954 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:53:57,059 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:57,059 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:57,059 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:57,067 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:53:58,061 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:53:58,062 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:53:58,062 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:53:58,077 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:01,169 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:01,170 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:01,170 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:01,189 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:01,300 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:01,300 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:01,301 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:01,318 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:02,180 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:02,180 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:02,180 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:02,194 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:06,139 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:06,140 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:06,140 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:06,152 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:06,262 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:06,263 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:06,263 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:06,280 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:07,338 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:07,338 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:07,338 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:07,351 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:17,723 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:17,724 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:17,724 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:17,734 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:17,897 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:17,897 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:17,898 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:17,916 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:22,918 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:22,918 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:22,919 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:22,926 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:25,718 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:25,719 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:25,719 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:25,737 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:29,921 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:29,921 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:29,921 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:29,937 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:30,148 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:30,149 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:30,149 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:30,158 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:32,441 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:32,441 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:32,441 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:32,454 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:32,567 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:32,568 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:32,568 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:32,581 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:34,934 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:34,934 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:34,935 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:34,952 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:37,629 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:37,630 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:37,630 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:37,637 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:37,755 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:37,756 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:37,756 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:37,774 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:37,864 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:37,865 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:37,865 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:37,871 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:43,565 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:43,566 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:43,566 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:43,572 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:44,030 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:44,030 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:44,030 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:44,040 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:46,565 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:46,566 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:46,566 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:46,581 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:50,686 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:54:50,687 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:50,687 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:50,713 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:54:54,838 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:54,839 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:54,839 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:54,848 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:54:58,890 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:54:58,890 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:54:58,890 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:54:58,906 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:55:01,828 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:55:01,828 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:55:01,828 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:55:01,843 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:55:01,935 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:55:01,935 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:55:01,936 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:55:01,941 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:55:03,954 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:55:03,954 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:55:03,954 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:55:03,959 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:55:04,064 : INFO : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2025-06-14 04:55:04,064 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:55:04,065 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:55:04,077 : INFO : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2025-06-14 04:55:05,540 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2025-06-14 04:55:05,541 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-14 04:55:05,541 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-14 04:55:05,548 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2025-06-14 04:55:17,372 : INFO : Machine : Shutting down...
+2025-06-14 04:55:17,372 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-14 04:55:17,377 : ERROR : OPP : Stop called on serial connection com3
+2025-06-14 04:55:17,383 : ERROR : OPP : Stop called on serial connection com4
+2025-06-14 04:55:17,384 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-06-14 04:55:17,648 : WARNING : OPP : Poll took more than 250.0ms for 0
+2025-06-14 04:55:17,651 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 964, in _poll_sender
+    self.send_to_processor(chain_serial, self.read_input_msg[chain_serial])
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 345, in send_to_processor
+    self.opp_connection[chain_serial].send(msg)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 160, in send
+    self.writer.write(msg)
+AttributeError: 'NoneType' object has no attribute 'write'
+2025-06-14 04:55:17,663 : INFO : root : MPF run loop ended.

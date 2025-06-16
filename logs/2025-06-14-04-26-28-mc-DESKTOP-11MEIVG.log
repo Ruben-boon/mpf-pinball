@@ -1,0 +1,22 @@
+2025-06-14 04:26:28,962 : kivy : Factory: 189 symbols loaded
+2025-06-14 04:26:29,221 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2025-06-14 04:26:29,222 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-06-14 04:26:29,286 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-06-14 04:26:29,286 : kivy : Video: Provider: gstplayer
+2025-06-14 04:26:29,518 : kivy : Loading MPF-MC controller
+2025-06-14 04:26:29,522 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-06-14 04:26:29,523 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2025-06-14 04:26:29,524 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-06-14 04:26:29,573 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-06-14 04:26:29,574 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2025-06-14 04:26:29,577 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2025-06-14 04:26:29,579 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-14 04:26:29,590 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-14 04:26:29,600 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-14 04:26:29,608 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-14 04:26:29,611 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-14 04:26:29,616 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-14 04:26:29,618 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2025-06-14 04:26:29,619 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-14 04:26:29,620 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-14 04:26:29,621 : ConfigProcessor : Loading config from file C:\pinball\my_machine\modes\base\config\base.yaml.
