@@ -14,6 +14,12 @@ coils:
   c_flipper_right_hold:
     number: 0-0-4
     allow_enable: true
+  c_flipper_top_main:
+    number: 0-0-15
+    default_pulse_ms: 25
+  c_flipper_top_hold:
+    number: 0-0-7
+    allow_enable: true
 
 # slingshots
   c_left_slingshot:
@@ -27,19 +33,19 @@ coils:
 
 # pop bumpers
   c_pop1:
-    number: 1-0-1
+    number: 0-0-8
     default_pulse_ms: 20
   c_pop2:
-    number: 1-0-2
+    number: 0-0-0
     default_pulse_ms: 20
   c_pop3: 
-    number: 1=0=3
+    number: 0-0-10
     default_pulse_ms: 20
   c_pop4:
-    number: 1-0-4
+    number: 0-0-14
     default_pulse_ms: 20
   c_pop5:
-    number: 1-0-5
+    number: 0-0-12
     default_pulse_ms: 20
 
 # # scoops
@@ -52,5 +58,5 @@ coils:
 
 # trough
   c_trough_eject:
-    number: 0-0-15
+    number: 1-0-1
     default_pulse_ms: 35

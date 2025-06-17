@@ -1,0 +1,235 @@
+2025-06-16 08:21:29,309 : INFO : root : Loading config.
+2025-06-16 08:21:29,325 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-16 08:21:29,325 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-16 08:21:29,325 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\coils.yaml
+2025-06-16 08:21:29,325 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-16 08:21:29,450 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-16 08:21:29,450 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-16 08:21:29,466 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-16 08:21:29,466 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-16 08:21:29,466 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-16 08:21:29,481 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-16 08:21:29,497 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-16 08:21:29,497 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-16 08:21:29,497 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-16 08:21:29,497 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-16 08:21:29,622 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-16 08:21:29,622 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-16 08:21:29,622 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-16 08:21:29,622 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2025-06-16 08:21:29,622 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-16-08-21-29-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-16 08:21:29,622 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2025-06-16 08:21:29,622 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-16 08:21:29,622 : INFO : Machine : Platform: win32
+2025-06-16 08:21:29,622 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2025-06-16 08:21:29,622 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-16 08:21:29,638 : INFO : Machine : Initialise MPF.
+2025-06-16 08:21:29,959 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-16 08:21:30,009 : INFO : OPP : Init of OPP board 1 done
+2025-06-16 08:21:30,009 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-16 08:21:30,156 : INFO : OPP : Init of OPP board 0 done
+2025-06-16 08:21:30,157 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,235 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,235 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,235 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,235 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,235 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,249 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,249 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,249 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,249 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,249 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-16 08:21:30,250 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-16 08:21:30,278 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-16 08:21:30,283 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-16 08:21:30,286 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-16 08:21:32,847 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-06-16 08:21:32,851 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-06-16 08:21:32,895 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2025-06-16 08:21:32,898 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,899 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,906 : INFO : ball_device.bd_trough : State: idle
+2025-06-16 08:21:32,966 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-16 08:21:32,972 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-16 08:21:32,973 : INFO : BallController : Initial balls found: 0
+2025-06-16 08:21:32,975 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 50, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,976 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 98, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,976 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,976 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane1'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,977 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane2'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,977 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_outlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,977 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_slingshot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,977 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,977 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop2'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,978 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop3'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,978 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop4'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,978 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,978 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_inlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,978 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_outlane'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,979 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_slingshot'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,979 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_scoop_center'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,979 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_scoop_right'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,979 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_startButton'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,980 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough1'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,980 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,980 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,980 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough4'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,980 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough5'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,981 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0.0, 'top': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 50}, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_bank1'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 2280, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 290, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,985 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 426, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,987 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 351, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,987 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 302, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2332, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 57, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,988 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,989 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 255, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,990 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_center'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,990 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 220, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,990 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_right'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,991 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_shooter_lane'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,991 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,991 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 303, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,992 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,992 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,992 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,993 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-16 08:21:32,994 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-06-16 08:21:32,997 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2025-06-16 08:21:32,998 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2025-06-16 08:21:33,007 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2025-06-16 08:21:33,011 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2025-06-16 08:21:33,015 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2025-06-16 08:21:33,016 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2025-06-16 08:21:33,017 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2025-06-16 08:21:33,020 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2025-06-16 08:21:33,020 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2025-06-16 08:21:33,021 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2025-06-16 08:21:33,022 : INFO : Mode.attract : Started. Priority: 10
+2025-06-16 08:21:33,022 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2025-06-16 08:21:33,022 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2025-06-16 08:21:33,022 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2025-06-16 08:21:33,045 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2025-06-16 08:21:33,045 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2025-06-16 08:21:33,046 : INFO : Machine : Starting the main run loop.
+2025-06-16 08:21:33,371 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:33,371 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:33,371 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:33,491 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:33,555 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:33,555 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:33,555 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:33,689 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:33,743 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:33,744 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:33,744 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:33,856 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:33,907 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:33,908 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:33,908 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,015 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:34,051 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:34,052 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:34,052 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,137 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:34,221 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:34,221 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:34,221 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,266 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:34,359 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:34,359 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:34,359 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,417 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:34,493 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:34,494 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:34,494 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,582 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:34,886 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:34,886 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:34,886 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:34,979 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:35,148 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:35,149 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:35,149 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:35,203 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:35,313 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:35,313 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:35,313 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:35,446 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:35,508 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:35,508 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:35,508 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:35,591 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:35,668 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:35,669 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:35,669 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:35,777 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:35,829 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:35,830 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:35,830 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:35,935 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:36,015 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:36,015 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:36,016 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:36,094 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:36,175 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:36,176 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:36,176 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:36,267 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:36,360 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:36,360 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:36,360 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:36,438 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:36,514 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:36,514 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:36,514 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:36,594 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:36,656 : INFO : SwitchController : <<<<<<< 's_pop3' active >>>>>>>
+2025-06-16 08:21:36,657 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2025-06-16 08:21:36,657 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2025-06-16 08:21:36,743 : INFO : SwitchController : <<<<<<< 's_pop3' inactive >>>>>>>
+2025-06-16 08:21:55,796 : INFO : Machine : Shutting down...
+2025-06-16 08:21:55,802 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-16 08:21:55,811 : ERROR : OPP : Stop called on serial connection com3
+2025-06-16 08:21:55,839 : ERROR : OPP : Stop called on serial connection com4
+2025-06-16 08:21:55,839 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 965, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-06-16 08:21:56,112 : WARNING : OPP : Poll took more than 250.0ms for 0
+2025-06-16 08:21:56,112 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759
+handle: <Handle Util.raise_exceptions(<Task finishe...ute 'write'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py:759>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\utility_functions.py", line 767, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 964, in _poll_sender
+    self.send_to_processor(chain_serial, self.read_input_msg[chain_serial])
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 345, in send_to_processor
+    self.opp_connection[chain_serial].send(msg)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 160, in send
+    self.writer.write(msg)
+AttributeError: 'NoneType' object has no attribute 'write'
+2025-06-16 08:21:56,114 : INFO : root : MPF run loop ended.

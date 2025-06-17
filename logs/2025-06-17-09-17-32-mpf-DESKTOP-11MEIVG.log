@@ -1,0 +1,132 @@
+2025-06-17 09:17:32,295 : INFO : root : Loading config.
+2025-06-17 09:17:32,295 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-17 09:17:32,295 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-17 09:17:32,310 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\switches.yaml
+2025-06-17 09:17:32,310 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-17 09:17:32,435 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-17 09:17:32,435 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-17 09:17:32,435 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-17 09:17:32,435 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-17 09:17:32,451 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-17 09:17:32,467 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-17 09:17:32,467 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-17 09:17:32,482 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-17 09:17:32,482 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-17 09:17:32,482 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\a17888e5e1df298d67e07ada0b1bff4a.mpf_cache
+2025-06-17 09:17:32,607 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-17 09:17:32,607 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-17 09:17:32,607 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-17 09:17:32,607 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2025-06-17 09:17:32,607 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-17-09-17-32-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-17 09:17:32,607 : INFO : Machine : MPF path: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2025-06-17 09:17:32,607 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-17 09:17:32,607 : INFO : Machine : Platform: win32
+2025-06-17 09:17:32,607 : INFO : Machine : Python executable location: C:\Users\ruben\.local\pipx\venvs\mpf\Scripts\python.exe
+2025-06-17 09:17:32,607 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-17 09:17:32,607 : INFO : Machine : Initialise MPF.
+2025-06-17 09:17:32,854 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-17 09:17:33,001 : INFO : OPP : Init of OPP board 1 done
+2025-06-17 09:17:33,001 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-17 09:17:33,076 : INFO : OPP : Init of OPP board 0 done
+2025-06-17 09:17:33,077 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,166 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,166 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,166 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,166 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,167 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-17 09:17:33,181 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-17 09:17:33,213 : ERROR : asyncio : Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<SystemWideDevice.device_added_system_wide() done, defined at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py:15> exception=ConfigFileError('Failed to configure switch s_right_slingshot in platform. See error above')>
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 148, in _initialize
+    self.hw_switch = self.platform.configure_switch(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 857, in configure_switch
+    self.raise_config_error("A request was made to configure an OPP switch "
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: A request was made to configure an OPP switch with number 0-0-23 which doesn't exist Error Code: CFE-OPP-7 (https://docs.missionpinball.org/en/0.56/logs/CFE-OPP-7.html)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 151, in _initialize
+    raise ConfigFileError("Failed to configure switch {} in platform. See error above".format(self.name), 2,
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in switch: Failed to configure switch s_right_slingshot in platform. See error above Error Code: CFE-switch-2 (https://docs.missionpinball.org/en/0.56/logs/CFE-switch-2.html)
+2025-06-17 09:17:33,217 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-17 09:17:33,217 : INFO : Machine : Starting the main run loop.
+2025-06-17 09:17:33,219 : INFO : Machine : Shutting down...
+2025-06-17 09:17:33,219 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-17 09:17:33,220 : ERROR : OPP : Stop called on serial connection com3
+2025-06-17 09:17:33,225 : ERROR : asyncio : Exception in callback EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...te 'number'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py:118
+handle: <Handle EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...te 'number'")>) at C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py:118>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\events.py", line 121, in _async_handler_done
+    future.result()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\switch_controller.py", line 84, in _initialize_switches
+    await self.update_switches_from_hw()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\switch_controller.py", line 106, in update_switches_from_hw
+    switches.add((switch, switch.hw_switch.number))
+AttributeError: 'NoneType' object has no attribute 'number'
+2025-06-17 09:17:33,229 : ERROR : OPP : Stop called on serial connection com4
+2025-06-17 09:17:34,262 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 148, in _initialize
+    self.hw_switch = self.platform.configure_switch(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 857, in configure_switch
+    self.raise_config_error("A request was made to configure an OPP switch "
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: A request was made to configure an OPP switch with number 0-0-23 which doesn't exist Error Code: CFE-OPP-7 (https://docs.missionpinball.org/en/0.56/logs/CFE-OPP-7.html)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 151, in _initialize
+    raise ConfigFileError("Failed to configure switch {} in platform. See error above".format(self.name), 2,
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in switch: Failed to configure switch s_right_slingshot in platform. See error above Error Code: CFE-switch-2 (https://docs.missionpinball.org/en/0.56/logs/CFE-switch-2.html)
+2025-06-17 09:18:10,886 : ERROR : root : 
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 148, in _initialize
+    self.hw_switch = self.platform.configure_switch(
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\platforms\opp\opp.py", line 857, in configure_switch
+    self.raise_config_error("A request was made to configure an OPP switch "
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: A request was made to configure an OPP switch with number 0-0-23 which doesn't exist Error Code: CFE-OPP-7 (https://docs.missionpinball.org/en/0.56/logs/CFE-OPP-7.html)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\devices\switch.py", line 151, in _initialize
+    raise ConfigFileError("Failed to configure switch {} in platform. See error above".format(self.name), 2,
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in switch: Failed to configure switch s_right_slingshot in platform. See error above Error Code: CFE-switch-2 (https://docs.missionpinball.org/en/0.56/logs/CFE-switch-2.html)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\commands\game.py", line 239, in __init__
+    self.machine.run()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 693, in run
+    self._run_loop()
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\machine.py", line 800, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError

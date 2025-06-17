@@ -1,0 +1,108 @@
+2025-06-17 09:14:57,854 : kivy : Factory: 189 symbols loaded
+2025-06-17 09:14:58,154 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2025-06-17 09:14:58,154 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-06-17 09:14:58,237 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-06-17 09:14:58,238 : kivy : Video: Provider: gstplayer
+2025-06-17 09:14:58,508 : kivy : Loading MPF-MC controller
+2025-06-17 09:14:58,512 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-06-17 09:14:58,512 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2025-06-17 09:14:58,513 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-06-17 09:14:58,571 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-06-17 09:14:58,572 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2025-06-17 09:14:58,575 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2025-06-17 09:14:58,577 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-17 09:14:58,585 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-17 09:14:58,596 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-17 09:14:58,607 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-17 09:14:58,610 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-17 09:14:58,616 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-17 09:14:58,618 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2025-06-17 09:14:58,619 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-17 09:14:58,620 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-17 09:14:58,621 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-17 09:14:58,621 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2025-06-17 09:14:58,622 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2025-06-17 09:14:58,622 : mpfmc : Machine path: C:\pinball\my_machine
+2025-06-17 09:14:58,622 : mpfmc : Starting clock at 60.0Hz
+2025-06-17 09:14:58,643 : kivy : Text: Provider: sdl2
+2025-06-17 09:14:58,719 : kivy : Window: Provider: sdl2
+2025-06-17 09:14:59,947 : kivy : GL: Using the "OpenGL" graphics system
+2025-06-17 09:14:59,954 : kivy : GL: GLEW initialization succeeded
+2025-06-17 09:14:59,955 : kivy : GL: Backend used <glew>
+2025-06-17 09:14:59,955 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 376.54'>
+2025-06-17 09:14:59,955 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2025-06-17 09:14:59,955 : kivy : GL: OpenGL renderer <b'GeForce GT 630M/PCIe/SSE2'>
+2025-06-17 09:14:59,955 : kivy : GL: OpenGL parsed version: 4, 5
+2025-06-17 09:14:59,955 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2025-06-17 09:14:59,955 : kivy : GL: Texture max size <16384>
+2025-06-17 09:14:59,955 : kivy : GL: Texture max units <32>
+2025-06-17 09:14:59,985 : kivy : Window: auto add sdl2 input provider
+2025-06-17 09:14:59,986 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2025-06-17 09:15:00,001 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2025-06-17 09:15:00,381 : AudioInterface : Initialized
+2025-06-17 09:15:00,381 : AudioInterface : Loaded SDL 2.0.20
+2025-06-17 09:15:00,381 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2025-06-17 09:15:00,381 : AudioInterface : Loaded GStreamer 1.18.5.0
+2025-06-17 09:15:00,382 : AudioInterface : Loaded GLib 2.62.6
+2025-06-17 09:15:00,382 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2025-06-17 09:15:00,382 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2025-06-17 09:15:00,382 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2025-06-17 09:15:00,382 : SoundSystem : Setting master volume to 0.0
+2025-06-17 09:15:00,383 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2025-06-17 09:15:00,383 : AudioInterface : Enabling audio playback
+2025-06-17 09:15:00,387 : kivy : Base: Start application main loop
+2025-06-17 09:15:00,387 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2025-06-17 09:15:00,388 : EventManager : Event: ======'display_playfield_initialized'====== Args={}
+2025-06-17 09:15:00,400 : mpfmc : Display: Setting 'window' as default display
+2025-06-17 09:15:00,412 : mpfmc : ASPECT RATIO MISMATCH: The on-screen window is not the same aspect ratio as the display called 'window'. The logical display will be scaled from 1280x390 to the window size 800x600, and a black bar will make up the difference
+2025-06-17 09:15:00,413 : EventManager : Event: ======'displays_initialized'====== Args={}
+2025-06-17 09:15:00,415 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2025-06-17 09:15:00,415 : EventManager : Event: ======'display_window_ready'====== Args={}
+2025-06-17 09:15:00,417 : EventManager : Event: ======'slide_playfield_blank_created'====== Args={}
+2025-06-17 09:15:00,417 : EventManager : Event: ======'display_playfield_ready'====== Args={}
+2025-06-17 09:15:00,450 : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-17 09:15:00,462 : EventManager : Event: ======'mc_ready'====== Args={}
+2025-06-17 09:15:00,463 : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-17 09:15:00,465 : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-17 09:15:00,467 : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-17 09:15:00,467 : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-06-17 09:15:00,634 : kivy : GL: NPOT texture support is available
+2025-06-17 09:15:00,650 : EventManager : Event: ======'loading_assets'====== Args={'total': 1, 'loaded': 1, 'remaining': 0, 'percent': 100}
+2025-06-17 09:15:00,650 : AssetManager : Asset loading took: 0.26683712005615234
+2025-06-17 09:15:00,651 : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2025-06-17 09:15:00,651 : AssetManager : Loading assets: 1/1 (100%)
+2025-06-17 09:15:00,651 : EventManager : Event: ======'init_done'====== Args={}
+2025-06-17 09:15:00,651 : MPF-MC BCP Server : Starting up on localhost port 5050
+2025-06-17 09:15:00,656 : MPF-MC BCP Server : Waiting for a connection...
+2025-06-17 09:15:00,656 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2025-06-17 09:15:00,664 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2025-06-17 09:15:00,665 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2025-06-17 09:15:00,669 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2025-06-17 09:15:00,836 : MPF-MC BCP Server : Received connection from: 127.0.0.1:50869
+2025-06-17 09:15:00,841 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 50869}
+2025-06-17 09:15:00,914 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,915 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,915 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,916 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,916 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,917 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,917 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,918 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,918 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,919 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,919 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,919 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,920 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2025-06-17 09:15:00,920 : SoundSystem : Setting master volume to 0.5
+2025-06-17 09:15:01,071 : mpfmc : Stopping...
+2025-06-17 09:15:01,072 : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-17 09:15:01,072 : AudioInterface : Disabling audio playback
+2025-06-17 09:15:01,216 : mpfmc : Loop rate 39.78 Hz
+2025-06-17 09:15:01,216 : kivy : Base: Leaving application in progress...
+2025-06-17 09:15:01,217 : mpfmc : Stopping...
+2025-06-17 09:15:01,217 : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-17 09:15:01,217 : mpfmc : Loop rate 39.73 Hz
+2025-06-17 09:15:01,217 : kivy : MC run loop ended.
+2025-06-17 09:15:01,217 : kivy : Stopping child threads... (3 remaining)
+2025-06-17 09:15:01,845 : MPF-MC BCP Server : Stopping BCP sending thread
+2025-06-17 09:15:01,918 : kivy : All child threads stopped.

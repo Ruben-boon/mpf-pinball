@@ -1,0 +1,81 @@
+2025-06-17 05:05:10,023 : kivy : Factory: 189 symbols loaded
+2025-06-17 05:05:10,431 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2025-06-17 05:05:10,431 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-06-17 05:05:10,503 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-06-17 05:05:10,503 : kivy : Video: Provider: gstplayer
+2025-06-17 05:05:10,751 : kivy : Loading MPF-MC controller
+2025-06-17 05:05:10,758 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-06-17 05:05:10,758 : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config
+2025-06-17 05:05:10,759 : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-06-17 05:05:10,818 : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-06-17 05:05:10,818 : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.
+2025-06-17 05:05:10,822 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config
+2025-06-17 05:05:10,825 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-17 05:05:10,833 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-17 05:05:10,845 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-17 05:05:10,857 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-17 05:05:10,861 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-17 05:05:10,870 : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-17 05:05:10,872 : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\5edbcd24fbe704f5401fb4c9e1e1d8f8.mpf_cache
+2025-06-17 05:05:10,873 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\67cf8ffee0fce2d4fcb5ef0bb894d8de.mpf_cache
+2025-06-17 05:05:10,874 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\25321780674732dcacb77a8f5b2a53cd.mpf_cache
+2025-06-17 05:05:10,875 : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-17 05:05:10,876 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2025-06-17 05:05:10,876 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2025-06-17 05:05:10,876 : mpfmc : Machine path: C:\pinball\my_machine
+2025-06-17 05:05:10,876 : mpfmc : Starting clock at 60.0Hz
+2025-06-17 05:05:10,898 : kivy : Text: Provider: sdl2
+2025-06-17 05:05:10,962 : kivy : Window: Provider: sdl2
+2025-06-17 05:05:12,394 : kivy : GL: Using the "OpenGL" graphics system
+2025-06-17 05:05:12,402 : kivy : GL: GLEW initialization succeeded
+2025-06-17 05:05:12,402 : kivy : GL: Backend used <glew>
+2025-06-17 05:05:12,402 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 376.54'>
+2025-06-17 05:05:12,403 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2025-06-17 05:05:12,403 : kivy : GL: OpenGL renderer <b'GeForce GT 630M/PCIe/SSE2'>
+2025-06-17 05:05:12,403 : kivy : GL: OpenGL parsed version: 4, 5
+2025-06-17 05:05:12,403 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2025-06-17 05:05:12,403 : kivy : GL: Texture max size <16384>
+2025-06-17 05:05:12,403 : kivy : GL: Texture max units <32>
+2025-06-17 05:05:12,430 : kivy : Window: auto add sdl2 input provider
+2025-06-17 05:05:12,431 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2025-06-17 05:05:12,445 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2025-06-17 05:05:12,815 : AudioInterface : Initialized
+2025-06-17 05:05:12,815 : AudioInterface : Loaded SDL 2.0.20
+2025-06-17 05:05:12,815 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2025-06-17 05:05:12,815 : AudioInterface : Loaded GStreamer 1.18.5.0
+2025-06-17 05:05:12,816 : AudioInterface : Loaded GLib 2.62.6
+2025-06-17 05:05:12,816 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2025-06-17 05:05:12,816 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2025-06-17 05:05:12,816 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2025-06-17 05:05:12,816 : SoundSystem : Setting master volume to 0.0
+2025-06-17 05:05:12,817 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2025-06-17 05:05:12,817 : AudioInterface : Enabling audio playback
+2025-06-17 05:05:12,821 : kivy : Base: Start application main loop
+2025-06-17 05:05:12,821 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2025-06-17 05:05:12,822 : EventManager : Event: ======'display_playfield_initialized'====== Args={}
+2025-06-17 05:05:12,833 : mpfmc : Display: Setting 'window' as default display
+2025-06-17 05:05:12,843 : mpfmc : ASPECT RATIO MISMATCH: The on-screen window is not the same aspect ratio as the display called 'window'. The logical display will be scaled from 1280x390 to the window size 800x600, and a black bar will make up the difference
+2025-06-17 05:05:12,843 : EventManager : Event: ======'displays_initialized'====== Args={}
+2025-06-17 05:05:12,846 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2025-06-17 05:05:12,846 : EventManager : Event: ======'display_window_ready'====== Args={}
+2025-06-17 05:05:12,847 : EventManager : Event: ======'slide_playfield_blank_created'====== Args={}
+2025-06-17 05:05:12,848 : EventManager : Event: ======'display_playfield_ready'====== Args={}
+2025-06-17 05:05:12,880 : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-17 05:05:12,889 : EventManager : Event: ======'mc_ready'====== Args={}
+2025-06-17 05:05:12,890 : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-17 05:05:12,892 : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-17 05:05:12,894 : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-17 05:05:12,895 : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-06-17 05:05:13,053 : kivy : GL: NPOT texture support is available
+2025-06-17 05:05:13,073 : EventManager : Event: ======'loading_assets'====== Args={'total': 1, 'loaded': 1, 'remaining': 0, 'percent': 100}
+2025-06-17 05:05:13,073 : AssetManager : Asset loading took: 0.2558436393737793
+2025-06-17 05:05:13,073 : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2025-06-17 05:05:13,073 : AssetManager : Loading assets: 1/1 (100%)
+2025-06-17 05:05:13,073 : EventManager : Event: ======'init_done'====== Args={}
+2025-06-17 05:05:13,074 : MPF-MC BCP Server : Starting up on localhost port 5050
+2025-06-17 05:05:13,078 : MPF-MC BCP Server : Waiting for a connection...
+2025-06-17 05:05:13,078 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2025-06-17 05:05:13,086 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2025-06-17 05:05:13,087 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2025-06-17 05:05:13,091 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2025-06-17 05:05:35,875 : kivy : Base: Leaving application in progress...
