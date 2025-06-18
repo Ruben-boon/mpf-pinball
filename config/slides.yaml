@@ -11,10 +11,13 @@ slides:
   #       width: 740
   #       height: 120
   #       color: white
-
   attract_image_slide:
      widgets:
       - type: image
         image: af_bg
         x: center   
         y: middle  
+  attract_video_slide:
+     widgets:
+      - type: video
+        video: af_intro_video

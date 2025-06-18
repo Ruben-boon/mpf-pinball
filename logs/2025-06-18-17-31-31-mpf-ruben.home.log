@@ -113,3 +113,6 @@
 2025-06-18 17:31:32,455 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
 2025-06-18 17:31:32,469 : INFO : EventManager : Event: ======'slide_attract_image_slide_created'====== Args={'_from_bcp': True}
 2025-06-18 17:31:32,469 : INFO : EventManager : Event: ======'slide_attract_image_slide_active'====== Args={'_from_bcp': True}
+2025-06-18 17:54:15,470 : INFO : Machine : Shutting down...
+2025-06-18 17:54:15,471 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-18 17:54:15,474 : INFO : root : MPF run loop ended.
