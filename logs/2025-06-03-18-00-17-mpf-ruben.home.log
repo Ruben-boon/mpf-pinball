@@ -1,5 +1,0 @@
-2025-06-03 18:00:17,305 : INFO : root : Loading config.
-2025-06-03 18:00:17,307 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2025-06-03 18:00:17,307 : INFO : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml.
-2025-06-03 18:00:17,312 : INFO : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml
-2025-06-03 18:00:17,313 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/config/config.yaml.

@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 switches:
 # flippers
@@ -68,6 +68,6 @@ switches:
   s_startButton:
     number: 0-0-25
     tags: start
-  s_shooter_lane:
+  s_right_inlane:
     number: 0-0-11
     tags: playfield_active

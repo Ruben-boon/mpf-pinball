@@ -1,6 +1,0 @@
-2025-06-14 04:18:08,571 : INFO : root : Loading config.
-2025-06-14 04:18:08,595 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2025-06-14 04:18:08,596 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
-2025-06-14 04:18:08,596 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml.
-2025-06-14 04:18:08,852 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\.local\pipx\venvs\mpf\lib\site-packages\mpf\mpfconfig.yaml
-2025-06-14 04:18:08,854 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.

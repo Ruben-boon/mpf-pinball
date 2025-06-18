@@ -1,0 +1,7 @@
+#config_version=6
+
+images:
+  fh_bg:
+    file: fh_bg.jpg
+  af_bg:
+    file: af_bg.jpg

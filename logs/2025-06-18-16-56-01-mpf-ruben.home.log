@@ -1,0 +1,12 @@
+2025-06-18 16:56:01,775 : INFO : root : Loading config.
+2025-06-18 16:56:01,777 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-18 16:56:01,777 : WARNING : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/config/config.yaml
+2025-06-18 16:56:01,777 : INFO : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml.
+2025-06-18 16:56:01,783 : INFO : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/mpfconfig.yaml
+2025-06-18 16:56:01,784 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/config/config.yaml.
+2025-06-18 16:56:01,784 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/config.yaml
+2025-06-18 16:56:01,785 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/hardware.yaml
+2025-06-18 16:56:01,785 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/switches.yaml
+2025-06-18 16:56:01,786 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/coils.yaml
+2025-06-18 16:56:01,787 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/devices.yaml
+2025-06-18 16:56:01,787 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/config/displays.yaml

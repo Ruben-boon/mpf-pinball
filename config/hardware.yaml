@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 hardware:
   platform: opp
@@ -6,6 +6,7 @@ hardware:
 
 opp:
   ports: com3, com4
+  debug: true
 
 psus:
   default:

@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 coils:
 # flippers
@@ -8,12 +8,14 @@ coils:
   c_flipper_left_hold:
     number: 0-0-3
     allow_enable: true
+
   c_flipper_right_main:
     number: 0-0-2
     default_pulse_ms: 25
   c_flipper_right_hold:
     number: 0-0-4
     allow_enable: true
+    
   c_flipper_top_main:
     number: 0-0-15
     default_pulse_ms: 25
