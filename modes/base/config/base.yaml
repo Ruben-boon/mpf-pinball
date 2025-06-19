@@ -8,16 +8,19 @@ mode:
 slide_player:
   mode_base_started:
     widgets:
+     
       - type: text
         text: (score)
         number_grouping: true
         min_digits: 2
         font_size: 100
+        font_name: Creepster-Regular.ttf
       - type: text
         text: PLAYER (number)
         y: 10
         x: 10
         font_size: 50
+        font_name: MetalMania-Regular.ttf
         anchor_x: left
         anchor_y: bottom
       - type: text
@@ -27,6 +30,11 @@ slide_player:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
+        font_name: OldLondonAlternate.ttf
+      - type: image
+        image: af_stairs
+        x: center   
+        y: middle 
 ##! test
 #! start_game
 #! assert_mode_running base

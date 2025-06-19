@@ -1,19 +1,21 @@
 events:
   game_ended: 53
-  game_started: 103
+  game_started: 106
 missing_switches:
-  s_left_flipper: 3
+  s_left_flipper: 6
   s_left_outlane: 10
-  s_left_slingshot: 3
-  s_pop1: 14
-  s_pop2: 14
-  s_pop3: 14
-  s_pop4: 3
-  s_pop5: 3
-  s_right_flipper: 2
+  s_left_slingshot: 6
+  s_pop1: 17
+  s_pop2: 17
+  s_pop3: 17
+  s_pop4: 6
+  s_pop5: 6
+  s_right_flipper: 5
+  s_right_inlane: 3
   s_right_outlane: 10
-  s_right_slingshot: 3
-  s_startButton: 3
+  s_right_slingshot: 6
+  s_startButton: 6
+  s_trough1: 3
   s_trough2: 10
   s_trough3: 10
   s_trough4: 10

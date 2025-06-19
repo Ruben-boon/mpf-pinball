@@ -5,3 +5,5 @@ images:
     file: fh_bg.jpg
   af_bg:
     file: af_bg.jpg
+  af_stairs:
+    file: af_stairs.jpg
