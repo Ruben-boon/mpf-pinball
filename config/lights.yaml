@@ -1,0 +1,58 @@
+#config_version=6
+
+lights:
+  led_1:
+    number: 1-0-0
+    subtype: led
+    type: rgb
+  led_2:
+    number: 1-0-1
+    subtype: led
+    type: rgb
+  led_3:
+    number: 1-0-2
+    subtype: led
+    type: rgb
+  led_4:
+    number: 1-0-3
+    subtype: led
+    type: rgb
+  led_5:
+    number: 1-0-4
+    subtype: led
+    type: rgb   
+
+
+light_player:
+  # --- Events to control individual LEDs ---
+  led_code:
+    led_1: FAFF9C
+    led_2: FAFF9C
+    led_3: off
+    led_4: off
+    led_5: green
+
+  led_off:
+    led_1: off
+    led_2: off
+  led_name:
+    led_1: red
+    led_2: blue
+  led_fade:
+    led_1:
+      color: slateblue
+      fade: 2000ms
+    led_2:
+      color: crimson
+      fade: 1s
+
+
+keyboard:
+  1:
+    event: led_off      # Turns both LEDs off
+  2:
+    event: led_code     # Sets individual hex colors
+  3:
+    event: led_name     # Sets individual named colors # Fades the group to PapayaWhip
+  5:
+    event: led_fade     # Fades LEDs to individual colors

@@ -4,6 +4,7 @@ config:
   - hardware.yaml
   - switches.yaml
   - coils.yaml
+  - lights.yaml
   - devices.yaml
   - images.yaml
   - displays.yaml
@@ -17,6 +18,4 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_trough
-
-
 

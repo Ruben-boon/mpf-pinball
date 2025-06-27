@@ -1,0 +1,240 @@
+2025-06-21 07:36:22,171 : INFO : root : Loading config.
+2025-06-21 07:36:22,187 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-21 07:36:22,187 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\config.yaml
+2025-06-21 07:36:22,187 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-21 07:36:22,202 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-21 07:36:22,202 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\lights.yaml
+2025-06-21 07:36:22,218 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-21 07:36:22,234 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\images.yaml
+2025-06-21 07:36:22,234 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-21 07:36:22,234 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-21 07:36:22,234 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-21 07:36:22,426 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-21 07:36:22,429 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\76bc62f652ae2965f03127125af6e953.mpf_cache
+2025-06-21 07:36:22,429 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-21 07:36:22,429 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-21 07:36:22,429 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.3
+2025-06-21 07:36:22,429 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-21-07-36-22-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-21 07:36:22,429 : INFO : Machine : MPF path: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf
+2025-06-21 07:36:22,429 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-21 07:36:22,429 : INFO : Machine : Platform: win32
+2025-06-21 07:36:22,429 : INFO : Machine : Python executable location: C:\Users\ruben\AppData\Local\Programs\Python\Python39\python.exe
+2025-06-21 07:36:22,429 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-21 07:36:22,429 : INFO : Machine : Initializing MPF...
+2025-06-21 07:36:22,760 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-21 07:36:22,843 : INFO : OPP : Init of OPP board 1 done
+2025-06-21 07:36:22,844 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-21 07:36:22,969 : INFO : OPP : Init of OPP board 0 done
+2025-06-21 07:36:22,969 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,084 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,084 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,084 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.3', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,085 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.3, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,085 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,101 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,101 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,101 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,101 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,101 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-21 07:36:23,102 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-21 07:36:23,139 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-21 07:36:23,146 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-21 07:36:23,149 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-21 07:36:26,211 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-06-21 07:36:26,212 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-06-21 07:36:26,408 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2025-06-21 07:36:26,409 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.57.1', 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,410 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.57.1 (config_version=6, BCP v1.1,                      Requires MPF API compatibility v0.57.0 or newer)', 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,414 : INFO : ball_device.bd_trough : State: idle
+2025-06-21 07:36:26,532 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-21 07:36:26,558 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-21 07:36:26,559 : INFO : BallController : Initial balls found: 0
+2025-06-21 07:36:26,561 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 53, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,562 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 106, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,562 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,562 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_outlane'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,562 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_slingshot'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,563 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop1'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,563 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop2'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop3'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop4'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,565 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop5'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,565 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_flipper'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,568 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_inlane'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,569 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_outlane'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,569 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_slingshot'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,570 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_startButton'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,570 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough1'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,570 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,571 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,572 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough4'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,572 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough5'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,573 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 0, 'top': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 53}, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,573 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_bank1'====== Args={'value': 140, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,573 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 2284, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane1'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane2'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 295, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,575 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,575 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,575 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,576 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,576 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop5'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,577 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_bot'====== Args={'value': 426, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,577 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_mid'====== Args={'value': 351, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,578 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_top'====== Args={'value': 302, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,579 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2339, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,579 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,580 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,581 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 258, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,581 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_center'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,583 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_lower'====== Args={'value': 220, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,585 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop_right'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,587 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_shooter_lane'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,588 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_startButton'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,588 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 316, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,589 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,589 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,590 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,592 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-06-21 07:36:26,593 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-06-21 07:36:26,598 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2025-06-21 07:36:26,604 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2025-06-21 07:36:26,616 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2025-06-21 07:36:26,617 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2025-06-21 07:36:26,622 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2025-06-21 07:36:26,623 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2025-06-21 07:36:26,624 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2025-06-21 07:36:26,625 : INFO : Mode.attract : Started. Priority: 10
+2025-06-21 07:36:26,625 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2025-06-21 07:36:26,625 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2025-06-21 07:36:26,626 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2025-06-21 07:36:26,655 : INFO : EventManager : Event: ======'slide_attract_image_slide_created'====== Args={'_from_bcp': True}
+2025-06-21 07:36:26,656 : INFO : EventManager : Event: ======'slide_attract_image_slide_active'====== Args={'_from_bcp': True}
+2025-06-21 07:36:26,657 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
+2025-06-21 07:36:31,619 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:36:32,365 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:36:33,049 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:36:33,448 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:36:34,260 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:36:35,139 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:36:36,882 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:36:38,665 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:36:40,446 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:36:42,880 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:36:43,562 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:36:44,391 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:36:45,073 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:36:45,679 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:36:46,145 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:40:10,354 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:40:10,916 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:40:11,367 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:41:02,712 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:41:03,139 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:41:03,561 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:41:04,167 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:41:06,884 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:41:07,578 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:43:09,887 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:01,088 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:44:01,503 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:02,136 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:02,627 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:44:03,196 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:03,724 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:04,926 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:05,596 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:05,983 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:06,370 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 07:44:06,693 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:07,777 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:08,113 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:44:08,536 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:08,792 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:09,372 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:44:09,616 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:09,796 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:10,353 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:44:10,645 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:10,929 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:11,431 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:11,726 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:44:12,036 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:12,333 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:12,613 : INFO : EventManager : Event: ======'led_name'====== Args={'_from_bcp': True}
+2025-06-21 07:44:13,144 : INFO : EventManager : Event: ======'led_code'====== Args={'_from_bcp': True}
+2025-06-21 07:44:16,380 : INFO : EventManager : Event: ======'led_fade'====== Args={'_from_bcp': True}
+2025-06-21 07:44:16,856 : INFO : EventManager : Event: ======'group_light'====== Args={'_from_bcp': True}
+2025-06-21 07:44:18,612 : INFO : EventManager : Event: ======'led_off'====== Args={'_from_bcp': True}
+2025-06-21 08:07:28,758 : ERROR : asyncio : Fatal write error on serial transport
+protocol: <asyncio.streams.StreamReaderProtocol object at 0x0000022194FAC880>
+transport: SerialTransport(<ProactorEventLoop running=True closed=False debug=False>, <asyncio.streams.StreamReaderProtocol object at 0x0000022194FAC880>, Serial<id=0x22194fac8b0, open=True>(port='com3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=0, xonxoff=False, rtscts=False, dsrdtr=False))
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\serial_asyncio\__init__.py", line 290, in _poll_read
+    if self.serial.in_waiting:
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (OSError(22, 'The I/O operation has been aborted because of either a thread exit or an application request.', None, 995))
+2025-06-21 08:07:28,806 : WARNING : OPP : Serial error: ClearCommError failed (OSError(22, 'The I/O operation has been aborted because of either a thread exit or an application request.', None, 995))
+2025-06-21 08:07:28,807 : INFO : EventManager : Event: ======'serial_error'====== Args={}
+2025-06-21 08:07:28,808 : INFO : Machine : Shutting down...
+2025-06-21 08:07:28,808 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-21 08:07:28,811 : ERROR : OPP : Stop called on serial connection com4
+2025-06-21 08:07:28,815 : ERROR : OPP : Stop called on serial connection com3
+2025-06-21 08:07:28,816 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\utility_functions.py:790
+handle: <Handle Util.raise_exceptions(<Task finishe...ection lost')>) at C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\utility_functions.py:790>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\utility_functions.py", line 798, in raise_exceptions
+    future.result()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\opp\opp.py", line 971, in _poll_sender
+    await self.opp_connection[chain_serial].writer.drain()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-06-21 08:07:28,909 : ERROR : root : ClearCommError failed (OSError(22, 'The I/O operation has been aborted because of either a thread exit or an application request.', None, 995))
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\commands\game.py", line 240, in __init__
+    self.machine.run()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 704, in run
+    self._run_loop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 804, in _run_loop
+    self._crash_shutdown()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 749, in _crash_shutdown
+    self._do_stop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 740, in _do_stop
+    self.shutdown()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 770, in shutdown
+    self._platform_stop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 820, in _platform_stop
+    hardware_platform.stop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\opp\opp.py", line 195, in stop
+    connections.stop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 149, in stop
+    self.machine.clock.loop.run_until_complete(self.writer.wait_closed())
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 359, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\base_serial_communicator.py", line 117, in read
+    resp = await self.reader.read(n)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 684, in read
+    await self._wait_for_data('read')
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\streams.py", line 517, in _wait_for_data
+    await self._waiter
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\serial_asyncio\__init__.py", line 290, in _poll_read
+    if self.serial.in_waiting:
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (OSError(22, 'The I/O operation has been aborted because of either a thread exit or an application request.', None, 995))
