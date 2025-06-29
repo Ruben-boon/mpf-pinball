@@ -1,0 +1,34 @@
+2025-06-29 07:47:44,239 : INFO : root : Loading config.
+2025-06-29 07:47:44,239 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 07:47:44,255 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-29 07:47:44,395 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 07:47:44,395 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\76bc62f652ae2965f03127125af6e953.mpf_cache
+2025-06-29 07:47:44,395 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-29 07:47:44,395 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 07:47:44,395 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.3
+2025-06-29 07:47:44,395 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-29-07-47-44-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-29 07:47:44,395 : INFO : Machine : MPF path: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf
+2025-06-29 07:47:44,395 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-29 07:47:44,395 : INFO : Machine : Platform: win32
+2025-06-29 07:47:44,395 : INFO : Machine : Python executable location: C:\Users\ruben\AppData\Local\Programs\Python\Python39\python.exe
+2025-06-29 07:47:44,395 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-29 07:47:44,412 : INFO : Machine : Initializing MPF...
+2025-06-29 07:47:44,664 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,757 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,757 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,757 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.3', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,757 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.3, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,757 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-29 07:47:44,773 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-29 07:47:44,804 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-29 07:47:44,820 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-29 07:47:44,820 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-29 07:47:45,032 : INFO : Machine : Starting the main run loop with active modes: []
+2025-06-29 07:47:45,032 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-06-29 07:47:45,033 : INFO : Machine : Shutting down...
+2025-06-29 07:47:45,033 : INFO : EventManager : Event: ======'shutdown'====== Args={}

@@ -1,0 +1,161 @@
+2025-06-29 07:24:09,107 : INFO : root : Loading config.
+2025-06-29 07:24:09,115 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 07:24:09,116 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-29 07:24:09,121 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\lights.yaml
+2025-06-29 07:24:09,121 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-29 07:24:09,136 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml
+2025-06-29 07:24:09,152 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\lights.yaml
+2025-06-29 07:24:09,168 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\devices.yaml
+2025-06-29 07:24:09,168 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\images.yaml
+2025-06-29 07:24:09,168 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\displays.yaml
+2025-06-29 07:24:09,168 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\slides.yaml
+2025-06-29 07:24:09,168 : INFO : ConfigProcessor : Config file cache created: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-29 07:24:09,339 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 07:24:09,339 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\76bc62f652ae2965f03127125af6e953.mpf_cache
+2025-06-29 07:24:09,339 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-29 07:24:09,339 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 07:24:09,339 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.3
+2025-06-29 07:24:09,339 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-29-07-24-09-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-29 07:24:09,339 : INFO : Machine : MPF path: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf
+2025-06-29 07:24:09,339 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-29 07:24:09,339 : INFO : Machine : Platform: win32
+2025-06-29 07:24:09,339 : INFO : Machine : Python executable location: C:\Users\ruben\AppData\Local\Programs\Python\Python39\python.exe
+2025-06-29 07:24:09,339 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-29 07:24:09,339 : INFO : Machine : Initializing MPF...
+2025-06-29 07:24:09,563 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-29 07:24:09,701 : INFO : OPP : Init of OPP board 1 done
+2025-06-29 07:24:09,701 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-29 07:24:09,753 : INFO : OPP : Init of OPP board 0 done
+2025-06-29 07:24:09,754 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,858 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,858 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,858 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.3', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,858 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.3, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,858 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,874 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,875 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,875 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,875 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,875 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-29 07:24:09,875 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-29 07:24:09,921 : ERROR : asyncio : Task exception was never retrieved
+future: <Task finished name='Task-72' coro=<SystemWideDevice.device_added_system_wide() done, defined at C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\system_wide_device.py:15> exception=ConfigFileError('Failed to parse light number led_swamp_5 in platform. See error above')>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 237, in _load_hw_drivers
+    channel_list = platform.parse_light_number_to_channels(self.config['number'], self.config['subtype'])
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\opp\opp.py", line 892, in parse_light_number_to_channels
+    self.raise_config_error("Unknown subtype {}".format(subtype), 8)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: Unknown subtype led22 Error Code: CFE-OPP-8 (https://missionpinball.org/logs)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 315, in _initialize
+    self._load_hw_drivers()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 239, in _load_hw_drivers
+    self.raise_config_error("Failed to parse light number {} in platform. See error above".
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light.led_swamp_5: Failed to parse light number led_swamp_5 in platform. See error above Error Code: CFE-light-4 (https://missionpinball.org/logs)
+2025-06-29 07:24:09,959 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-29 07:24:09,960 : INFO : Machine : Starting the main run loop with active modes: []
+2025-06-29 07:24:09,960 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-06-29 07:24:09,961 : INFO : Machine : Shutting down...
+2025-06-29 07:24:09,961 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-29 07:24:09,962 : ERROR : OPP : Stop called on serial connection com4
+2025-06-29 07:24:09,988 : ERROR : OPP : Stop called on serial connection com3
+2025-06-29 07:24:09,993 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-29 07:24:10,000 : ERROR : asyncio : Exception in callback EventManager.process_event_queue()
+handle: <Handle EventManager.process_event_queue()>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 755, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\text_ui.py", line 456, in _bcp_connection_attempt
+    self._pending_bcp_connection = PopUpDialog(self.screen,
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\asciimatics\widgets\popupdialog.py", line 39, in __init__
+    string_len = wcswidth if screen.unicode_aware else len
+AttributeError: 'NoneType' object has no attribute 'unicode_aware'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 846, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 808, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 757, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connection_attempt of <mpf.core.text_ui.TextUi object at 0x000002AD864E99C0>>, priority=1, kwargs={}, key=UUID('e4af3176-0763-4b84-a420-43177d5f8604'), condition=None, blocking_facility=None) for event bcp_connection_attempt. 'NoneType' object has no attribute 'unicode_aware'
+2025-06-29 07:24:10,044 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-29 07:24:11,048 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 237, in _load_hw_drivers
+    channel_list = platform.parse_light_number_to_channels(self.config['number'], self.config['subtype'])
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\opp\opp.py", line 892, in parse_light_number_to_channels
+    self.raise_config_error("Unknown subtype {}".format(subtype), 8)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: Unknown subtype led22 Error Code: CFE-OPP-8 (https://missionpinball.org/logs)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 315, in _initialize
+    self._load_hw_drivers()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 239, in _load_hw_drivers
+    self.raise_config_error("Failed to parse light number {} in platform. See error above".
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light.led_swamp_5: Failed to parse light number led_swamp_5 in platform. See error above Error Code: CFE-light-4 (https://missionpinball.org/logs)
+2025-06-29 07:25:21,772 : ERROR : root : 
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 237, in _load_hw_drivers
+    channel_list = platform.parse_light_number_to_channels(self.config['number'], self.config['subtype'])
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\platforms\opp\opp.py", line 892, in parse_light_number_to_channels
+    self.raise_config_error("Unknown subtype {}".format(subtype), 8)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in OPP: Unknown subtype led22 Error Code: CFE-OPP-8 (https://missionpinball.org/logs)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 315, in _initialize
+    self._load_hw_drivers()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 239, in _load_hw_drivers
+    self.raise_config_error("Failed to parse light number {} in platform. See error above".
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light.led_swamp_5: Failed to parse light number led_swamp_5 in platform. See error above Error Code: CFE-light-4 (https://missionpinball.org/logs)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\commands\game.py", line 240, in __init__
+    self.machine.run()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 704, in run
+    self._run_loop()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 811, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError

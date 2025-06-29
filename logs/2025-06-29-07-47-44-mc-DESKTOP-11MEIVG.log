@@ -1,0 +1,9 @@
+2025-06-29 07:47:44,708 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-06-29 07:47:44,723 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-06-29 07:47:44,724 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-06-29 07:47:44,724 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-06-29 07:47:44,724 : kivy : Kivy: v2.2.1
+2025-06-29 07:47:44,724 : kivy : Kivy: Installed at "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\kivy\__init__.py"
+2025-06-29 07:47:44,724 : kivy : Python: v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2025-06-29 07:47:44,724 : kivy : Python: Interpreter at "C:\Users\ruben\AppData\Local\Programs\Python\Python39\python.exe"
+2025-06-29 07:47:44,747 : kivy : Factory: 190 symbols loaded

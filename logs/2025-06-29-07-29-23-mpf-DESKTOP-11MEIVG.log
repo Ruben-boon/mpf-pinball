@@ -1,0 +1,11 @@
+2025-06-29 07:29:23,382 : INFO : root : Loading config.
+2025-06-29 07:29:23,403 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 07:29:23,404 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-29 07:29:23,415 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\my_machine\config\lights.yaml
+2025-06-29 07:29:23,415 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-29 07:29:23,446 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-29 07:29:23,446 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\config\config.yaml.
+2025-06-29 07:29:23,446 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\config.yaml
+2025-06-29 07:29:23,467 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\hardware.yaml
+2025-06-29 07:29:23,487 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\switches.yaml
+2025-06-29 07:29:23,501 : INFO : ConfigProcessor : Loading config: C:\pinball\my_machine\config\coils.yaml

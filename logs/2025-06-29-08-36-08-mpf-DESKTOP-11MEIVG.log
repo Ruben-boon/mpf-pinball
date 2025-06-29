@@ -1,0 +1,74 @@
+2025-06-29 08:36:08,742 : INFO : root : Loading config.
+2025-06-29 08:36:08,758 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 08:36:08,758 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\ea592b2e59251eb1324fb8d8ecdf3742.mpf_cache
+2025-06-29 08:36:08,917 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 08:36:08,918 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\76bc62f652ae2965f03127125af6e953.mpf_cache
+2025-06-29 08:36:08,919 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\195f66f1d07408d279921a878741edf5.mpf_cache
+2025-06-29 08:36:08,920 : INFO : ConfigProcessor : Loading config from cache: C:\Users\ruben\AppData\Local\Temp\de22d214a8e6fb7753c0be2dfb8deb7c.mpf_cache
+2025-06-29 08:36:08,922 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.3
+2025-06-29 08:36:08,923 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-06-29-08-36-08-mpf-DESKTOP-11MEIVG.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-06-29 08:36:08,923 : INFO : Machine : MPF path: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf
+2025-06-29 08:36:08,923 : INFO : Machine : Machine path: C:\pinball\my_machine
+2025-06-29 08:36:08,923 : INFO : Machine : Platform: win32
+2025-06-29 08:36:08,923 : INFO : Machine : Python executable location: C:\Users\ruben\AppData\Local\Programs\Python\Python39\python.exe
+2025-06-29 08:36:08,923 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-06-29 08:36:08,927 : INFO : Machine : Initializing MPF...
+2025-06-29 08:36:09,265 : INFO : OPP : Connecting to com3 at 115200bps
+2025-06-29 08:36:09,330 : INFO : OPP : Init of OPP board 1 done
+2025-06-29 08:36:09,330 : INFO : OPP : Connecting to com4 at 115200bps
+2025-06-29 08:36:09,480 : INFO : OPP : Init of OPP board 0 done
+2025-06-29 08:36:09,480 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,596 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,596 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,596 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.3', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,596 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.3, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,597 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,611 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,611 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,611 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,612 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,612 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-06-29 08:36:09,612 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-06-29 08:36:09,657 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-06-29 08:36:09,663 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-06-29 08:36:09,665 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-06-29 08:36:12,218 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-06-29 08:36:12,219 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-06-29 08:36:12,410 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.57.1', 'prev_value': None, 'change': True}
+2025-06-29 08:36:12,410 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.57.1 (config_version=6, BCP v1.1,                      Requires MPF API compatibility v0.57.0 or newer)', 'prev_value': None, 'change': True}
+2025-06-29 08:36:12,416 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2025-06-29 08:36:12,474 : INFO : ball_device.bd_trough : State: idle
+2025-06-29 08:36:12,492 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-06-29 08:36:12,496 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-06-29 08:36:12,497 : INFO : BallController : Initial balls found: 0
+2025-06-29 08:36:12,499 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...t_inlane_2>")>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...t_inlane_2>")>)>
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 136, in _check_duplicate_light_numbers
+    raise ConfigFileError(f"Duplicate number {type(driver)} {driver.number} for light {light}",
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light: Duplicate number <class 'mpf.platforms.opp.opp_modern_lights.OPPModernLightChannel'> 1-0-120 for light <light.led_left_inlane_2> Context: (None, '1-0-120', <class 'mpf.platforms.opp.opp_modern_lights.OPPModernLightChannel'>) Error Code: CFE-light-10 (https://missionpinball.org/logs)
+2025-06-29 08:36:12,502 : INFO : Machine : Starting the main run loop with active modes: []
+2025-06-29 08:36:12,502 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-06-29 08:36:12,503 : INFO : Machine : Shutting down...
+2025-06-29 08:36:12,504 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-29 08:36:12,506 : ERROR : OPP : Stop called on serial connection com4
+2025-06-29 08:36:12,510 : ERROR : OPP : Stop called on serial connection com3
+2025-06-29 08:36:13,547 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\devices\light.py", line 136, in _check_duplicate_light_numbers
+    raise ConfigFileError(f"Duplicate number {type(driver)} {driver.number} for light {light}",
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light: Duplicate number <class 'mpf.platforms.opp.opp_modern_lights.OPPModernLightChannel'> 1-0-120 for light <light.led_left_inlane_2> Context: (None, '1-0-120', <class 'mpf.platforms.opp.opp_modern_lights.OPPModernLightChannel'>) Error Code: CFE-light-10 (https://missionpinball.org/logs)
