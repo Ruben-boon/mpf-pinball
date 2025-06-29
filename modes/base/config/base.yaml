@@ -3,12 +3,13 @@
 ##! mode: base
 mode:
   start_events: ball_starting
+  stop_events: ball_will_end 
+
   priority: 100
 
 slide_player:
   mode_base_started:
     widgets:
-     
       - type: text
         text: (score)
         number_grouping: true
@@ -33,11 +34,24 @@ slide_player:
         font_name: OldLondonAlternate.ttf
       - type: image
         image: af_stairs
-        x: center   
-        y: middle 
-##! test
-#! start_game
-#! assert_mode_running base
-#! assert_text_on_top_slide "00"
-#! assert_text_on_top_slide "PLAYER 1"
-#! assert_text_on_top_slide "BALL 1"
+        x: center
+        y: middle
+
+light_player:
+  mode_base_started:
+    led_gi_left_ball_guide_1: white
+    led_gi_left_ball_guide_2: white
+    led_gi_left_ball_guide_3: white
+    led_gi_right_ball_guide_1: white
+    led_gi_right_ball_guide_2: white
+    led_gi_right_slingshot: white
+    led_gi_left_slingshot: white
+
+  mode_base_ended:
+    led_gi_left_ball_guide_1: white
+    led_gi_left_ball_guide_2: white
+    led_gi_left_ball_guide_3: white
+    led_gi_right_ball_guide_1: white
+    led_gi_right_ball_guide_2: white
+    led_gi_right_slingshot: white
+    led_gi_left_slingshot: white

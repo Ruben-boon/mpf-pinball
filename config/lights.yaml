@@ -1,7 +1,6 @@
 #config_version=6
 
 lights:
-
 #global illumniation lower half
   led_gi_left_ball_guide_1:
     number: 1-0-33
@@ -160,47 +159,47 @@ lights:
     subtype: led
     type: rgb
 
-light_player:
-  # --- Events to control individual LEDs ---
-  led_code:
-    led_gi_left_ball_guide_1: white 
-    led_gi_left_ball_guide_2: white
-    led_gi_left_ball_guide_3: white
-    led_gi_right_ball_guide_1: white  
-    led_gi_right_ball_guide_2: white
-    led_gi_left_slingshot: blue
-    led_gi_right_slingshot: blue
-    # led_ball_saver: 007FFF # Azure
-    led_left_outlane: red
-    led_left_inlane_1: 7F00FF 
-    led_left_inlane_2: red
-    led_right_outlane: white 
-    led_right_inlane: blue
-    led_mansion_1: white 
-    led_mansion_2: white 
-    led_mansion_3: green
-    led_mansion_4: blue 
-    led_mansion_5: white 
-    led_mansion_6: white 
-    led_mansion_7: white
-    led_mansion_8: white 
-    led_mansion_9: white 
-    led_mansion_10: white 
-    led_mansion_11: white 
-    led_mansion_12: white 
-    led_mansion_13: white 
-    led_letter_g: blue 
-    led_letter_r: blue
-    led_letter_e: green
-    led_thunder_left: red
-    led_the_power: red
-    led_thunder_right: white
-    led_swamp_1: red
-    led_swamp_2: red
-    led_swamp_3: red
-    led_swamp_4: white
-    led_swamp_5: green
+# light_player:
+#   # --- Events to control individual LEDs ---
+#   led_code:
+#     led_gi_left_ball_guide_1: white 
+#     led_gi_left_ball_guide_2: white
+#     led_gi_left_ball_guide_3: white
+#     led_gi_right_ball_guide_1: white  
+#     led_gi_right_ball_guide_2: white
+#     led_gi_left_slingshot: blue
+#     led_gi_right_slingshot: blue
+#     # led_ball_saver: 007FFF # Azure
+#     led_left_outlane: red
+#     led_left_inlane_1: 7F00FF 
+#     led_left_inlane_2: red
+#     led_right_outlane: white 
+#     led_right_inlane: blue
+#     led_mansion_1: white 
+#     led_mansion_2: white 
+#     led_mansion_3: green
+#     led_mansion_4: blue 
+#     led_mansion_5: white 
+#     led_mansion_6: white 
+#     led_mansion_7: white
+#     led_mansion_8: white 
+#     led_mansion_9: white 
+#     led_mansion_10: white 
+#     led_mansion_11: white 
+#     led_mansion_12: white 
+#     led_mansion_13: white 
+#     led_letter_g: blue 
+#     led_letter_r: blue
+#     led_letter_e: green
+#     led_thunder_left: red
+#     led_the_power: red
+#     led_thunder_right: white
+#     led_swamp_1: red
+#     led_swamp_2: red
+#     led_swamp_3: red
+#     led_swamp_4: white
+#     led_swamp_5: green
 
-keyboard:
-  2:
-    event: led_code # Sets individual hex colors
+# keyboard:
+#   2:
+#     event: led_code # Sets individual hex colors

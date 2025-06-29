@@ -1,0 +1,45 @@
+#show_version=6
+
+#up col 1
+- duration: 0.2s
+  lights:
+    led_mansion_10: white
+- duration: 0.2s
+  lights:
+    led_mansion_6: white
+- duration: 0.2s
+  lights:
+    led_mansion_2: white
+
+#down col 1
+- duration: 0.2s
+  lights:
+    led_mansion_2: off
+- duration: 0.2s
+  lights:
+    led_mansion_6: off
+- duration: 0.2s
+  lights:
+    led_mansion_10: off
+
+#up col 2
+- duration: 0.2s
+  lights:
+    led_mansion_11: white
+- duration: 0.2s
+  lights:
+    led_mansion_7: white
+- duration: 0.2s
+  lights:
+    led_mansion_3: white
+
+#down col 2
+- duration: 0.2s
+  lights:
+    led_mansion_3: white
+- duration: 0.2s
+  lights:
+    led_mansion_7: white
+- duration: 0.2s
+  lights:
+    led_mansion_11: white

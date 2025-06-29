@@ -1,0 +1,13 @@
+2025-06-29 19:08:05,230 : INFO : root : Loading config.
+2025-06-29 19:08:05,232 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 19:08:05,232 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/1941ac2cbc7f60a15b77e866ee64bff5.mpf_cache
+2025-06-29 19:08:05,251 : WARNING : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/modes/attract/config/attract.yaml
+2025-06-29 19:08:05,251 : INFO : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/modes/attract/config/attract.yaml.
+2025-06-29 19:08:05,252 : INFO : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/modes/attract/config/attract.yaml
+2025-06-29 19:08:05,252 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/attract/config/attract.yaml.
+2025-06-29 19:08:05,252 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/modes/attract/config/attract.yaml
+2025-06-29 19:08:05,252 : INFO : ConfigProcessor : Config file cache created: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/f574f59b1e0fcbb2258348220f26b9cc.mpf_cache
+2025-06-29 19:08:05,253 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/edcc5f1d3215b377c9faab88c62e4ce0.mpf_cache
+2025-06-29 19:08:05,253 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/174d451d321a0971202b746018364536.mpf_cache
+2025-06-29 19:08:05,253 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/f574f59b1e0fcbb2258348220f26b9cc.mpf_cache
+2025-06-29 19:08:05,253 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/attract/shows/./attract_light_show.yaml.

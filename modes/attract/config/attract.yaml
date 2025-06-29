@@ -1,4 +1,8 @@
 #config_version=6
-
-slide_player:
-  mode_attract_started: attract_image_slide
+show_player:
+  mode_attract_started:
+    # mansion_attract_show_1:
+    #   speed: 2
+    mansion_attract_show_3:
+      speed: 2
+  
