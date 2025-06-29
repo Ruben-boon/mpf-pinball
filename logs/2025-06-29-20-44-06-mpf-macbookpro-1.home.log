@@ -105,3 +105,7 @@
 2025-06-29 20:44:07,779 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
 2025-06-29 20:44:07,780 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
 2025-06-29 20:44:08,184 : INFO : BcpServer : New client connected.
+2025-06-29 20:50:49,072 : INFO : BcpServer : New client connected.
+2025-06-29 20:50:54,793 : INFO : Machine : Shutting down...
+2025-06-29 20:50:54,793 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-06-29 20:50:54,796 : INFO : root : MPF run loop ended.

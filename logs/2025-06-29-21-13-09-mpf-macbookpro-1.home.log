@@ -1,0 +1,7 @@
+2025-06-29 21:13:09,915 : INFO : root : Loading config.
+2025-06-29 21:13:09,917 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 21:13:09,917 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/1941ac2cbc7f60a15b77e866ee64bff5.mpf_cache
+2025-06-29 21:13:09,935 : WARNING : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/modes/attract/config/attract.yaml
+2025-06-29 21:13:09,935 : INFO : ConfigProcessor : Loading config from file /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/modes/attract/config/attract.yaml.
+2025-06-29 21:13:09,936 : INFO : ConfigProcessor : Loading config: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/mpf/modes/attract/config/attract.yaml
+2025-06-29 21:13:09,936 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/attract/config/attract.yaml.

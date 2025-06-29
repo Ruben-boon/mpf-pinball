@@ -186,3 +186,4 @@
 2025-06-29 20:44:07,778 : EventManager : Event: ======'mc_reset_phase_2'====== Args={}
 2025-06-29 20:44:07,778 : EventManager : Event: ======'mc_reset_phase_3'====== Args={}
 2025-06-29 20:44:07,778 : EventManager : Event: ======'mc_reset_complete'====== Args={}
+2025-06-29 20:50:54,787 : kivy : Base: Leaving application in progress...

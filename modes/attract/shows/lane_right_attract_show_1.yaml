@@ -1,0 +1,24 @@
+#show_version=6
+
+#on
+- duration: 0.2s
+  lights:
+    led_right_inlane: 
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_right_outlane: 
+      color: white
+      fade: 200ms
+#off
+- duration: 0.2s
+  lights:
+    led_right_inlane: 
+      color: off
+      fade: 200ms
+- duration: 1s
+  lights:
+    led_right_outlane:  
+      color: off
+      fade: 200ms

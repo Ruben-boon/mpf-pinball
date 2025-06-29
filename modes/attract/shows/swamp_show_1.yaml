@@ -1,0 +1,48 @@
+#show_version=6
+
+#on
+- duration: 1s
+  lights: 
+    led_swamp_1: 
+      color: white
+
+    led_swamp_4: white
+    led_swamp_5: off
+
+- duration: 1s
+  lights: 
+    led_swamp_2: 
+      color: white
+
+    led_swamp_4: off
+    led_swamp_5: white
+
+- duration: 1s
+  lights: 
+    led_swamp_3: 
+      color: white
+
+    led_swamp_4: white
+    led_swamp_5: off
+
+#off
+- duration: 0.5s
+  lights: 
+    led_swamp_1: off
+
+    led_swamp_4: off
+    led_swamp_5: white
+
+- duration: 0.5s
+  lights: 
+    led_swamp_2: off
+
+    led_swamp_4: white
+    led_swamp_5: off
+
+- duration: 0.5s
+  lights: 
+    led_swamp_3: off
+
+    led_swamp_4: off
+    led_swamp_5: white
