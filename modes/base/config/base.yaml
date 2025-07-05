@@ -14,8 +14,8 @@ slide_player:
         text: (score)
         number_grouping: true
         min_digits: 2
-        font_size: 100
-        font_name: Creepster-Regular.ttf
+        font_size: 200
+        font_name: MetalMania-Regular.ttf
       - type: text
         text: PLAYER (number)
         y: 10
@@ -31,9 +31,9 @@ slide_player:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
-        font_name: OldLondonAlternate.ttf
+        font_name: MetalMania-Regular.ttf
       - type: image
-        image: af_stairs
+        image: gy_v3
         x: center
         y: middle
 

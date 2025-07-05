@@ -1,7 +1,0 @@
-2025-06-29 19:32:51,113 : INFO : root : Loading MPF Monitor Version 0.57.1
-2025-06-29 19:32:51,316 : INFO : Core : Looking for MPF at localhost:5051
-2025-06-29 19:32:52,270 : INFO : BCP Client : Connected to MPF
-2025-06-29 19:39:07,143 : INFO : BCP Client : Connected to MPF
-2025-06-29 19:39:10,719 : INFO : root : MPF Monitor run loop ended.
-2025-06-29 19:39:10,720 : INFO : root : Stopping child threads... (2 remaining)
-2025-06-29 19:39:11,526 : INFO : root : All child threads stopped.
