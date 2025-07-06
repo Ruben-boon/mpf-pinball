@@ -1,27 +1,57 @@
 #config_version=6
 
 switches:
-# flippers
+  #flippers
   s_left_flipper:
     number: 0-0-19
     tags: left_flipper
   s_right_flipper:
     number: 0-0-17
     tags: right_flipper
-
-# slingshots
+  #slingshots
   s_left_slingshot:
     number: 0-0-26
     tags: left_slingshot
   s_right_slingshot:
     number: 0-0-24
     tags: right_slingshot
+  #lanes right
+  s_right_inlane:
+    number: 1-0-16
+    tags: playfield_active
+  s_right_outlane:
+    number: 1-0-17
+    tags: playfield_active
+  #lanes left
+  s_left_inlane_1:
+    number: 1-0-18
+    tags: playfield_active
+  s_left_inlane_2:
+    number: 1-0-19
+    tags: playfield_active
+  s_left_outlane:
+    number: 1-0-20
+    tags: playfield_active
+  #targets & scoop
+  s_target_g:
+    number: 1-0-21
+    tags: playfield_active
+  s_target_r:
+    number: 1-0-22
+    tags: playfield_active
+  s_right_scoop:
+    number: 1-0-23
+    tags: playfield_active
 
-# pop bumpers
+  s_center_scoop:
+    number: 0-0-10
+    tags: playfield_active
+
+  # pop bumpers
   s_pop1:
-    number: 0-0-1   
+    number: 0-0-1
   s_pop2:
-    number: 0-0-3 
+    number: 0-0-3
   s_pop3:
     number: 0-0-8
   s_pop4:
@@ -29,45 +59,19 @@ switches:
   s_pop5:
     number: 0-0-9
 
-# # scoops
-#   s_scoop_center:
-#     number:
-#     tags: scoop
-#   s_scoop_right:
-#     number:
-#     tags: scoop
-
-# # outlanes
-#   s_left_outlane:
-#     number:
-#   s_left_inlane1:
-#     number:
-#   s_left_inlane2:
-#     number:
-#   s_right_outlane:
-#     number:
-#   s_right_inlane:
-#     number:
-
-
-# trough
+  # trough
   s_trough1:
     number: 1-0-1
-#   s_trough2:
-#     number:
-#   s_trough3:
-#     number:
-#   s_trough4:
-#     number:
-#   s_trough5:
-#     number:
+  #   s_trough2:
+  #     number:
+  #   s_trough3:
+  #     number:
+  #   s_trough4:
+  #     number:
+  #   s_trough5:
+  #     number:
 
-  
-
-# miscellaneous
+  # miscellaneous
   s_startButton:
     number: 0-0-25
     tags: start
-  s_right_inlane:
-    number: 0-0-11
-    tags: playfield_active

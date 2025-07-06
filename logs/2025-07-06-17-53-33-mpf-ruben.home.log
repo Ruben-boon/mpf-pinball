@@ -1,0 +1,24 @@
+2025-07-06 17:53:33,347 : INFO : root : Loading config.
+2025-07-06 17:53:33,349 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-07-06 17:53:33,349 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/1941ac2cbc7f60a15b77e866ee64bff5.mpf_cache
+2025-07-06 17:53:33,368 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/f574f59b1e0fcbb2258348220f26b9cc.mpf_cache
+2025-07-06 17:53:33,368 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/edcc5f1d3215b377c9faab88c62e4ce0.mpf_cache
+2025-07-06 17:53:33,369 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/174d451d321a0971202b746018364536.mpf_cache
+2025-07-06 17:53:33,369 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/f574f59b1e0fcbb2258348220f26b9cc.mpf_cache
+2025-07-06 17:53:33,369 : WARNING : ConfigProcessor : Config file in cache changed: /Users/ruben/Pinball/mpf-pinball/modes/grave_targets/config/grave_targets.yaml
+2025-07-06 17:53:33,369 : INFO : ConfigProcessor : Loading config from file /Users/ruben/Pinball/mpf-pinball/modes/grave_targets/config/grave_targets.yaml.
+2025-07-06 17:53:33,371 : INFO : ConfigProcessor : Loading config: /Users/ruben/Pinball/mpf-pinball/modes/grave_targets/config/grave_targets.yaml
+2025-07-06 17:53:33,371 : INFO : ConfigProcessor : Config file cache created: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/c284941e722380023d767d5e99e91837.mpf_cache
+2025-07-06 17:53:33,371 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/eb471d6ccb0819d362663d6a8f2acf38.mpf_cache
+2025-07-06 17:53:33,371 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/d59102b8edab9d29c936bc5103c31ce3.mpf_cache
+2025-07-06 17:53:33,371 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/47fef8a1453daf1c032af9b266173dc7.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/099d4b18c0884da431b87dd690bf4c32.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/598981ad252bde5d57763e28fc8e8246.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/7d84a1dad0271550171325475a6e1af4.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/f238ae40b962a84c30d7301a20ca1dae.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/a93e216f51b341135614380ce5b2c95b.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/e915b2173a980311df13d8013999f00c.mpf_cache
+2025-07-06 17:53:33,372 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/b77620ad9425e89373db73baff92c60d.mpf_cache
+2025-07-06 17:53:33,373 : INFO : ConfigProcessor : Loading config from cache: /var/folders/9g/7xjb17l959g1fnq4pjl5c5p80000gn/T/3a6eacdb066bec064fdcba33a168c528.mpf_cache
+2025-07-06 17:53:36,281 : ERROR : root : Shutdown because of SIGINT or keyboard interrupt.
+NoneType: None

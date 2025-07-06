@@ -1,59 +1,42 @@
 #config_version=6
 
-machine_vars:
-  master_volume:
-    initial_value: 0.25 # Set this to any value you want
-    value_type: float
-    persist: true
+sounds:
+  music_startuplong:
+    file: music_startuplong.wav
+    track: music
 
-sound_system:
-  tracks:
-    music:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.6
-    sfx:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.8
-    voice:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.9
+  slingshot:
+    file: sword1.wav
+    track: sfx
 
-assets:
-  sounds:
-    default:
-      load: on_demand
-    music:
-      track: music
-    sfx:
-      track: sfx
-    voice:
-      track: voice
+  blue_target:
+    file: fx_bang.wav
+    track: sfx
 
-# sounds:
-#   extra_ball:
-#     file: extra_ball_12753.wav
-#     events_when_stopped: extra_ball_callout_finished
-#     streaming: false
-#     bus: voice
-#     volume: 0.5
-#     priority: 50
-#     max_queue_time: None
-#     ducking:
-#       target: music
-#       delay: 0
-#       attack: 0.3 sec
-#       attenuation: -18db
-#       release_point: 2.0 sec
-#       release: 1.0 sec
+  grave_complete:
+    file: vo_graveyardaward.wav
+    track: voice
 
-sound_player:
-  mode_attract_started:
-    song_01:
-      action: play
-      loops: -1
-  mode_attract_stopped:
-    song_01:
-      action: stop
+  music_prelaunch:
+    file: music_prelaunch.wav
+    track: music
+
+  main_theme_1:
+    file: main_theme_1.wav
+    track: music
+
+  main_theme_2:
+    file: main_theme_1_alternate.wav
+    track: music
+
+  dragon_roost:
+    file: dragon_roost.flac
+    track: music
+# playlists:
+#   pl_main_themes:
+#     shuffle: true
+#     repeat: false
+#     crossfade_time: 5s
+#     sounds:
+#       - main_theme_2
+#       - dragon_roosts

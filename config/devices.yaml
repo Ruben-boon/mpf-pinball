@@ -48,7 +48,7 @@ autofire_coils:
     coil: c_pop5
     switch: s_pop5
     enable_events: machine_reset_phase_3
-    
+
 ball_devices:
   bd_trough:
     ball_switches: s_trough1
@@ -58,3 +58,7 @@ ball_devices:
   #   ball_switches: s_scoop_lower
   #   eject_coil: c_scoop_lower
   #   eject_timeouts: 3s
+
+# In config/devices.yaml
+#config_version=6
+
