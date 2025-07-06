@@ -8,8 +8,8 @@ show_player:
     # mansion_attract_show_2:
     #     speed: 2
     #     loops: -1
-    mansion_attract_show_3:
-        speed: 2
+    mansion_attract_show_1:
+        speed: 4
 
     lane_left_attract_show_2:
         speed: 1
