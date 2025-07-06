@@ -1,0 +1,59 @@
+#config_version=6
+
+machine_vars:
+  master_volume:
+    initial_value: 0.25 # Set this to any value you want
+    value_type: float
+    persist: true
+
+sound_system:
+  tracks:
+    music:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.6
+    sfx:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.8
+    voice:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.9
+
+assets:
+  sounds:
+    default:
+      load: on_demand
+    music:
+      track: music
+    sfx:
+      track: sfx
+    voice:
+      track: voice
+
+# sounds:
+#   extra_ball:
+#     file: extra_ball_12753.wav
+#     events_when_stopped: extra_ball_callout_finished
+#     streaming: false
+#     bus: voice
+#     volume: 0.5
+#     priority: 50
+#     max_queue_time: None
+#     ducking:
+#       target: music
+#       delay: 0
+#       attack: 0.3 sec
+#       attenuation: -18db
+#       release_point: 2.0 sec
+#       release: 1.0 sec
+
+sound_player:
+  mode_attract_started:
+    song_01:
+      action: play
+      loops: -1
+  mode_attract_stopped:
+    song_01:
+      action: stop

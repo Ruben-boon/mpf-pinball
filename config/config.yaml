@@ -9,6 +9,7 @@ config:
   - images.yaml
   - displays.yaml
   - slides.yaml
+  - sounds.yaml
 
 modes:
   - base

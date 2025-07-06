@@ -1,6 +1,7 @@
 #config_version=6
 
 show_player:
+<<<<<<< HEAD
   mode_attract_started:
     # mansion_attract_show_1:
     #     speed: 2
@@ -10,18 +11,24 @@ show_player:
     #     loops: -1
     mansion_attract_show_1:
         speed: 4
+=======
+  mode_attract_started: slide_show
+  mode_attract_started.1:
+    led_mansion_attract_show_3:
+        speed: 2
+>>>>>>> ab501343e2531e4c6f08bf9af4c325043d1cdfc0
 
-    lane_left_attract_show_2:
+    led_lane_left_attract_show_2:
         speed: 1
 
-    lane_right_attract_show_1:
+    led_lane_right_attract_show_1:
         speed: 1
     
-    letter_attract_show:
+    led_letter_attract_show:
         speed: 2
 
-    thunder_show_1:
+    led_thunder_show_1:
         speed: 2
 
-    swamp_show_1:
+    led_swamp_show_1:
         speed: 2
