@@ -6,7 +6,7 @@ sounds:
     track: music
 
   slingshot:
-    file: sword1.wav
+    file: fx_sword.wav
     track: sfx
 
   blue_target:

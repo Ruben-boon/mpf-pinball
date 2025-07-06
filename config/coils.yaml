@@ -18,7 +18,7 @@ coils:
     
   c_flipper_top_main:
     number: 0-0-15
-    default_pulse_ms: 25
+    default_pulse_ms: 15
   c_flipper_top_hold:
     number: 0-0-7
     allow_enable: true

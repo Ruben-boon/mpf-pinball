@@ -71,10 +71,10 @@ show_player:
         loops: 1
 
 sound_player: 
-  shot_target_g_hit:
+  shot_target_g_unlit_hit:
     blue_target:
       action: play
-  shot_target_r_hit:
+  shot_target_r_unlit_hit:
     blue_target:
       action: play
   shot_right_scoop_lit_hit:
