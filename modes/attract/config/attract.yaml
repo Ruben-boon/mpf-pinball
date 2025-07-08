@@ -3,19 +3,31 @@
 show_player:
   mode_attract_started:
     led_mansion_attract_show_3:
-        speed: 2
+      speed: 2
 
     led_lane_left_attract_show_2:
-        speed: 1
+      speed: 1
 
     led_lane_right_attract_show_1:
-        speed: 1
-    
+      speed: 1
+
     led_letter_attract_show:
-        speed: 2
+      speed: 2
 
     led_thunder_show_1:
-        speed: 2
+      speed: 2
 
     led_swamp_show_1:
-        speed: 2
+      speed: 2
+
+sound_player:
+  mode_attract_started:
+    music_startuplong:
+      action: play
+      loops: -1
+      
+
+#   mode_attract_stopped:
+#     music_startuplong: 
+#       action: stop
+#       fade_out: 0s 

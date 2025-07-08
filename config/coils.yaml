@@ -18,7 +18,7 @@ coils:
     
   c_flipper_top_main:
     number: 0-0-15
-    default_pulse_ms: 25
+    default_pulse_ms: 15
   c_flipper_top_hold:
     number: 0-0-7
     allow_enable: true
@@ -50,13 +50,13 @@ coils:
     number: 0-0-12
     default_pulse_ms: 20
 
-# # scoops
-#   c_scoop_center:
-#     number:
-#     default_pulse_ms: 40
-#   c_scoop_right:
-#     number:
-#     default_pulse_ms: 40
+# scoops
+  c_center_scoop:
+    number: 1-0-3
+    default_pulse_ms: 20
+  c_right_scoop:
+    number: 1-0-2
+    default_pulse_ms: 40
 
 # trough
   c_trough_eject:
