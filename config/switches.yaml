@@ -42,7 +42,6 @@ switches:
   s_right_scoop:
     number: 1-0-23
     tags: playfield_active
-
   s_center_scoop:
     number: 0-0-10
     tags: playfield_active
