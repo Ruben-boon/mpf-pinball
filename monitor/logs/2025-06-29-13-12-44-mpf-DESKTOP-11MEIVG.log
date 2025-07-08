@@ -1,0 +1,5 @@
+2025-06-29 13:12:44,699 : INFO : root : Loading config.
+2025-06-29 13:12:44,707 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-06-29 13:12:44,708 : INFO : ConfigProcessor : Loading config from file C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml.
+2025-06-29 13:12:44,728 : INFO : ConfigProcessor : Loading config: C:\Users\ruben\AppData\Local\Programs\Python\Python39\lib\site-packages\mpf\mpfconfig.yaml
+2025-06-29 13:12:44,729 : INFO : ConfigProcessor : Loading config from file C:\pinball\my_machine\monitor\config\config.yaml.

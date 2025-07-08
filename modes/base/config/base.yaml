@@ -3,19 +3,19 @@
 ##! mode: base
 mode:
   start_events: ball_starting
-  stop_events: ball_will_end
+  stop_events: ball_will_endp
 
   priority: 100
 
 shots:
-  shot_right_outlane:
-    switch: s_right_outlane
-  shot_right_inlane:
-    switch: s_right_inlane
-  shot_left_inlane_1:
-    switch: s_left_inlane_1
-  shot_left_inlane_2:
-    switch: s_left_inlane_2
+  # shot_right_outlane:
+  #   switch: s_right_outlane
+  # shot_right_inlane:
+  #   switch: s_right_inlane
+  # shot_left_inlane_1:
+  #   switch: s_left_inlane_1
+  # shot_left_inlane_2:
+  #   switch: s_left_inlane_2
   shot_left_outlane:
     switch: s_left_outlane
 

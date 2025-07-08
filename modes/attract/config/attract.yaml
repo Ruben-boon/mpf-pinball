@@ -1,8 +1,7 @@
 #config_version=6
 
 show_player:
-  mode_attract_started: slide_show
-  mode_attract_started.1:
+  mode_attract_started:
     led_mansion_attract_show_3:
       speed: 2
 

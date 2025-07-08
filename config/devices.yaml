@@ -54,14 +54,14 @@ ball_devices:
     ball_switches: s_trough1
     eject_coil: c_trough_eject
     tags: trough, home, drain
-  bd_scoop_center:
+  bd_center_scoop:
     ball_switches: s_center_scoop
-    eject_coil: c_scoop_lower
+    eject_coil: c_center_scoop
     eject_timeouts: 3s
-  bd_scoop_right:
+  bd_right_scoop:
     ball_switches: s_right_scoop
-    eject_coil: c_scoop_lower
+    eject_coil: c_right_scoop
     eject_timeouts: 3s
-
-
+# In config/devices.yaml
+#config_version=6
 
