@@ -2,6 +2,8 @@
 
 show_player:
   mode_attract_started:
+    slide_show:
+      speed: 1
     led_mansion_attract_show_3:
       speed: 2
 
@@ -25,7 +27,9 @@ sound_player:
     music_startuplong:
       action: play
       loops: -1
-      
+  
+
+
 
 #   mode_attract_stopped:
 #     music_startuplong: 
