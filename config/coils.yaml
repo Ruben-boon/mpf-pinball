@@ -56,7 +56,7 @@ coils:
     default_pulse_ms: 20
   c_right_scoop:
     number: 1-0-2
-    default_pulse_ms: 40
+    default_pulse_ms: 80
 
 # trough
   c_trough_eject:
