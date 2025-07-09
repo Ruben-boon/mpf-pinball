@@ -1,0 +1,66 @@
+#show_version=6
+
+- duration: 0.5s
+  lights:
+    led_it:
+      color: white
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_it:
+      color: off
+      fade: 200ms
+    led_upper_ramp_2:
+      color: off
+- duration: 1s
+  lights:
+    led_upper_ramp_1:
+      color: white
+      fade: 200ms
+    led_it:
+      color: white
+      fade: 200ms
+- duration: 1s
+  lights:
+    led_upper_ramp_2:
+      color: white
+      fade: 200ms
+    led_it:
+      color: off
+      fade: 200ms
+
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: white
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: off
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: white
+    led_upper_ramp_1:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: off
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: white
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: off
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: white
+- duration: 0.2s
+  lights:
+    led_loop:
+      color: off
