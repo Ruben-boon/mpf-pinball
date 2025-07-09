@@ -14,12 +14,24 @@ show_player:
       speed: 1
 
     led_letter_attract_show:
-      speed: 2
+      speed: 4
 
     led_thunder_show_1:
       speed: 2
 
     led_swamp_show_1:
+      speed: 2
+
+    led_greed_pulse:
+      speed: 2
+    
+    led_gy_show:
+      speed: 2
+    
+    led_center_straight:
+      speed: 2
+
+    led_upper_loop:
       speed: 2
 
 sound_player:

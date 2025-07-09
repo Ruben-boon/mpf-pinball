@@ -1,0 +1,42 @@
+#show_version=6
+
+- duration: 0.5s
+  lights:
+    led_greed_1:
+      color: white
+      fade: 200ms
+    led_greed_3:
+      color: off
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_greed_2:
+      color: white
+      fade: 200ms
+    led_greed_4:
+      color: off
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_greed_3:
+      color: white
+      fade: 200ms
+    led_greed_5:
+      color: off
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_greed_4:
+      color: white
+      fade: 200ms
+    led_greed_1:
+      color: off
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_greed_5:
+      color: white
+      fade: 200ms
+    led_greed_2:
+      color: off
+      fade: 200ms

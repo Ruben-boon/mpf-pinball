@@ -1,0 +1,57 @@
+#show_version=6
+
+- duration: 0.5s
+  lights:
+    led_ramp_1:
+      color: white
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_ramp_2:
+      color: white
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_letter_v:
+      color: white
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_jump_1:
+      color: white
+      fade: 200ms
+- duration: 0.5s
+  lights:
+    led_jump_2:
+      color: white
+      fade: 200ms
+
+- duration: 0.5s
+  lights:
+    led_jump_2:
+      color: off
+      fade: 200ms
+
+- duration: 0.5s
+  lights:
+    led_jump_1:
+      color: off
+      fade: 200ms
+
+- duration: 0.5s
+  lights:
+    led_letter_v:
+      color: off
+      fade: 200ms
+
+- duration: 0.5s
+  lights:
+    led_ramp_2:
+      color: off
+      fade: 200ms
+
+- duration: 0.5s
+  lights:
+    led_ramp_1:
+      color: off
+      fade: 200ms
