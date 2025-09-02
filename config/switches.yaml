@@ -1,7 +1,7 @@
 #config_version=6
 
 switches:
-  #flippers
+  #flippers 19 17 26
   s_left_flipper:
     number: 0-0-19
     tags: left_flipper
