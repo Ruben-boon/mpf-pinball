@@ -1,0 +1,239 @@
+#config_version=6
+
+lights:
+#top chain
+#global illumniation lower half
+  led_gi_left_ball_guide_1:
+    number: 1-0-33
+    subtype: led
+    type: rgb
+  led_gi_left_ball_guide_2:
+    number: 1-0-34
+    subtype: led
+    type: rgb
+  led_gi_left_ball_guide_3:
+    number: 1-0-35
+    subtype: led
+    type: rgb
+  led_gi_right_ball_guide_1:
+    number: 1-0-3
+    subtype: led
+    type: rgb
+  led_gi_right_ball_guide_2:
+    number: 1-0-4
+    subtype: led
+    type: rgb
+  led_gi_left_slingshot:
+    number: 1-0-36
+    subtype: led
+    type: rgb
+  led_gi_right_slingshot:
+    number: 1-0-2
+    subtype: led
+    type: rgb
+
+#lower half
+  # led_ball_saver:
+  #   number: 1-0-
+  #   subtype: led
+  #   type: rgb
+  led_left_outlane:
+    number: 1-0-32
+    subtype: led
+    type: rgb
+  led_left_inlane_1:
+    number: 1-0-30
+    subtype: led
+    type: rgb
+  led_left_inlane_2:
+    number: 1-0-31
+    subtype: led
+    type: rgb
+
+  led_right_outlane:
+    number: 1-0-0
+    subtype: led
+    type: rgb
+  led_right_inlane:
+    number: 1-0-1
+    subtype: led
+    type: rgb
+
+#mansion
+  led_mansion_1:
+    number: 1-0-17
+    subtype: led
+    type: rgb
+  led_mansion_2:
+    number: 1-0-13
+    subtype: led
+    type: rgb
+  led_mansion_3:
+    number: 1-0-14
+    subtype: led
+    type: rgb
+  led_mansion_4:
+    number: 1-0-15
+    subtype: led
+    type: rgb
+  led_mansion_5:
+    number: 1-0-16
+    subtype: led
+    type: rgb
+  led_mansion_6:
+    number: 1-0-9
+    subtype: led
+    type: rgb
+  led_mansion_7:
+    number: 1-0-10
+    subtype: led
+    type: rgb
+  led_mansion_8:
+    number: 1-0-11
+    subtype: led
+    type: rgb
+  led_mansion_9:
+    number: 1-0-12
+    subtype: led
+    type: rgb
+  led_mansion_10:
+    number: 1-0-5
+    subtype: led
+    type: rgb
+  led_mansion_11:
+    number: 1-0-6
+    subtype: led
+    type: rgb
+  led_mansion_12:
+    number: 1-0-7
+    subtype: led
+    type: rgb
+  led_mansion_13:
+    number: 1-0-8
+    subtype: led
+    type: rgb
+
+#middle 
+  led_letter_g:
+    number: 1-0-29
+    subtype: led
+    type: rgb
+  led_letter_r:
+    number: 1-0-28
+    subtype: led
+    type: rgb
+  led_letter_e:
+    number: 1-0-19
+    subtype: led
+    type: rgb
+  led_thunder_left:
+    number: 1-0-27
+    subtype: led
+    type: rgb
+  led_the_power:
+    number: 1-0-26
+    subtype: led
+    type: rgb
+  led_thunder_right:
+    number: 1-0-25
+    subtype: led
+    type: rgb
+  led_swamp_1:
+    number: 1-0-20
+    subtype: led
+    type: rgb
+  led_swamp_2:
+    number: 1-0-21
+    subtype: led
+    type: rgb
+  led_swamp_3:
+    number: 1-0-22
+    subtype: led
+    type: rgb
+  led_swamp_4:
+    number: 1-0-23
+    subtype: led
+    type: rgb
+  led_swamp_5:
+    number: 1-0-24
+    subtype: led
+    type: rgb
+
+
+
+#bottom chain
+  led_advance:
+    number: 0-0-2
+    subtype: led
+    type: rgb
+  led_gy:
+    number: 0-0-1
+    subtype: led
+    type: rgb
+  led_it:
+    number: 0-0-3
+    subtype: led
+    type: rgb
+  led_ramp_1:
+    number: 0-0-4
+    subtype: led
+    type: rgb
+  led_ramp_2:
+    number: 0-0-5
+    subtype: led
+    type: rgb
+  led_letter_v:
+    number: 0-0-6
+    subtype: led
+    type: rgb
+  led_greed_1:
+    number: 0-0-7
+    subtype: led
+    type: rgb
+  led_greed_2:
+    number: 0-0-8
+    subtype: led
+    type: rgb
+  led_greed_3:
+    number: 0-0-9
+    subtype: led
+    type: rgb
+  led_greed_4:
+    number: 0-0-10
+    subtype: led
+    type: rgb
+  led_greed_5:
+    number: 0-0-11
+    subtype: led
+    type: rgb
+  
+  led_upper_ramp_1:
+    number: 0-0-12
+    subtype: led
+    type: rgb
+  led_upper_ramp_2:
+    number: 0-0-14
+    subtype: led
+    type: rgb
+  
+  led_loop:
+    number: 0-0-15
+    subtype: led
+    type: rgb
+  
+  led_letter_a:
+    number: 0-0-17
+    subtype: led
+    type: rgb
+
+  led_jump_1:
+    number: 0-0-18
+    subtype: led
+    type: rgb
+  led_jump_2:
+    number: 0-0-19
+    subtype: led
+    type: rgb
+
+
+

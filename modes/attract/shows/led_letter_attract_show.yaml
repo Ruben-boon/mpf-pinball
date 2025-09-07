@@ -1,0 +1,41 @@
+#show_version=6
+
+#on
+- duration: 1s
+  lights: 
+    led_letter_g: 
+      color: white
+      fade: 200ms
+- duration: 1s
+  lights:
+    led_letter_r: 
+      color: white
+      fade: 200ms
+- duration: 1s
+  lights:
+    led_letter_a: 
+      color: white
+      fade: 200ms
+- duration: 1s
+  lights:
+    led_letter_e: 
+      color: white
+      fade: 200ms
+
+#off
+- duration: 1s
+  lights:
+    led_letter_g: 
+      color: off
+      fade: 200ms
+    led_letter_r: 
+      color: off
+      fade: 200ms
+    led_letter_a:
+      color: off
+      fade: 200ms
+    led_letter_e: 
+      color: off
+      fade: 200ms
+
+    

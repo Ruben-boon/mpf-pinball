@@ -1,0 +1,55 @@
+#show_version=6
+
+#on
+- duration: 0.3s
+  lights: 
+    led_thunder_left: 
+      color: white
+    led_the_power: 
+      color: white
+    led_thunder_right: 
+      color: white
+
+#off
+- duration: 0.1s
+  lights:
+    led_thunder_left: 
+      color: off
+    led_the_power: 
+      color: off
+    led_thunder_right: 
+      color: off
+
+#on
+- duration: 0.7s
+  lights: 
+    led_thunder_left: 
+      color: white
+    led_the_power: 
+      color: white
+    led_thunder_right: 
+      color: white
+
+#off
+- duration: 0.1s
+  lights:
+    led_thunder_left: 
+      color: off
+
+    led_the_power: 
+      color: off
+
+    led_thunder_right: 
+      color: off
+
+
+#on
+- duration: 0.2s
+  lights: 
+    led_thunder_left: 
+      color: white
+    led_the_power: 
+      color: white
+    led_thunder_right: 
+      color: white
+

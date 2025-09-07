@@ -1,0 +1,42 @@
+#config_version=6
+
+sounds:
+  music_startuplong:
+    file: music_startuplong.wav
+    track: music
+
+  slingshot:
+    file: fx_sword.wav
+    track: sfx
+
+  blue_target:
+    file: fx_bang.wav
+    track: sfx
+
+  grave_complete:
+    file: vo_graveyardaward.wav
+    track: voice
+
+  music_prelaunch:
+    file: music_prelaunch.wav
+    track: music
+
+  main_theme_1:
+    file: main_theme_1.wav
+    track: music
+
+  main_theme_2:
+    file: main_theme_1_alternate.wav
+    track: music
+
+  dragon_roost:
+    file: dragon_roost.flac
+    track: music
+# playlists:
+#   pl_main_themes:
+#     shuffle: true
+#     repeat: false
+#     crossfade_time: 5s
+#     sounds:
+#       - main_theme_2
+#       - dragon_roosts

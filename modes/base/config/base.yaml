@@ -1,0 +1,116 @@
+#config_version=6
+
+##! mode: base
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_endp
+
+  priority: 100
+
+shots:
+  # shot_right_outlane:
+  #   switch: s_right_outlane
+  # shot_right_inlane:
+  #   switch: s_right_inlane
+  # shot_left_inlane_1:
+  #   switch: s_left_inlane_1
+  # shot_left_inlane_2:
+  #   switch: s_left_inlane_2
+  shot_left_outlane:
+    switch: s_left_outlane
+
+  # # Scoops
+  # shot_right_scoop:
+  #   switch: s_right_scoop
+  # shot_center_scoop:
+  #   switch: s_center_scoop
+
+  # Pop Bumpers (often not defined as shots, but can be for specific modes)
+  shot_pop1:
+    switch: s_pop1
+  shot_pop2:
+    switch: s_pop2
+  shot_pop3:
+    switch: s_pop3
+  shot_pop4:
+    switch: s_pop4
+  shot_pop5:
+    switch: s_pop5
+
+slide_player:
+  mode_base_started:
+    widgets:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 200
+        font_name: MetalMania-Regular.ttf
+      - type: text
+        text: PLAYER (number)
+        y: 10
+        x: 10
+        font_size: 50
+        font_name: MetalMania-Regular.ttf
+        anchor_x: left
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 10
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 50
+        font_name: MetalMania-Regular.ttf
+      - type: image
+        image: gy_v3
+        x: center
+        y: middle
+light_player:
+  mode_base_started:
+    led_gi_left_ball_guide_1: white
+    led_gi_left_ball_guide_2: white
+    led_gi_left_ball_guide_3: white
+    led_gi_right_ball_guide_1: white
+    led_gi_right_ball_guide_2: white
+    led_gi_right_slingshot: white
+    led_gi_left_slingshot: white
+
+  mode_base_ended:
+    led_gi_left_ball_guide_1: white
+    led_gi_left_ball_guide_2: white
+    led_gi_left_ball_guide_3: white
+    led_gi_right_ball_guide_1: white
+    led_gi_right_ball_guide_2: white
+    led_gi_right_slingshot: white
+    led_gi_left_slingshot: white
+sound_player:
+  #music
+  mode_base_started:
+    music_startuplong:
+      action: stop
+      fade_out: 0s
+    music_prelaunch:
+      action: play
+
+  playfield_active:
+   
+    dragon_roost:
+      action: play
+    music_prelaunch:
+      action: stop
+      fade_out: 1s
+  #sfx on hit
+  s_left_slingshot_active:
+    slingshot:
+      action: play
+
+  s_right_slingshot_active:
+    slingshot:
+      action: play
+
+# playlist_player:
+#   playfield_active:
+#     trackplaylist:
+#       playlist: pl_main_themes
+#       action: play

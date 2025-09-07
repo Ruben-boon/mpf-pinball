@@ -1,0 +1,32 @@
+#config_version=6
+
+slides:
+  # welcome_slide:
+  #   widgets:
+  #     - type: image
+  #       image: af_bg
+  #       x: center   
+  #       y: middle  
+  attract_image_slide:
+     widgets:
+      - type: image
+        image: af_bg
+        x: center   
+        y: middle  
+  attract_video_slide:
+     widgets:
+      - type: video
+        video: af_intro_video
+  some_other_slide:
+    - type: text
+      text: THIS IS ANOTHER SLIDE
+    - type: text
+      text: WITH MORE WORDS
+      y: bottom
+      anchor_y: bottom
+  tilt_warning_1:
+    - type: text
+      text: WARNING
+  tilt_warning_2:
+    - type: text
+      text: WARNING WARNING

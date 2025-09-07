@@ -1,0 +1,13 @@
+#config_version=6
+
+hardware:
+  platform: opp
+  driverboards: gen2
+
+opp:
+  ports: com3, com4
+  debug: true
+
+psus:
+  default:
+    release_wait_ms: 50

@@ -1,0 +1,15 @@
+#config_version=6
+
+images:
+  fh_bg:
+    file: fh_bg.jpg
+  af_bg:
+    file: af_bg.jpg
+  af_stairs:
+    file: af_stairs.jpg
+  mansionv2:
+    file: mansionv2.jpg
+  theatre: 
+    file: theatre2.jpg
+  gy_v3:
+    file: gy_v3.jpg

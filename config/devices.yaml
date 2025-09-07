@@ -1,0 +1,67 @@
+#config_version=6
+
+flippers:
+  # left_flipper:
+  #   main_coil: c_flipper_left_main
+  #   hold_coil: c_flipper_left_hold
+  #   activation_switch: s_left_flipper
+  #   enable_events: machine_reset_phase_3
+
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+  top_flipper:
+    main_coil: c_flipper_top_main
+    hold_coil: c_flipper_top_hold
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+    enable_events: machine_reset_phase_3
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+    enable_events: machine_reset_phase_3
+  pop1:
+    coil: c_pop1
+    switch: s_pop1
+    enable_events: machine_reset_phase_3
+  pop2:
+    coil: c_pop2
+    switch: s_pop2
+    enable_events: machine_reset_phase_3
+  pop3:
+    coil: c_pop3
+    switch: s_pop3
+    enable_events: machine_reset_phase_3
+  pop4:
+    coil: c_pop4
+    switch: s_pop4
+    enable_events: machine_reset_phase_3
+  pop5:
+    coil: c_pop5
+    switch: s_pop5
+    enable_events: machine_reset_phase_3
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+  bd_center_scoop:
+    ball_switches: s_center_scoop
+    eject_coil: c_center_scoop
+    eject_timeouts: 3s
+  bd_right_scoop:
+    ball_switches: s_right_scoop
+    eject_coil: c_right_scoop
+    eject_timeouts: 3s
+# In config/devices.yaml
+#config_version=6
+

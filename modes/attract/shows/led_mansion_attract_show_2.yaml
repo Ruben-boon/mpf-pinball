@@ -1,0 +1,87 @@
+#show_version=6
+# A pulse of energy shoots up the lights, then flashes.
+
+# The upward pulse
+- duration: 0.3s
+  lights:
+    led_mansion_1: white  
+- duration: 0.3s
+  lights:
+    led_mansion_1: off
+    led_mansion_2: white
+- duration: 0.3s
+  lights:
+    led_mansion_2: off
+    led_mansion_3: white
+- duration: 0.3s
+  lights:
+    led_mansion_3: off
+    led_mansion_4: white
+- duration: 0.3s
+  lights:
+    led_mansion_4: off
+    led_mansion_5: white
+- duration: 0.3s
+  lights:
+    led_mansion_5: off
+    led_mansion_6: white
+- duration: 0.3s
+  lights:
+    led_mansion_6: off
+    led_mansion_7: white
+- duration: 0.3s
+  lights:
+    led_mansion_7: off
+    led_mansion_8: white
+- duration: 0.3s
+  lights:
+    led_mansion_8: off
+    led_mansion_9: white
+- duration: 0.3s
+  lights:
+    led_mansion_9: off
+    led_mansion_10: white
+- duration: 0.3s
+  lights:
+    led_mansion_10: off
+    led_mansion_11: white
+- duration: 0.3s
+  lights:
+    led_mansion_11: off
+    led_mansion_12: white
+- duration: 0.3s
+  lights:
+    led_mansion_12: off
+    led_mansion_13: white
+
+# The final burst and fade
+- duration: 0.3s
+  lights:
+    led_mansion_1: white
+    led_mansion_2: white
+    led_mansion_3: white
+    led_mansion_4: white
+    led_mansion_5: white
+    led_mansion_6: white
+    led_mansion_7: white
+    led_mansion_8: white
+    led_mansion_9: white
+    led_mansion_10: white
+    led_mansion_11: white
+    led_mansion_12: white
+    led_mansion_13: white
+- lights:
+    led_mansion_1: off
+    led_mansion_2: off
+    led_mansion_3: off
+    led_mansion_4: off
+    led_mansion_5: off
+    led_mansion_6: off
+    led_mansion_7: off
+    led_mansion_8: off
+    led_mansion_9: off
+    led_mansion_10: off
+    led_mansion_11: off
+    led_mansion_12: off
+    led_mansion_13: off
+  duration: 1s

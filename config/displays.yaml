@@ -1,0 +1,15 @@
+#config_version=6
+
+displays:
+  window:
+    width: 1280
+    height: 390
+window:
+  width: 1280
+  height: 390
+  title: Mission Pinball Framework
+  resizable: true
+  fullscreen: false
+  borderless: false
+  exit_on_escape: true
+  source_display: window

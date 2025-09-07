@@ -1,0 +1,81 @@
+#config_version=6
+
+##! mode: grave_targets
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 200
+
+shot_groups:
+  grave_targets_group:
+    shots: shot_target_g, shot_target_r
+
+event_player:
+  # When the mode starts, reset the drop sequence
+  mode_grave_targets_started: reset_targets
+  shot_right_scoop_lit_hit: reset_targets
+
+shots:
+  shot_target_g:
+    switches: s_target_g
+    profile: target_profile
+    reset_events: reset_targets
+    show_tokens:
+      led: led_letter_g
+  shot_target_r:
+    switches: s_target_r
+    profile: target_profile
+    reset_events: reset_targets
+    show_tokens:
+      led: led_letter_r
+  shot_right_scoop:
+    switches: s_right_scoop
+    profile: scoop_profile
+    advance_events: grave_targets_group_lit_complete
+    reset_events: reset_targets
+    show_tokens:
+      led: led_letter_e
+
+shot_profiles:
+  target_profile:
+    states:
+      - name: unlit
+        show: show_blink
+      - name: lit
+        show: "on"
+
+  scoop_profile:
+    advance_on_hit: false
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: show_blink
+
+variable_player:
+  shot_target_g_hit:
+    score: 100
+  shot_target_r_hit:
+    score: 100
+
+  shot_right_scoop_unlit_hit:
+    score: 100
+  shot_right_scoop_lit_hit:
+    score: 20000
+ 
+show_player:
+  shot_right_scoop_lit_hit:
+      led_thunder_show_2:
+        speed: 2
+        loops: 1
+
+sound_player: 
+  shot_target_g_unlit_hit:
+    blue_target:
+      action: play
+  shot_target_r_unlit_hit:
+    blue_target:
+      action: play
+  shot_right_scoop_lit_hit:
+    grave_complete:
+      action: play

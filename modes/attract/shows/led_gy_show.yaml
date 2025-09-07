@@ -1,0 +1,98 @@
+#show_version=6
+
+
+- duration: 3s
+  lights:
+    led_gy:
+      color: off
+      fade: 200ms
+    led_advance:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_advance:
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: white
+      fade: 200ms
+
+- duration: 1s
+  lights:
+    led_gy:
+      color: off
+      fade: 200ms
+    led_advance:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_advance:
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: white
+      fade: 200ms
+
+- duration: 1s
+  lights:
+    led_gy:
+      color: off
+      fade: 200ms
+    led_advance:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_advance:
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: white
+      fade: 200ms
+
+
+- duration: 0.4s
+  lights:
+    led_gy:
+      color: off
+      fade: 200ms
+    led_advance:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_advance:
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: white
+      fade: 200ms
+
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: off
+      fade: 200ms
+    led_advance:
+      color: off
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_advance:
+      color: white
+      fade: 200ms
+- duration: 0.2s
+  lights:
+    led_gy:
+      color: white
+      fade: 200ms

@@ -1,0 +1,76 @@
+events:
+  game_ended: 53
+  game_started: 220
+missing_switches:
+  s_left_inlane_1: 55
+  s_left_inlane_2: 55
+  s_right_inlane: 54
+  s_right_outlane: 55
+  s_trough1: 1
+  s_trough2: 10
+  s_trough3: 10
+  s_trough4: 10
+  s_trough5: 9
+player:
+  score:
+    average: 0
+    top:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    total: 53
+shots:
+  my_first_shot: 5
+  shot_left_outlane: 11
+  shot_pop1: 80
+  shot_pop2: 11
+  shot_pop3: 15
+  shot_pop4: 21
+  shot_pop5: 29
+  shot_right_inlane: 1
+  shot_right_scoop: 1158523
+  shot_target_g: 178
+  shot_target_r: 185
+switches:
+  s_center_scoop: 121
+  s_drop_bank1: 140
+  s_left_flipper: 2460
+  s_left_inlane1: 2
+  s_left_inlane2: 2
+  s_left_inlane_1: 1
+  s_left_inlane_2: 2
+  s_left_outlane: 12
+  s_left_slingshot: 510
+  s_plunger: 5
+  s_pop1: 80
+  s_pop2: 11
+  s_pop3: 15
+  s_pop4: 24
+  s_pop5: 33
+  s_pop_bot: 426
+  s_pop_mid: 351
+  s_pop_top: 302
+  s_right_flipper: 2729
+  s_right_inlane: 88
+  s_right_outlane: 4
+  s_right_scoop: 340
+  s_right_slingshot: 462
+  s_scoop_center: 2
+  s_scoop_lower: 220
+  s_scoop_right: 1
+  s_shooter_lane: 15
+  s_startButton: 91
+  s_target_g: 182
+  s_target_r: 185
+  s_trough1: 395
+  s_trough2: 1
+  s_trough3: 1
+  s_trough4: 1
+  s_trough5: 1
