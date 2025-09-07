@@ -13,7 +13,11 @@ shot_groups:
 event_player:
   # When the mode starts, reset the drop sequence
   mode_grave_targets_started: reset_targets
-  shot_right_scoop_lit_hit: reset_targets
+  # When scoop is hit, reset targets and complete the mode and trigger reward collection
+  shot_right_scoop_lit_hit:
+    - reset_targets
+    - grave_targets_complete
+    - enable_grave_targets_reward
 
 shots:
   shot_target_g:
@@ -62,6 +66,7 @@ variable_player:
     score: 100
   shot_right_scoop_lit_hit:
     score: 20000
+    grave_targets_completed: 1
  
 show_player:
   shot_right_scoop_lit_hit:

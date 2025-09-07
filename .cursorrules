@@ -1,0 +1,251 @@
+# MPF Pinball Machine Development Rules
+
+## Project Overview
+This is an MPF (Mission Pinball Framework) pinball machine project. The machine has multiple game modes, LED lighting, sound effects, and a reward collection system.
+
+## MPF Documentation Reference
+**CRITICAL**: Always consult the comprehensive MPF documentation sources before making any changes:
+
+### Primary Documentation Sources:
+1. **Local Documentation**: `mpf-docs/deepseek-mpf.md` - Contains comprehensive MPF architecture, philosophy, and implementation details
+2. **Official Web Documentation**: https://missionpinball.org/latest - Official MPF documentation with up-to-date API references, examples, and troubleshooting guides
+
+### Documentation Content:
+- Complete MPF architecture and philosophy
+- Event-driven system fundamentals
+- Hardware configuration best practices
+- Mode management and priority systems
+- Config players (variable_player, show_player, sound_player, etc.)
+- Shot groups and shot profiles
+- Show creation and management
+- Sound system configuration
+- Display architecture and widgets
+- Custom code integration patterns
+- Common error patterns and solutions
+- Conditional events and variable_player syntax
+- Player variables vs machine variables usage
+
+**ALWAYS** reference both documentation sources when:
+- Creating new modes or modifying existing ones
+- Configuring hardware (switches, coils, lights)
+- Setting up shows and animations
+- Implementing game logic with config players
+- Troubleshooting configuration errors
+- Planning new features or functionality
+
+### Documentation Usage Pattern:
+1. **Start with local documentation** (`mpf-docs/deepseek-mpf.md`) for architectural understanding and general patterns
+2. **Use web research** (https://missionpinball.org/latest) for specific syntax, API references, and current examples
+3. **Combine both sources** for comprehensive understanding - local docs provide context, web docs provide specifics
+4. **Always verify syntax** using official web documentation for conditional events, variable_player syntax, and config player parameters
+
+## File Structure
+- `config/` - Main configuration files (switches, coils, lights, sounds, etc.)
+- `modes/` - Game mode configurations
+- `data/` - Machine variables and audit data
+- `sounds/` - Audio files (music, sfx, voice)
+- `images/` - Background images and graphics
+- `fonts/` - Custom fonts for displays
+- `videos/` - Video files for displays
+
+## Development Workflow
+1. After making changes, always run `mpf both -X` to test the configuration
+2. Check for YAML syntax errors first
+3. Fix any configuration conflicts (duplicate keys, missing references)
+4. Test the specific functionality that was changed
+5. Verify LED lighting, sound effects, and scoring work correctly
+
+## Key Configuration Files
+- `config/config.yaml` - Main config with mode list
+- `config/switches.yaml` - Switch definitions and hardware mapping
+- `config/coils.yaml` - Coil definitions and hardware mapping
+- `config/lights.yaml` - LED definitions and hardware mapping
+- `config/sounds.yaml` - Sound file definitions
+- `data/machine_vars.yaml` - Machine variables for tracking state
+
+## Game Modes
+- `base` - Basic game functionality, scoring display
+- `attract` - Attract mode with LED shows
+- `grave_targets` - Target shooting mode with scoop completion
+- `pop_bumpers` - Pop bumper hitting mode (20 hits to complete)
+- `reward_collection` - Collects rewards from completed modes
+
+## Hardware Mapping
+- Switches use format: `number: 0-0-X` or `number: 1-0-X`
+- Coils use format: `number: 0-0-X` or `number: 1-0-X`
+- LEDs use format: `number: 0-0-X` or `number: 1-0-X`
+
+## Common Patterns
+- Modes start on `ball_starting` and stop on `ball_will_end`
+- Use shot groups to track multiple shots together
+- Use machine variables to track completion status
+- Use `led_loop` for reward collection indication
+- Use `shot_right_scoop` for reward collection
+- Use MPF counters for hit tracking and completion goals
+
+## MPF Counters - Best Practice for Hit Tracking
+**Use counters instead of complex conditional expressions for tracking hits toward completion goals.**
+
+### Counter Configuration Pattern:
+```yaml
+counters:
+  counter_name:
+    count_events: event1, event2, event3
+    count_complete_value: 20
+    events_when_complete: completion_event
+    enable_events: mode_started
+    reset_events: ball_starting
+```
+
+### When to Use Counters:
+- Tracking multiple hits of the same type (e.g., "hit pop bumpers 20 times")
+- Counting events toward a completion goal
+- Any scenario where you need to track progress toward a target number
+
+### Benefits:
+- Clean, readable configuration
+- Automatic completion detection
+- No complex placeholder evaluation errors
+- Built-in enable/disable/reset functionality
+- Follows MPF best practices
+
+## Error Prevention
+- Never duplicate shot definitions across modes
+- Always check for duplicate YAML keys
+- Ensure all referenced switches, coils, and LEDs exist
+- Use consistent naming conventions
+- Test configuration after each change
+
+## Scoring System
+- Pop bumpers: 1,000 points per hit, 50,000 completion bonus
+- Grave targets: 100 points per target, 20,000 completion bonus
+- Reward collection: 25,000 points per collected reward
+
+## LED Usage
+- Pop bumpers: `led_pop1` through `led_pop5`
+- Grave targets: `led_letter_g`, `led_letter_r`, `led_letter_e`
+- Reward indicator: `led_loop`
+- General illumination: `led_gi_*` lights
+
+## Sound System
+- Music tracks: `music_startuplong`, `music_prelaunch`, `main_theme_1`
+- Sound effects: `blue_target`, `slingshot`, `fx_bang`
+- Voice: `vo_graveyardaward`, `grave_complete`
+
+## When Making Changes
+1. Always read existing files first to understand current structure
+2. Use search_replace for precise edits
+3. Create todo lists for complex multi-step tasks
+4. Test immediately after changes with `mpf both -X`
+5. Fix any YAML syntax errors or configuration conflicts
+6. Verify the specific functionality works as expected
+7. **ALWAYS update .cursorrules when new patterns or solutions are discovered**
+
+## Code Style
+- Use clear, descriptive comments
+- Group related configurations together
+- Use consistent indentation (2 spaces)
+- Follow MPF naming conventions
+- Keep configurations organized and readable
+
+## Important Lessons Learned
+- **Device Overloading**: Never define the same shot/device in multiple modes - MPF will throw "cannot be overloaded" errors
+- **YAML Syntax**: Cannot have duplicate keys in event_player sections - use lists for multiple actions
+- **Shot Control**: Cannot directly control shot devices with `shot_name: light` in event_player - use custom events instead
+- **Mode Dependencies**: When modes share devices, define them in one mode and reference from others
+- **Reward Collection**: Use custom events (enable_reward_collection, disable_reward_collection) instead of direct device control
+- **Show Management**: Shows must be defined in each mode's `shows/` folder - MPF requires unique show names across the entire machine
+- **Show Naming**: Use descriptive, unique names for shows (e.g., `show_pop_bumpers_blink`, `show_reward_blink`) to avoid conflicts
+- **Hit Tracking**: Use MPF counters for tracking multiple hits instead of complex conditional expressions with player variables
+- **Counter Logic**: Counters are the preferred way to track hits toward completion goals (e.g., "hit pop bumpers 20 times")
+- **Placeholder Evaluation**: Complex expressions like `(current_player.shots.shot1 + current_player.shots.shot2) >= 20` can fail with "Cannot access in path because the parent is None" errors
+- **LED Control Debugging**: When LEDs don't light up despite events firing, use `light_player` instead of `show_player` for simpler debugging
+- **Event Debugging**: Add custom debug events to trace event flow and confirm logic is working before troubleshooting hardware issues
+
+## LED Lighting Debugging Guide
+**When LEDs don't light up, follow this systematic debugging approach:**
+
+### Step 1: Verify Event Flow
+Add debug events to confirm your logic is working:
+```yaml
+event_player:
+  your_trigger_event:
+    - your_led_action
+    - debug_your_event_fired  # Add this debug event
+```
+
+### Step 2: Test LED Control Method
+If events are firing but LEDs aren't lighting:
+
+**Option A: Use `light_player` (Simplest)**
+```yaml
+light_player:
+  your_event:
+    led_name: white  # or red, blue, green, etc.
+```
+
+**Option B: Use `show_player` (More Complex)**
+```yaml
+show_player:
+  your_event:
+    led_name:
+      show: "on"  # Built-in show
+      loops: 0
+```
+
+### Step 3: Verify LED Hardware Mapping
+Check `config/lights.yaml`:
+```yaml
+lights:
+  led_name:
+    number: 1-0-17  # Verify this matches your hardware
+    subtype: led
+    type: rgb
+```
+
+### Step 4: Test with Simple Events
+Create a test event to isolate the issue:
+```yaml
+event_player:
+  test_led:
+    - debug_test_led_fired
+light_player:
+  test_led:
+    led_name: red
+```
+
+### LED Control Best Practices
+- **Start Simple**: Use `light_player` with basic colors (white, red, blue, green)
+- **Debug First**: Add debug events to confirm event flow before troubleshooting hardware
+- **Test Isolation**: Create simple test events to isolate LED control from complex game logic
+- **Hardware Verification**: Always verify LED numbers in `lights.yaml` match physical hardware
+- **Show vs Light**: Use `light_player` for simple on/off, `show_player` for complex animations
+
+## Common Error Patterns
+- Duplicate shot definitions across modes → Move to base mode or single mode
+- Duplicate YAML keys in event_player → Use list format: `event: [action1, action2]`
+- Device control syntax errors → Use custom events instead of direct device control
+- Missing mode in config.yaml → Always add new modes to the modes list
+- Duplicate show names across modes → Use unique, descriptive show names for each mode
+- Shows not in mode's shows/ folder → Create shows/ directory in each mode and place show files there
+- Complex conditional expressions failing → Use MPF counters instead of complex player variable calculations
+- Placeholder evaluation errors → Avoid complex expressions with multiple player variables in conditions
+- **LEDs not lighting despite events firing** → Use `light_player` instead of `show_player`, add debug events, verify hardware mapping
+
+## Testing Protocol
+1. Run `mpf both -X` after each change
+2. Check for YAML syntax errors first
+3. Look for device overloading errors
+4. Verify specific functionality works
+5. **For LED issues**: Add debug events, test with `light_player`, verify hardware mapping
+6. Update .cursorrules with any new patterns discovered
+
+## LED Debugging Checklist
+When LEDs don't work:
+- [ ] Events are firing (check event log for debug events)
+- [ ] LED hardware mapping is correct in `lights.yaml`
+- [ ] Using `light_player` for simple testing
+- [ ] LED numbers match physical hardware
+- [ ] Mode is loaded in `config.yaml`
+- [ ] No YAML syntax errors
+- [ ] Test with simple events first, then complex logic

@@ -1,8 +1,32 @@
+grave_targets_completed:
+  expire: null
+  expire_secs: null
+  value: 0
+grave_targets_reward_available:
+  expire: null
+  expire_secs: null
+  value: 0
+grave_targets_reward_collected:
+  expire: null
+  expire_secs: null
+  value: 0
 master_volume:
   expire: null
   expire_secs: null
   value: 0.5
 player1_score:
+  expire: null
+  expire_secs: null
+  value: 0
+pop_bumpers_completed:
+  expire: null
+  expire_secs: null
+  value: 0
+pop_bumpers_reward_available:
+  expire: null
+  expire_secs: null
+  value: 0
+pop_bumpers_reward_collected:
   expire: null
   expire_secs: null
   value: 0

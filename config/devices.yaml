@@ -13,11 +13,11 @@ flippers:
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
 
-  top_flipper:
-    main_coil: c_flipper_top_main
-    hold_coil: c_flipper_top_hold
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
+  # top_flipper:
+  #   main_coil: c_flipper_top_main
+  #   hold_coil: c_flipper_top_hold
+  #   activation_switch: s_right_flipper
+  #   enable_events: machine_reset_phase_3
 
 autofire_coils:
   left_slingshot:

@@ -3,7 +3,7 @@
 ##! mode: base
 mode:
   start_events: ball_starting
-  stop_events: ball_will_endp
+  stop_events: ball_will_end
 
   priority: 100
 

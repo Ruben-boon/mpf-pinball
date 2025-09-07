@@ -1,0 +1,86 @@
+#config_version=6
+
+##! mode: mansion_modes
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 300
+
+# Define the center scoop shot for reward collection
+shots:
+  shot_center_scoop:
+    switch: s_center_scoop
+    profile: reward_scoop_profile
+    advance_events: enable_grave_targets_reward, enable_pop_bumpers_reward
+    reset_events: collect_available_rewards
+
+shot_profiles:
+  reward_scoop_profile:
+    advance_on_hit: false
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: "on"
+
+event_player:
+  # When a mode completes, trigger reward collection
+  grave_targets_complete:
+    - enable_grave_targets_reward
+    - debug_grave_targets_complete
+  
+  pop_bumpers_complete:
+    - enable_pop_bumpers_reward
+    - debug_pop_bumpers_complete
+  
+  # When center scoop is hit, collect available rewards
+  shot_center_scoop_lit_hit:
+    - collect_available_rewards
+    - debug_center_scoop_hit
+  
+  # Debug events to see if show_player is working
+  enable_grave_targets_reward:
+    - debug_mansion_1_blink_start
+  
+  enable_pop_bumpers_reward:
+    - debug_mansion_2_blink_start
+  
+  collect_available_rewards:
+    - debug_mansion_lights_solid
+
+variable_player:
+  # Enable grave targets reward
+  enable_grave_targets_reward:
+    grave_targets_reward_available: 1
+  
+  # Enable pop bumpers reward  
+  enable_pop_bumpers_reward:
+    pop_bumpers_reward_available: 1
+  
+  # Collect available rewards - simplified approach
+  collect_available_rewards:
+    score: 25000
+    grave_targets_reward_available: 0
+    pop_bumpers_reward_available: 0
+    grave_targets_reward_collected: 1
+    pop_bumpers_reward_collected: 1
+
+light_player:
+  # When grave targets mode completes, turn on mansion_1
+  enable_grave_targets_reward:
+    led_mansion_1: white
+  
+  # When pop bumpers mode completes, turn on mansion_2
+  enable_pop_bumpers_reward:
+    led_mansion_2: white
+  
+  # When rewards are collected, keep mansion LEDs on
+  collect_available_rewards:
+    led_mansion_1: white
+    led_mansion_2: white
+
+sound_player:
+  # Sound when collecting rewards
+  shot_center_scoop_lit_hit:
+    grave_complete:
+      action: play

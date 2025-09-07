@@ -1,5 +1,8 @@
 #config_version=6
 
+mpf:
+  report_crashes: never
+  
 config:
   - hardware.yaml
   - switches.yaml
@@ -15,6 +18,8 @@ modes:
   - base
   - attract
   - grave_targets
+  - pop_bumpers
+  - mansion_modes
 
 sound_system:
   tracks:

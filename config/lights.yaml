@@ -235,5 +235,26 @@ lights:
     subtype: led
     type: rgb
 
+# pop bumpers
+  led_pop1:
+    number: 0-0-13
+    subtype: led
+    type: rgb
+  led_pop2:
+    number: 0-0-16
+    subtype: led
+    type: rgb
+  led_pop3:
+    number: 0-0-20
+    subtype: led
+    type: rgb
+  led_pop4:
+    number: 0-0-21
+    subtype: led
+    type: rgb
+  led_pop5:
+    number: 0-0-22
+    subtype: led
+    type: rgb
 
 
