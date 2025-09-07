@@ -1,16 +1,35 @@
 events:
   game_ended: 53
-  game_started: 258
+  game_started: 296
 missing_switches:
+  S_eject_hole: 15
+  s_eject_lane: 15
+  s_left_flipper: 38
   s_left_inlane_1: 55
   s_left_inlane_2: 55
+  s_left_outlane: 38
+  s_left_ramp_entry: 14
+  s_left_ramp_top: 14
+  s_left_slingshot: 32
+  s_pop1: 38
+  s_pop2: 19
+  s_pop3: 38
+  s_pop4: 22
+  s_pop5: 38
+  s_right_flipper: 38
   s_right_inlane: 54
   s_right_outlane: 55
-  s_trough1: 1
+  s_right_slingshot: 38
+  s_startButton: 38
+  s_target_v: 1
+  s_top_loop_entry: 15
+  s_trough1: 39
   s_trough2: 10
   s_trough3: 10
   s_trough4: 10
   s_trough5: 9
+  s_upper_left_loop: 15
+  s_upper_right_loop: 15
 player:
   score:
     average: 0
@@ -28,32 +47,38 @@ player:
     total: 53
 shots:
   my_first_shot: 5
-  shot_center_scoop: 94
+  shot_center_scoop: 130
   shot_left_outlane: 14
   shot_pop1: 122
-  shot_pop2: 155
+  shot_pop2: 157
   shot_pop3: 349
-  shot_pop4: 408
+  shot_pop4: 413
   shot_pop5: 361
   shot_right_inlane: 1
-  shot_right_scoop: 1158579
-  shot_target_g: 221
-  shot_target_r: 237
+  shot_right_ramp: 19
+  shot_right_scoop: 1158604
+  shot_target_a: 15
+  shot_target_g: 259
+  shot_target_r: 267
 switches:
-  s_center_scoop: 270
+  S_eject_hole: 0
+  s_center_scoop: 306
   s_drop_bank1: 140
+  s_eject_lane: 0
   s_left_flipper: 2557
   s_left_inlane1: 2
   s_left_inlane2: 2
   s_left_inlane_1: 1
   s_left_inlane_2: 2
   s_left_outlane: 15
-  s_left_slingshot: 534
+  s_left_ramp_entry: 3
+  s_left_ramp_top: 1
+  s_left_slingshot: 535
   s_plunger: 5
   s_pop1: 122
-  s_pop2: 155
+  s_pop2: 157
   s_pop3: 349
-  s_pop4: 412
+  s_pop4: 417
   s_pop5: 365
   s_pop_bot: 426
   s_pop_mid: 351
@@ -61,17 +86,24 @@ switches:
   s_right_flipper: 2837
   s_right_inlane: 88
   s_right_outlane: 4
-  s_right_scoop: 396
+  s_right_ramp_entry: 16
+  s_right_ramp_top: 13
+  s_right_scoop: 422
   s_right_slingshot: 482
   s_scoop_center: 2
   s_scoop_lower: 220
   s_scoop_right: 1
   s_shooter_lane: 15
   s_startButton: 99
-  s_target_g: 225
-  s_target_r: 237
+  s_target_a: 15
+  s_target_g: 263
+  s_target_r: 279
+  s_target_v: 0
+  s_top_loop_entry: 0
   s_trough1: 401
   s_trough2: 1
   s_trough3: 1
   s_trough4: 1
   s_trough5: 1
+  s_upper_left_loop: 0
+  s_upper_right_loop: 0

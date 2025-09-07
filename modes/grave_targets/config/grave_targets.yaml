@@ -6,46 +6,105 @@ mode:
   stop_events: ball_will_end
   priority: 200
 
+sequences:
+  grave_targets_sequence:
+    events:
+      - shot_target_g_lit_hit
+      - shot_target_r_lit_hit
+      - shot_target_a_lit_hit
+      - right_ramp_hit
+      - shot_right_scoop_lit_hit
+    restart_events: reset_targets
+    events_when_complete: grave_targets_sequence_complete
+
 shot_groups:
   grave_targets_group:
-    shots: shot_target_g, shot_target_r
+    shots: shot_target_g, shot_target_r, shot_target_a, shot_right_ramp
 
 event_player:
   # When the mode starts, reset the drop sequence
   mode_grave_targets_started: reset_targets
-  # When scoop is hit, reset targets and complete the mode and trigger reward collection
+  # When the sequence resets, advance the first target
+  reset_targets: advance_target_g
+  # When right scoop is hit, make it solid and trigger mansion light blinking
   shot_right_scoop_lit_hit:
-    - reset_targets
     - grave_targets_complete
     - enable_grave_targets_reward
+    - advance_scoop_to_solid
 
 shots:
   shot_target_g:
     switches: s_target_g
-    profile: target_profile
+    profile: target_profile_g
+    advance_events: advance_target_g, shot_target_g_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_letter_g
   shot_target_r:
     switches: s_target_r
-    profile: target_profile
+    profile: target_profile_r
+    advance_events: shot_target_g_lit_hit, shot_target_r_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_letter_r
+  shot_target_a:
+    switches: s_target_a
+    profile: target_profile_a
+    advance_events: shot_target_r_lit_hit, shot_target_a_lit_hit
+    reset_events: reset_targets
+    show_tokens:
+      led: led_letter_a
+  shot_right_ramp:
+    hit_events: right_ramp_hit
+    profile: target_profile_ramp
+    advance_events: shot_target_a_lit_hit, right_ramp_hit
+    reset_events: reset_targets
+    show_tokens:
+      led: led_ramp_1
   shot_right_scoop:
     switches: s_right_scoop
     profile: scoop_profile
-    advance_events: grave_targets_group_lit_complete
+    advance_events: right_ramp_hit, advance_scoop_to_solid
     reset_events: reset_targets
     show_tokens:
       led: led_letter_e
 
 shot_profiles:
-  target_profile:
+  target_profile_g:
+    advance_on_hit: false
     states:
-      - name: unlit
-        show: show_blink
+      - name: off
+        show: off
       - name: lit
+        show: show_blink
+      - name: down
+        show: "on"
+  target_profile_r:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: show_blink
+      - name: down
+        show: "on"
+  target_profile_a:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: show_blink
+      - name: down
+        show: "on"
+  target_profile_ramp:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: show_blink
+      - name: down
         show: "on"
 
   scoop_profile:
@@ -55,32 +114,56 @@ shot_profiles:
         show: off
       - name: lit
         show: show_blink
+      - name: solid
+        show: "on"
+
 
 variable_player:
   shot_target_g_hit:
-    score: 100
+    score: 1000
   shot_target_r_hit:
-    score: 100
+    score: 1000
+  shot_target_a_hit:
+    score: 1000
+  right_ramp_hit:
+    score: 1000
 
-  shot_right_scoop_unlit_hit:
-    score: 100
   shot_right_scoop_lit_hit:
-    score: 20000
     grave_targets_completed: 1
- 
-show_player:
-  shot_right_scoop_lit_hit:
-      led_thunder_show_2:
-        speed: 2
-        loops: 1
 
-sound_player: 
+show_player:
+  # Show when each blinking target is hit
+  shot_target_g_lit_hit:
+    led_grave_target_show:
+      speed: 2
+      loops: 1
+  shot_target_r_lit_hit:
+    led_grave_target_show:
+      speed: 2
+      loops: 1
+  shot_target_a_lit_hit:
+    led_grave_target_show:
+      speed: 2
+      loops: 1
+  right_ramp_hit:
+    led_grave_target_show:
+      speed: 2
+      loops: 1
+  shot_right_scoop_lit_hit:
+    led_grave_target_show:
+      speed: 2
+      loops: 1
+
+sound_player:
   shot_target_g_unlit_hit:
     blue_target:
       action: play
   shot_target_r_unlit_hit:
     blue_target:
       action: play
-  shot_right_scoop_lit_hit:
-    grave_complete:
+  shot_target_a_unlit_hit:
+    blue_target:
+      action: play
+  right_ramp_hit:
+    blue_target:
       action: play

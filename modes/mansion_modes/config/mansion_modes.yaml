@@ -6,13 +6,41 @@ mode:
   stop_events: ball_will_end
   priority: 300
 
-# Define the center scoop shot for reward collection
+# Achievement group for mansion awards
+achievement_groups:
+  mansion_awards:
+    achievements: grave_targets_award, pop_bumpers_award
+    enable_events: mode_mansion_modes_started
+    auto_select: true
+
+# Individual mansion achievements
+achievements:
+  grave_targets_award:
+    show_tokens:
+      led: led_mansion_1
+    show_when_selected: mansion_blink
+    show_when_completed: "on"
+    events_when_started: award_grave_targets
+    complete_events: grave_targets_complete
+    reset_events: ball_will_end
+  pop_bumpers_award:
+    show_tokens:
+      led: led_mansion_2
+    show_when_selected: mansion_blink
+    show_when_completed: "on"
+    events_when_started: award_pop_bumpers
+    complete_events: pop_bumpers_complete
+    reset_events: ball_will_end
+
+# Center scoop shot for collecting selected achievement
 shots:
   shot_center_scoop:
     switch: s_center_scoop
     profile: reward_scoop_profile
-    advance_events: enable_grave_targets_reward, enable_pop_bumpers_reward
+    advance_events: mode_mansion_modes_started
     reset_events: collect_available_rewards
+    show_tokens:
+      led: led_loop
 
 shot_profiles:
   reward_scoop_profile:
@@ -21,63 +49,44 @@ shot_profiles:
       - name: unlit
         show: off
       - name: lit
-        show: "on"
+        show: mansion_blink
 
 event_player:
-  # When a mode completes, trigger reward collection
+  # When a mode completes, mark its achievement as complete
   grave_targets_complete:
-    - enable_grave_targets_reward
     - debug_grave_targets_complete
   
   pop_bumpers_complete:
-    - enable_pop_bumpers_reward
     - debug_pop_bumpers_complete
   
-  # When center scoop is hit, collect available rewards
+  # When center scoop is hit, collect the selected achievement
   shot_center_scoop_lit_hit:
     - collect_available_rewards
     - debug_center_scoop_hit
   
-  # Debug events to see if show_player is working
-  enable_grave_targets_reward:
-    - debug_mansion_1_blink_start
+  # Award events for each achievement type
+  award_grave_targets:
+    - debug_grave_targets_awarded
   
-  enable_pop_bumpers_reward:
-    - debug_mansion_2_blink_start
-  
-  collect_available_rewards:
-    - debug_mansion_lights_solid
+  award_pop_bumpers:
+    - debug_pop_bumpers_awarded
 
 variable_player:
-  # Enable grave targets reward
-  enable_grave_targets_reward:
-    grave_targets_reward_available: 1
-  
-  # Enable pop bumpers reward  
-  enable_pop_bumpers_reward:
-    pop_bumpers_reward_available: 1
-  
-  # Collect available rewards - simplified approach
+  # Collect available rewards - award points and reset
   collect_available_rewards:
-    score: 25000
-    grave_targets_reward_available: 0
-    pop_bumpers_reward_available: 0
+    score: 50000
     grave_targets_reward_collected: 1
     pop_bumpers_reward_collected: 1
 
-light_player:
-  # When grave targets mode completes, turn on mansion_1
-  enable_grave_targets_reward:
-    led_mansion_1: white
-  
-  # When pop bumpers mode completes, turn on mansion_2
-  enable_pop_bumpers_reward:
-    led_mansion_2: white
-  
-  # When rewards are collected, keep mansion LEDs on
+show_player:
+  # Stop blinking and keep solid when reward is collected
   collect_available_rewards:
-    led_mansion_1: white
-    led_mansion_2: white
+    led_mansion_1:
+      show: "on"
+      loops: 0
+    led_mansion_2:
+      show: "on"
+      loops: 0
 
 sound_player:
   # Sound when collecting rewards
