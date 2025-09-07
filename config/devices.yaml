@@ -1,11 +1,11 @@
 #config_version=6
 
 flippers:
-  # left_flipper:
-  #   main_coil: c_flipper_left_main
-  #   hold_coil: c_flipper_left_hold
-  #   activation_switch: s_left_flipper
-  #   enable_events: machine_reset_phase_3
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
 
   right_flipper:
     main_coil: c_flipper_right_main

@@ -4,10 +4,10 @@
 coils:
 
   c_flipper_left_main:
-    number: 0-0-2
+    number: 0-0-4
     default_pulse_ms: 25
   c_flipper_left_hold:
-    number: 0-0-4
+    number: 0-0-5
     allow_enable: true
 #007 = right (not sure hold or main)
   c_flipper_right_main:
@@ -28,9 +28,9 @@ coils:
 
 
 
-# slingshots 005=left 003=right
+
   c_left_slingshot:
-    number: 0-0-5
+    number: 0-0-2
     default_pulse_ms: 12
     default_pulse_power: 0.70
   c_right_slingshot:
