@@ -6,7 +6,7 @@
     awesome_slide:
       widgets:
       - type: image
-        image: af_bg
+        image: pirate_ships
       transition:
         type: fade
         duration: 1s
@@ -17,8 +17,8 @@
       widgets:
       - type: Text
         text: PRESS START
-        color: white
-        font_size: 80
+        color: brown
+        font_size: 100
         font_name: CinzelDecorative-Black
         # anchor_y: top
 
@@ -42,7 +42,7 @@
       #   y: 10
       #   anchor_y: bottom
       - type: image 
-        image: mansionv2
+        image: pirate_ships
       transition:
         type: fade
         duration: 1s
@@ -58,24 +58,4 @@
 #         duration: 1s
 #         direction: top
 
-- duration: 3
-  slides:
-    last_game_score_slide:
-      widgets:
-      - type: text
-        text: LAST GAME
-        color: ffda82
-        font_size: 42
-        font_name: CinzelDecorative-Black
-        anchor_x: left
-      - type: text
-        text: (machine|player1_score)
-        number_grouping: true
-        min_digits: 2
-        color: ffda82
-        font_size: 42
-        font_name: CinzelDecorative-Black
-        anchor_x: left
-      - type: image 
-        image: mansionv2
 

@@ -36,7 +36,7 @@ show_player:
 
 sound_player:
   mode_attract_started:
-    music_startuplong:
+    song_of_storms:
       action: play
       loops: -1
   

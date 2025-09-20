@@ -32,6 +32,15 @@ sounds:
   dragon_roost:
     file: dragon_roost.flac
     track: music
+
+  song_of_storms:
+    file: song_of_storms.wav
+    track: music
+
+  music_theme:
+    file: music_theme.wav
+    track: music
+
 # playlists:
 #   pl_main_themes:
 #     shuffle: true

@@ -63,7 +63,7 @@ slide_player:
         font_size: 50
         font_name: MetalMania-Regular.ttf
       - type: image
-        image: gy_v3
+        image: onepiece
         x: center
         y: middle
 light_player:
