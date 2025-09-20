@@ -4,14 +4,14 @@
 coils:
   c_flipper_left_main:
     number: 0-0-4
-    default_pulse_ms: 25
+    default_pulse_ms: 20
   c_flipper_left_hold:
     number: 0-0-5
     allow_enable: true
 
   c_flipper_right_main:
     number: 0-0-7
-    default_pulse_ms: 25
+    default_pulse_ms: 20
   c_flipper_right_hold:
     number: 0-0-15
     allow_enable: true
@@ -58,8 +58,11 @@ coils:
   c_right_scoop:
     number: 1-0-6
     default_pulse_ms: 80
+  c_it_hole:
+    number: 1-0-7
+    default_pulse_ms: 80
 
   # trough
   c_trough_eject:
-    number: 1-0-7
+    number: 1-0-4
     default_pulse_ms: 35

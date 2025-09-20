@@ -13,11 +13,11 @@ flippers:
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
 
-  # top_flipper:
-  #   main_coil: c_flipper_top_main
-  #   hold_coil: c_flipper_top_hold
-  #   activation_switch: s_right_flipper
-  #   enable_events: machine_reset_phase_3
+  top_flipper:
+    main_coil: c_flipper_top_main
+    hold_coil: c_flipper_top_hold
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
 
 autofire_coils:
   left_slingshot:
@@ -62,6 +62,10 @@ ball_devices:
     ball_switches: s_right_scoop
     eject_coil: c_right_scoop
     eject_timeouts: 3s
+  bd_it_hole:
+    ball_switches: s_it_hole
+    eject_coil: c_it_hole
+    eject_timeouts: 1s
 # In config/devices.yaml
 #config_version=6
 
