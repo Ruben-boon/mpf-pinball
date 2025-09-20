@@ -43,6 +43,8 @@ switches:
     number: 1-0-10
   s_center_scoop:
     number: 1-0-11
+  s_it_hole:
+    number: 0-0-10
 
 
   # pop bumpers
