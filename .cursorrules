@@ -161,6 +161,52 @@ counters:
 - **Placeholder Evaluation**: Complex expressions like `(current_player.shots.shot1 + current_player.shots.shot2) >= 20` can fail with "Cannot access in path because the parent is None" errors
 - **LED Control Debugging**: When LEDs don't light up despite events firing, use `light_player` instead of `show_player` for simpler debugging
 - **Event Debugging**: Add custom debug events to trace event flow and confirm logic is working before troubleshooting hardware issues
+- **Sequential Targeting**: Use MPF cookbook pattern for sequential targeting - reference https://missionpinball.org/latest/cookbook/sequential_drop_banks/
+
+## Sequential Targeting Implementation Guide
+**For targets that must be hit in a specific order (e.g., G → R → Scoop), use the MPF cookbook pattern:**
+
+### Key Components:
+1. **Shot Configuration with `advance_events`:**
+   ```yaml
+   shots:
+     shot_target_g:
+       advance_events: advance_target_g, shot_target_g_lit_hit
+     shot_target_r:
+       advance_events: shot_target_g_lit_hit, shot_target_r_lit_hit
+   ```
+
+2. **Shot Profile with Three States:**
+   ```yaml
+   shot_profiles:
+     target_profile:
+       advance_on_hit: false
+       states:
+         - name: off      # LED off
+         - name: lit      # LED blinking (ready to hit)
+         - name: down     # LED solid on (hit)
+   ```
+
+3. **Event Flow Pattern:**
+   ```yaml
+   event_player:
+     mode_started: reset_sequence
+     reset_sequence: advance_first_target
+   ```
+
+### How It Works:
+- **Mode starts**: `reset_sequence` event fires
+- **Reset triggers**: `advance_first_target` event fires
+- **First target advances**: From `off` to `lit` state (starts blinking)
+- **Hit first target**: Advances from `lit` to `down` (stays solid), fires `shot_target_g_lit_hit`
+- **Second target advances**: From `off` to `lit` state (starts blinking)
+- **Sequence continues**: Each hit advances the next target in sequence
+
+### Critical Success Factors:
+- **Use `advance_on_hit: false`** in shot profiles to prevent auto-advancement
+- **Use `advance_events`** on shots to control when they advance states
+- **Use proper state names**: `off`, `lit`, `down` (not `unlit`, `lit`, `hit`)
+- **Reference MPF cookbook**: https://missionpinball.org/latest/cookbook/sequential_drop_banks/
 
 ## LED Lighting Debugging Guide
 **When LEDs don't light up, follow this systematic debugging approach:**

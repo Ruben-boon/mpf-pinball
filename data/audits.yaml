@@ -1,15 +1,45 @@
 events:
   game_ended: 53
+<<<<<<< HEAD
   game_started: 263
+=======
+  game_started: 320
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
 missing_switches:
+  S_eject_hole: 39
+  s_center_scoop: 1
+  s_eject_lane: 39
+  s_left_flipper: 62
   s_left_inlane_1: 55
   s_left_inlane_2: 55
+  s_left_outlane: 62
+  s_left_ramp_entry: 38
+  s_left_ramp_top: 38
+  s_left_slingshot: 56
+  s_pop1: 62
+  s_pop2: 43
+  s_pop3: 62
+  s_pop4: 46
+  s_pop5: 14
+  s_right_flipper: 62
   s_right_inlane: 54
   s_right_outlane: 55
+<<<<<<< HEAD
+=======
+  s_right_ramp_top: 1
+  s_right_scoop: 1
+  s_right_slingshot: 62
+  s_startButton: 62
+  s_target_v: 1
+  s_top_loop_entry: 39
+  s_trough1: 63
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
   s_trough2: 10
   s_trough3: 10
   s_trough4: 10
   s_trough5: 9
+  s_upper_left_loop: 39
+  s_upper_right_loop: 39
 player:
   score:
     average: 0
@@ -27,6 +57,7 @@ player:
     total: 53
 shots:
   my_first_shot: 5
+<<<<<<< HEAD
   shot_center_scoop: 127
   shot_left_outlane: 19
   shot_pop1: 188
@@ -43,10 +74,32 @@ switches:
   s_drop_bank1: 140
   s_it_hole: 41
   s_left_flipper: 2690
+=======
+  shot_center_scoop: 186
+  shot_left_outlane: 14
+  shot_pop1: 122
+  shot_pop2: 157
+  shot_pop3: 349
+  shot_pop4: 413
+  shot_pop5: 364
+  shot_right_inlane: 1
+  shot_right_ramp: 39
+  shot_right_scoop: 1158626
+  shot_target_a: 36
+  shot_target_g: 282
+  shot_target_r: 289
+switches:
+  S_eject_hole: 0
+  s_center_scoop: 362
+  s_drop_bank1: 140
+  s_eject_lane: 0
+  s_left_flipper: 2557
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
   s_left_inlane1: 2
   s_left_inlane2: 2
   s_left_inlane_1: 1
   s_left_inlane_2: 2
+<<<<<<< HEAD
   s_left_outlane: 20
   s_left_slingshot: 606
   s_plunger: 5
@@ -55,23 +108,54 @@ switches:
   s_pop3: 399
   s_pop4: 461
   s_pop5: 400
+=======
+  s_left_outlane: 15
+  s_left_ramp_entry: 3
+  s_left_ramp_top: 1
+  s_left_slingshot: 535
+  s_plunger: 5
+  s_pop1: 122
+  s_pop2: 157
+  s_pop3: 349
+  s_pop4: 417
+  s_pop5: 368
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
   s_pop_bot: 426
   s_pop_mid: 351
   s_pop_top: 302
   s_right_flipper: 3148
   s_right_inlane: 88
   s_right_outlane: 4
+<<<<<<< HEAD
   s_right_scoop: 411
   s_right_slingshot: 544
+=======
+  s_right_ramp_entry: 37
+  s_right_ramp_top: 33
+  s_right_scoop: 444
+  s_right_slingshot: 482
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
   s_scoop_center: 2
   s_scoop_lower: 220
   s_scoop_right: 1
   s_shooter_lane: 15
+<<<<<<< HEAD
   s_startButton: 106
   s_target_g: 233
   s_target_r: 256
   s_trough1: 416
+=======
+  s_startButton: 99
+  s_target_a: 36
+  s_target_g: 286
+  s_target_r: 301
+  s_target_v: 0
+  s_top_loop_entry: 0
+  s_trough1: 401
+>>>>>>> cedf5f38b752a68d7b352e3b7301ce10e0375295
   s_trough2: 1
   s_trough3: 1
   s_trough4: 1
   s_trough5: 1
+  s_upper_left_loop: 0
+  s_upper_right_loop: 0

@@ -2,32 +2,19 @@
 
 # first bank 001 002 003 004 005 006 007 0015
 coils:
-
   c_flipper_left_main:
     number: 0-0-4
     default_pulse_ms: 20
   c_flipper_left_hold:
     number: 0-0-5
     allow_enable: true
-#007 = right (not sure hold or main)
+
   c_flipper_right_main:
     number: 0-0-7
     default_pulse_ms: 20
   c_flipper_right_hold:
     number: 0-0-15
     allow_enable: true
-
-    #001 and 006 6 = hold /tiny
-  c_flipper_top_main:
-    number: 0-0-1
-    default_pulse_ms: 25
-  c_flipper_top_hold:
-    number: 0-0-6
-    allow_enable: true
-    default_hold_power: 0.20
-
-
-
 
   c_left_slingshot:
     number: 0-0-2
@@ -38,14 +25,23 @@ coils:
     default_pulse_ms: 12
     default_pulse_power: 0.70
 
-# pop bumpers
+  #Problems currently disabled
+  c_flipper_top_main:
+    number: 0-0-1
+    default_pulse_ms: 25
+  c_flipper_top_hold:
+    number: 0-0-6
+    allow_enable: true
+    default_hold_power: 0.20
+
+  # pop bumpers
   c_pop1:
     number: 0-0-8
     default_pulse_ms: 20
   c_pop2:
     number: 0-0-0
     default_pulse_ms: 20
-  c_pop3: 
+  c_pop3:
     number: 0-0-11
     default_pulse_ms: 20
   c_pop4:
@@ -55,7 +51,7 @@ coils:
     number: 0-0-12
     default_pulse_ms: 20
 
-# scoops
+  # scoops
   c_center_scoop:
     number: 1-0-5
     default_pulse_ms: 20
@@ -66,7 +62,7 @@ coils:
     number: 1-0-7
     default_pulse_ms: 80
 
-# trough
+  # trough
   c_trough_eject:
     number: 1-0-4
     default_pulse_ms: 35

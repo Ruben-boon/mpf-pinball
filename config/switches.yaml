@@ -39,6 +39,9 @@ switches:
   s_target_r:
     number: 1-0-8
     tags: playfield_active
+  s_target_a:
+    number: 1-0-13
+    tags: playfield_active
   s_right_scoop:
     number: 1-0-10
   s_center_scoop:
@@ -46,17 +49,15 @@ switches:
   s_it_hole:
     number: 0-0-10
 
-
   # pop bumpers
   s_pop1:
-    number: 0-0-2
+    number: 0-0-2e
   s_pop2:
     number: 0-0-1
   s_pop3:
     number: 0-0-9
   s_pop4:
     number: 0-0-3
-
   s_pop5:
     number: 0-0-8
 
@@ -76,3 +77,34 @@ switches:
   s_startButton:
     number: 1-0-3
     tags: start
+
+  #switches for sequence shots
+  s_right_ramp_entry:
+    number: 1-0-32
+  s_right_ramp_top:
+    number: 1-0-33
+  s_left_ramp_entry:
+    number: 1-0-34
+  s_left_ramp_top:
+    number: 1-0-35
+  s_top_loop_entry:
+    number: 1-0-36
+  s_upper_right_loop:
+    number: 1-0-37
+  s_upper_left_loop:
+    number: 1-0-38
+  s_eject_lane:
+    number: 1-0-39
+  S_eject_hole:
+    number: 1-0-40
+
+sequence_shots:
+  right_ramp:
+    switch_sequence: s_right_ramp_entry, s_right_ramp_top
+    sequence_timeout: 3s
+  left_ramp:
+    switch_sequence: s_left_ramp_entry, s_left_ramp_top
+    sequence_timeout: 3s
+  top_loop:
+    switch_sequence: s_top_loop_entry, s_upper_right_loop
+    sequence_timeout: 3s
