@@ -15,24 +15,24 @@ switches:
   s_right_slingshot:
     number: 0-0-24
     tags: right_slingshot
-  s_right_inlane:
-    number: 1-0-2
-    tags: playfield_active
-  s_right_outlane:
-    number: 1-0-3
-    tags: playfield_active
-  s_left_inlane_1:
-    number: 1-0-1
-    tags: playfield_active
-  s_left_inlane_2:
-    number: 1-0-4
-    tags: playfield_active
-  s_left_outlane:
-    number: 1-0-9
-    tags: playfield_active
+  # s_right_inlane:
+  #   number: 1-0-2
+  #   tags: playfield_active
+  # s_right_outlane:
+  #   number: 1-0-3
+  #   tags: playfield_active
+  # s_left_inlane_1:
+  #   number: 1-0-1
+  #   tags: playfield_active
+  # s_left_inlane_2:
+  #   number: 1-0-4
+  #   tags: playfield_active
+  # s_left_outlane:
+  #   number: 1-0-9
+  #   tags: playfield_active
   #targets & scoop
   s_target_g:
-    number: 1-0-5
+    number: 1-0-2
     tags: playfield_active
   s_target_r:
     number: 1-0-8
@@ -61,7 +61,7 @@ switches:
 
   # trough
   s_trough1:
-    number: 1-0-7
+    number: 1-0-1
   #   s_trough2:
   #     number:
   #   s_trough3:
@@ -73,7 +73,7 @@ switches:
 
   # miscellaneous
   s_startButton:
-    number: 1-0-6
+    number: 1-0-3
     tags: start
 
   #switches for sequence shots

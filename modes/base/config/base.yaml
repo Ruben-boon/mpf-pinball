@@ -31,26 +31,26 @@ sequence_shots:
     sequence_timeout: 3s
 
 shots:
-  shot_right_inlane:
-    switch: s_right_inlane
-    show_tokens:
-      led: led_right_inlane
-  shot_right_outlane:
-    switch: s_right_outlane
-    show_tokens:
-      led: led_right_outlane
-  shot_left_inlane_1:
-    switch: s_left_inlane_1
-    show_tokens:
-      led: led_left_inlane_1
-  shot_left_inlane_2:
-    switch: s_left_inlane_2
-    show_tokens:
-      led: led_left_inlane_2
-  shot_left_outlane:
-    switch: s_left_outlane
-    show_tokens:
-      led: led_left_outlane
+  # shot_right_inlane:
+  #   switch: s_right_inlane
+  #   show_tokens:
+  #     led: led_right_inlane
+  # shot_right_outlane:
+  #   switch: s_right_outlane
+  #   show_tokens:
+  #     led: led_right_outlane
+  # shot_left_inlane_1:
+  #   switch: s_left_inlane_1
+  #   show_tokens:
+  #     led: led_left_inlane_1
+  # shot_left_inlane_2:
+  #   switch: s_left_inlane_2
+  #   show_tokens:
+  #     led: led_left_inlane_2
+  # shot_left_outlane:
+  #   switch: s_left_outlane
+  #   show_tokens:
+  #     led: led_left_outlane
 
 variable_player:
   # switch hits
