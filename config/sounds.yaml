@@ -6,8 +6,13 @@ sounds:
     track: music
 
   slingshot:
-    file: fx_sword.wav
+    file: fx-cannon.wav
     track: sfx
+  
+  coin :
+    file: fx-coin.wav
+    track: sfx
+    
 
   blue_target:
     file: fx_bang.wav

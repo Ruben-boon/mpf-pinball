@@ -15,26 +15,24 @@ switches:
   s_right_slingshot:
     number: 0-0-24
     tags: right_slingshot
-  #lanes right
-  # s_right_inlane:
-  #   number: 1-0-2
-  #   tags: playfield_active
-  # s_right_outlane:
-  #   number: 1-0-3
-  #   tags: playfield_active
-  #lanes left
-  # s_left_inlane_1:
-  #   number: 1-0-1
-  #   tags: playfield_active
-  # s_left_inlane_2:
-  #   number: 1-0-2
-  #   tags: playfield_active
+  s_right_inlane:
+    number: 1-0-2
+    tags: playfield_active
+  s_right_outlane:
+    number: 1-0-3
+    tags: playfield_active
+  s_left_inlane_1:
+    number: 1-0-1
+    tags: playfield_active
+  s_left_inlane_2:
+    number: 1-0-4
+    tags: playfield_active
   s_left_outlane:
     number: 1-0-9
     tags: playfield_active
   #targets & scoop
   s_target_g:
-    number: 1-0-2
+    number: 1-0-5
     tags: playfield_active
   s_target_r:
     number: 1-0-8
@@ -63,7 +61,7 @@ switches:
 
   # trough
   s_trough1:
-    number: 1-0-1
+    number: 1-0-7
   #   s_trough2:
   #     number:
   #   s_trough3:
@@ -75,7 +73,7 @@ switches:
 
   # miscellaneous
   s_startButton:
-    number: 1-0-3
+    number: 1-0-6
     tags: start
 
   #switches for sequence shots
@@ -97,14 +95,3 @@ switches:
     number: 1-0-39
   S_eject_hole:
     number: 1-0-40
-
-sequence_shots:
-  right_ramp:
-    switch_sequence: s_right_ramp_entry, s_right_ramp_top
-    sequence_timeout: 3s
-  left_ramp:
-    switch_sequence: s_left_ramp_entry, s_left_ramp_top
-    sequence_timeout: 3s
-  top_loop:
-    switch_sequence: s_top_loop_entry, s_upper_right_loop
-    sequence_timeout: 3s

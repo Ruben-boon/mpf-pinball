@@ -281,6 +281,8 @@ light_player:
 - Complex conditional expressions failing → Use MPF counters instead of complex player variable calculations
 - Placeholder evaluation errors → Avoid complex expressions with multiple player variables in conditions
 - **LEDs not lighting despite events firing** → Use `light_player` instead of `show_player`, add debug events, verify hardware mapping
+- **LED stays on instead of blinking** → Use `show_player` with custom shows for blinking effects, not `light_player` for static colors
+- **Mode priority conflicts with LED control** → Higher priority modes override lower priority modes for device control
 
 ## Testing Protocol
 1. Run `mpf both -X` after each change
@@ -293,11 +295,50 @@ light_player:
 8. **For LED issues**: Add debug events, test with `light_player`, verify hardware mapping
 9. Update .cursorrules with any new patterns discovered
 
+## LED Control and Mode Priority Guide
+**When multiple modes try to control the same LED, mode priority determines which one wins.**
+
+### Mode Priority System:
+- Higher priority numbers = higher priority
+- Priority 300 > Priority 250 > Priority 200 > Priority 100
+- Higher priority modes override lower priority modes for device control
+
+### LED Control Methods:
+1. **`light_player`**: Simple static colors (red, blue, white, off)
+   ```yaml
+   light_player:
+     your_event:
+       led_name: red
+   ```
+
+2. **`show_player`**: Complex animations and blinking effects
+   ```yaml
+   show_player:
+     your_event:
+       led_name:
+         show: your_blink_show
+         loops: 0
+   ```
+
+### Common LED Control Issues:
+- **LED not lighting**: Check mode priority, verify events firing, test with `light_player` first
+- **LED stays on instead of blinking**: Use `show_player` with custom shows, not `light_player`
+- **LED control being overridden**: Increase mode priority or use different LED
+- **Events firing but no LED response**: Check hardware mapping in `lights.yaml`
+
+### LED Control Best Practices:
+- **Start with `light_player`** for simple testing (red, blue, white)
+- **Use `show_player`** for blinking, animations, and complex effects
+- **Check mode priorities** when LEDs don't respond as expected
+- **Test with simple events** before complex game logic
+- **Verify hardware mapping** matches physical LED numbers
+
 ## LED Debugging Checklist
 When LEDs don't work:
 - [ ] Events are firing (check event log for debug events)
 - [ ] LED hardware mapping is correct in `lights.yaml`
-- [ ] Using `light_player` for simple testing
+- [ ] Mode priority is higher than conflicting modes
+- [ ] Using correct control method (`light_player` vs `show_player`)
 - [ ] LED numbers match physical hardware
 - [ ] Mode is loaded in `config.yaml`
 - [ ] No YAML syntax errors

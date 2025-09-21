@@ -1,55 +1,33 @@
 #show_version=6
 
 #on
-- duration: 0.3s
-  lights: 
-    led_thunder_left: 
-      color: white
-    led_the_power: 
-      color: white
-    led_thunder_right: 
-      color: white
-
-#off
-- duration: 0.1s
+- time: 0
   lights:
-    led_thunder_left: 
-      color: off
-    led_the_power: 
-      color: off
-    led_thunder_right: 
-      color: off
-
-#on
-- duration: 0.7s
-  lights: 
-    led_thunder_left: 
-      color: white
-    led_the_power: 
-      color: white
-    led_thunder_right: 
-      color: white
-
-#off
-- duration: 0.1s
+    led_letter_g: white
+- time: 50ms
   lights:
-    led_thunder_left: 
-      color: off
-
-    led_the_power: 
-      color: off
-
-    led_thunder_right: 
-      color: off
-
-
-#on
-- duration: 0.2s
-  lights: 
-    led_thunder_left: 
-      color: white
-    led_the_power: 
-      color: white
-    led_thunder_right: 
-      color: white
-
+    led_letter_r: white
+- time: 100ms
+  lights:
+    led_letter_a: white
+- time: 150ms
+  lights:
+    led_letter_v: white
+- time: 200ms
+  lights:
+    led_letter_e: white
+- time: 250ms
+  lights:
+    led_letter_g: off
+- time: 300ms
+  lights:
+    led_letter_r: off
+- time: 350ms
+  lights:
+    led_letter_a: off
+- time: 400ms
+  lights:
+    led_letter_v: off
+- time: 450ms
+  lights:
+    led_letter_e: off

@@ -1,0 +1,30 @@
+#show_version=6
+
+##! show: led_sling_blink
+
+- time: 0
+  lights:
+    led_the_power: white
+
+- time: 40ms
+  lights:
+    led_thunder_left: white
+
+    led_thunder_right: white
+- time: 80ms
+  lights:
+    led_thunder_left: off
+    led_the_power: off
+    led_thunder_right: off
+- time: 120ms
+  lights:
+    led_the_power: white
+- time: 160ms
+  lights:
+    led_thunder_right: white
+    led_thunder_left: white
+- time: 200ms
+  lights:
+    led_thunder_left: off
+    led_the_power: off
+    led_thunder_right: off

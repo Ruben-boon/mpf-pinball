@@ -1,66 +1,81 @@
 events:
   game_ended: 0
-  game_started: 5
+  game_started: 74
 missing_switches:
-  S_eject_hole: 5
-  s_center_scoop: 1
-  s_eject_lane: 5
-  s_left_outlane: 1
-  s_left_ramp_entry: 5
-  s_left_ramp_top: 5
-  s_left_slingshot: 1
-  s_pop3: 1
-  s_right_ramp_entry: 4
-  s_right_ramp_top: 4
-  s_right_scoop: 2
-  s_right_slingshot: 1
-  s_target_a: 4
-  s_top_loop_entry: 5
-  s_trough1: 1
-  s_upper_left_loop: 5
-  s_upper_right_loop: 5
+  S_eject_hole: 74
+  s_center_scoop: 61
+  s_eject_lane: 74
+  s_it_hole: 69
+  s_left_flipper: 69
+  s_left_ramp_entry: 74
+  s_left_ramp_top: 74
+  s_pop1: 4
+  s_pop2: 1
+  s_pop3: 4
+  s_right_flipper: 69
+  s_right_ramp_entry: 1
+  s_right_ramp_top: 1
+  s_right_scoop: 1
+  s_startButton: 69
+  s_top_loop_entry: 74
+  s_trough1: 70
+  s_upper_left_loop: 74
+  s_upper_right_loop: 74
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  shot_center_scoop: 23
-  shot_left_outlane: 4
-  shot_pop1: 18
-  shot_pop2: 54
-  shot_pop3: 46
-  shot_pop4: 18
-  shot_pop5: 19
-  shot_right_ramp: 1
-  shot_right_scoop: 10
-  shot_target_a: 1
-  shot_target_g: 11
-  shot_target_r: 15
+  shot_bumper_1: 16
+  shot_bumper_2: 22
+  shot_bumper_3: 27
+  shot_bumper_4: 43
+  shot_bumper_5: 21
+  shot_center_scoop: 24
+  shot_left_inlane_1: 1
+  shot_left_inlane_2: 1
+  shot_left_outlane: 5
+  shot_pop1: 55
+  shot_pop2: 76
+  shot_pop3: 81
+  shot_pop4: 57
+  shot_pop5: 168
+  shot_right_inlane: 1
+  shot_right_outlane: 1
+  shot_right_ramp: 7
+  shot_right_scoop: 25
+  shot_target_a: 7
+  shot_target_g: 18
+  shot_target_r: 21
 switches:
   S_eject_hole: 0
-  s_center_scoop: 23
+  s_center_scoop: 24
   s_eject_lane: 0
   s_it_hole: 21
   s_left_flipper: 78
-  s_left_outlane: 4
+  s_left_inlane_1: 1
+  s_left_inlane_2: 1
+  s_left_outlane: 5
   s_left_ramp_entry: 0
   s_left_ramp_top: 0
-  s_left_slingshot: 19
-  s_pop1: 18
-  s_pop2: 54
-  s_pop3: 46
-  s_pop4: 18
-  s_pop5: 19
+  s_left_slingshot: 141
+  s_pop1: 72
+  s_pop2: 160
+  s_pop3: 122
+  s_pop4: 140
+  s_pop5: 210
   s_right_flipper: 156
-  s_right_ramp_entry: 1
-  s_right_ramp_top: 1
-  s_right_scoop: 10
-  s_right_slingshot: 25
+  s_right_inlane: 1
+  s_right_outlane: 1
+  s_right_ramp_entry: 7
+  s_right_ramp_top: 7
+  s_right_scoop: 25
+  s_right_slingshot: 93
   s_startButton: 7
-  s_target_a: 1
-  s_target_g: 11
-  s_target_r: 15
+  s_target_a: 7
+  s_target_g: 18
+  s_target_r: 21
   s_top_loop_entry: 0
   s_trough1: 7
   s_upper_left_loop: 0

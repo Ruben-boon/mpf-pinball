@@ -1,12 +1,10 @@
 #config_version=6
 
 hardware:
-  platform: opp
-  driverboards: gen2
+  platform: smart_virtual
+  driverboards: smart_virtual
 
-opp:
-  ports: com3, com4
-  debug: true
+smart_virtual:
 
 psus:
   default:

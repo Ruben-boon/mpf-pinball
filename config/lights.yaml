@@ -241,8 +241,12 @@ lights:
     number: 0-0-22
     subtype: led
     type: rgb
+  led_gi_smallflip:
+    number: 0-0-23
+    subtype: led
+    type: rgb
 
-# pop bumpers
+# pop bumpers (using shared led_gy instead of individual LEDs)
   # led_pop1:
   #   number: 0-0-13
   #   subtype: led

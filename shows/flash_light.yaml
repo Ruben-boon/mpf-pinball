@@ -1,0 +1,7 @@
+#show_version=6
+- time: 0
+  lights:
+    led_gy: white
+- time: 200ms
+  lights:
+    led_gy: off

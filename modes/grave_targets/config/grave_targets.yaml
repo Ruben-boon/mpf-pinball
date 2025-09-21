@@ -22,11 +22,8 @@ shot_groups:
     shots: shot_target_g, shot_target_r, shot_target_a, shot_right_ramp
 
 event_player:
-  # When the mode starts, reset the drop sequence
   mode_grave_targets_started: reset_targets
-  # When the sequence resets, advance the first target
   reset_targets: advance_target_g
-  # When right scoop is hit, make it solid and trigger mansion light blinking
   shot_right_scoop_lit_hit:
     - grave_targets_complete
 
@@ -115,7 +112,6 @@ shot_profiles:
       - name: solid
         show: "on"
 
-
 variable_player:
   shot_target_g_hit:
     score: 1000
@@ -128,7 +124,7 @@ variable_player:
 
   shot_right_scoop_lit_hit:
     grave_targets_completed: 1
-  
+
   # Bonus score when completing the mode
   grave_targets_complete:
     score: 40000
@@ -136,25 +132,25 @@ variable_player:
 show_player:
   # Show when each blinking target is hit
   shot_target_g_lit_hit:
-    led_grave_target_show:
-      speed: 2
-      loops: 1
+    led_targets:
+      show: led_grave_target_show
+      loops: 0
   shot_target_r_lit_hit:
-    led_grave_target_show:
-      speed: 2
-      loops: 1
+    led_targets:
+      show: led_grave_target_show
+      loops: 0
   shot_target_a_lit_hit:
-    led_grave_target_show:
-      speed: 2
-      loops: 1
+    led_targets:
+      show: led_grave_target_show
+      loops: 0
   right_ramp_hit:
-    led_grave_target_show:
-      speed: 2
-      loops: 1
+    led_targets:
+      show: led_grave_target_show
+      loops: 0
   shot_right_scoop_lit_hit:
-    led_grave_target_show:
-      speed: 2
-      loops: 1
+    led_targets:
+      show: led_grave_target_show
+      loops: 0
 
 sound_player:
   shot_target_g_unlit_hit:

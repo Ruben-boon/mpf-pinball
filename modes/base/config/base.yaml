@@ -3,39 +3,111 @@
 ##! mode: base
 mode:
   start_events: ball_starting
-  stop_events: ball_will_end
+  priority: 250
 
-  priority: 100
+counters:
+  right_ramp_counter:
+    starting_count: 0
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    count_events: right_ramp_hit
+  top_loop_counter:
+    starting_count: 0
+    count_events: top_loop_hit
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+
+sequence_shots:
+  right_ramp:
+    switch_sequence: s_right_ramp_entry, s_right_ramp_top
+    sequence_timeout: 3s
+  left_ramp:
+    switch_sequence: s_left_ramp_entry, s_left_ramp_top
+    sequence_timeout: 3s
+  top_loop:
+    switch_sequence: s_top_loop_entry, s_upper_right_loop
+    sequence_timeout: 3s
 
 shots:
-  # shot_right_outlane:
-  #   switch: s_right_outlane
-  # shot_right_inlane:
-  #   switch: s_right_inlane
-  # shot_left_inlane_1:
-  #   switch: s_left_inlane_1
-  # shot_left_inlane_2:
-  #   switch: s_left_inlane_2
+  shot_right_inlane:
+    switch: s_right_inlane
+    show_tokens:
+      led: led_right_inlane
+  shot_right_outlane:
+    switch: s_right_outlane
+    show_tokens:
+      led: led_right_outlane
+  shot_left_inlane_1:
+    switch: s_left_inlane_1
+    show_tokens:
+      led: led_left_inlane_1
+  shot_left_inlane_2:
+    switch: s_left_inlane_2
+    show_tokens:
+      led: led_left_inlane_2
   shot_left_outlane:
     switch: s_left_outlane
+    show_tokens:
+      led: led_left_outlane
 
-  # # Scoops
-  # shot_right_scoop:
-  #   switch: s_right_scoop
-  # shot_center_scoop:
-  #   switch: s_center_scoop
+variable_player:
+  # switch hits
+  s_pop1_active:
+    score: 200
+  s_pop2_active:
+    score: 200
+  s_pop3_active:
+    score: 200
+  s_pop4_active:
+    score: 200
+  s_pop5_active:
+    score: 200
 
-  # Pop Bumpers (often not defined as shots, but can be for specific modes)
-  shot_pop1:
-    switch: s_pop1
-  shot_pop2:
-    switch: s_pop2
-  shot_pop3:
-    switch: s_pop3
-  shot_pop4:
-    switch: s_pop4
-  shot_pop5:
-    switch: s_pop5
+  s_left_slingshot_active:
+    score: 50
+  s_right_slingshot_active:
+    score: 50
+
+  s_it_hole_active:
+    score: 200
+
+  #shot hits
+  shot_right_ramp_hit:
+    score: 100
+  shot_right_scoop_hit:
+    score: 100
+
+show_player:
+  s_pop1_active:
+    led_gy:
+      show: led_gy_blink
+      loops: 0
+  s_pop2_active:
+    led_gy:
+      show: led_gy_blink
+      loops: 0
+  s_pop3_active:
+    led_gy:
+      show: led_gy_blink
+      loops: 0
+  s_pop4_active:
+    led_gy:
+      show: led_gy_blink
+      loops: 0
+  s_pop5_active:
+    led_gy:
+      show: led_gy_blink
+      loops: 0
+  s_left_slingshot_active:
+    led_gy:
+      show: led_sling_blink
+      loops: 0
+  s_right_slingshot_active:
+    led_gy:
+      show: led_sling_blink
+      loops: 0
 
 slide_player:
   mode_base_started:
@@ -66,6 +138,7 @@ slide_player:
         image: onepiece
         x: center
         y: middle
+
 light_player:
   mode_base_started:
     led_gi_left_ball_guide_1: white
@@ -75,15 +148,22 @@ light_player:
     led_gi_right_ball_guide_2: white
     led_gi_right_slingshot: white
     led_gi_left_slingshot: white
+    led_gi_pops: white
+    led_gi_grtargets: white
+    led_gi_smallflip: white
 
   mode_base_ended:
-    led_gi_left_ball_guide_1: white
-    led_gi_left_ball_guide_2: white
-    led_gi_left_ball_guide_3: white
-    led_gi_right_ball_guide_1: white
-    led_gi_right_ball_guide_2: white
-    led_gi_right_slingshot: white
-    led_gi_left_slingshot: white
+    led_gi_left_ball_guide_1: off
+    led_gi_left_ball_guide_2: off
+    led_gi_left_ball_guide_3: off
+    led_gi_right_ball_guide_1: off
+    led_gi_right_ball_guide_2: off
+    led_gi_right_slingshot: off
+    led_gi_left_slingshot: off
+    led_gi_pops: off
+    led_gi_grtargets: off
+    led_gi_smallflip: off
+
 sound_player:
   #music
   mode_base_started:
@@ -94,7 +174,6 @@ sound_player:
       action: play
 
   playfield_active:
-   
     dragon_roost:
       action: play
     music_prelaunch:
@@ -109,8 +188,18 @@ sound_player:
     slingshot:
       action: play
 
-# playlist_player:
-#   playfield_active:
-#     trackplaylist:
-#       playlist: pl_main_themes
-#       action: play
+  s_pop1_active:
+    coin:
+      action: play
+  s_pop2_active:
+    coin:
+      action: play
+  s_pop3_active:
+    coin:
+      action: play
+  s_pop4_active:
+    coin:
+      action: play
+  s_pop5_active:
+    coin:
+      action: play

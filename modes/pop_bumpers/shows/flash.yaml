@@ -1,0 +1,6 @@
+- time: 0
+  lights:
+    (led): white
+- time: 200ms
+  lights:
+    (led): off
