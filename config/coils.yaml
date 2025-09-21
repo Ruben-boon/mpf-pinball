@@ -37,19 +37,19 @@ coils:
   # pop bumpers
   c_pop1:
     number: 0-0-8
-    default_pulse_ms: 20
+    default_pulse_ms: 17
   c_pop2:
     number: 0-0-0
-    default_pulse_ms: 20
+    default_pulse_ms: 17
   c_pop3:
     number: 0-0-11
-    default_pulse_ms: 20
+    default_pulse_ms: 17
   c_pop4:
     number: 0-0-14
-    default_pulse_ms: 20
+    default_pulse_ms: 17
   c_pop5:
     number: 0-0-12
-    default_pulse_ms: 20
+    default_pulse_ms: 17
 
   # scoops
   c_center_scoop:

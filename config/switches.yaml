@@ -40,7 +40,7 @@ switches:
     number: 1-0-8
     tags: playfield_active
   s_target_a:
-    number: 1-0-13
+    number: 1-0-41
     tags: playfield_active
   s_right_scoop:
     number: 1-0-10
@@ -51,7 +51,7 @@ switches:
 
   # pop bumpers
   s_pop1:
-    number: 0-0-2e
+    number: 0-0-2
   s_pop2:
     number: 0-0-1
   s_pop3:

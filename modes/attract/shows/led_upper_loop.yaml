@@ -10,19 +10,19 @@
     led_it:
       color: off
       fade: 200ms
-    led_upper_ramp_2:
+    led_upper_ramp_star:
       color: off
 - duration: 1s
   lights:
-    led_upper_ramp_1:
-      color: white
+    led_upper_ramp_jackpot:
+      color: red
       fade: 200ms
     led_it:
       color: white
       fade: 200ms
 - duration: 1s
   lights:
-    led_upper_ramp_2:
+    led_upper_ramp_star:
       color: white
       fade: 200ms
     led_it:
@@ -41,7 +41,7 @@
   lights:
     led_loop:
       color: white
-    led_upper_ramp_1:
+    led_upper_ramp_jackpot:
       color: off
       fade: 200ms
 - duration: 0.2s

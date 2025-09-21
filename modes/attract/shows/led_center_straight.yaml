@@ -17,24 +17,24 @@
       fade: 200ms
 - duration: 0.5s
   lights:
-    led_jump_1:
+    led_jump_extraball:
       color: white
       fade: 200ms
 - duration: 0.5s
   lights:
-    led_jump_2:
+    led_jump_multiball:
       color: white
       fade: 200ms
 
 - duration: 0.5s
   lights:
-    led_jump_2:
+    led_jump_multiball:
       color: off
       fade: 200ms
 
 - duration: 0.5s
   lights:
-    led_jump_1:
+    led_jump_extraball:
       color: off
       fade: 200ms
 

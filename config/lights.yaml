@@ -162,99 +162,106 @@ lights:
 
 
 #bottom chain
-  led_advance:
+  led_greed_1:
     number: 0-0-2
     subtype: led
     type: rgb
-  led_gy:
-    number: 0-0-1
-    subtype: led
-    type: rgb
-  led_it:
+  led_greed_2:
     number: 0-0-3
     subtype: led
     type: rgb
-  led_ramp_1:
+  led_greed_3:
     number: 0-0-4
     subtype: led
     type: rgb
-  led_ramp_2:
+  led_greed_4:
     number: 0-0-5
     subtype: led
     type: rgb
-  led_letter_v:
+  led_greed_5:
     number: 0-0-6
     subtype: led
     type: rgb
-  led_greed_1:
+    
+  led_ramp_1:
     number: 0-0-7
     subtype: led
     type: rgb
-  led_greed_2:
+  led_ramp_2:
     number: 0-0-8
     subtype: led
     type: rgb
-  led_greed_3:
+  led_letter_v:
     number: 0-0-9
     subtype: led
     type: rgb
-  led_greed_4:
+  led_it:
     number: 0-0-10
     subtype: led
     type: rgb
-  led_greed_5:
+  led_upper_ramp_jackpot:
     number: 0-0-11
     subtype: led
     type: rgb
-  
-  led_upper_ramp_1:
+  led_letter_a:
     number: 0-0-12
     subtype: led
     type: rgb
-  led_upper_ramp_2:
+  led_jump_multiball:
+    number: 0-0-13
+    subtype: led
+    type: rgb
+  led_jump_extraball:
     number: 0-0-14
     subtype: led
     type: rgb
-  
   led_loop:
     number: 0-0-15
     subtype: led
     type: rgb
-  
-  led_letter_a:
+  led_upper_ramp_star:
+    number: 0-0-16
+    subtype: led
+    type: rgb
+  led_gi_pops:
     number: 0-0-17
     subtype: led
     type: rgb
-
-  led_jump_1:
+  led_gy:
     number: 0-0-18
     subtype: led
     type: rgb
-  led_jump_2:
-    number: 0-0-19
+    # 19 empty
+  led_advance:
+    number: 0-0-20
+    subtype: led
+    type: rgb
+    # 21 emtpy
+  led_gi_grtargets:
+    number: 0-0-22
     subtype: led
     type: rgb
 
 # pop bumpers
-  led_pop1:
-    number: 0-0-13
-    subtype: led
-    type: rgb
-  led_pop2:
-    number: 0-0-16
-    subtype: led
-    type: rgb
-  led_pop3:
-    number: 0-0-20
-    subtype: led
-    type: rgb
-  led_pop4:
-    number: 0-0-21
-    subtype: led
-    type: rgb
-  led_pop5:
-    number: 0-0-22
-    subtype: led
-    type: rgb
+  # led_pop1:
+  #   number: 0-0-13
+  #   subtype: led
+  #   type: rgb
+  # led_pop2:
+  #   number: 0-0-16
+  #   subtype: led
+  #   type: rgb
+  # led_pop3:
+  #   number: 0-0-20
+  #   subtype: led
+  #   type: rgb
+  # led_pop4:
+  #   number: 0-0-21
+  #   subtype: led
+  #   type: rgb
+  # led_pop5:
+  #   number: 0-0-22
+  #   subtype: led
+  #   type: rgb
 
 

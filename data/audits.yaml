@@ -1,70 +1,67 @@
 events:
   game_ended: 0
-  game_started: 2
+  game_started: 5
 missing_switches:
-  S_eject_hole: 2
-  s_center_scoop: 2
-  s_eject_lane: 2
-  s_it_hole: 2
-  s_left_flipper: 2
-  s_left_outlane: 2
-  s_left_ramp_entry: 2
-  s_left_ramp_top: 2
-  s_left_slingshot: 2
-  s_pop1: 2
-  s_pop2: 2
-  s_pop3: 2
-  s_pop4: 2
-  s_pop5: 2
-  s_right_flipper: 2
-  s_right_ramp_entry: 1
-  s_right_ramp_top: 1
-  s_right_scoop: 1
-  s_right_slingshot: 2
-  s_startButton: 2
-  s_target_a: 1
-  s_target_g: 1
-  s_target_r: 1
-  s_top_loop_entry: 2
-  s_trough1: 2
-  s_upper_left_loop: 2
-  s_upper_right_loop: 2
+  S_eject_hole: 5
+  s_center_scoop: 1
+  s_eject_lane: 5
+  s_left_outlane: 1
+  s_left_ramp_entry: 5
+  s_left_ramp_top: 5
+  s_left_slingshot: 1
+  s_pop3: 1
+  s_right_ramp_entry: 4
+  s_right_ramp_top: 4
+  s_right_scoop: 2
+  s_right_slingshot: 1
+  s_target_a: 4
+  s_top_loop_entry: 5
+  s_trough1: 1
+  s_upper_left_loop: 5
+  s_upper_right_loop: 5
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
+  shot_center_scoop: 23
+  shot_left_outlane: 4
+  shot_pop1: 18
+  shot_pop2: 54
+  shot_pop3: 46
+  shot_pop4: 18
+  shot_pop5: 19
   shot_right_ramp: 1
-  shot_right_scoop: 8
+  shot_right_scoop: 10
   shot_target_a: 1
-  shot_target_g: 1
-  shot_target_r: 1
+  shot_target_g: 11
+  shot_target_r: 15
 switches:
   S_eject_hole: 0
-  s_center_scoop: 0
+  s_center_scoop: 23
   s_eject_lane: 0
-  s_it_hole: 0
-  s_left_flipper: 0
-  s_left_outlane: 0
+  s_it_hole: 21
+  s_left_flipper: 78
+  s_left_outlane: 4
   s_left_ramp_entry: 0
   s_left_ramp_top: 0
-  s_left_slingshot: 0
-  s_pop1: 0
-  s_pop2: 0
-  s_pop3: 0
-  s_pop4: 0
-  s_pop5: 0
-  s_right_flipper: 0
+  s_left_slingshot: 19
+  s_pop1: 18
+  s_pop2: 54
+  s_pop3: 46
+  s_pop4: 18
+  s_pop5: 19
+  s_right_flipper: 156
   s_right_ramp_entry: 1
   s_right_ramp_top: 1
-  s_right_scoop: 8
-  s_right_slingshot: 0
-  s_startButton: 0
+  s_right_scoop: 10
+  s_right_slingshot: 25
+  s_startButton: 7
   s_target_a: 1
-  s_target_g: 1
-  s_target_r: 1
+  s_target_g: 11
+  s_target_r: 15
   s_top_loop_entry: 0
-  s_trough1: 0
+  s_trough1: 7
   s_upper_left_loop: 0
   s_upper_right_loop: 0
