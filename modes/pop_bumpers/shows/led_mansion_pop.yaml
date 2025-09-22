@@ -1,0 +1,55 @@
+#show_version=6
+
+- time: 0
+  lights:
+    led_mansion_1: white
+- time: 59ms
+  lights:
+    led_mansion_1: off
+    led_mansion_2: white
+- time: 100ms
+  lights:
+    led_mansion_2: off
+    led_mansion_3: white
+- time: 150ms
+  lights:
+    led_mansion_3: off
+    led_mansion_4: white
+- time: 200ms
+  lights:
+    led_mansion_4: off
+    led_mansion_5: white
+- time: 250ms
+  lights:
+    led_mansion_5: off
+    led_mansion_6: white
+- time: 300ms
+  lights:
+    led_mansion_6: off
+    led_mansion_7: white
+- time: 350ms
+  lights:
+    led_mansion_7: off
+    led_mansion_8: white
+- time: 400ms
+  lights:
+    led_mansion_8: off
+    led_mansion_9: white
+- time: 450ms
+  lights:
+    led_mansion_9: off
+    led_mansion_10: white
+- time: 500ms
+  lights:
+    led_mansion_10: off
+    led_mansion_11: white
+- time: 550ms
+  lights:
+    led_mansion_11: off
+    led_mansion_12: white
+- time: 600ms
+  lights:
+    led_mansion_12: off
+    led_mansion_13: white
+
+

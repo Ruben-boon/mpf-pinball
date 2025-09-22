@@ -10,96 +10,30 @@ counters:
   pop_bumper_counter:
     count_events: s_pop1_active, s_pop2_active, s_pop3_active, s_pop4_active, s_pop5_active
     count_complete_value: 20
-    events_when_complete: pop_bumpers_20_hits_reached
+    events_when_complete: pop_bumpers_20_hits_reached, pop_mode_complete
     enable_events: mode_pop_bumpers_started
     reset_events: ball_starting
 
 event_player:
   # When the mode starts, reset the pop bumper counter
-  mode_pop_bumpers_started: reset_pop_bumpers
+  # mode_pop_bumpers_started: reset_pop_bumpers
   # When 20 hits are reached, complete the mode and trigger reward collection
-  pop_bumpers_20_hits_reached:
-    - pop_bumpers_complete
-    - enable_pop_bumpers_reward
-
-variable_player:
-  s_pop1_active:
-    score: 100
-  s_pop2_active:
-    score: 100
-  s_pop3_active:
-    score: 100
-  s_pop4_active:
-    score: 100
-  s_pop5_active:
-    score: 100
-
-  # When 20 hits are reached, complete the mode and trigger reward collection
-  pop_bumpers_20_hits_reached:
-    pop_bumpers_completed: 1
-
-  # Bonus score when completing the mode
-  # pop_bumpers_complete:
-  #   score: 20000
+  # pop_bumpers_20_hits_reached:
+  #   - pop_bumpers_complete
+  #   - enable_pop_bumpers_reward
 
 show_player:
-  # Light up pop bumpers when mode starts
-  mode_pop_bumpers_started:
-    led_gy:
-      show: "on"
+  pop_bumpers_20_hits_reached:
+    led_mansion:
+      show: led_mansion_pop
+      loops: 0
 
-  # Flash all pop bumpers when mode is completed
-  pop_bumpers_complete:
-    led_gy:
-      show: flash
-      loops: 5
-
-  # Single blink when each pop bumper is hit - using led_gy_blink from base mode
-  s_pop1_active:
-    led_gy:
-      show: led_gy_blink
-      loops: 1
-  s_pop2_active:
-    led_gy:
-      show: led_gy_blink
-      loops: 1
-  s_pop3_active:
-    led_gy:
-      show: led_gy_blink
-      loops: 1
-  s_pop4_active:
-    led_gy:
-      show: led_gy_blink
-      loops: 1
-  s_pop5_active:
-    led_gy:
-      show: led_gy_blink
-      loops: 1
 
 sound_player:
-  # Sound for each pop bumper hit
-  s_pop1_active:
-    blue_target:
-      action: play
-  s_pop2_active:
-    blue_target:
-      action: play
-  s_pop3_active:
-    blue_target:
-      action: play
-  s_pop4_active:
-    blue_target:
-      action: play
-  s_pop5_active:
-    blue_target:
-      action: play
-
-  # Sound when 20 hits are reached
   pop_bumpers_20_hits_reached:
-    grave_complete:
-      action: play
+    coin_complete: play
 
-  # Special sound when mode is completed
-  pop_bumpers_complete:
-    grave_complete:
-      action: play
+variable_player:
+  # switch hits
+  pop_bumpers_20_hits_reached:
+    score: 50000

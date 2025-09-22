@@ -12,7 +12,10 @@ sounds:
   coin :
     file: fx-coin.wav
     track: sfx
-    
+  
+  coin_complete:
+    file: fx-harp-complete.wav
+    track: sfx
 
   blue_target:
     file: fx_bang.wav
