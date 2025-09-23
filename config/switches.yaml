@@ -78,20 +78,33 @@ switches:
 
   #switches for sequence shots
   s_right_ramp_entry:
-    number: 1-0-32
+    number: 1-0-56
   s_right_ramp_top:
-    number: 1-0-33
+    number: 1-0-57
   s_left_ramp_entry:
-    number: 1-0-34
+    number: 1-0-58
   s_left_ramp_top:
-    number: 1-0-35
+    number: 1-0-59
   s_top_loop_entry:
-    number: 1-0-36
+    number: 1-0-60
   s_upper_right_loop:
-    number: 1-0-37
+    number: 1-0-61
   s_upper_left_loop:
-    number: 1-0-38
+    number: 1-0-62
   s_eject_lane:
-    number: 1-0-39
-  S_eject_hole:
-    number: 1-0-40
+    number: 1-0-63
+  s_eject_hole:
+    number: 1-0-90
+  s_test_1:
+    number: 1-0-91
+  s_test_2:
+    number: 1-0-92
+  s_test_3:
+    number: 1-0-93
+  s_test_4:
+    number: 1-0-94
+  s_test_5:
+    number: 1-0-95
+
+
+  
