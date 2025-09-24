@@ -38,7 +38,7 @@ switches:
     number: 1-0-8
     tags: playfield_active
   s_target_a:
-    number: 1-0-41
+    number: 1-0-44
     tags: playfield_active
   s_right_scoop:
     number: 1-0-10
@@ -76,35 +76,132 @@ switches:
     number: 1-0-3
     tags: start
 
+  # s_test_32:
+  #   number: 1-0-32
+  # s_test_33:
+  #   number: 1-0-33
+  # s_test_34:
+  #   number: 1-0-34
+  # s_test_35:
+  #   number: 1-0-35
+  # s_test_36:
+  #   number: 1-0-36
+  # s_test_37:
+  #   number: 1-0-37
+  # s_test_38:
+  #   number: 1-0-38
+  # s_test_39:
+  #   number: 1-0-39
+  # s_test_40:
+  #   number: 1-0-40
+  # s_test_42:
+  #   number: 1-0-42
+  # s_test_43:
+  #   number: 1-0-43
+  # s_test_44:
+  #   number: 1-0-44
+  # s_test_45:
+  #   number: 1-0-45
+  # s_test_46:
+  #   number: 1-0-46
+  # s_test_47:
+  #   number: 1-0-47
+  # s_test_48:
+  #   number: 1-0-48
+  # s_test_49:
+  #   number: 1-0-49
+  # s_test_50:
+  #   number: 1-0-50
+  # s_test_51:
+  #   number: 1-0-51
+  # s_test_52:
+  #   number: 1-0-52
+  # s_test_53:
+  #   number: 1-0-53
+  # s_test_54:
+  #   number: 1-0-54
+  # s_test_55:
+  #   number: 1-0-55
   #switches for sequence shots
   s_right_ramp_entry:
-    number: 1-0-56
-  s_right_ramp_top:
-    number: 1-0-57
+    number: 1-0-41
   s_left_ramp_entry:
-    number: 1-0-58
-  s_left_ramp_top:
-    number: 1-0-59
+    number: 1-0-42
+  s_ramp_top:
+    number: 1-0-43
   s_top_loop_entry:
     number: 1-0-60
-  s_upper_right_loop:
-    number: 1-0-61
+  s_upper_right_loop: 
+    number: 1-0-39
   s_upper_left_loop:
-    number: 1-0-62
+    number: 1-0-38
   s_eject_lane:
-    number: 1-0-63
+    number: 1-0-37
   s_eject_hole:
-    number: 1-0-90
-  s_test_1:
-    number: 1-0-91
-  s_test_2:
-    number: 1-0-92
-  s_test_3:
-    number: 1-0-93
-  s_test_4:
-    number: 1-0-94
-  s_test_5:
-    number: 1-0-95
+    number: 1-0-64
+
+  # s_test_65:
+  #   number: 1-0-65
+  # s_test_66:
+  #   number: 1-0-66
+  # s_test_67:
+  #   number: 1-0-67
+  # s_test_68:
+  #   number: 1-0-68
+  # s_test_69:
+  #   number: 1-0-69
+  # s_test_70:
+  #   number: 1-0-70
+  # s_test_71:
+  #   number: 1-0-71
+  # s_test_72:
+  #   number: 1-0-72
+  # s_test_73:
+  #   number: 1-0-73
+  # s_test_74:
+  #   number: 1-0-74
+  # s_test_75:
+  #   number: 1-0-75
+  # s_test_76:
+  #   number: 1-0-76
+  # s_test_77:
+  #   number: 1-0-77
+  # s_test_78:
+  #   number: 1-0-78
+  # s_test_79:
+  #   number: 1-0-79
+  # s_test_80:
+  #   number: 1-0-80
+  # s_test_81:
+  #   number: 1-0-81
+  # s_test_82:
+  #   number: 1-0-82
+  # s_test_83:
+  #   number: 1-0-83
+  # s_test_84:
+  #   number: 1-0-84
+  # s_test_85:
+  #   number: 1-0-85
+  # s_test_86:
+  #   number: 1-0-86
+  # s_test_87:
+  #   number: 1-0-87
+  # s_test_88:
+  #   number: 1-0-88
+  # s_test_89:
+  #   number: 1-0-89
+  # s_test_90:
+  #   number: 1-0-90
+  # s_test_91:
+  #   number: 1-0-91
+  # s_test_92:
+  #   number: 1-0-92
+  # s_test_93:
+  #   number: 1-0-93
+  # s_test_94:
+  #   number: 1-0-94
+  # s_test_95:
+  #   number: 1-0-95
 
 
   

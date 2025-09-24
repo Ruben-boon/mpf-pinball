@@ -20,11 +20,11 @@ counters:
     reset_on_complete: false
 
 sequence_shots:
-  right_ramp:
-    switch_sequence: s_right_ramp_entry, s_right_ramp_top
+  shot_right_ramp:
+    switch_sequence: s_right_ramp_entry, s_ramp_top
     sequence_timeout: 3s
   left_ramp:
-    switch_sequence: s_left_ramp_entry, s_left_ramp_top
+    switch_sequence: s_left_ramp_entry, s_ramp_top
     sequence_timeout: 3s
   top_loop:
     switch_sequence: s_top_loop_entry, s_upper_right_loop
