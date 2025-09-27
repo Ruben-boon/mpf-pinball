@@ -1,0 +1,23 @@
+#show_version=6
+##! show: mansion_pop_complete_show
+
+# Show for when pop bumpers achievement is completed
+# This will light up led_mansion_1 to indicate pop bumpers mode is completed
+- time: 0
+  lights:
+    led_mansion_1: red
+- time: 1s
+  lights:
+    led_mansion_1: off
+- time: 1.5s
+  lights:
+    led_mansion_1: red
+- time: 2s
+  lights:
+    led_mansion_1: off
+- time: 2.5s
+  lights:
+    led_mansion_1: red
+- time: 3s
+  lights:
+    led_mansion_1: red

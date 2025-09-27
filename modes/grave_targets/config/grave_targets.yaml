@@ -99,18 +99,18 @@ shots:
 
 variable_player:
   shot_target_g_hit:
-    score: 1000
+    score: 500
   shot_target_r_hit:
-    score: 1000
+    score: 500
   shot_target_a_hit:
-    score: 1000
+    score: 500
   shot_right_ramp_hit:
-    score: 1000
+    score: 500
   shot_right_scoop_lit_hit:
     grave_targets_completed: 1
   # Bonus score when completing the mode
   grave_targets_complete:
-    score: 40000
+    score: 2000
 
 show_player:
   # Show when each blinking target is hit
@@ -148,3 +148,4 @@ sound_player:
   shot_right_ramp_lit_hit:
     sword_slice:
       action: play
+

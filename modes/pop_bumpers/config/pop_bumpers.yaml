@@ -31,4 +31,4 @@ event_player:
 variable_player:
   # switch hits
   pop_bumpers_20_hits_reached:
-    score: 50000
+    score: 2000

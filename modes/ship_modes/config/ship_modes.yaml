@@ -1,0 +1,55 @@
+#config_version=6
+
+##! mode: ship_modes
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 1000
+
+
+event_player:
+  pop_mode_complete:
+    - ship_pop_mode_ready
+  grave_targets_complete:
+    - ship_grave_mode_ready
+
+
+achievements:
+  ship_mode_pop:
+    show_tokens:
+      lights: led_mansion_1
+    show_when_started: flash
+    show_when_completed: on
+    complete_events: ship_pop_mode_collected
+    start_events: ship_pop_mode_ready
+    events_when_started: light_center_scoop
+  ship_mode_grave:
+    show_tokens:
+      lights: led_mansion_2
+    show_when_started: flash
+    show_when_completed: on
+    complete_events: ship_grave_mode_collected
+    start_events: ship_grave_mode_ready
+    events_when_started: light_center_scoop
+
+# achievement_groups:
+#   mansion_awards:
+#     achievements:
+#       - ship_mode_grave
+#       - ship_mode_pop
+#     show_tokens:
+#       lights: led_center_scoop
+#     show_when_enabled: flash
+#     enable_events: light_center_scoop
+#     disable_events: unlight_center_scoop
+# show_player:
+#   mansion_mode_completion_celebration:
+#     led_mansion_shine:
+#       show: led_mansion_shine
+#       loops: 0
+
+sound_player:
+  mansion_mode_completion_celebration:
+    coin_complete:
+      action: play
+

@@ -19,7 +19,8 @@ modes:
   - attract
   - grave_targets
   - pop_bumpers
-  - mansion_modes
+  - ship_modes
+  - center_scoop_lit
 
 sound_system:
   tracks:

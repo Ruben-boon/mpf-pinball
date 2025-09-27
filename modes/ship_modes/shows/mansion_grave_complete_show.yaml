@@ -1,0 +1,23 @@
+#show_version=6
+##! show: mansion_grave_complete_show
+
+# Show for when grave targets achievement is completed
+# This will light up led_mansion_2 to indicate grave targets mode is completed
+- time: 0
+  lights:
+    led_mansion_2: green
+- time: 1s
+  lights:
+    led_mansion_2: off
+- time: 1.5s
+  lights:
+    led_mansion_2: green
+- time: 2s
+  lights:
+    led_mansion_2: off
+- time: 2.5s
+  lights:
+    led_mansion_2: green
+- time: 3s
+  lights:
+    led_mansion_2: green

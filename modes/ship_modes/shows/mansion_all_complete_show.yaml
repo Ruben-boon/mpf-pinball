@@ -1,0 +1,37 @@
+#show_version=6
+##! show: mansion_all_complete_show
+
+# Show for when all mansion modes are completed
+# This will light up all completed mansion LEDs in a celebration pattern
+- time: 0
+  lights:
+    led_mansion_1: red
+    led_mansion_2: green
+- time: 0.5s
+  lights:
+    led_mansion_1: off
+    led_mansion_2: off
+- time: 1s
+  lights:
+    led_mansion_1: red
+    led_mansion_2: green
+- time: 1.5s
+  lights:
+    led_mansion_1: off
+    led_mansion_2: off
+- time: 2s
+  lights:
+    led_mansion_1: red
+    led_mansion_2: green
+- time: 2.5s
+  lights:
+    led_mansion_1: off
+    led_mansion_2: off
+- time: 3s
+  lights:
+    led_mansion_1: red
+    led_mansion_2: green
+- time: 3.5s
+  lights:
+    led_mansion_1: red
+    led_mansion_2: green

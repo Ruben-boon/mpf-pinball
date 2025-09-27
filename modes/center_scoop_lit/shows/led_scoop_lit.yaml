@@ -1,0 +1,8 @@
+#show_version=6
+
+##! show: led_gy_blink
+
+- time: 0
+  lights:
+    led_center_scoop: red
+

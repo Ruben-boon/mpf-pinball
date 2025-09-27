@@ -1,0 +1,34 @@
+#config_version=6
+##! mode: chair_lit
+
+mode:
+  priority: 1002
+  start_events: light_center_scoop
+  stop_events: unlight_center_scoop
+
+light_player:
+  mode_center_scoop_lit_started:
+    led_center_scoop: red
+  shot_center_scoop_hit:
+    led_center_scoop: off
+
+# show_player:
+#   mode_center_scoop_lit_started:
+#     led_center_scoop:
+#       show: led_scoop_lit
+#       loops: 0
+
+shots:
+  shot_center_scoop:
+    switch: s_center_scoop
+
+event_player:
+  shot_center_scoop_hit:
+    - ship_pop_mode_collected
+    - ship_grave_mode_collected
+    - ship_mode_complete_bonus
+    - unlight_center_scoop
+
+variable_player:
+  ship_mode_complete_bonus:
+    score: 20000
