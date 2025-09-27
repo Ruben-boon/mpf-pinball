@@ -12,14 +12,14 @@ sequences:
       - shot_target_g_lit_hit
       - shot_target_r_lit_hit
       - shot_target_a_lit_hit
-      - right_ramp_hit
+      - shot_right_ramp_hit
       - shot_right_scoop_lit_hit
     restart_events: reset_targets
     events_when_complete: grave_targets_sequence_complete
 
 shot_groups:
   grave_targets_group:
-    shots: shot_target_g, shot_target_r, shot_target_a, shot_right_ramp
+    shots: shot_target_g, shot_target_r, shot_target_a
 
 event_player:
   mode_grave_targets_started: reset_targets
@@ -50,16 +50,16 @@ shots:
     show_tokens:
       led: led_letter_a
   shot_right_ramp:
-    hit_events: right_ramp_hit
+    switches: s_ramp_top
     profile: target_profile_ramp
-    advance_events: shot_target_a_lit_hit, right_ramp_hit
+    advance_events: shot_target_a_lit_hit, shot_right_ramp_hit
     reset_events: reset_targets
     show_tokens:
       led: led_ramp_1
   shot_right_scoop:
     switches: s_right_scoop
     profile: scoop_profile
-    advance_events: right_ramp_hit, advance_scoop_to_solid
+    advance_events: shot_right_ramp_hit, advance_scoop_to_solid
     reset_events: reset_targets
     show_tokens:
       led: led_letter_e
@@ -119,7 +119,7 @@ variable_player:
     score: 1000
   shot_target_a_hit:
     score: 1000
-  right_ramp_hit:
+  shot_right_ramp_hit:
     score: 1000
 
   shot_right_scoop_lit_hit:
@@ -143,7 +143,7 @@ show_player:
     led_targets:
       show: led_grave_target_show
       loops: 0
-  right_ramp_hit:
+  shot_right_ramp_hit:
     led_targets:
       show: led_grave_target_show
       loops: 0
@@ -162,6 +162,6 @@ sound_player:
   shot_target_a_unlit_hit:
     blue_target:
       action: play
-  right_ramp_hit:
+  shot_right_ramp_hit:
     blue_target:
       action: play

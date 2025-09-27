@@ -33,16 +33,16 @@ sounds:
     file: main_theme_1.wav
     track: music
 
-  main_theme_2:
-    file: main_theme_1_alternate.wav
-    track: music
-
   dragon_roost:
     file: dragon_roost.flac
     track: music
 
   song_of_storms:
     file: song_of_storms.wav
+    track: music
+
+  main_theme_1_alternate:
+    file: main_theme_1_alternate.wav
     track: music
 
   music_theme:
