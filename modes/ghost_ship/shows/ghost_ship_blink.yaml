@@ -1,0 +1,8 @@
+#show_version=6
+
+- duration: 0.2
+  lights:
+    led_advance: white
+- duration: 0.2
+  lights:
+    led_advance: off

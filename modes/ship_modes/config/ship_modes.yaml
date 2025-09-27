@@ -12,6 +12,12 @@ event_player:
     - ship_pop_mode_ready
   grave_targets_complete:
     - ship_grave_mode_ready
+  ramp_alternate_complete:
+    - ship_ramp_alternate_mode_ready
+  ghost_ship_complete:
+    - ship_ghost_ship_mode_ready
+  left_ramp_complete:
+    - ship_left_ramp_mode_ready
 
 
 achievements:
@@ -30,6 +36,30 @@ achievements:
     show_when_completed: on
     complete_events: ship_grave_mode_collected
     start_events: ship_grave_mode_ready
+    events_when_started: light_center_scoop
+  ship_mode_ramp_alternate:
+    show_tokens:
+      lights: led_mansion_3
+    show_when_started: flash
+    show_when_completed: on
+    complete_events: ship_ramp_alternate_mode_collected
+    start_events: ship_ramp_alternate_mode_ready
+    events_when_started: light_center_scoop
+  ship_mode_ghost_ship:
+    show_tokens:
+      lights: led_mansion_4
+    show_when_started: flash
+    show_when_completed: on
+    complete_events: ship_ghost_ship_mode_collected
+    start_events: ship_ghost_ship_mode_ready
+    events_when_started: light_center_scoop
+  ship_mode_left_ramp:
+    show_tokens:
+      lights: led_mansion_5
+    show_when_started: flash
+    show_when_completed: on
+    complete_events: ship_left_ramp_mode_collected
+    start_events: ship_left_ramp_mode_ready
     events_when_started: light_center_scoop
 
 # achievement_groups:

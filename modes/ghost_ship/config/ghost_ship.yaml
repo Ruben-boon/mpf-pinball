@@ -1,0 +1,52 @@
+#config_version=6
+
+##! mode: ghost_ship
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 200
+
+# Counter to track how many times the loop sequence has been hit (2 times total)
+counters:
+  ghost_ship_counter:
+    count_events: shot_left_orbit_hit
+    count_complete_value: 2
+    events_when_complete: ghost_ship_mode_complete
+    enable_events: mode_ghost_ship_started
+    reset_events: ball_starting
+
+event_player:
+  # When 2 sequences are completed, finish the mode
+  ghost_ship_mode_complete:
+    - ghost_ship_complete
+
+variable_player:
+  # Scoring for hits
+  shot_left_orbit_hit:
+    score: 1000
+  # Bonus for completing the mode
+  ghost_ship_complete:
+    score: 3000
+
+show_player:
+  # Start LED blinking when mode starts
+  mode_ghost_ship_started:
+    led_advance:
+      show: ghost_ship_blink
+      loops: -1
+  # Keep LED blinking after each hit until mode is complete
+  shot_left_orbit_hit:
+    led_advance:
+      show: ghost_ship_blink
+      loops: -1
+  # Show solid when mode is completed
+  ghost_ship_mode_complete:
+    led_advance:
+      show: "on"
+      loops: 0
+
+sound_player:
+  # Sound effects for hits
+  shot_left_orbit_hit:
+    sword_slice:
+      action: play
