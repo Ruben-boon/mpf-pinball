@@ -231,7 +231,10 @@ lights:
     number: 0-0-18
     subtype: led
     type: rgb
-    # 19 empty
+  led_center_scoop:
+    number: 0-0-19
+    subtype: led
+    type: rgb
   led_advance:
     number: 0-0-20
     subtype: led

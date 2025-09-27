@@ -6,16 +6,16 @@ mode:
   stop_events: ball_will_end
   priority: 200
 
-sequences:
-  grave_targets_sequence:
-    events:
-      - shot_target_g_lit_hit
-      - shot_target_r_lit_hit
-      - shot_target_a_lit_hit
-      - shot_right_ramp_hit
-      - shot_right_scoop_lit_hit
-    restart_events: reset_targets
-    events_when_complete: grave_targets_sequence_complete
+# sequences:
+#   grave_targets_sequence:
+#     events:
+#       - shot_target_g_lit_hit
+#       - shot_target_r_lit_hit
+#       - shot_target_a_lit_hit
+#       - shot_right_ramp_lit_hit
+#       - shot_right_scoop_lit_hit
+#     restart_events: reset_targets
+#     events_when_complete: grave_targets_sequence_complete
 
 shot_groups:
   grave_targets_group:
@@ -26,91 +26,76 @@ event_player:
   reset_targets: advance_target_g
   shot_right_scoop_lit_hit:
     - grave_targets_complete
+  advance_scoop_to_solid:
+    - debug_advance_scoop_to_solid
+
+shot_profiles:
+  target_profile:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: show_blink
+      - name: down
+        show: "on"
+  # target_profile_ramp:
+  #   advance_on_hit: false
+  #   states:
+  #     - name: off
+  #       show: off
+  #     - name: lit
+  #       show: show_blink
+  #     - name: down
+  #       show: "on"
+  # scoop_profile:
+  #   advance_on_hit: false
+  #   states:
+  #     - name: unlit
+  #       show: off
+  #     - name: lit
+  #       show: show_blink
+  #     - name: solid
+  #       show: "on"
 
 shots:
   shot_target_g:
     switches: s_target_g
-    profile: target_profile_g
+    profile: target_profile
     advance_events: advance_target_g, shot_target_g_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_letter_g
   shot_target_r:
     switches: s_target_r
-    profile: target_profile_r
+    profile: target_profile
     advance_events: shot_target_g_lit_hit, shot_target_r_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_letter_r
   shot_target_a:
     switches: s_target_a
-    profile: target_profile_a
+    profile: target_profile
     advance_events: shot_target_r_lit_hit, shot_target_a_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_letter_a
   shot_right_ramp:
     switches: s_ramp_top
-    profile: target_profile_ramp
-    advance_events: shot_target_a_lit_hit, shot_right_ramp_hit
+    profile: target_profile
+    advance_events: shot_target_a_lit_hit, shot_right_ramp_lit_hit
     reset_events: reset_targets
     show_tokens:
       led: led_ramp_1
   shot_right_scoop:
     switches: s_right_scoop
-    profile: scoop_profile
-    advance_events: shot_right_ramp_hit, advance_scoop_to_solid
+    profile: target_profile
+    advance_events: shot_right_ramp_lit_hit, shot_right_scoop_lit_hit, advance_scoop_to_solid
     reset_events: reset_targets
     show_tokens:
       led: led_letter_e
 
-shot_profiles:
-  target_profile_g:
-    advance_on_hit: false
-    states:
-      - name: off
-        show: off
-      - name: lit
-        show: show_blink
-      - name: down
-        show: "on"
-  target_profile_r:
-    advance_on_hit: false
-    states:
-      - name: off
-        show: off
-      - name: lit
-        show: show_blink
-      - name: down
-        show: "on"
-  target_profile_a:
-    advance_on_hit: false
-    states:
-      - name: off
-        show: off
-      - name: lit
-        show: show_blink
-      - name: down
-        show: "on"
-  target_profile_ramp:
-    advance_on_hit: false
-    states:
-      - name: off
-        show: off
-      - name: lit
-        show: show_blink
-      - name: down
-        show: "on"
-
-  scoop_profile:
-    advance_on_hit: false
-    states:
-      - name: unlit
-        show: off
-      - name: lit
-        show: show_blink
-      - name: solid
-        show: "on"
+# sequence_shots are defined in base mode
 
 variable_player:
   shot_target_g_hit:
@@ -121,10 +106,8 @@ variable_player:
     score: 1000
   shot_right_ramp_hit:
     score: 1000
-
   shot_right_scoop_lit_hit:
     grave_targets_completed: 1
-
   # Bonus score when completing the mode
   grave_targets_complete:
     score: 40000
@@ -143,7 +126,7 @@ show_player:
     led_targets:
       show: led_grave_target_show
       loops: 0
-  shot_right_ramp_hit:
+  shot_right_ramp_lit_hit:
     led_targets:
       show: led_grave_target_show
       loops: 0
@@ -151,17 +134,17 @@ show_player:
     led_targets:
       show: led_grave_target_show
       loops: 0
-
+  
 sound_player:
   shot_target_g_unlit_hit:
-    blue_target:
+    sword_slice:
       action: play
   shot_target_r_unlit_hit:
-    blue_target:
+    sword_slice:
       action: play
   shot_target_a_unlit_hit:
-    blue_target:
+    sword_slice:
       action: play
-  shot_right_ramp_hit:
-    blue_target:
+  shot_right_ramp_lit_hit:
+    sword_slice:
       action: play

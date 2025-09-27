@@ -1,0 +1,18 @@
+#show_version=6
+
+##! show: led_mansion_pop_mansion
+- duration: 0.2
+  lights:
+    led_mansion_1: red
+- duration: 0.2
+  lights:
+    led_mansion_1: blue
+- duration: 0.2
+  lights:
+    led_mansion_1: green
+- duration: 0.2
+  lights:
+    led_mansion_1: white
+- duration: 0.2
+  lights:
+    led_mansion_1: off

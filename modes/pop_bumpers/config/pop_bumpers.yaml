@@ -22,16 +22,11 @@ event_player:
   #   - pop_bumpers_complete
   #   - enable_pop_bumpers_reward
 
-show_player:
-  pop_bumpers_20_hits_reached:
-    led_mansion:
-      show: led_mansion_pop
-      loops: 0
-
-
-sound_player:
-  pop_bumpers_20_hits_reached:
-    coin_complete: play
+# show_player:
+#   pop_bumpers_20_hits_reached:
+#     led_mansion_1:
+#       show: led_mansion_pop
+#       loops: 0
 
 variable_player:
   # switch hits

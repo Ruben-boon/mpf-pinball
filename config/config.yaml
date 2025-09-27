@@ -19,7 +19,7 @@ modes:
   - attract
   - grave_targets
   - pop_bumpers
-  # - mansion_modes
+  - mansion_modes
 
 sound_system:
   tracks:

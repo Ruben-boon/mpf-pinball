@@ -1,6 +1,6 @@
 #show_version=6
 
-##! show: mansion_blink
+##! show: mansion_1_blink
 - duration: 0.5
   lights:
     led_mansion_1: white
