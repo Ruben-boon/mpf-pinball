@@ -33,10 +33,6 @@ lights:
     type: rgb
 
 #lower half
-  # led_ball_saver:
-  #   number: 1-0-
-  #   subtype: led
-  #   type: rgb
   led_left_outlane:
     number: 1-0-32
     subtype: led
@@ -112,6 +108,10 @@ lights:
     number: 1-0-8
     subtype: led
     type: rgb
+  led_mansion_14:
+    number: 1-0-37
+    subtype: led
+    type: rgb
 
 #middle 
   led_letter_g:
@@ -120,6 +120,10 @@ lights:
     type: rgb
   led_letter_r:
     number: 1-0-28
+    subtype: led
+    type: rgb
+  led_letter_d:
+    number: 1-0-18
     subtype: led
     type: rgb
   led_letter_e:
@@ -211,12 +215,28 @@ lights:
     number: 0-0-13
     subtype: led
     type: rgb
+  led_jump_1:
+    number: 0-0-24
+    subtype: led
+    type: rgb
+  led_jump_2:
+    number: 0-0-21
+    subtype: led
+    type: rgb
   led_jump_extraball:
     number: 0-0-14
     subtype: led
     type: rgb
   led_loop:
     number: 0-0-15
+    subtype: led
+    type: rgb
+  led_upper_ramp_1:
+    number: 0-0-25
+    subtype: led
+    type: rgb
+  led_upper_ramp_2:
+    number: 0-0-26
     subtype: led
     type: rgb
   led_upper_ramp_star:
@@ -249,26 +269,5 @@ lights:
     subtype: led
     type: rgb
 
-# pop bumpers (using shared led_gy instead of individual LEDs)
-  # led_pop1:
-  #   number: 0-0-13
-  #   subtype: led
-  #   type: rgb
-  # led_pop2:
-  #   number: 0-0-16
-  #   subtype: led
-  #   type: rgb
-  # led_pop3:
-  #   number: 0-0-20
-  #   subtype: led
-  #   type: rgb
-  # led_pop4:
-  #   number: 0-0-21
-  #   subtype: led
-  #   type: rgb
-  # led_pop5:
-  #   number: 0-0-22
-  #   subtype: led
-  #   type: rgb
 
 

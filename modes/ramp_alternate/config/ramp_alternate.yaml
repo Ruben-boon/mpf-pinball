@@ -3,7 +3,7 @@
 ##! mode: ramp_alternate
 mode:
   start_events: ball_starting
-  stop_events: ball_will_end
+  stop_events: ship_ramp_alternate_mode_complete
   priority: 200
 
 # Counter to track how many times the sequence has been completed (3 times total)
@@ -23,7 +23,7 @@ shot_profiles:
       - name: off
         show: off
       - name: lit
-        show: ramp_blink
+        show: show_blink
       - name: down
         show: "on"
 

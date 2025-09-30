@@ -1,0 +1,7 @@
+#show_version=6
+
+- duration: 0.2s
+  shows:
+    show_mansion_bottom_top:
+      loops: 0
+      speed: 1

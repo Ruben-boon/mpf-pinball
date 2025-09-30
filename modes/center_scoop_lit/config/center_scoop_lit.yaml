@@ -24,6 +24,7 @@ shots:
 
 event_player:
   shot_center_scoop_hit:
+  # only collects when they are enbabled
     - ship_pop_mode_collected
     - ship_grave_mode_collected
     - ship_ramp_alternate_mode_collected

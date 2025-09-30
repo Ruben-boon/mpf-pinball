@@ -23,42 +23,47 @@ event_player:
 achievements:
   ship_mode_pop:
     show_tokens:
-      lights: led_mansion_1
-    show_when_started: flash
+      led: led_mansion_1
+    show_when_started: show_blink
     show_when_completed: on
     complete_events: ship_pop_mode_collected
+    events_when_completed: ship_pop_mode_complete
     start_events: ship_pop_mode_ready
     events_when_started: light_center_scoop
   ship_mode_grave:
     show_tokens:
-      lights: led_mansion_2
-    show_when_started: flash
+      led: led_mansion_2
+    show_when_started: show_blink
     show_when_completed: on
     complete_events: ship_grave_mode_collected
+    events_when_completed: ship_grave_mode_complete
     start_events: ship_grave_mode_ready
     events_when_started: light_center_scoop
   ship_mode_ramp_alternate:
     show_tokens:
-      lights: led_mansion_3
-    show_when_started: flash
+      led: led_mansion_3
+    show_when_started: show_blink
     show_when_completed: on
     complete_events: ship_ramp_alternate_mode_collected
+    events_when_completed: ship_ramp_alternate_mode_complete
     start_events: ship_ramp_alternate_mode_ready
     events_when_started: light_center_scoop
   ship_mode_ghost_ship:
     show_tokens:
-      lights: led_mansion_4
-    show_when_started: flash
+      led: led_mansion_4
+    show_when_started: show_blink
     show_when_completed: on
     complete_events: ship_ghost_ship_mode_collected
+    events_when_completed: ship_ghost_ship_mode_complete
     start_events: ship_ghost_ship_mode_ready
     events_when_started: light_center_scoop
   ship_mode_left_ramp:
     show_tokens:
-      lights: led_mansion_5
-    show_when_started: flash
+      led: led_mansion_5
+    show_when_started: show_blink
     show_when_completed: on
     complete_events: ship_left_ramp_mode_collected
+    events_when_completed: ship_left_ramp_mode_complete
     start_events: ship_left_ramp_mode_ready
     events_when_started: light_center_scoop
 

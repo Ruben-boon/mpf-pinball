@@ -1,8 +1,0 @@
-#show_version=6
-
-- duration: 0.5
-  lights:
-    (led): white
-- duration: 0.5
-  lights:
-    (led): off

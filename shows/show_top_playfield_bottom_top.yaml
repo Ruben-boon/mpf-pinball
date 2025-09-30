@@ -1,0 +1,39 @@
+#show_version=6
+
+#on
+- duration: 0.2s
+  lights:
+    led_upper_ramp_jackpot: white
+- duration: 0.2s
+  lights:
+    led_upper_ramp_star: white
+- duration: 0.2s
+  lights:
+    led_loop: white
+- duration: 0.2s
+  lights:
+    led_letter_a: white
+- duration: 0.2s
+  lights:
+    led_jump_extraball: white
+- duration: 0.2s
+  lights:
+    led_jump_multiball: white
+- duration: 0.2s
+  lights:
+    led_upper_ramp_jackpot: off
+- duration: 0.2s
+  lights:
+    led_upper_ramp_star: off
+- duration: 0.2s
+  lights:
+    led_loop: off
+- duration: 0.2s
+  lights:
+    led_letter_a: off
+- duration: 0.2s
+  lights:
+    led_jump_extraball: off
+- duration: 0.2s
+  lights:
+    led_jump_multiball: off

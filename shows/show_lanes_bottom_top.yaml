@@ -1,0 +1,21 @@
+#show_version=6
+
+#on
+- duration: 0.2s
+  lights:
+    led_left_outlane: white
+    led_right_outlane: white
+- duration: 0.2s
+  lights:
+    led_left_inlane_1: white
+    led_left_inlane_2: white
+    led_right_inlane: white
+- duration: 0.2s
+  lights:
+    led_left_outlane: off
+    led_right_outlane: off
+- duration: 0.2s
+  lights:
+    led_left_inlane_1: off
+    led_left_inlane_2: off
+    led_right_inlane: off
