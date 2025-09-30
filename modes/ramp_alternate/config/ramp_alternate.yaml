@@ -1,0 +1,90 @@
+#config_version=6
+
+##! mode: ramp_alternate
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 200
+
+# Counter to track how many times the sequence has been completed (3 times total)
+counters:
+  ramp_alternate_counter:
+    count_events: ramp_alternate_sequence_complete
+    count_complete_value: 3
+    events_when_complete: ramp_alternate_mode_complete
+    enable_events: mode_ramp_alternate_started
+    reset_events: ball_starting
+
+# Shot profile for the sequential targeting
+shot_profiles:
+  ramp_alternate_profile:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: ramp_blink
+      - name: down
+        show: "on"
+
+# Shots for the sequential targeting (ramp -> jump multiball)
+shots:
+  shot_ramp_alternate_ramp:
+    switches: s_ramp_top
+    profile: ramp_alternate_profile
+    advance_events: advance_ramp_alternate_ramp, shot_ramp_alternate_ramp_lit_hit
+    reset_events: reset_ramp_alternate_sequence
+    show_tokens:
+      led: led_ramp_2
+  shot_ramp_alternate_jump:
+    switches: s_eject_lane
+    profile: ramp_alternate_profile
+    advance_events: shot_ramp_alternate_ramp_lit_hit, shot_ramp_alternate_jump_lit_hit
+    reset_events: reset_ramp_alternate_sequence
+    show_tokens:
+      led: led_jump_multiball
+
+event_player:
+  # When mode starts, reset and start the sequence
+  mode_ramp_alternate_started: reset_ramp_alternate_sequence
+  reset_ramp_alternate_sequence: advance_ramp_alternate_ramp
+  
+  # When jump multiball is hit, complete this sequence and reset for next iteration
+  shot_ramp_alternate_jump_lit_hit:
+    - ramp_alternate_sequence_complete
+    - reset_ramp_alternate_sequence
+  
+  # When 3 sequences are completed, finish the mode
+  ramp_alternate_mode_complete:
+    - ramp_alternate_complete
+
+variable_player:
+  # Scoring for hits
+  shot_ramp_alternate_ramp_lit_hit:
+    score: 1000
+  shot_ramp_alternate_jump_lit_hit:
+    score: 1000
+  # Bonus for completing the mode
+  ramp_alternate_complete:
+    score: 5000
+
+show_player:
+  # Show when ramp is hit
+  shot_ramp_alternate_ramp_lit_hit:
+    led_ramp_2:
+      show: "on"
+      loops: 0
+  # Show when jump multiball is hit
+  shot_ramp_alternate_jump_lit_hit:
+    led_jump_multiball:
+      show: "on"
+      loops: 0
+
+sound_player:
+  # Sound effects for hits
+  shot_ramp_alternate_ramp_lit_hit:
+    sword_slice:
+      action: play
+  shot_ramp_alternate_jump_lit_hit:
+    sword_slice:
+      action: play

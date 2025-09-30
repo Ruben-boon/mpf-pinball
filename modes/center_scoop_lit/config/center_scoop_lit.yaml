@@ -26,6 +26,9 @@ event_player:
   shot_center_scoop_hit:
     - ship_pop_mode_collected
     - ship_grave_mode_collected
+    - ship_ramp_alternate_mode_collected
+    - ship_ghost_ship_mode_collected
+    - ship_left_ramp_mode_collected
     - ship_mode_complete_bonus
     - unlight_center_scoop
 

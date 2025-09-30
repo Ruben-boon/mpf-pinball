@@ -1,74 +1,48 @@
 events:
   game_ended: 0
-  game_started: 160
+  game_started: 3
 missing_switches:
-  S_eject_hole: 86
-  s_center_scoop: 2
-  s_eject_hole: 74
-  s_eject_lane: 70
-  s_it_hole: 2
-  s_left_ramp_entry: 70
-  s_right_scoop: 2
-  s_top_loop_entry: 74
-  s_upper_left_loop: 74
+  s_eject_hole: 3
+  s_right_scoop: 1
+  s_top_loop_entry: 3
+  s_upper_left_loop: 1
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  shot_bumper_1: 16
-  shot_bumper_2: 22
-  shot_bumper_3: 27
-  shot_bumper_4: 43
-  shot_bumper_5: 21
-  shot_center_scoop: 40
-  shot_left_inlane_1: 1
-  shot_left_inlane_2: 1
-  shot_left_outlane: 5
-  shot_pop1: 55
-  shot_pop2: 76
-  shot_pop3: 81
-  shot_pop4: 57
-  shot_pop5: 168
-  shot_right_inlane: 1
-  shot_right_outlane: 1
-  shot_right_ramp: 91
-  shot_right_scoop: 70
-  shot_target_a: 63
-  shot_target_g: 66
-  shot_target_r: 93
+  shot_center_scoop: 9
+  shot_ramp_alternate_jump: 11
+  shot_ramp_alternate_ramp: 31
+  shot_right_ramp: 31
+  shot_right_scoop: 12
+  shot_target_a: 13
+  shot_target_g: 9
+  shot_target_r: 29
 switches:
-  S_eject_hole: 0
-  s_center_scoop: 85
+  s_center_scoop: 39
   s_eject_hole: 0
-  s_eject_lane: 10
-  s_it_hole: 70
-  s_left_flipper: 211
-  s_left_inlane_1: 1
-  s_left_inlane_2: 1
-  s_left_outlane: 5
-  s_left_ramp_entry: 13
-  s_left_ramp_top: 1
-  s_left_slingshot: 242
-  s_pop1: 145
-  s_pop2: 371
-  s_pop3: 257
-  s_pop4: 1239
-  s_pop5: 351
-  s_ramp_top: 83
-  s_right_flipper: 416
-  s_right_inlane: 1
-  s_right_outlane: 1
-  s_right_ramp_entry: 113
-  s_right_ramp_top: 9
-  s_right_scoop: 70
-  s_right_slingshot: 174
-  s_startButton: 14
-  s_target_a: 63
-  s_target_g: 66
-  s_target_r: 93
-  s_top_loop_entry: 3
-  s_trough1: 31
-  s_upper_left_loop: 2
-  s_upper_right_loop: 24
+  s_eject_lane: 11
+  s_it_hole: 32
+  s_left_flipper: 119
+  s_left_ramp_entry: 18
+  s_left_slingshot: 52
+  s_pop1: 62
+  s_pop2: 74
+  s_pop3: 36
+  s_pop4: 46
+  s_pop5: 31
+  s_ramp_top: 31
+  s_right_flipper: 243
+  s_right_ramp_entry: 39
+  s_right_scoop: 12
+  s_right_slingshot: 55
+  s_startButton: 6
+  s_target_a: 13
+  s_target_g: 9
+  s_target_r: 29
+  s_top_loop_entry: 0
+  s_trough1: 13
+  s_upper_left_loop: 4
+  s_upper_right_loop: 30

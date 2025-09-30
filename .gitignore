@@ -1,5 +1,7 @@
 # Ignore the entire logs directory
 logs/
 
+data/audit.yaml
+
 # Ignore all files with the .log extension
 *.log

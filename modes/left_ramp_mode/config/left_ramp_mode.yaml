@@ -1,0 +1,52 @@
+#config_version=6
+
+##! mode: left_ramp_mode
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 200
+
+# Counter to track how many times the ramp sequence has been hit (2 times total)
+counters:
+  left_ramp_counter:
+    count_events: shot_left_ramp_hit
+    count_complete_value: 2
+    events_when_complete: left_ramp_mode_complete
+    enable_events: mode_left_ramp_mode_started
+    reset_events: ball_starting
+
+event_player:
+  # When 2 sequences are completed, finish the mode
+  left_ramp_mode_complete:
+    - left_ramp_complete
+
+variable_player:
+  # Scoring for hits
+  shot_left_ramp_hit:
+    score: 1000
+  # Bonus for completing the mode
+  left_ramp_complete:
+    score: 3000
+
+show_player:
+  # Start LED blinking when mode starts
+  mode_left_ramp_mode_started:
+    led_upper_ramp_star:
+      show: left_ramp_blink
+      loops: -1
+  # Keep LED blinking after each hit until mode is complete
+  shot_left_ramp_hit:
+    led_upper_ramp_star:
+      show: left_ramp_blink
+      loops: -1
+  # Show solid when mode is completed
+  left_ramp_mode_complete:
+    led_upper_ramp_star:
+      show: "on"
+      loops: 0
+
+sound_player:
+  # Sound effects for hits
+  shot_left_ramp_hit:
+    sword_slice:
+      action: play
