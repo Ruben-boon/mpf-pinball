@@ -3,7 +3,7 @@
 ##! mode: left_ramp_mode
 mode:
   start_events: ball_starting
-  stop_events: ball_will_end
+  stop_events: left_ramp_mode_complete
   priority: 200
 
 # Counter to track how many times the ramp sequence has been hit (2 times total)
@@ -29,16 +29,11 @@ variable_player:
     score: 3000
 
 show_player:
-  # Start LED blinking when mode starts
-  mode_left_ramp_mode_started:
-    led_upper_ramp_star:
-      show: left_ramp_blink
-      loops: -1
   # Keep LED blinking after each hit until mode is complete
   shot_left_ramp_hit:
     led_upper_ramp_star:
-      show: left_ramp_blink
-      loops: -1
+      show: show_blink
+      loops: 0
   # Show solid when mode is completed
   left_ramp_mode_complete:
     led_upper_ramp_star:

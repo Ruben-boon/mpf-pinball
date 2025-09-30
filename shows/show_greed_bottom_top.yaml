@@ -1,0 +1,32 @@
+#show_version=6
+
+- duration: 0.2s
+  lights:
+    led_greed_1: white
+- duration: 0.2s
+  lights:
+    led_greed_3: white
+- duration: 0.2s
+  lights:
+    led_greed_2: white
+- duration: 0.2s
+  lights:
+    led_greed_4: white
+- duration: 0.2s
+  lights:
+    led_greed_5: white
+- duration: 0.2s
+  lights:
+    led_greed_1: off
+- duration: 0.2s
+  lights:
+    led_greed_3: off
+- duration: 0.2s
+  lights:
+    led_greed_2: off
+- duration: 0.2s
+  lights:
+    led_greed_4: off
+- duration: 0.2s
+  lights:
+    led_greed_5: off

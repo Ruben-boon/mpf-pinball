@@ -1,0 +1,23 @@
+#show_version=6
+
+#on
+- duration: 0.2s
+  lights:
+    led_thunder_left:
+      color: white
+    led_thunder_right:
+      color: white
+- duration: 0.2s
+  lights:
+    led_the_power:
+      color: white
+- duration: 0.2s
+  lights:
+    led_thunder_left:
+      color: off
+    led_thunder_right:
+      color: off
+- duration: 0.2s
+  lights:
+    led_the_power:
+      color: off

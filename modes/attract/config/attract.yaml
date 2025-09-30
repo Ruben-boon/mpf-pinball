@@ -2,48 +2,48 @@
 
 show_player:
   mode_attract_started:
-    slide_show:
-      speed: 1
-    led_mansion_attract_show_3:
-      speed: 2
+    show_lanes_bottom_top:
+      speed: 3
+    show_mansion_bottom_top:
+      speed: 3
+    show_electric_bottom_top:
+      speed: 3
+    show_center_playfield_bottom_top:
+      speed: 3
+    show_greed_bottom_top:
+      speed: 3
+    show_center_ramp_bottom_top:
+      speed: 3
+    show_top_playfield_bottom_top:
+      speed: 3
 
-    led_lane_left_attract_show_2:
-      speed: 1
-
-    led_lane_right_attract_show_1:
-      speed: 1
-
-    led_letter_attract_show:
-      speed: 4
-
-    led_thunder_show_1:
-      speed: 2
-
-    led_swamp_show_1:
-      speed: 2
-
-    led_greed_pulse:
-      speed: 2
-    
-    led_gy_show:
-      speed: 2
-    
-    led_center_straight:
-      speed: 2
-
-    led_upper_loop:
-      speed: 2
+    # led_lane_left_attract_show_2:
+    #   speed: 1
+    # led_thunder_show_1:
+    #   speed: 2
+    # led_letter_attract_show:
+    #   speed: 4
+    # slide_show:
+    #   speed: 1
+    # led_mansion_attract_show_3:
+    #   speed: 2
+    # led_swamp_show_1:
+    #   speed: 2
+    # led_greed_pulse:
+    #   speed: 2
+    # led_gy_show:
+    #   speed: 2
+    # led_center_straight:
+    #   speed: 2
+    # led_upper_loop:
+    #   speed: 2
 
 sound_player:
   mode_attract_started:
     song_of_storms:
       action: play
       loops: -1
-  
-
-
-
 #   mode_attract_stopped:
-#     music_startuplong: 
+#     music_startuplong:
 #       action: stop
-#       fade_out: 0s 
+#       fade_out: 0s

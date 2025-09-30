@@ -3,19 +3,8 @@
 ##! mode: grave_targets
 mode:
   start_events: ball_starting
-  stop_events: ball_will_end
+  stop_events: ship_grave_mode_complete
   priority: 200
-
-# sequences:
-#   grave_targets_sequence:
-#     events:
-#       - shot_target_g_lit_hit
-#       - shot_target_r_lit_hit
-#       - shot_target_a_lit_hit
-#       - shot_right_ramp_lit_hit
-#       - shot_right_scoop_lit_hit
-#     restart_events: reset_targets
-#     events_when_complete: grave_targets_sequence_complete
 
 shot_groups:
   grave_targets_group:
@@ -39,24 +28,6 @@ shot_profiles:
         show: show_blink
       - name: down
         show: "on"
-  # target_profile_ramp:
-  #   advance_on_hit: false
-  #   states:
-  #     - name: off
-  #       show: off
-  #     - name: lit
-  #       show: show_blink
-  #     - name: down
-  #       show: "on"
-  # scoop_profile:
-  #   advance_on_hit: false
-  #   states:
-  #     - name: unlit
-  #       show: off
-  #     - name: lit
-  #       show: show_blink
-  #     - name: solid
-  #       show: "on"
 
 shots:
   shot_target_g:
@@ -114,25 +85,26 @@ variable_player:
 
 show_player:
   # Show when each blinking target is hit
-  shot_target_g_lit_hit:
-    led_targets:
-      show: led_grave_target_show
-      loops: 0
+  # shot_target_g_lit_hit:
+  #   led_targets:
+  #     show: show_playfield_bottom_top
+  #     loops: 0
+
   shot_target_r_lit_hit:
     led_targets:
-      show: led_grave_target_show
+      show: show_global_top_bottom
       loops: 0
   shot_target_a_lit_hit:
     led_targets:
-      show: led_grave_target_show
+      show: show_global_bottom_top
       loops: 0
   shot_right_ramp_lit_hit:
     led_targets:
-      show: led_grave_target_show
+      show: show_global_top_bottom
       loops: 0
   shot_right_scoop_lit_hit:
     led_targets:
-      show: led_grave_target_show
+      show: show_global_bottom_top
       loops: 0
   
 sound_player:
