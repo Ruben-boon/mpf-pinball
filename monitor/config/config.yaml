@@ -1,0 +1,5 @@
+#config_version=6
+
+# MPF Monitor Configuration
+# This file is required for MPF monitor to start properly
+# No additional configuration needed for basic monitor functionality

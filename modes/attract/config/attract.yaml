@@ -37,7 +37,7 @@ show_player:
       loops: 2
       events_when_completed: start_ripe_target_r
   start_ripe_target_r:
-    ripe_target_r:
+    riple_target_r:
       speed: 40
       loops: 2
       events_when_completed: start_riple_target_e
