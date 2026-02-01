@@ -1,5 +1,6 @@
 # Ignore the entire logs directory
 logs/
+.claude/
 
 data/audit.yaml
 

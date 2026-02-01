@@ -2,7 +2,7 @@
 
 mpf:
   report_crashes: never
-  
+
 config:
   - hardware.yaml
   - switches.yaml

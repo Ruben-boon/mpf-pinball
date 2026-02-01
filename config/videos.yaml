@@ -1,6 +1,8 @@
+#config_version=6
+
 videos:
   af_intro_video:
     file: af_intro.mp4
-    # You can control looping and volume here
-    end_behavior: loop  # Options are 'loop' or 'stop'. Default is stop.
+    height: 32
+    end_behavior: loop
     volume: 0.5    

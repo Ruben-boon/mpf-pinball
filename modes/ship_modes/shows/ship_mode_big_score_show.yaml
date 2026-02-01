@@ -1,0 +1,286 @@
+#show_version=6
+##! show: ship_mode_big_score_show
+# Impressive light show for when big score (20,000 points) is collected in ship_modes
+
+# Initial bright burst - all mansion lights flash gold
+- time: 0
+  lights:
+    led_mansion_1: 'FFD700'
+    led_mansion_2: 'FFD700'
+    led_mansion_3: 'FFD700'
+    led_mansion_4: 'FFD700'
+    led_mansion_5: 'FFD700'
+    led_mansion_6: 'FFD700'
+    led_mansion_7: 'FFD700'
+    led_mansion_8: 'FFD700'
+    led_mansion_9: 'FFD700'
+    led_the_power: 'FFD700'
+    led_center_scoop: 'FFD700'
+
+# Expand outward - wave 1
+- time: '+0.1'
+  lights:
+    led_mansion_1: 'FFED4E'
+    led_mansion_2: 'FFED4E'
+    led_mansion_3: 'FFED4E'
+    led_mansion_4: 'FFED4E'
+    led_mansion_5: 'FFED4E'
+    led_mansion_6: 'FFED4E'
+    led_mansion_7: 'FFED4E'
+    led_mansion_8: 'FFED4E'
+    led_mansion_9: 'FFED4E'
+    led_left_inlane_1: 'FFD700'
+    led_left_inlane_2: 'FFD700'
+    led_right_inlane: 'FFD700'
+    led_swamp_1: 'FFD700'
+    led_swamp_2: 'FFD700'
+    led_swamp_3: 'FFD700'
+    led_swamp_4: 'FFD700'
+    led_swamp_5: 'FFD700'
+
+# Wave 2 - spread to letters and greed
+- time: '+0.1'
+  lights:
+    led_mansion_1: 'FFF8DC'
+    led_mansion_2: 'FFF8DC'
+    led_mansion_3: 'FFF8DC'
+    led_mansion_4: 'FFF8DC'
+    led_mansion_5: 'FFF8DC'
+    led_mansion_6: 'FFF8DC'
+    led_mansion_7: 'FFF8DC'
+    led_mansion_8: 'FFF8DC'
+    led_mansion_9: 'FFF8DC'
+    led_left_inlane_1: 'FFED4E'
+    led_left_inlane_2: 'FFED4E'
+    led_right_inlane: 'FFED4E'
+    led_swamp_1: 'FFED4E'
+    led_swamp_2: 'FFED4E'
+    led_swamp_3: 'FFED4E'
+    led_swamp_4: 'FFED4E'
+    led_swamp_5: 'FFED4E'
+    led_letter_g: 'FFD700'
+    led_letter_r: 'FFD700'
+    led_letter_e: 'FFD700'
+    led_letter_d: 'FFD700'
+    led_greed_1: 'FFD700'
+    led_greed_2: 'FFD700'
+    led_greed_3: 'FFD700'
+    led_greed_4: 'FFD700'
+    led_greed_5: 'FFD700'
+    led_thunder_left: 'FFD700'
+    led_thunder_right: 'FFD700'
+
+# Peak brightness - everything gold
+- time: '+0.15'
+  lights:
+    led_mansion_1: 'FFD700'
+    led_mansion_2: 'FFD700'
+    led_mansion_3: 'FFD700'
+    led_mansion_4: 'FFD700'
+    led_mansion_5: 'FFD700'
+    led_mansion_6: 'FFD700'
+    led_mansion_7: 'FFD700'
+    led_mansion_8: 'FFD700'
+    led_mansion_9: 'FFD700'
+    led_mansion_10: 'FFD700'
+    led_mansion_11: 'FFD700'
+    led_mansion_12: 'FFD700'
+    led_mansion_13: 'FFD700'
+    led_mansion_14: 'FFD700'
+    led_center_scoop: 'FFD700'
+    led_the_power: 'FFD700'
+    led_left_inlane_1: 'FFD700'
+    led_left_inlane_2: 'FFD700'
+    led_right_inlane: 'FFD700'
+    led_swamp_1: 'FFD700'
+    led_swamp_2: 'FFD700'
+    led_swamp_3: 'FFD700'
+    led_swamp_4: 'FFD700'
+    led_swamp_5: 'FFD700'
+    led_letter_g: 'FFD700'
+    led_letter_r: 'FFD700'
+    led_letter_e: 'FFD700'
+    led_letter_d: 'FFD700'
+    led_letter_a: 'FFD700'
+    led_letter_v: 'FFD700'
+    led_greed_1: 'FFD700'
+    led_greed_2: 'FFD700'
+    led_greed_3: 'FFD700'
+    led_greed_4: 'FFD700'
+    led_greed_5: 'FFD700'
+    led_thunder_left: 'FFD700'
+    led_thunder_right: 'FFD700'
+    led_gy: 'FFD700'
+    led_advance: 'FFD700'
+
+# Flash white - maximum impact
+- time: '+0.1'
+  lights:
+    led_mansion_1: 'FFFFFF'
+    led_mansion_2: 'FFFFFF'
+    led_mansion_3: 'FFFFFF'
+    led_mansion_4: 'FFFFFF'
+    led_mansion_5: 'FFFFFF'
+    led_mansion_6: 'FFFFFF'
+    led_mansion_7: 'FFFFFF'
+    led_mansion_8: 'FFFFFF'
+    led_mansion_9: 'FFFFFF'
+    led_mansion_10: 'FFFFFF'
+    led_mansion_11: 'FFFFFF'
+    led_mansion_12: 'FFFFFF'
+    led_mansion_13: 'FFFFFF'
+    led_mansion_14: 'FFFFFF'
+    led_center_scoop: 'FFFFFF'
+    led_the_power: 'FFFFFF'
+    led_left_inlane_1: 'FFFFFF'
+    led_left_inlane_2: 'FFFFFF'
+    led_right_inlane: 'FFFFFF'
+    led_letter_g: 'FFFFFF'
+    led_letter_r: 'FFFFFF'
+    led_letter_e: 'FFFFFF'
+    led_letter_d: 'FFFFFF'
+    led_letter_a: 'FFFFFF'
+    led_letter_v: 'FFFFFF'
+    led_thunder_left: 'FFFFFF'
+    led_thunder_right: 'FFFFFF'
+
+# Back to gold
+- time: '+0.1'
+  lights:
+    led_mansion_1: 'FFD700'
+    led_mansion_2: 'FFD700'
+    led_mansion_3: 'FFD700'
+    led_mansion_4: 'FFD700'
+    led_mansion_5: 'FFD700'
+    led_mansion_6: 'FFD700'
+    led_mansion_7: 'FFD700'
+    led_mansion_8: 'FFD700'
+    led_mansion_9: 'FFD700'
+    led_center_scoop: 'FFD700'
+    led_the_power: 'FFD700'
+    led_thunder_left: 'FFD700'
+    led_thunder_right: 'FFD700'
+    led_left_inlane_1: 'AA8800'
+    led_left_inlane_2: 'AA8800'
+    led_right_inlane: 'AA8800'
+    led_letter_g: 'AA8800'
+    led_letter_r: 'AA8800'
+    led_letter_e: 'AA8800'
+    led_letter_d: 'AA8800'
+
+# Sparkle effect - alternate lights
+- time: '+0.15'
+  lights:
+    led_mansion_1: 'FFED4E'
+    led_mansion_2: 'AA8800'
+    led_mansion_3: 'FFED4E'
+    led_mansion_4: 'AA8800'
+    led_mansion_5: 'FFED4E'
+    led_mansion_6: 'AA8800'
+    led_mansion_7: 'FFED4E'
+    led_mansion_8: 'AA8800'
+    led_mansion_9: 'FFED4E'
+    led_center_scoop: 'FFED4E'
+
+# Reverse sparkle
+- time: '+0.15'
+  lights:
+    led_mansion_1: 'AA8800'
+    led_mansion_2: 'FFED4E'
+    led_mansion_3: 'AA8800'
+    led_mansion_4: 'FFED4E'
+    led_mansion_5: 'AA8800'
+    led_mansion_6: 'FFED4E'
+    led_mansion_7: 'AA8800'
+    led_mansion_8: 'FFED4E'
+    led_mansion_9: 'AA8800'
+    led_the_power: 'FFED4E'
+    led_thunder_left: 'FFED4E'
+    led_thunder_right: 'FFED4E'
+
+# Final burst
+- time: '+0.15'
+  lights:
+    led_mansion_1: 'FFD700'
+    led_mansion_2: 'FFD700'
+    led_mansion_3: 'FFD700'
+    led_mansion_4: 'FFD700'
+    led_mansion_5: 'FFD700'
+    led_mansion_6: 'FFD700'
+    led_mansion_7: 'FFD700'
+    led_mansion_8: 'FFD700'
+    led_mansion_9: 'FFD700'
+    led_center_scoop: 'FFD700'
+    led_the_power: 'FFD700'
+
+# Fade to dim gold
+- time: '+0.2'
+  lights:
+    led_mansion_1: 'AA8800'
+    led_mansion_2: 'AA8800'
+    led_mansion_3: 'AA8800'
+    led_mansion_4: 'AA8800'
+    led_mansion_5: 'AA8800'
+    led_mansion_6: 'AA8800'
+    led_mansion_7: 'AA8800'
+    led_mansion_8: 'AA8800'
+    led_mansion_9: 'AA8800'
+    led_center_scoop: 'AA8800'
+    led_the_power: 'AA8800'
+
+# Final fade out
+- time: '+0.2'
+  lights:
+    led_mansion_1: '554400'
+    led_mansion_2: '554400'
+    led_mansion_3: '554400'
+    led_mansion_4: '554400'
+    led_mansion_5: '554400'
+    led_mansion_6: '554400'
+    led_mansion_7: '554400'
+    led_mansion_8: '554400'
+    led_mansion_9: '554400'
+    led_center_scoop: '554400'
+
+# Off - let mode lighting take over
+- time: '+0.2'
+  lights:
+    led_mansion_1: off
+    led_mansion_2: off
+    led_mansion_3: off
+    led_mansion_4: off
+    led_mansion_5: off
+    led_mansion_6: off
+    led_mansion_7: off
+    led_mansion_8: off
+    led_mansion_9: off
+    led_mansion_10: off
+    led_mansion_11: off
+    led_mansion_12: off
+    led_mansion_13: off
+    led_mansion_14: off
+    led_center_scoop: off
+    led_the_power: off
+    led_left_inlane_1: off
+    led_left_inlane_2: off
+    led_right_inlane: off
+    led_swamp_1: off
+    led_swamp_2: off
+    led_swamp_3: off
+    led_swamp_4: off
+    led_swamp_5: off
+    led_letter_g: off
+    led_letter_r: off
+    led_letter_e: off
+    led_letter_d: off
+    led_letter_a: off
+    led_letter_v: off
+    led_greed_1: off
+    led_greed_2: off
+    led_greed_3: off
+    led_greed_4: off
+    led_greed_5: off
+    led_thunder_left: off
+    led_thunder_right: off
+    led_gy: off
+    led_advance: off

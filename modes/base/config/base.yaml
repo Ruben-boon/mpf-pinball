@@ -123,28 +123,29 @@ slide_player:
         text: (score)
         number_grouping: true
         min_digits: 2
-        font_size: 200
-        font_name: MetalMania-Regular.ttf
+        font_name: pixelmix
+        font_size: 12
+        color: orange
+        y: middle
+        x: center
       - type: text
-        text: PLAYER (number)
-        y: 10
-        x: 10
-        font_size: 50
-        font_name: MetalMania-Regular.ttf
+        text: P(number)
+        y: 1
+        x: 2
+        font_name: pixelmix
+        font_size: 7
+        color: orange
         anchor_x: left
         anchor_y: bottom
       - type: text
-        text: BALL (ball)
-        y: 10
-        x: right-10
+        text: B(ball)
+        y: 1
+        x: 126
         anchor_x: right
         anchor_y: bottom
-        font_size: 50
-        font_name: MetalMania-Regular.ttf
-      - type: image
-        image: onepiece
-        x: center
-        y: middle
+        font_name: pixelmix
+        font_size: 7
+        color: orange
 
 light_player:
   mode_base_started:

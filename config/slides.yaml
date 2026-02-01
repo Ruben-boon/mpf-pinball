@@ -1,32 +1,65 @@
 #config_version=6
 
 slides:
+  window_slide:
+    - type: display
+      effects:
+        - type: color_dmd
+      width: 1280
+      height: 320
   # welcome_slide:
   #   widgets:
-  #     - type: image
-  #       image: af_bg
-  #       x: center   
-  #       y: middle  
+  #     - type: text
+  #       text: WELCOME
+  #       font_size: 10
+  #       color: orange
   attract_image_slide:
      widgets:
-      - type: image
-        image: af_bg
-        x: center   
-        y: middle  
+      - type: text
+        text: PRESS START
+        font_size: 10
+        color: orange
+        y: middle
+        x: center
   attract_video_slide:
      widgets:
-      - type: video
-        video: af_intro_video
+      - type: text
+        text: GAME READY
+        font_size: 10
+        color: orange
+        y: middle
+        x: center
   some_other_slide:
     - type: text
-      text: THIS IS ANOTHER SLIDE
+      text: ANOTHER SLIDE
+      font_size: 8
+      color: orange
+      y: top-8
+      x: center
+      anchor_y: top
     - type: text
-      text: WITH MORE WORDS
+      text: MORE WORDS
+      font_size: 8
+      color: orange
       y: bottom
+      x: center
       anchor_y: bottom
   tilt_warning_1:
     - type: text
       text: WARNING
+      font_size: 12
+      color: red
+      y: middle
+      x: center
   tilt_warning_2:
     - type: text
-      text: WARNING WARNING
+      text: DANGER
+      font_size: 12
+      color: red
+      y: middle
+      x: center
+
+slide_player:
+  init_done:
+    window_slide:
+      target: window

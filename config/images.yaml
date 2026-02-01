@@ -3,17 +3,25 @@
 images:
   fh_bg:
     file: fh_bg.jpg
+    height: 32
   af_bg:
     file: af_bg.jpg
+    height: 32
   af_stairs:
     file: af_stairs.jpg
+    height: 32
   mansionv2:
     file: mansionv2.jpg
-  theatre: 
+    height: 32
+  theatre:
     file: theatre2.jpg
+    height: 32
   gy_v3:
     file: gy_v3.jpg
+    height: 32
   onepiece:
     file: onepiece.jpg
+    height: 32
   pirate_ships:
     file: pirate_ships.jpg
+    height: 32

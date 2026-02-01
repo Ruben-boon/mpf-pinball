@@ -77,11 +77,12 @@ achievements:
 #     show_when_enabled: flash
 #     enable_events: light_center_scoop
 #     disable_events: unlight_center_scoop
-# show_player:
-#   mansion_mode_completion_celebration:
-#     led_mansion_shine:
-#       show: led_mansion_shine
-#       loops: 0
+
+show_player:
+  ship_mode_complete_bonus:
+    ship_mode_big_score_show:
+      loops: 0
+      priority: 1000
 
 sound_player:
   mansion_mode_completion_celebration:
