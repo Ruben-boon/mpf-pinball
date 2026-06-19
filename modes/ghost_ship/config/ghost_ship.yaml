@@ -38,5 +38,8 @@ show_player:
 sound_player:
 
   shot_left_orbit_hit:
-    sword_slice:
+    taf_orbit:
+      action: play
+  ghost_ship_complete:
+    taf_complete_ghost:
       action: play

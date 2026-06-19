@@ -112,16 +112,23 @@ show_player:
       speed: 20
   
 sound_player:
-  shot_target_g_unlit_hit:
-    sword_slice:
+  # play on the same lit_hit events the scoring/shows use
+  shot_target_g_lit_hit:
+    taf_target:
       action: play
-  shot_target_r_unlit_hit:
-    sword_slice:
+  shot_target_r_lit_hit:
+    taf_target:
       action: play
-  shot_target_a_unlit_hit:
-    sword_slice:
+  shot_target_a_lit_hit:
+    taf_target:
       action: play
   shot_right_ramp_lit_hit:
-    sword_slice:
+    taf_target:
+      action: play
+  shot_right_scoop_lit_hit:
+    taf_target:
+      action: play
+  grave_targets_complete:
+    taf_complete_grave:
       action: play
 

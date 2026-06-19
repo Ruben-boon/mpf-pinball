@@ -1,17 +1,21 @@
 events:
   game_ended: 0
-  game_started: 26
+  game_started: 56
 missing_switches:
-  s_eject_hole: 26
-  s_eject_lane: 1
-  s_left_ramp_entry: 1
-  s_ramp_top: 1
-  s_right_ramp_entry: 1
-  s_right_scoop: 1
-  s_target_g: 1
-  s_target_r: 1
-  s_top_loop_entry: 26
-  s_upper_left_loop: 26
+  s_center_scoop: 15
+  s_eject_hole: 56
+  s_it_hole: 30
+  s_left_flipper: 30
+  s_left_outlane: 30
+  s_left_ramp_entry: 11
+  s_left_slingshot: 12
+  s_right_flipper: 30
+  s_right_scoop: 17
+  s_right_slingshot: 12
+  s_startButton: 12
+  s_target_a: 2
+  s_top_loop_entry: 21
+  s_trough1: 12
 player:
   score:
     average: 0
@@ -19,37 +23,37 @@ player:
     total: 0
 shots:
   shot_center_scoop: 16
-  shot_ramp_alternate_jump: 9
-  shot_ramp_alternate_ramp: 67
-  shot_right_ramp: 55
-  shot_right_scoop: 43
-  shot_target_a: 22
-  shot_target_g: 16
-  shot_target_r: 39
+  shot_ramp_alternate_jump: 41
+  shot_ramp_alternate_ramp: 100
+  shot_right_ramp: 88
+  shot_right_scoop: 45
+  shot_target_a: 46
+  shot_target_g: 38
+  shot_target_r: 55
 switches:
-  s_center_scoop: 48
+  s_center_scoop: 63
   s_eject_hole: 0
-  s_eject_lane: 9
+  s_eject_lane: 41
   s_it_hole: 33
   s_left_flipper: 181
   s_left_outlane: 32
-  s_left_ramp_entry: 25
-  s_left_slingshot: 110
-  s_pop1: 110
-  s_pop2: 131
-  s_pop3: 108
-  s_pop4: 88
-  s_pop5: 54
-  s_ramp_top: 67
+  s_left_ramp_entry: 35
+  s_left_slingshot: 148
+  s_pop1: 132
+  s_pop2: 142
+  s_pop3: 120
+  s_pop4: 101
+  s_pop5: 72
+  s_ramp_top: 100
   s_right_flipper: 410
-  s_right_ramp_entry: 85
-  s_right_scoop: 45
-  s_right_slingshot: 113
-  s_startButton: 6
-  s_target_a: 25
-  s_target_g: 16
-  s_target_r: 41
-  s_top_loop_entry: 0
-  s_trough1: 22
-  s_upper_left_loop: 0
-  s_upper_right_loop: 22
+  s_right_ramp_entry: 119
+  s_right_scoop: 47
+  s_right_slingshot: 138
+  s_startButton: 7
+  s_target_a: 49
+  s_target_g: 38
+  s_target_r: 57
+  s_top_loop_entry: 2
+  s_trough1: 23
+  s_upper_left_loop: 15
+  s_upper_right_loop: 41

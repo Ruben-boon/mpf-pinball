@@ -83,8 +83,11 @@ show_player:
 sound_player:
   # Sound effects for hits
   shot_ramp_alternate_ramp_lit_hit:
-    sword_slice:
+    taf_ramp:
       action: play
   shot_ramp_alternate_jump_lit_hit:
-    sword_slice:
+    taf_ramp:
+      action: play
+  ramp_alternate_complete:
+    taf_complete_ramp_alt:
       action: play

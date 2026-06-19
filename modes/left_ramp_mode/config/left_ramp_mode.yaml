@@ -43,5 +43,8 @@ show_player:
 sound_player:
   # Sound effects for hits
   shot_left_ramp_hit:
-    sword_slice:
+    taf_ramp:
+      action: play
+  left_ramp_complete:
+    taf_complete_left_ramp:
       action: play

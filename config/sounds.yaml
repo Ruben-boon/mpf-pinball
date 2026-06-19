@@ -49,11 +49,271 @@ sounds:
     file: music_theme.wav
     track: music
 
-# playlists:
-#   pl_main_themes:
-#     shuffle: true
-#     repeat: false
-#     crossfade_time: 5s
-#     sounds:
-#       - main_theme_2
-#       - dragon_roosts
+  # --- TAF remastered music (sounds/taf_remastered/) ---
+  taf_attract:
+    file: 0x0018-addams_theme.wav
+    track: music
+
+  taf_prelaunch:
+    file: 0x0006-wait_1.wav
+    track: music
+
+  # --- gameplay theme rotation (playlist track) ---
+  taf_theme_1:
+    file: 0x0002-main_theme_1.wav
+    track: music_playlist
+  taf_theme_2:
+    file: 0x0003-main_theme_2.wav
+    track: music_playlist
+  taf_theme_3:
+    file: 0x0004-main_theme_3.wav
+    track: music_playlist
+  taf_theme_4:
+    file: 0x0005-main_theme_4.wav
+    track: music_playlist
+  taf_theme_5:
+    file: 0x000c-main_theme_5.wav
+    track: music_playlist
+  taf_theme_6:
+    file: 0x001a-main_theme_6.wav
+    track: music_playlist
+
+  # --- TAF remastered voice callouts ---
+  taf_welcome_guest:
+    file: 0x7a29-welcome_guest.wav
+    track: voice
+
+  taf_welcome_back:
+    file: 0x7a18-welcome_back.wav
+    track: voice
+
+  # --- TAF remastered sfx ---
+  # pop bumpers — random ha/ho/hu laughs (taf_pop pool)
+  taf_haho_1:
+    file: 0x7a08-ha_1.wav
+    track: sfx
+  taf_haho_2:
+    file: 0x7a09-ha_2.wav
+    track: sfx
+  taf_haho_3:
+    file: 0x7a0a-ho_1.wav
+    track: sfx
+  taf_haho_4:
+    file: 0x7a0b-ho_2.wav
+    track: sfx
+  taf_haho_5:
+    file: 0x7a0c-hu_1.wav
+    track: sfx
+  taf_haho_6:
+    file: 0x7a0d-ha_3.wav
+    track: sfx
+  taf_haho_7:
+    file: 0x7a0e-ho_3.wav
+    track: sfx
+  taf_haho_8:
+    file: 0x7a0f-ha_4.wav
+    track: sfx
+  taf_haho_9:
+    file: 0x7a10-ho_4.wav
+    track: sfx
+  taf_haho_10:
+    file: 0x7a11-ha_5.wav
+    track: sfx
+  taf_haho_11:
+    file: 0x7a19-ha_6.wav
+    track: sfx
+
+  # slingshots: left=taf_rebound_3, right=taf_rebound_4 (defined below)
+
+  # grave targets — ting family (taf_target pool)
+  taf_ting_1:
+    file: 0x0054-ting_1.wav
+    track: sfx
+  taf_ting_2:
+    file: 0x0055-ting_2.wav
+    track: sfx
+  taf_ting_3:
+    file: 0x0056-ting_3.wav
+    track: sfx
+  taf_ting_4:
+    file: 0x0057-ting_4.wav
+    track: sfx
+
+  # ramps — rebound_1/2 (taf_ramp pool)
+  taf_rebound_1:
+    file: 0x00bc-rebound_1.wav
+    track: sfx
+  taf_rebound_2:
+    file: 0x00bd-rebound_2.wav
+    track: sfx
+
+  # slingshots — left=rebound_3, right=rebound_4 (distinct, no pool)
+  taf_rebound_3:
+    file: 0x00c3-rebound_3.wav
+    track: sfx
+  taf_rebound_4:
+    file: 0x00c4-rebound_4.wav
+    track: sfx
+
+  # orbits — whistle family (taf_orbit pool)
+  taf_whistle_1:
+    file: 0x00bb-whistle_1.wav
+    track: sfx
+  taf_whistle_2:
+    file: 0x00be-whistle_2.wav
+    track: sfx
+  taf_whistle_3:
+    file: 0x00bf-whistle_3.wav
+    track: sfx
+
+  # base scoop — combo family (taf_scoop pool)
+  taf_combo_1:
+    file: 0x00c8-combo_1.wav
+    track: sfx
+  taf_combo_2:
+    file: 0x00d0-combo_2.wav
+    track: sfx
+  taf_combo_3:
+    file: 0x00d7-combo_3.wav
+    track: sfx
+
+  # IT hole
+  taf_thing_fx:
+    file: 0x00c0-thing_fx_1.wav
+    track: sfx
+
+  # main ramp entry (s_right_ramp_entry)
+  taf_bear:
+    file: 0x7a06-bear.wav
+    track: sfx
+
+  # ramp sequence completed (shot_left_ramp / shot_right_ramp)
+  taf_ramp_loop:
+    file: 0x7a07-ramp_loop.wav
+    track: sfx
+
+  # eject lane (s_eject_lane) + upper left loop (s_upper_left_loop) — always play
+  taf_space_19:
+    file: 0x00c2-space_19.wav
+    track: sfx
+
+  # upper right loop switch (s_upper_right_loop) — always plays
+  taf_motor_3:
+    file: 0x00a1-motor_3.wav
+    track: sfx
+
+  # center scoop capture — ducks the music until the callout finishes
+  taf_mansion_1:
+    file: 0x00d1-mansion_1.wav
+    track: sfx
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.1sec
+      attenuation: -30db
+      release_point: 0.3sec
+      release: 0.4sec
+
+  # per-mode completion sounds (distinct, no pool — one each)
+  taf_complete_grave:
+    file: 0x00d5-spirit_fx_1.wav
+    track: sfx
+  taf_complete_ramp_alt:
+    file: 0x00d8-matchup.wav
+    track: sfx
+  taf_complete_left_ramp:
+    file: 0x00d6-stairs_1.wav
+    track: sfx
+  taf_complete_ghost:
+    file: 0x00d2-mansion_2.wav
+    track: sfx
+
+  # big ship-mode collect (jackpot)
+  taf_jackpot:
+    file: 0x00c6-jackpot_fx_1.wav
+    track: sfx
+
+sound_pools:
+  # Picks one of the welcome callouts at random each time it's played
+  taf_welcome:
+    track: voice
+    type: random
+    sounds:
+      - taf_welcome_back
+      - taf_welcome_guest
+
+  # pop bumper hit — random ha/ho/hu laugh
+  taf_pop:
+    track: sfx
+    type: random
+    sounds:
+      - taf_haho_1
+      - taf_haho_2
+      - taf_haho_3
+      - taf_haho_4
+      - taf_haho_5
+      - taf_haho_6
+      - taf_haho_7
+      - taf_haho_8
+      - taf_haho_9
+      - taf_haho_10
+      - taf_haho_11
+
+  # grave target hit — random ting (dedicated to targets)
+  taf_target:
+    track: sfx
+    type: random
+    sounds:
+      - taf_ting_1
+      - taf_ting_2
+      - taf_ting_3
+      - taf_ting_4
+
+  # ramp hit — random rebound (dedicated to ramps)
+  taf_ramp:
+    track: sfx
+    type: random
+    sounds:
+      - taf_rebound_1
+      - taf_rebound_2
+
+  # orbit hit — random whistle (dedicated to orbits)
+  taf_orbit:
+    track: sfx
+    type: random
+    sounds:
+      - taf_whistle_1
+      - taf_whistle_2
+      - taf_whistle_3
+
+  # base scoop hit — random combo (dedicated to scoop)
+  taf_scoop:
+    track: sfx
+    type: random
+    sounds:
+      - taf_combo_1
+      - taf_combo_2
+      - taf_combo_3
+
+playlists:
+  # Gameplay theme rotation: plays each theme, then the next, and loops the
+  # whole list forever (repeat: True). 2s crossfade between themes.
+  gameplay_themes:
+    sounds: taf_theme_1, taf_theme_2, taf_theme_3, taf_theme_4, taf_theme_5, taf_theme_6
+    shuffle: False
+    repeat: True
+    crossfade_time: 2s
+
+playlist_player:
+  # Started once per ball via the start_gameplay_music one-shot event (base mode
+  # event_player guards it with the themes_started flag so it won't restart when
+  # the ball re-enters the playfield).
+  # key under the event is the TRACK name (music_playlist); 'playlist:' names the playlist.
+  start_gameplay_music:
+    music_playlist:
+      playlist: gameplay_themes
+      action: play
+  # stop it when the ball ends
+  ball_will_end:
+    music_playlist:
+      action: stop

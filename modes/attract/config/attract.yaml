@@ -95,10 +95,13 @@ show_player:
 
 sound_player:
   mode_attract_started:
-    song_of_storms:
+    taf_attract:
       action: play
       loops: -1
-#   mode_attract_stopped:
-#     music_startuplong:
-#       action: stop
-#       fade_out: 0s
+  # Interrupt the attract music the moment a game begins.
+  # (The welcome callout is played from the base mode instead, so it
+  #  isn't cut off when attract's sound context is torn down here.)
+  mode_attract_will_stop:
+    taf_attract:
+      action: stop
+      fade_out: 0.3s

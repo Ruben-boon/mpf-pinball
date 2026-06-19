@@ -36,3 +36,8 @@ event_player:
 variable_player:
   ship_mode_complete_bonus:
     score: 20000
+
+sound_player:
+  ship_mode_complete_bonus:
+    taf_jackpot:
+      action: play

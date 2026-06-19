@@ -39,6 +39,11 @@ sound_system:
       type: standard
       simultaneous_sounds: 8
       volume: 0.4
+    # looping gameplay theme rotation
+    music_playlist:
+      type: playlist
+      volume: 0.5
+      crossfade_time: 2s
 
 assets:
   sounds:
@@ -50,7 +55,9 @@ assets:
       track: sfx
     voice:
       track: voice
-    
+    taf_remastered:
+      track: sfx
+
 playfields:
   playfield:
     tags: default

@@ -59,6 +59,11 @@ shots:
   #   show_tokens:
   #     led: led_left_outlane
 
+event_player:
+  # Post a one-shot start event on the FIRST playfield_active of each ball.
+  # The flag guard prevents re-firing when the ball returns to the playfield.
+  playfield_active{not current_player.themes_started}: start_gameplay_music
+
 variable_player:
   # switch hits
   s_pop1_active:
@@ -85,6 +90,17 @@ variable_player:
     score: 100
   shot_right_scoop_hit:
     score: 100
+
+  # flag so the theme playlist only starts once per ball
+  mode_base_started:
+    themes_started:
+      int: 0
+      action: set
+  # set after the one-shot start event fires (see event_player below)
+  start_gameplay_music:
+    themes_started:
+      int: 1
+      action: set
 
 show_player:
   s_pop1_active:
@@ -178,36 +194,75 @@ sound_player:
     music_startuplong:
       action: stop
       fade_out: 0s
-    music_prelaunch:
+    taf_prelaunch:
+      action: play
+    # Welcome callout on the voice track, layered over the music.
+    # Owned by base mode so it plays in full and isn't cut off.
+    # taf_welcome is a random pool: alternates welcome_back / welcome_guest.
+    taf_welcome:
       action: play
 
   playfield_active:
-    dragon_roost:
-      action: play
-    music_prelaunch:
+    # gameplay theme rotation is started by playlist_player (config/sounds.yaml)
+    taf_prelaunch:
       action: stop
       fade_out: 1s
   #sfx on hit
   s_left_slingshot_active:
-    slingshot:
+    taf_rebound_3:
       action: play
 
   s_right_slingshot_active:
-    slingshot:
+    taf_rebound_4:
       action: play
 
   s_pop1_active:
-    coin:
+    taf_pop:
       action: play
   s_pop2_active:
-    coin:
+    taf_pop:
       action: play
   s_pop3_active:
-    coin:
+    taf_pop:
       action: play
   s_pop4_active:
-    coin:
+    taf_pop:
       action: play
   s_pop5_active:
-    coin:
+    taf_pop:
+      action: play
+
+  # previously-silent base shots
+  s_it_hole_active:
+    taf_thing_fx:
+      action: play
+  shot_right_scoop_hit:
+    taf_scoop:
+      action: play
+  # center scoop capture
+  s_center_scoop_active:
+    taf_mansion_1:
+      action: play
+  # main ramp entry switch — bear roar
+  s_right_ramp_entry_active:
+    taf_bear:
+      action: play
+  # secondary left ramp entry (s_left_ramp_entry) — intentionally no sound
+  # both completed ramp sequences play the ramp loop
+  shot_left_ramp_hit:
+    taf_ramp_loop:
+      action: play
+  shot_right_ramp_hit:
+    taf_ramp_loop:
+      action: play
+  # eject lane switch — always fires
+  s_eject_lane_active:
+    taf_space_19:
+      action: play
+  # upper loop switches — always fire (distinct sounds)
+  s_upper_right_loop_active:
+    taf_motor_3:
+      action: play
+  s_upper_left_loop_active:
+    taf_space_19:
       action: play
