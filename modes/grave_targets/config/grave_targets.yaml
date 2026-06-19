@@ -1,9 +1,13 @@
 #config_version=6
 
 ##! mode: grave_targets
+# Started from the center scoop (start_mode_grave, posted by center_scoop_lit
+# when the scoop is shot while this window is the pointed/next mode).
+# Objective: spell G-R-A-V-E via the lit-shot chain. Completing it awards the
+# reward; the mansion window was already MARKED when the mode started.
 mode:
-  start_events: ball_starting
-  stop_events: ship_grave_mode_complete
+  start_events: start_mode_grave
+  stop_events: grave_targets_complete, ball_will_end
   priority: 200
 
 shot_groups:
@@ -11,7 +15,12 @@ shot_groups:
     shots: shot_target_g, shot_target_r, shot_target_a
 
 event_player:
-  mode_grave_targets_started: reset_targets
+  # Mode-start callout fires 2s after start (the mansion capture sound, taf_mansion_1,
+  # plays immediately on the scoop hit via base mode).
+  mode_grave_targets_started:
+    reset_targets:
+    grave_mode_start_callout:
+      delay: 2s
   reset_targets: advance_target_g
   shot_right_scoop_lit_hit:
     - grave_targets_complete
@@ -112,23 +121,28 @@ show_player:
       speed: 20
   
 sound_player:
-  # play on the same lit_hit events the scoring/shows use
+  # play on the same lit_hit events the scoring/shows use.
+  # ha/ho/hu laugh pool (taf_pop) per the grave-targets feel.
   shot_target_g_lit_hit:
-    taf_target:
+    taf_pop:
       action: play
   shot_target_r_lit_hit:
-    taf_target:
+    taf_pop:
       action: play
   shot_target_a_lit_hit:
-    taf_target:
+    taf_pop:
       action: play
   shot_right_ramp_lit_hit:
-    taf_target:
+    taf_pop:
       action: play
   shot_right_scoop_lit_hit:
-    taf_target:
+    taf_pop:
       action: play
   grave_targets_complete:
     taf_complete_grave:
+      action: play
+  # mode-start callout (1s after start, layered after the mansion capture sound)
+  grave_mode_start_callout:
+    taf_start_grave:
       action: play
 

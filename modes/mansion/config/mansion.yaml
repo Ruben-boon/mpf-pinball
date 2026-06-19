@@ -1,0 +1,105 @@
+#config_version=6
+
+##! mode: mansion
+# Mansion-mode orchestrator (TAF-style). Was previously 'ship_modes'.
+#
+# Two states per mansion window:
+#   MARKED  (window solid) = the mode was STARTED. Once marked it never comes up
+#                            as "next" again. Marked the instant the mode starts.
+#   DONE    (objective completed) = reward earned. A marked-but-not-done window
+#                                   simply means the player drained before finishing.
+#
+# A "next pointer" (player var next_mode) selects the next UNMARKED window, which
+# blinks. Slingshots rotate the pointer between unmarked windows. The center scoop
+# starts whatever window the pointer is on (see center_scoop_lit mode).
+#
+# Windows:  led_mansion_1 = grave,  led_mansion_2 = left orbit
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 1000
+
+variable_player:
+  # Fresh state every ball — nothing carries over.
+  mode_mansion_started:
+    grave_marked: {int: 0, action: set}
+    orbit_marked: {int: 0, action: set}
+    grave_done: {int: 0, action: set}
+    orbit_done: {int: 0, action: set}
+
+  # Mark a window the instant its mode starts (posted by center_scoop_lit).
+  start_mode_grave:
+    grave_marked: {int: 1, action: set}
+  start_mode_orbit:
+    orbit_marked: {int: 1, action: set}
+
+  # Objective completed → record DONE (reward scoring lives in each objective mode).
+  grave_targets_complete:
+    grave_done: {int: 1, action: set}
+  left_orbit_complete:
+    orbit_done: {int: 1, action: set}
+
+  # store the pointer as a string so guards can read it. The "nothing left"
+  # sentinel is "idle" (NOT "none" — MPF's YAML loader coerces none/null to
+  # null and the variable_player then rejects it).
+  next_is_grave:
+    next_mode: {string: grave, action: set}
+  next_is_orbit:
+    next_mode: {string: orbit, action: set}
+  next_is_none:
+    next_mode: {string: idle, action: set}
+
+event_player:
+  # Recompute the pointer + lights at start and after every mark change.
+  mode_mansion_started: recompute_next_mode
+  start_mode_grave: recompute_next_mode
+  start_mode_orbit: recompute_next_mode
+
+  # --- pointer resolution -------------------------------------------------
+  # First unmarked window in order grave -> orbit; else none.
+  recompute_next_mode{current_player.grave_marked==0}: next_is_grave
+  recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==0}: next_is_orbit
+  recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==1}: next_is_none
+
+  # --- slingshot rotation -------------------------------------------------
+  # Toggle the pointer to the OTHER unmarked window. With one unmarked window
+  # left the target is marked, the guard fails, and the pointer stays put.
+  s_left_slingshot_active: rotate_next_mode
+  s_right_slingshot_active: rotate_next_mode
+  rotate_next_mode{current_player.next_mode=="grave" and current_player.orbit_marked==0}: next_is_orbit
+  rotate_next_mode{current_player.next_mode=="orbit" and current_player.grave_marked==0}: next_is_grave
+
+show_player:
+  # Blink the pointed window (shared key so the solid hold can replace it).
+  next_is_grave:
+    mansion_blink:
+      show_tokens:
+        led: led_mansion_1
+      loops: -1
+      key: mansion_1_show
+  next_is_orbit:
+    mansion_blink:
+      show_tokens:
+        led: led_mansion_2
+      loops: -1
+      key: mansion_2_show
+
+  # When a window is MARKED (mode started): replace its blink with a solid hold.
+  start_mode_grave:
+    led_mansion_solid:
+      show_tokens:
+        led: led_mansion_1
+      loops: -1
+      key: mansion_1_show
+  start_mode_orbit:
+    led_mansion_solid:
+      show_tokens:
+        led: led_mansion_2
+      loops: -1
+      key: mansion_2_show
+
+  # big ship-mode collect celebration
+  ship_mode_complete_bonus:
+    ship_mode_big_score_show:
+      loops: 0
+      priority: 1000

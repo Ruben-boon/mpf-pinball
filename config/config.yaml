@@ -18,11 +18,8 @@ modes:
   - base
   - attract
   - grave_targets
-  - pop_bumpers
-  - ramp_alternate
-  - ghost_ship
-  - left_ramp_mode
-  - ship_modes
+  - left_orbit
+  - mansion
   - center_scoop_lit
 
 sound_system:

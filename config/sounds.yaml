@@ -233,6 +233,21 @@ sounds:
     file: 0x00c6-jackpot_fx_1.wav
     track: sfx
 
+  # center scoop hit while unplugged — "it's not plugged in yet" callout.
+  # Plug the scoop back in via the bear/main ramp (s_right_ramp_entry).
+  taf_not_plugged_in:
+    file: 0x7a4a-its_not_plugged_it_yet.wav
+    track: voice
+
+  # per-mode start callouts — played ~1s after the mansion capture sound when a
+  # mansion mode starts (in addition to taf_mansion_1, which still fires).
+  taf_start_grave:
+    file: 0x7a78-seance.wav
+    track: voice
+  taf_start_orbit:
+    file: 0x7a1d-straight_to_the_vault.wav
+    track: voice
+
 sound_pools:
   # Picks one of the welcome callouts at random each time it's played
   taf_welcome:

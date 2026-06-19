@@ -1,43 +1,62 @@
 #config_version=6
-##! mode: chair_lit
 
+##! mode: center_scoop_lit
+# The center scoop is the heart of the game: shoot it (while PLUGGED IN and lit)
+# to START the next mansion mode. Starting a mode UNPLUGS the scoop (light off);
+# it must be re-plugged by hitting the bear / main ramp (s_right_ramp_entry)
+# before it can start the next mode. Shooting it while unplugged just plays the
+# "it's not plugged in yet" callout.
+#
+# Runs the whole ball so it can always arbitrate scoop hits.
 mode:
   priority: 1002
-  start_events: light_center_scoop
-  stop_events: unlight_center_scoop
-
-light_player:
-  mode_center_scoop_lit_started:
-    led_center_scoop: red
-  shot_center_scoop_hit:
-    led_center_scoop: off
-
-# show_player:
-#   mode_center_scoop_lit_started:
-#     led_center_scoop:
-#       show: led_scoop_lit
-#       loops: 0
+  start_events: ball_starting
+  stop_events: ball_will_end
 
 shots:
   shot_center_scoop:
     switch: s_center_scoop
 
-event_player:
-  shot_center_scoop_hit:
-  # only collects when they are enbabled
-    - ship_pop_mode_collected
-    - ship_grave_mode_collected
-    - ship_ramp_alternate_mode_collected
-    - ship_ghost_ship_mode_collected
-    - ship_left_ramp_mode_collected
-    - ship_mode_complete_bonus
-    - unlight_center_scoop
-
 variable_player:
-  ship_mode_complete_bonus:
-    score: 20000
+  mode_center_scoop_lit_started:
+    scoop_plugged: {int: 1, action: set}
+  # Starting a mode unplugs the scoop.
+  start_mode_grave:
+    scoop_plugged: {int: 0, action: set}
+  start_mode_orbit:
+    scoop_plugged: {int: 0, action: set}
+  # Bear / main ramp re-plugs the scoop (only meaningful while unplugged).
+  scoop_replugged:
+    scoop_plugged: {int: 1, action: set}
+
+event_player:
+  # Bear / main ramp re-plugs the scoop, but only while unplugged.
+  s_right_ramp_entry_active{current_player.scoop_plugged==0}:
+    - scoop_replugged
+
+  # --- scoop hit arbitration ---------------------------------------------
+  # PLUGGED + a mode is pending → start that mode.
+  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="grave"}:
+    - start_mode_grave
+  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="orbit"}:
+    - start_mode_orbit
+  # PLUGGED but nothing left to start → nothing happens (all windows marked).
+  # UNPLUGGED → "not plugged in" callout.
+  shot_center_scoop_hit{current_player.scoop_plugged==0}:
+    - center_scoop_not_plugged
+
+light_player:
+  # Lit (red) whenever plugged; off when unplugged.
+  mode_center_scoop_lit_started:
+    led_center_scoop: red
+  scoop_replugged:
+    led_center_scoop: red
+  start_mode_grave:
+    led_center_scoop: off
+  start_mode_orbit:
+    led_center_scoop: off
 
 sound_player:
-  ship_mode_complete_bonus:
-    taf_jackpot:
+  center_scoop_not_plugged:
+    taf_not_plugged_in:
       action: play

@@ -1,0 +1,7 @@
+#show_version=6
+
+##! show: led_mansion_solid
+# Hold a mansion window solid (used when a window is MARKED done).
+- duration: -1
+  lights:
+    (led): white

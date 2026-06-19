@@ -76,23 +76,25 @@ No sound is shared across element types. Each type has its own pool/sound:
 |---|---|
 | Pop bumpers | `taf_pop` — random ha/ho/hu (`taf_haho_1..11`) |
 | Slingshots | left=`taf_rebound_3`, right=`taf_rebound_4` (distinct, no pool) |
-| Grave targets | `taf_target` — ting 1–4 |
+| Grave targets | `taf_pop` — random ha/ho/hu laughs (was ting) |
 | Base right scoop | `taf_scoop` — combo 1–3 |
-| Ramps (base/ramp_alt/left_ramp) | `taf_ramp` — rebound 1–2 |
-| Orbit (ghost_ship) | `taf_orbit` — whistle 1–3 |
+| Ramps (base) | `taf_ramp` — rebound 1–2 |
+| Orbit (left_orbit) | `taf_orbit` — whistle 1–3 |
 | IT hole | `taf_thing_fx` |
-| Mode completes | distinct per mode: grave=`spirit_fx`, ramp_alt=`matchup`, left_ramp=`stairs`, ghost=`mansion_2` |
-| Ship collect 20k | `taf_jackpot` |
+| Mode completes | grave=`taf_complete_grave` (spirit_fx), orbit=`taf_complete_ghost` (mansion_2) |
+| Mode start callouts (2s after start) | grave=`taf_start_grave` (seance), orbit=`taf_start_orbit` (straight to the vault) |
+| Center scoop not plugged | `taf_not_plugged_in` |
+| Mansion capture | `taf_mansion_1` (on `s_center_scoop_active`, ducks music) |
+| Big collect 20k | `taf_jackpot` |
 
-- The old `sword_slice` references (grave/ramp_alt/left_ramp/ghost_ship) are gone — they were
-  undefined and silent. grave_targets sounds were also on the wrong event (`*_unlit_hit`);
-  moved to the `*_lit_hit` events that the scoring/shows actually use.
+- grave_targets sounds were on the wrong event (`*_unlit_hit`); moved to the `*_lit_hit`
+  events that the scoring/shows actually use, then switched from the ting pool to `taf_pop`.
 
 ### Center scoop (CONFIRMED working)
 - On capture (`s_center_scoop_active`, played from base mode), `taf_mansion_1` (`0x00d1`)
   plays and **ducks the music** until the callout finishes — see ducking below.
 - `bd_center_scoop` holds the ball before ejecting via
-  `eject_events: s_center_scoop_active:2s` in `config/devices.yaml`. NOTE: the 2s hold is a
+  `eject_events: s_center_scoop_active:3s` in `config/devices.yaml`. NOTE: the 3s hold is a
   real-hardware behavior; in smart-virtual (`-X`) the "unexpected ball" path ejects after the
   ~0.5s virtual confirm and ignores the delay, so verify the hold length on the machine.
 
@@ -122,6 +124,6 @@ ducking:
   `mode_base_started`.
 - A `sound_player` entry for `game_started` placed in **attract** mode never fires, because
   attract is already stopped by the time `game_started` arrives.
-- `sword_slice` is referenced by several modes (grave_targets, ramp_alternate, left_ramp,
-  ghost_ship) but is **not defined** in `sounds.yaml` → those hits are currently silent.
-  (To be fixed in the sfx phase.)
+- The mode-start callouts (`taf_start_grave` / `taf_start_orbit`) are delayed 2s via the
+  objective mode's own `event_player` (`mode_<name>_started → *_mode_start_callout {delay: 2s}`),
+  so they layer *after* the immediate `taf_mansion_1` capture callout rather than colliding with it.

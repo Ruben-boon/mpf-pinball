@@ -84,7 +84,8 @@ All LEDs are `subtype: led, type: rgb`. They're grouped in `lights.yaml` by phys
 chain:
 - **GI lower half:** `led_gi_*` (ball guides, slingshots, pops, gr-targets, smallflip)
 - **Lower lanes:** `led_left_outlane/inlane_1/inlane_2`, `led_right_outlane/inlane`
-- **Mansion:** `led_mansion_1 … led_mansion_14` — `1–5` are the ship-modes achievement LEDs
+- **Mansion:** `led_mansion_1 … led_mansion_14` — windows for the `mansion` modes;
+  `1`=grave_targets, `2`=left_orbit (rest unused for now)
 - **Middle:** `led_letter_g/r/d/e/a/v`, `led_thunder_*`, `led_the_power`, `led_swamp_1..5`
 - **Bottom chain:** `led_greed_1..5`, `led_ramp_1/2`, `led_it`, `led_loop`,
   `led_upper_ramp_*`, `led_jump_*`, `led_center_scoop`, `led_advance`, `led_gy`, etc.

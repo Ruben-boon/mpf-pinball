@@ -1,0 +1,57 @@
+#config_version=6
+
+##! mode: left_orbit
+# Started from the center scoop (start_mode_orbit, posted by center_scoop_lit
+# when the scoop is shot while this window is the pointed/next mode).
+# Objective: shoot the left orbit twice. Completing it awards the reward; the
+# mansion window (led_mansion_2) was already MARKED when the mode started.
+mode:
+  start_events: start_mode_orbit
+  stop_events: left_orbit_complete, ball_will_end
+  priority: 200
+
+counters:
+  left_orbit_counter:
+    count_events: shot_left_orbit_hit
+    count_complete_value: 2
+    events_when_complete: left_orbit_complete
+    enable_events: mode_left_orbit_started
+    reset_events: mode_left_orbit_started
+
+event_player:
+  # Mode-start callout fires 2s after start (the mansion capture sound,
+  # taf_mansion_1, plays immediately on the scoop hit via base mode).
+  mode_left_orbit_started:
+    orbit_mode_start_callout:
+      delay: 2s
+
+variable_player:
+  shot_left_orbit_hit:
+    score: 1000
+  left_orbit_complete:
+    score: 3000
+
+show_player:
+  # Blink the advance LED on each orbit hit.
+  shot_left_orbit_hit:
+    show_blink:
+      show_tokens:
+        led: led_advance
+      loops: 0
+
+light_player:
+  # Solid when complete.
+  left_orbit_complete:
+    led_advance: white
+
+sound_player:
+  shot_left_orbit_hit:
+    taf_orbit:
+      action: play
+  left_orbit_complete:
+    taf_complete_ghost:
+      action: play
+  # mode-start callout (1s after start, layered after the mansion capture sound)
+  orbit_mode_start_callout:
+    taf_start_orbit:
+      action: play

@@ -1,7 +1,7 @@
 # Modes
 
 Per-mode reference, grounded in the actual `modes/<name>/config/<name>.yaml` files.
-For the cross-mode progression see `docs/architecture.md` (ship-modes flow).
+For the cross-mode progression see `docs/architecture.md` (mansion / center-scoop flow).
 
 ## base — priority 250, starts `ball_starting`
 
@@ -31,61 +31,47 @@ Pure light-show + music loop; no scoring.
 - **sound_player:** `song_of_storms` looping (`loops: -1`) on `mode_attract_started`.
 - Mode-local shows live in `modes/attract/shows/`.
 
-## pop_bumpers — priority 200, objective mode
+## grave_targets — priority 200, mansion mode (window `led_mansion_1`)
 
-- **counter `pop_bumper_counter`:** counts `s_pop1..5_active`, completes at **20**,
-  posts `pop_bumpers_20_hits_reached, pop_mode_complete`. Resets on `ball_starting`.
-- **stop_event:** `ship_pop_mode_complete` (fires after collection — see architecture).
-- +2000 on completion. Achievement LED: `led_mansion_1`.
-
-## grave_targets — priority 200, objective mode
-
+Started by the **center scoop** (`start_events: start_mode_grave`), not `ball_starting`.
 Sequential G-R-A-V-E lit-shot chain using a shared `target_profile`
 (states off→lit→down, `advance_on_hit: false`, advanced via events).
 
 - **order:** `shot_target_g → shot_target_r → shot_target_a → shot_right_ramp
   (s_ramp_top) → shot_right_scoop`. Each shot's `advance_events` chains off the previous
   shot's `*_lit_hit`.
-- `shot_right_scoop_lit_hit` posts `grave_targets_complete` (+2000). LED: `led_mansion_2`.
-- Per-target ripple shows + `sword_slice` sfx on hits.
-- **stop_event:** `ship_grave_mode_complete`.
+- `shot_right_scoop_lit_hit` posts `grave_targets_complete` (+2000) = DONE/reward.
+- Per-target ripple shows. **SFX:** target hits play the ha/ho laugh pool (`taf_pop`).
+- **Start callout:** `taf_start_grave` (seance) 2s after start (see architecture).
+- **stop_events:** `grave_targets_complete, ball_will_end`.
 
-## ramp_alternate — priority 200, objective mode
+## left_orbit — priority 200, mansion mode (window `led_mansion_2`)
 
-Alternating ramp↔jump sequence using `ramp_alternate_profile`.
-- **shots:** `shot_ramp_alternate_ramp` (`s_ramp_top`, led_ramp_2) and
-  `shot_ramp_alternate_jump` (`s_eject_lane`, led_jump_multiball).
-- `mode_..._started → reset_ramp_alternate_sequence → advance_ramp_alternate_ramp`.
-- Hitting the lit jump posts `ramp_alternate_sequence_complete` + resets; the mode-complete
-  path posts `ramp_alternate_complete` (+5000). LED: `led_mansion_3`.
+Started by the **center scoop** (`start_events: start_mode_orbit`). Replaces the old
+`ghost_ship`.
+- **counter `left_orbit_counter`:** counts `shot_left_orbit_hit`, completes at **2**,
+  posts `left_orbit_complete` (+3000) = DONE/reward.
+- Left-orbit hits +1000, blink `led_advance`; solid (`led_advance: white`) on complete.
+- **Start callout:** `taf_start_orbit` (straight to the vault) 2s after start.
+- **stop_events:** `left_orbit_complete, ball_will_end`.
 
-## ghost_ship — priority 200, objective mode
+## mansion — priority 1000, starts `ball_starting`, stops `ball_will_end`
 
-- **counter `ghost_ship_counter`:** counts `shot_left_orbit_hit`, completes at **2**,
-  posts `ghost_ship_mode_complete → ghost_ship_complete` (+3000). LED: `led_mansion_4`.
-- Left-orbit hits +1000, blink `led_advance`; solid on complete.
-- **stop_event:** `ship_ghost_ship_mode_complete`.
+The orchestrator (was `ship_modes`). Owns the next-mode pointer (`next_mode`), the
+MARKED/DONE window state, mansion-LED blink/solid, and slingshot rotation. Full flow:
+`docs/architecture.md`. Mode-local shows in `modes/mansion/shows/`.
 
-## left_ramp_mode — priority 200, objective mode
+> The "nothing left" pointer sentinel is the string **`idle`**, never `none` (MPF
+> coerces `none`/`null` to null and `variable_player` rejects it).
 
-- **counter `left_ramp_counter`:** counts `shot_left_ramp_hit`, completes at **2**,
-  posts `left_ramp_mode_complete → left_ramp_complete` (+3000). LED: `led_mansion_5`.
-- Ramp hits +1000, blink `led_upper_ramp_star`; solid on complete.
-- **stop_event:** `left_ramp_mode_complete`.
+## center_scoop_lit — priority 1002, starts `ball_starting`, stops `ball_will_end`
 
-## ship_modes — priority 1000, starts `ball_starting`, stops `ball_will_end`
-
-The meta-mode. Listens for the five `*_complete` events, re-posts `*_ready` to start the
-matching **achievement** (mansion LED 1–5). Achievements collect at the center scoop and,
-when completed, post `ship_*_mode_complete` (the objective modes' stop events). Full flow:
-`docs/architecture.md`. Mode-local shows in `modes/ship_modes/shows/`.
-
-## center_scoop_lit — priority 1002
-
-The shared collector. Starts on `light_center_scoop`, stops on `unlight_center_scoop`.
-- Lights `led_center_scoop` red on start; off when `shot_center_scoop_hit`.
-- `shot_center_scoop` watches `s_center_scoop`; on hit posts **all** `ship_*_collected`
-  events + `ship_mode_complete_bonus` (+20000) + `unlight_center_scoop`.
+The scoop arbiter. Runs the whole ball; tracks `scoop_plugged`.
+- Plugged + a window pending → scoop hit posts `start_mode_grave` / `start_mode_orbit`
+  (marks the window, starts the mode, **unplugs** the scoop).
+- Unplugged → scoop hit plays `taf_not_plugged_in`.
+- Bear ramp (`s_right_ramp_entry`) while unplugged → `scoop_replugged` re-lights it.
+- `led_center_scoop` red when plugged, off when unplugged.
 
 ## test_mode — empty
 
