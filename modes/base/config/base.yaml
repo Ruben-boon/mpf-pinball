@@ -149,13 +149,13 @@ slide_player:
 
 light_player:
   mode_base_started:
-    led_gi_left_ball_guide_1: white
-    led_gi_left_ball_guide_2: white
-    led_gi_left_ball_guide_3: white
-    led_gi_right_ball_guide_1: white
-    led_gi_right_ball_guide_2: white
-    led_gi_right_slingshot: white
-    led_gi_left_slingshot: white
+    led_gi_left_ball_guide_1: blue
+    led_gi_left_ball_guide_2: blue
+    led_gi_left_ball_guide_3: blue
+    led_gi_right_ball_guide_1: blue
+    led_gi_right_ball_guide_2: blue
+    led_gi_right_slingshot: blue
+    led_gi_left_slingshot: blue
     led_gi_pops: white
     led_gi_grtargets: white
     led_gi_smallflip: white

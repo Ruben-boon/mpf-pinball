@@ -27,9 +27,9 @@ switches:
   # s_left_inlane_2:
   #   number: 1-0-4
   #   tags: playfield_active
-  # s_left_outlane:
-  #   number: 1-0-9
-  #   tags: playfield_active
+  s_left_outlane:
+    number: 1-0-9
+   
   #targets & scoop
   s_target_g:
     number: 1-0-2

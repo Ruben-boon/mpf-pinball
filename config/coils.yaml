@@ -34,6 +34,14 @@ coils:
     allow_enable: true
     default_hold_power: 0.20
 
+  c_flipper_little_main:
+    number: 1-0-3
+    default_pulse_ms: 10
+  c_flipper_little_hold:
+    number: 1-0-1
+    allow_enable: true
+    default_hold_power: 0.20
+
   # pop bumpers
   c_pop1:
     number: 0-0-8
@@ -56,7 +64,7 @@ coils:
     number: 1-0-5
     default_pulse_ms: 20
   c_right_scoop:
-    number: 1-0-6
+    number: 1-0-2
     default_pulse_ms: 80
   c_it_hole:
     number: 1-0-7

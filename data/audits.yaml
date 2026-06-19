@@ -1,63 +1,55 @@
 events:
   game_ended: 0
-  game_started: 21
+  game_started: 26
 missing_switches:
-  s_center_scoop: 9
-  s_eject_hole: 21
-  s_eject_lane: 9
-  s_it_hole: 14
-  s_left_flipper: 14
-  s_left_ramp_entry: 13
-  s_left_slingshot: 14
-  s_pop1: 14
-  s_pop2: 9
-  s_pop3: 9
-  s_pop4: 9
-  s_pop5: 9
-  s_right_flipper: 14
-  s_right_slingshot: 14
-  s_startButton: 14
-  s_top_loop_entry: 21
-  s_trough1: 14
-  s_upper_left_loop: 21
-  s_upper_right_loop: 14
+  s_eject_hole: 26
+  s_eject_lane: 1
+  s_left_ramp_entry: 1
+  s_ramp_top: 1
+  s_right_ramp_entry: 1
+  s_right_scoop: 1
+  s_target_g: 1
+  s_target_r: 1
+  s_top_loop_entry: 26
+  s_upper_left_loop: 26
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  shot_center_scoop: 12
-  shot_ramp_alternate_jump: 7
-  shot_ramp_alternate_ramp: 35
-  shot_right_ramp: 25
-  shot_right_scoop: 8
-  shot_target_a: 13
-  shot_target_g: 12
-  shot_target_r: 18
+  shot_center_scoop: 16
+  shot_ramp_alternate_jump: 9
+  shot_ramp_alternate_ramp: 67
+  shot_right_ramp: 55
+  shot_right_scoop: 43
+  shot_target_a: 22
+  shot_target_g: 16
+  shot_target_r: 39
 switches:
-  s_center_scoop: 23
+  s_center_scoop: 48
   s_eject_hole: 0
-  s_eject_lane: 7
-  s_it_hole: 12
-  s_left_flipper: 77
-  s_left_ramp_entry: 12
-  s_left_slingshot: 46
-  s_pop1: 45
-  s_pop2: 63
-  s_pop3: 46
-  s_pop4: 49
-  s_pop5: 24
-  s_ramp_top: 35
-  s_right_flipper: 148
-  s_right_ramp_entry: 47
-  s_right_scoop: 10
-  s_right_slingshot: 53
-  s_startButton: 1
-  s_target_a: 15
-  s_target_g: 12
-  s_target_r: 20
+  s_eject_lane: 9
+  s_it_hole: 33
+  s_left_flipper: 181
+  s_left_outlane: 32
+  s_left_ramp_entry: 25
+  s_left_slingshot: 110
+  s_pop1: 110
+  s_pop2: 131
+  s_pop3: 108
+  s_pop4: 88
+  s_pop5: 54
+  s_ramp_top: 67
+  s_right_flipper: 410
+  s_right_ramp_entry: 85
+  s_right_scoop: 45
+  s_right_slingshot: 113
+  s_startButton: 6
+  s_target_a: 25
+  s_target_g: 16
+  s_target_r: 41
   s_top_loop_entry: 0
-  s_trough1: 4
+  s_trough1: 22
   s_upper_left_loop: 0
-  s_upper_right_loop: 13
+  s_upper_right_loop: 22
