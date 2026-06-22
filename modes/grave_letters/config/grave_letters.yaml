@@ -1,0 +1,179 @@
+#config_version=6
+
+##! mode: grave_letters
+# DEFAULT RULE (active by default; suppressed via current_player.default_rules_off,
+# owned by base mode -- the mode never stops, so state is preserved).
+#
+# GRAVE letter tracking (not the old objective mode -- that became five_million).
+# Letters G R A V E, lit-on-hit, NO required order:
+#   G = s_target_g, R = s_target_r, A = s_target_a (standups)
+#   V = center / bear ramp completion (s_ramp_top -- double duty)
+#   E = swamp kickout (spot_grave_e, posted by swamp_kickout -- double duty)
+# Any SIDE/left ramp shot spots the first unlit letter (shot_left_ramp_hit).
+# Each newly-lit letter LIGHTS ITS MAPPED JET (G->jet1 .. E->jet5); graveyard_jets
+# scores a lit jet at 20K, an unlit jet at 10K. All 5 letters = all jets lit.
+# On GRAVE completion everything resets: letters AND jets go unlit.
+#
+# IMPLEMENTATION NOTE: the letters are plain player vars (grave_g..grave_e), NOT
+# MPF shots. The LEDs are rendered directly from those vars via light_player, so
+# suppressing/re-enabling the mode can never lose the lit state or fail to relight
+# (an earlier shot/profile-based version went dark and couldn't relight after a
+# focus mode -- see docs).
+#
+# Completing G-R-A-V-E scores the GRAVE bonus: 2M first time, then 3M ... cap 10M.
+# Bonus level is GAME-scoped (persists across balls); lit letters reset each ball.
+# grave_complete gates the jets' lit state in graveyard_jets.
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+event_player:
+  # Reset lit letters each ball, and light any already-lit LEDs (none on a fresh
+  # ball, but this also restores the LED render after re-enable via redraw_grave).
+  mode_grave_letters_started:
+    reset_grave_letters:
+  # reset_grave_letters forces the LEDs off directly in light_player (no redraw, to
+  # avoid the var-read race -- see note there).
+  # Re-render the LEDs from the preserved vars when the rules come back.
+  enable_default_modes:
+    redraw_grave:
+
+  # --- letter hits (guarded: rules active AND letter not already lit) ----------
+  # G / R / A standups.
+  s_target_g_active{not current_player.default_rules_off and not current_player.grave_g}:
+    - light_grave_g
+  s_target_r_active{not current_player.default_rules_off and not current_player.grave_r}:
+    - light_grave_r
+  s_target_a_active{not current_player.default_rules_off and not current_player.grave_a}:
+    - light_grave_a
+  # V = bear/center ramp completion (s_ramp_top fires on any completed ramp; this
+  # is intentional double-duty per design).
+  shot_right_ramp_hit{not current_player.default_rules_off and not current_player.grave_v}:
+    - light_grave_v
+  # E = swamp kickout (spot_grave_e posted by swamp_kickout, already guarded there).
+  spot_grave_e{not current_player.grave_e}:
+    - light_grave_e
+
+  # --- side/left ramp spots the FIRST unlit letter (order g,r,a,v,e) -----------
+  shot_left_ramp_hit{not current_player.default_rules_off and not current_player.grave_g}:
+    - light_grave_g
+  shot_left_ramp_hit{not current_player.default_rules_off and current_player.grave_g and not current_player.grave_r}:
+    - light_grave_r
+  shot_left_ramp_hit{not current_player.default_rules_off and current_player.grave_g and current_player.grave_r and not current_player.grave_a}:
+    - light_grave_a
+  shot_left_ramp_hit{not current_player.default_rules_off and current_player.grave_g and current_player.grave_r and current_player.grave_a and not current_player.grave_v}:
+    - light_grave_v
+  shot_left_ramp_hit{not current_player.default_rules_off and current_player.grave_g and current_player.grave_r and current_player.grave_a and current_player.grave_v and not current_player.grave_e}:
+    - light_grave_e
+
+  # Each newly-lit letter LIGHTS ITS JET (1 letter = 1 jet) and re-renders LEDs.
+  # Mapping: G->jet1, R->jet2, A->jet3, V->jet4, E->jet5. The jet lit vars are
+  # consumed by graveyard_jets (lit jet = 20K, unlit = 10K). Reset unlights all.
+  light_grave_g:
+    - redraw_grave
+  light_grave_r:
+    - redraw_grave
+  light_grave_a:
+    - redraw_grave
+  light_grave_v:
+    - redraw_grave
+  light_grave_e:
+    - redraw_grave
+
+  # Completion check after any letter lights. IMPORTANT: each check OMITS the letter
+  # being lit by this very event -- variable_player writes that letter's var on the
+  # SAME event, so it isn't set yet when this guard evaluates (race). The light_grave_X
+  # event firing already means letter X just lit, so we only require the OTHER four.
+  light_grave_g{current_player.grave_r and current_player.grave_a and current_player.grave_v and current_player.grave_e}: grave_group_complete
+  light_grave_r{current_player.grave_g and current_player.grave_a and current_player.grave_v and current_player.grave_e}: grave_group_complete
+  light_grave_a{current_player.grave_g and current_player.grave_r and current_player.grave_v and current_player.grave_e}: grave_group_complete
+  light_grave_v{current_player.grave_g and current_player.grave_r and current_player.grave_a and current_player.grave_e}: grave_group_complete
+  light_grave_e{current_player.grave_g and current_player.grave_r and current_player.grave_a and current_player.grave_v}: grave_group_complete
+
+  # GRAVE complete -> award bonus, then reset the letters for another lap.
+  grave_group_complete:
+    - award_grave_bonus
+    - reset_grave_letters
+
+variable_player:
+  # Reset clears the letters AND unlights all five jets.
+  reset_grave_letters:
+    grave_g: {int: 0, action: set}
+    grave_r: {int: 0, action: set}
+    grave_a: {int: 0, action: set}
+    grave_v: {int: 0, action: set}
+    grave_e: {int: 0, action: set}
+    grave_complete: {int: 0, action: set}
+    jet_1_lit: {int: 0, action: set}
+    jet_2_lit: {int: 0, action: set}
+    jet_3_lit: {int: 0, action: set}
+    jet_4_lit: {int: 0, action: set}
+    jet_5_lit: {int: 0, action: set}
+  # Each letter sets its own var AND lights its mapped jet.
+  light_grave_g:
+    grave_g: {int: 1, action: set}
+    jet_1_lit: {int: 1, action: set}
+  light_grave_r:
+    grave_r: {int: 1, action: set}
+    jet_2_lit: {int: 1, action: set}
+  light_grave_a:
+    grave_a: {int: 1, action: set}
+    jet_3_lit: {int: 1, action: set}
+  light_grave_v:
+    grave_v: {int: 1, action: set}
+    jet_4_lit: {int: 1, action: set}
+  light_grave_e:
+    grave_e: {int: 1, action: set}
+    jet_5_lit: {int: 1, action: set}
+  grave_group_complete:
+    grave_complete: {int: 1, action: set}
+
+  # GRAVE bonus level is GAME-scoped. Start at 1M so the first completion (after
+  # the +1M below) awards 2M; cap the award at 10M.
+  player_added:
+    grave_bonus_level: {int: 1000000, action: set}
+  award_grave_bonus{current_player.grave_bonus_level < 10000000}:
+    grave_bonus_level: {int: 1000000, action: add}
+  award_grave_bonus:
+    score: (current_player.grave_bonus_level)
+
+light_player:
+  # On reset, force all letter LEDs OFF directly. This avoids a race: redraw_grave
+  # reads the grave_* vars, but on reset the var-clear and the redraw fire off the
+  # same event, so redraw could read the still-lit old values. The unconditional
+  # off here is authoritative.
+  reset_grave_letters:
+    led_letter_g: "off"
+    led_letter_r: "off"
+    led_letter_a: "off"
+    led_letter_v: "off"
+    led_letter_e: "off"
+
+  # LEDs rendered purely from the lit-state vars. redraw_grave is posted whenever a
+  # letter changes and on reset/re-enable, so the physical LEDs always match state.
+  redraw_grave{current_player.grave_g}:
+    led_letter_g: white
+  redraw_grave{not current_player.grave_g}:
+    led_letter_g: "off"
+  redraw_grave{current_player.grave_r}:
+    led_letter_r: white
+  redraw_grave{not current_player.grave_r}:
+    led_letter_r: "off"
+  redraw_grave{current_player.grave_a}:
+    led_letter_a: white
+  redraw_grave{not current_player.grave_a}:
+    led_letter_a: "off"
+  redraw_grave{current_player.grave_v}:
+    led_letter_v: white
+  redraw_grave{not current_player.grave_v}:
+    led_letter_v: "off"
+  redraw_grave{current_player.grave_e}:
+    led_letter_e: white
+  redraw_grave{not current_player.grave_e}:
+    led_letter_e: "off"
+
+sound_player:
+  grave_group_complete:
+    taf_complete_grave:
+      action: play

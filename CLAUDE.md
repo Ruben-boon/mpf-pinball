@@ -40,6 +40,7 @@ suggesting they run on hardware.** Virtual mode needs no boards attached.
 | Official MPF docs for a feature we use (versioned links) | `docs/mpf-reference.md` |
 | Machine config entry point | `config/config.yaml` |
 | A specific mode | `modes/<name>/config/<name>.yaml` |
+| Authoring shows + the showcreator editor workflow | `docs/shows.md` |
 | Light shows (global) | `shows/` |
 | Light shows (mode-local) | `modes/<name>/shows/` |
 

@@ -140,6 +140,14 @@ switches:
   s_eject_hole:
     number: 1-0-64
 
+  # Swamp shots (default-rules overhaul). Swamp shot = s_swamp_feed when prev
+  # shot was NOT s_vault_subway; swamp kickout = s_right_scoop when prev shot
+  # was NOT s_swamp_feed. TODO: set real OPP addresses (placeholders for now).
+  s_swamp_feed:
+    number: 1-0-65
+  s_vault_subway:
+    number: 1-0-66
+
   # s_test_65:
   #   number: 1-0-65
   # s_test_66:

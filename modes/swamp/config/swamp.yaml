@@ -1,0 +1,49 @@
+#config_version=6
+
+##! mode: swamp
+# DEFAULT RULE (active by default; disabled during multiball / focus modes).
+#
+# Swamp = the side-wide sinkhole, fed by s_swamp_feed. A swamp shot ONLY counts if
+# the immediately-preceding tracked shot was NOT s_vault_subway (the vault subway
+# feeds the ball here without it being a real swamp shot).
+#
+# Scoring: Graveyard Value x1 normally, or x5 when the swamp is LIT.
+#   swamp_lit -- LIT BY DEFAULT for now. TODO: this should be lit/armed by the
+#   small flipper passing the ball through the vault opto, but we have no switch to
+#   track that pass yet. Until then it stays lit.
+#
+# "previous shot" is tracked via the player var last_swamp_shot, set by this mode
+# and by swamp_kickout. The window is intentionally untimed (last shot, regardless
+# of time) per design.
+mode:
+  # Always runs the whole ball; suppression via current_player.default_rules_off.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  mode_swamp_started:
+    # Lit by default (see TODO above).
+    swamp_lit: {int: 1, action: set}
+    # sentinel "start" (NOT none/null -- MPF's YAML loader coerces those to null
+    # and variable_player then rejects it).
+    last_swamp_shot: {string: start, action: set}
+
+  # Vault subway pass -- record it so the NEXT s_swamp_feed is rejected as a
+  # genuine swamp shot.
+  s_vault_subway_active:
+    last_swamp_shot: {string: vault, action: set}
+
+  # Valid swamp shot (prev shot was NOT the vault subway). Suppressed while
+  # default_rules_off. x5 when lit, x1 otherwise. graveyard_value owned by jets.
+  s_swamp_feed_active{not current_player.default_rules_off and current_player.last_swamp_shot != "vault" and current_player.swamp_lit == 1}:
+    score: (current_player.graveyard_value * 5)
+    last_swamp_shot: {string: swamp, action: set}
+  s_swamp_feed_active{not current_player.default_rules_off and current_player.last_swamp_shot != "vault" and current_player.swamp_lit != 1}:
+    score: (current_player.graveyard_value)
+    last_swamp_shot: {string: swamp, action: set}
+
+  # If the vault subway WAS the previous shot, just clear the marker (no score)
+  # so a later swamp_feed can count again.
+  s_swamp_feed_active{current_player.last_swamp_shot == "vault"}:
+    last_swamp_shot: {string: swamp, action: set}

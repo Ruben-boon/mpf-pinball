@@ -64,6 +64,10 @@ event_player:
   # The flag guard prevents re-firing when the ball returns to the playfield.
   playfield_active{not current_player.themes_started}: start_gameplay_music
 
+  # Any mansion mode started off the lit Electric Chair fires the celebration.
+  start_mode_grave: mode_start_sequence
+  start_mode_orbit: mode_start_sequence
+
 variable_player:
   # switch hits
   s_pop1_active:
@@ -96,6 +100,18 @@ variable_player:
     themes_started:
       int: 0
       action: set
+    # Default-rule suppression flag (owned here in always-on base mode).
+    # While 1, the default-rule modes (million_ramp, bear_kick, swamp,
+    # swamp_kickout, graveyard_jets, grave_letters) ignore their scoring events.
+    # The modes keep RUNNING so their state (lit GRAVE letters, ramp value, etc.)
+    # is preserved -- a focus mode / multiball just sets/clears this flag.
+    default_rules_off:
+      int: 0
+      action: set
+  disable_default_modes:
+    default_rules_off: {int: 1, action: set}
+  enable_default_modes:
+    default_rules_off: {int: 0, action: set}
   # set after the one-shot start event fires (see event_player below)
   start_gameplay_music:
     themes_started:
@@ -103,6 +119,37 @@ variable_player:
       action: set
 
 show_player:
+  # Mode-start celebration. Fired whenever a mansion mode is started off the lit
+  # Electric Chair (center scoop) -- see center_scoop_lit's start_mode_* events,
+  # fanned into mode_start_sequence below. Plays at priority 2000 so it overrides
+  # the mansion next-mode pointer blink, then control returns automatically.
+  mode_start_sequence:
+    mansion_blink_all:
+      speed: 10
+      loops: 5
+      priority: 2000
+      key: mode_start_sequence
+      events_when_completed: mode_start_seq_2
+  mode_start_seq_2:
+    show_mansion_bottom_top:
+      speed: 20
+      loops: 0
+      priority: 2000
+      key: mode_start_sequence
+      events_when_completed: mode_start_seq_3
+  mode_start_seq_3:
+    show_playfield_bottom_top:
+      speed: 30
+      loops: 0
+      priority: 2000
+      key: mode_start_sequence
+      events_when_completed: mode_start_seq_4
+  mode_start_seq_4:
+    kickout_left:
+      speed: 20
+      loops: 0
+      priority: 2000
+      key: mode_start_sequence
   s_pop1_active:
     led_gy:
       show: led_gy_blink

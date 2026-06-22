@@ -1,0 +1,27 @@
+#show_version=6
+# Fast blink of the right thunder light a few times.
+
+- time: 0
+  lights:
+    led_thunder_right: white
+- time: '+1'
+  lights:
+    led_thunder_right: 'off'
+- time: '+1'
+  lights:
+    led_thunder_right: white
+- time: '+1'
+  lights:
+    led_thunder_right: 'off'
+- time: '+1'
+  lights:
+    led_thunder_right: white
+- time: '+1'
+  lights:
+    led_thunder_right: 'off'
+- time: '+1'
+  lights:
+    led_thunder_right: white
+- time: '+1'
+  lights:
+    led_thunder_right: 'off'

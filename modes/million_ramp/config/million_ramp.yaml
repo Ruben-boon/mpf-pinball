@@ -1,0 +1,32 @@
+#config_version=6
+
+##! mode: million_ramp
+# DEFAULT RULE (active by default; disabled during multiball / focus modes via the
+# disable_default_modes / enable_default_modes contract).
+#
+# Million Plus Ramp = the SIDE / LEFT ramp (shot_left_ramp). Each shot scores the
+# current ramp value: 1M, then 2M, 3M ... up to a 10M cap. Value resets to 0 (so the
+# first hit scores 1M again) at the start of each ball.
+#
+# Side-effect: any left-ramp shot also spots the first unlit GRAVE letter
+# (handled in grave_letters via the shot_left_ramp_hit event).
+mode:
+  # Always runs the whole ball. Suppression is via the current_player.default_rules_off
+  # flag (owned by base mode), NOT by stopping the mode -- so progress is preserved.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  # Reset the running million value at the start of each ball.
+  mode_million_ramp_started:
+    million_ramp_value: {int: 0, action: set}
+
+  # Each left-ramp shot: bump the value by 1M (cap 10M), then award it.
+  # Suppressed while default_rules_off.
+  shot_left_ramp_hit{not current_player.default_rules_off and current_player.million_ramp_value < 10000000}:
+    million_ramp_value: {int: 1000000, action: add}
+  shot_left_ramp_hit{not current_player.default_rules_off}:
+    score: (current_player.million_ramp_value)
+
+# Note: the ramp-loop SFX for shot_left_ramp_hit is played by base mode.

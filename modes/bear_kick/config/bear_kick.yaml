@@ -1,0 +1,40 @@
+#config_version=6
+
+##! mode: bear_kick
+# DEFAULT RULE (active by default; disabled during multiball / focus modes).
+#
+# Bear Kick Ramp = the CENTER / MAIN / RIGHT ramp (shot_right_ramp). Each shot:
+#   - awards 1 Bear Kick (2 when lit via the near-left inlane -- see inlanes stub,
+#     bear_kick_lit player var; lit award times out, TODO once inlane switch exists)
+#   - lights the Electric Chair (center scoop) if not already lit -- the chair logic
+#     itself lives in center_scoop_lit, here we just post chair_light_request
+#   - this shot is also GRAVE "V" (spotted in grave_letters via shot_right_ramp_hit)
+# Ball return down the right inlane is hardware (no coil involved here).
+mode:
+  # Always runs the whole ball; suppression via current_player.default_rules_off.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  mode_bear_kick_started:
+    bear_kicks: {int: 0, action: set}
+
+  # Flat score per ramp shot (+2 bear kicks when lit, else +1). Suppressed while
+  # default_rules_off.
+  shot_right_ramp_hit{not current_player.default_rules_off and current_player.bear_kick_lit == 1}:
+    score: 100000
+    bear_kicks: {int: 2, action: add}
+  shot_right_ramp_hit{not current_player.default_rules_off and current_player.bear_kick_lit != 1}:
+    score: 100000
+    bear_kicks: {int: 1, action: add}
+
+event_player:
+  # Ask center_scoop_lit to (re)light the Electric Chair.
+  shot_right_ramp_hit{not current_player.default_rules_off}:
+    - chair_light_request
+  # At 7+ bear kicks, light the extra ball (jump_shot owns the extra_balls device).
+  # Re-posting once already lit is harmless -- the device ignores it. Guard on >=7
+  # so a +2 (lit) award that jumps from 6 to 8 still triggers it.
+  shot_right_ramp_hit{not current_player.default_rules_off and current_player.bear_kicks >= 7}:
+    - bear_kicks_7_reached

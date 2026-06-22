@@ -1,0 +1,65 @@
+#config_version=6
+
+##! mode: graveyard_jets
+# DEFAULT RULE (active by default; disabled during multiball / focus modes).
+#
+# Jet bumpers (s_pop1..5) each:
+#   - SCORE the advance amount immediately, AND add the same amount to the
+#     Graveyard Value pot (which the Swamp shot later collects x1/x5).
+#   - Amount is PER-JET: a LIT jet = 20K, an UNLIT jet = 10K. Each jet's lit
+#     state is jet_N_lit, set by grave_letters (G->jet1 .. E->jet5). All five
+#     are lit once GRAVE is fully spelled; all unlit after GRAVE completes/resets.
+# Graveyard Value: player var, BALL-scoped, starts 1,000,000, caps at 4,000,000.
+# (Reset is here so the value is owned in one place; held value via Train Wreck
+#  is a future feature.)
+# Mansion-pointer cycling on jet hits lives in the mansion mode (rotate_next_mode).
+mode:
+  # Always runs the whole ball; suppression via current_player.default_rules_off.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  # Graveyard Value resets to 1M each ball (mode starts on ball_starting).
+  mode_graveyard_jets_started:
+    graveyard_value: {int: 1000000, action: set}
+
+  # Per-jet: LIT (jet_N_lit==1) = 20K, UNLIT = 10K. Both score AND feed the pot.
+  # jet1 = s_pop1 .. jet5 = s_pop5.
+  s_pop1_active{not current_player.default_rules_off and current_player.jet_1_lit == 1}:
+    score: 20000
+    graveyard_value: {int: 20000, action: add}
+  s_pop1_active{not current_player.default_rules_off and current_player.jet_1_lit != 1}:
+    score: 10000
+    graveyard_value: {int: 10000, action: add}
+  s_pop2_active{not current_player.default_rules_off and current_player.jet_2_lit == 1}:
+    score: 20000
+    graveyard_value: {int: 20000, action: add}
+  s_pop2_active{not current_player.default_rules_off and current_player.jet_2_lit != 1}:
+    score: 10000
+    graveyard_value: {int: 10000, action: add}
+  s_pop3_active{not current_player.default_rules_off and current_player.jet_3_lit == 1}:
+    score: 20000
+    graveyard_value: {int: 20000, action: add}
+  s_pop3_active{not current_player.default_rules_off and current_player.jet_3_lit != 1}:
+    score: 10000
+    graveyard_value: {int: 10000, action: add}
+  s_pop4_active{not current_player.default_rules_off and current_player.jet_4_lit == 1}:
+    score: 20000
+    graveyard_value: {int: 20000, action: add}
+  s_pop4_active{not current_player.default_rules_off and current_player.jet_4_lit != 1}:
+    score: 10000
+    graveyard_value: {int: 10000, action: add}
+  s_pop5_active{not current_player.default_rules_off and current_player.jet_5_lit == 1}:
+    score: 20000
+    graveyard_value: {int: 20000, action: add}
+  s_pop5_active{not current_player.default_rules_off and current_player.jet_5_lit != 1}:
+    score: 10000
+    graveyard_value: {int: 10000, action: add}
+
+  # Clamp the pot at 4M (the score above is uncapped; only the collected pot caps).
+  graveyard_value{current_player.graveyard_value > 4000000}:
+    graveyard_value: {int: 4000000, action: set}
+
+# Mansion-pointer cycling on jet hits is handled in the mansion mode (it owns the
+# pointer + rotate_next_mode logic, same as the slingshots).
