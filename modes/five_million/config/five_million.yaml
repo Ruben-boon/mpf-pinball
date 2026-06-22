@@ -1,0 +1,27 @@
+#config_version=6
+
+##! mode: five_million
+# Was 'grave_targets'. Started from the center scoop (start_mode_grave, posted by
+# center_scoop_lit when this window is the pointed/next mode). The mansion window
+# was already MARKED when the mode started.
+#
+# New behavior: there is no objective. Starting the mode instantly scores 5,000,000
+# and completes (five_million_complete -> mansion records the room DONE).
+mode:
+  start_events: start_mode_grave
+  stop_events: five_million_complete, ball_will_end
+  priority: 200
+
+event_player:
+  # Award immediately on start, then complete.
+  mode_five_million_started:
+    five_million_complete:
+
+variable_player:
+  five_million_complete:
+    score: 5000000
+
+sound_player:
+  five_million_complete:
+    taf_complete_grave:
+      action: play

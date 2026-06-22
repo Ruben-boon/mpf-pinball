@@ -96,6 +96,18 @@ variable_player:
     themes_started:
       int: 0
       action: set
+    # Default-rule suppression flag (owned here in always-on base mode).
+    # While 1, the default-rule modes (million_ramp, bear_kick, swamp,
+    # swamp_kickout, graveyard_jets, grave_letters) ignore their scoring events.
+    # The modes keep RUNNING so their state (lit GRAVE letters, ramp value, etc.)
+    # is preserved -- a focus mode / multiball just sets/clears this flag.
+    default_rules_off:
+      int: 0
+      action: set
+  disable_default_modes:
+    default_rules_off: {int: 1, action: set}
+  enable_default_modes:
+    default_rules_off: {int: 0, action: set}
   # set after the one-shot start event fires (see event_player below)
   start_gameplay_music:
     themes_started:

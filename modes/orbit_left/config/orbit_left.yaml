@@ -1,0 +1,21 @@
+#config_version=6
+
+##! mode: orbit_left
+# DEFAULT RULE (active by default; suppressed via current_player.default_rules_off).
+#
+# Left orbit = s_upper_left_loop -> s_upper_right_loop (the shot_left_orbit
+# sequence_shot is defined in base). This is the HARD direction, so it scores high.
+# Its own mode so we can hang extra orbit rules/modes off it later.
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  shot_left_orbit_hit{not current_player.default_rules_off}:
+    score: 500000
+
+sound_player:
+  shot_left_orbit_hit{not current_player.default_rules_off}:
+    taf_orbit:
+      action: play

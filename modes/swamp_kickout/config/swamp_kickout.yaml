@@ -1,0 +1,43 @@
+#config_version=6
+
+##! mode: swamp_kickout
+# DEFAULT RULE (active by default; disabled during multiball / focus modes).
+#
+# Swamp Kickout = right sinkhole (s_right_scoop + c_right_scoop kick coil). A
+# kickout shot ONLY counts if the immediately-preceding tracked shot was NOT
+# s_swamp_feed (shares the last_swamp_shot player var with the swamp mode).
+#
+# When it counts:
+#   - awards the currently flashing mansion room whenever the Electric Chair would
+#     (i.e. chair yellow lamp lit) -- posts award_flashing_room; mansion mode does
+#     the actual award.
+#   - is GRAVE "E" -- spots the E letter (grave_letters listens on this same event)
+#   - kicks the ball back out via c_right_scoop.
+mode:
+  # Always runs the whole ball; suppression via current_player.default_rules_off.
+  # NOTE: the ball is always kicked back out (hardware) even while suppressed.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  # Valid kickout shot: previous shot was NOT the swamp feed.
+  s_right_scoop_active{current_player.last_swamp_shot != "swamp"}:
+    last_swamp_shot: {string: kickout, action: set}
+
+event_player:
+  # Always kick the ball back out (hardware), regardless of scoring validity.
+  s_right_scoop_active:
+    c_right_scoop_kick:
+
+  # Valid kickout: spot GRAVE "E" and (if chair yellow-lit) award the flashing room.
+  # Suppressed while default_rules_off (but the kick above still fires).
+  s_right_scoop_active{not current_player.default_rules_off and current_player.last_swamp_shot != "swamp"}:
+    - spot_grave_e
+  s_right_scoop_active{not current_player.default_rules_off and current_player.last_swamp_shot != "swamp" and current_player.chair_yellow_lit == 1}:
+    - award_flashing_room
+
+coil_player:
+  c_right_scoop_kick:
+    c_right_scoop:
+      action: pulse

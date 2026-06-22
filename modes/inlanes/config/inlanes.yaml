@@ -1,0 +1,14 @@
+#config_version=6
+
+##! mode: inlanes
+# DEFAULT RULE (active by default; disabled during multiball / focus modes).
+# STUB -- no inlane switches exist in hardware yet.
+#
+# Planned behavior once switches exist:
+#   - Near Left Inlane (always lit): lights "2 Bear Kicks" on the center ramp
+#     (sets bear_kick_lit; award times out after a few seconds).
+#   - Right Inlane: temporarily lights the Electric Chair for a mansion room.
+mode:
+  start_events: ball_starting, enable_default_modes
+  stop_events: disable_default_modes
+  priority: 500

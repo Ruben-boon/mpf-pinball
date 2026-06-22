@@ -1,0 +1,20 @@
+#config_version=6
+
+##! mode: orbit_right
+# DEFAULT RULE (active by default; suppressed via current_player.default_rules_off).
+#
+# Right orbit = s_upper_right_loop -> s_upper_left_loop (the shot_right_orbit
+# sequence_shot is defined in base). Its own mode for future orbit rules/modes.
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+variable_player:
+  shot_right_orbit_hit{not current_player.default_rules_off}:
+    score: 100000
+
+sound_player:
+  shot_right_orbit_hit{not current_player.default_rules_off}:
+    taf_orbit:
+      action: play

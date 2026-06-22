@@ -34,7 +34,7 @@ variable_player:
     orbit_marked: {int: 1, action: set}
 
   # Objective completed → record DONE (reward scoring lives in each objective mode).
-  grave_targets_complete:
+  five_million_complete:
     grave_done: {int: 1, action: set}
   left_orbit_complete:
     orbit_done: {int: 1, action: set}
@@ -61,11 +61,17 @@ event_player:
   recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==0}: next_is_orbit
   recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==1}: next_is_none
 
-  # --- slingshot rotation -------------------------------------------------
+  # --- slingshot + jet rotation -------------------------------------------
   # Toggle the pointer to the OTHER unmarked window. With one unmarked window
   # left the target is marked, the guard fails, and the pointer stays put.
+  # Jet bumpers cycle the pointer just like the slingshots do.
   s_left_slingshot_active: rotate_next_mode
   s_right_slingshot_active: rotate_next_mode
+  s_pop1_active: rotate_next_mode
+  s_pop2_active: rotate_next_mode
+  s_pop3_active: rotate_next_mode
+  s_pop4_active: rotate_next_mode
+  s_pop5_active: rotate_next_mode
   rotate_next_mode{current_player.next_mode=="grave" and current_player.orbit_marked==0}: next_is_orbit
   rotate_next_mode{current_player.next_mode=="orbit" and current_player.grave_marked==0}: next_is_grave
 

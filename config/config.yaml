@@ -17,10 +17,21 @@ config:
 modes:
   - base
   - attract
-  - grave_targets
+  - five_million
   - left_orbit
   - mansion
   - center_scoop_lit
+  # default rules (active by default; disabled during multiball / focus modes)
+  - million_ramp
+  - bear_kick
+  - swamp
+  - swamp_kickout
+  - graveyard_jets
+  - grave_letters
+  - inlanes
+  - orbit_left
+  - orbit_right
+  - jump_shot
 
 sound_system:
   tracks:

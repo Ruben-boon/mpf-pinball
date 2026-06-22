@@ -1,67 +1,75 @@
 events:
   game_ended: 0
-  game_started: 65
+  game_started: 95
 missing_switches:
-  s_eject_hole: 65
-  s_eject_lane: 9
-  s_it_hole: 39
-  s_left_flipper: 39
-  s_left_outlane: 39
-  s_left_ramp_entry: 20
+  s_eject_hole: 95
+  s_eject_lane: 4
+  s_it_hole: 69
+  s_left_flipper: 69
+  s_left_outlane: 69
+  s_left_ramp_entry: 12
   s_left_slingshot: 21
-  s_pop1: 9
-  s_pop2: 9
-  s_pop3: 9
-  s_pop4: 9
-  s_pop5: 9
-  s_ramp_top: 5
-  s_right_flipper: 39
-  s_right_scoop: 26
-  s_right_slingshot: 21
-  s_startButton: 21
-  s_target_a: 3
-  s_top_loop_entry: 30
-  s_trough1: 21
-  s_upper_left_loop: 8
-  s_upper_right_loop: 8
+  s_pop1: 8
+  s_pop2: 3
+  s_pop3: 8
+  s_pop4: 8
+  s_pop5: 3
+  s_ramp_top: 1
+  s_right_flipper: 69
+  s_right_ramp_entry: 1
+  s_right_slingshot: 10
+  s_startButton: 7
+  s_swamp_feed: 11
+  s_top_loop_entry: 60
+  s_trough1: 4
+  s_upper_left_loop: 3
+  s_upper_right_loop: 3
+  s_vault_subway: 11
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  shot_center_scoop: 25
+  shot_center_scoop: 46
+  shot_grave_a: 1
+  shot_grave_e: 1
+  shot_grave_g: 5
+  shot_grave_r: 7
+  shot_grave_v: 6
   shot_ramp_alternate_jump: 41
   shot_ramp_alternate_ramp: 100
   shot_right_ramp: 89
-  shot_right_scoop: 45
+  shot_right_scoop: 46
   shot_target_a: 47
   shot_target_g: 41
   shot_target_r: 57
 switches:
-  s_center_scoop: 76
+  s_center_scoop: 97
   s_eject_hole: 0
-  s_eject_lane: 41
+  s_eject_lane: 44
   s_it_hole: 33
   s_left_flipper: 181
   s_left_outlane: 32
-  s_left_ramp_entry: 35
-  s_left_slingshot: 148
-  s_pop1: 132
-  s_pop2: 142
-  s_pop3: 120
-  s_pop4: 101
-  s_pop5: 72
-  s_ramp_top: 101
+  s_left_ramp_entry: 41
+  s_left_slingshot: 149
+  s_pop1: 139
+  s_pop2: 154
+  s_pop3: 130
+  s_pop4: 136
+  s_pop5: 83
+  s_ramp_top: 145
   s_right_flipper: 410
-  s_right_ramp_entry: 125
-  s_right_scoop: 47
-  s_right_slingshot: 138
-  s_startButton: 7
-  s_target_a: 51
-  s_target_g: 43
-  s_target_r: 60
+  s_right_ramp_entry: 156
+  s_right_scoop: 60
+  s_right_slingshot: 148
+  s_startButton: 8
+  s_swamp_feed: 11
+  s_target_a: 65
+  s_target_g: 71
+  s_target_r: 92
   s_top_loop_entry: 2
-  s_trough1: 23
-  s_upper_left_loop: 16
-  s_upper_right_loop: 42
+  s_trough1: 30
+  s_upper_left_loop: 48
+  s_upper_right_loop: 82
+  s_vault_subway: 2

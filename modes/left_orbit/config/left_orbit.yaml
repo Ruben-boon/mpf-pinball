@@ -6,15 +6,34 @@
 # Objective: shoot the left orbit twice. Completing it awards the reward; the
 # mansion window (led_mansion_2) was already MARKED when the mode started.
 mode:
+  # TEST TWEAK: ends as soon as the 2-orbit objective is met (left_orbit_objective_met),
+  # so we don't have to wait the full 30s. The 30s timer (left_orbit_timer_done) is the
+  # fallback if the orbits aren't made. Either exit re-enables the default rules via
+  # mode_left_orbit_will_stop below.
   start_events: start_mode_orbit
-  stop_events: left_orbit_complete, ball_will_end
+  stop_events: left_orbit_objective_met, left_orbit_timer_done, ball_will_end
   priority: 200
+
+# TEST HARNESS for the default-rules disable mechanism: while this mode runs it
+# posts disable_default_modes (suppressing all default-rule modes); on end it
+# posts enable_default_modes. A 30s timer auto-ends the mode so we can verify
+# the rules come back. Multiball/other focus modes should post the same events.
+timers:
+  left_orbit_focus_timer:
+    start_value: 30
+    end_value: 0
+    direction: down
+    start_running: true
+    control_events:
+      - event: mode_left_orbit_started
+        action: restart
 
 counters:
   left_orbit_counter:
     count_events: shot_left_orbit_hit
     count_complete_value: 2
-    events_when_complete: left_orbit_complete
+    # Meeting the objective scores the reward but does NOT stop the mode.
+    events_when_complete: left_orbit_objective_met
     enable_events: mode_left_orbit_started
     reset_events: mode_left_orbit_started
 
@@ -24,11 +43,21 @@ event_player:
   mode_left_orbit_started:
     orbit_mode_start_callout:
       delay: 2s
+    disable_default_modes:
+  # Restore the default rules when this mode ends. Posted on _will_stop while this
+  # mode is STILL ACTIVE -- a mode's own event_player does not run on _stopped
+  # (the mode is already gone), so _stopped handlers here would never fire.
+  # While still active, post enable_default_modes as the mode is about to stop.
+  mode_left_orbit_will_stop:
+    enable_default_modes:
+  # 30s timer expiry is the ONLY thing that ends the mode (besides ball_will_end).
+  timer_left_orbit_focus_timer_complete:
+    left_orbit_timer_done:
 
 variable_player:
   shot_left_orbit_hit:
     score: 1000
-  left_orbit_complete:
+  left_orbit_objective_met:
     score: 3000
 
 show_player:
@@ -40,15 +69,15 @@ show_player:
       loops: 0
 
 light_player:
-  # Solid when complete.
-  left_orbit_complete:
+  # Solid when the objective is met.
+  left_orbit_objective_met:
     led_advance: white
 
 sound_player:
   shot_left_orbit_hit:
     taf_orbit:
       action: play
-  left_orbit_complete:
+  left_orbit_objective_met:
     taf_complete_ghost:
       action: play
   # mode-start callout (1s after start, layered after the mansion capture sound)

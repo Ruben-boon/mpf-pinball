@@ -1,0 +1,39 @@
+#config_version=6
+
+##! mode: jump_shot
+# DEFAULT RULE (active by default; suppressed via current_player.default_rules_off).
+#
+# Jump shot = s_eject_lane. Scores a flat value, and is the COLLECT for the extra
+# ball: at 7 bear kicks the extra ball lights (led_jump_extraball); hitting the jump
+# shot while lit awards the extra ball and turns the light off.
+# Its own mode so we can add jump-shot rules/modes later.
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 500
+
+extra_balls:
+  jump_extra_ball:
+    # Lit when bear_kick posts bear_kicks_7_reached; awarded when the jump shot is
+    # hit while lit. MPF tracks the lit/collected state and the actual ball award.
+    light_events: bear_kicks_7_reached
+    award_events: s_eject_lane_active{not current_player.default_rules_off}
+    max_per_game: 3
+
+variable_player:
+  # Flat score for every jump shot.
+  s_eject_lane_active{not current_player.default_rules_off}:
+    score: 50000
+
+light_player:
+  # Extra-ball lamp follows the device's lit / awarded events.
+  extra_ball_jump_extra_ball_lit:
+    led_jump_extraball: green
+  extra_ball_jump_extra_ball_awarded:
+    led_jump_extraball: "off"
+  # Make sure it starts off each ball.
+  mode_jump_shot_started:
+    led_jump_extraball: "off"
+
+# Note: the s_eject_lane SFX (taf_space_19) is played by base mode.
+
