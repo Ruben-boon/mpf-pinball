@@ -22,7 +22,7 @@ flippers:
   little_flipper:
     main_coil: c_flipper_little_main
     hold_coil: c_flipper_little_hold
-    activation_switch: s_left_flipper
+    activation_switch: s_left_outlane
     enable_events: machine_reset_phase_3
 
 autofire_coils:
