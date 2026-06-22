@@ -15,6 +15,14 @@ variable_player:
   shot_left_orbit_hit{not current_player.default_rules_off}:
     score: 500000
 
+show_player:
+  # Left orbit hit -> left-to-right playfield sweep.
+  shot_left_orbit_hit{not current_player.default_rules_off}:
+    sweep_left_to_right:
+      speed: 30
+      loops: 0
+      priority: 600
+
 sound_player:
   shot_left_orbit_hit{not current_player.default_rules_off}:
     taf_orbit:

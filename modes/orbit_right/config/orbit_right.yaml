@@ -14,6 +14,14 @@ variable_player:
   shot_right_orbit_hit{not current_player.default_rules_off}:
     score: 100000
 
+show_player:
+  # Right orbit hit -> right-to-left playfield sweep (mirror of the left orbit).
+  shot_right_orbit_hit{not current_player.default_rules_off}:
+    sweep_right_to_left:
+      speed: 30
+      loops: 0
+      priority: 600
+
 sound_player:
   shot_right_orbit_hit{not current_player.default_rules_off}:
     taf_orbit:
