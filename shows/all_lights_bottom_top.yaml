@@ -1,4 +1,6 @@
 #show_version=6
+# Bottom-to-top wipe across ALL lights, INCLUDING global illumination (led_gi_*).
+# Used by attract. The no-GI playfield-only variant is playfield_bottom_top.yaml.
 - time: 0
   lights:
     led_gi_left_ball_guide_1: '151515'

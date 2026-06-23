@@ -140,7 +140,7 @@ show_player:
       key: mode_start_sequence
       events_when_completed: mode_start_seq_3
   mode_start_seq_3:
-    show_playfield_bottom_top:
+    playfield_bottom_top:
       speed: 30
       loops: 0
       priority: 2000

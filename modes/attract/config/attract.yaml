@@ -2,7 +2,7 @@
 
 show_player:
   mode_attract_started:
-    bottom_top:
+    all_lights_bottom_top:
       speed: 40
       loops: 2
       events_when_completed: start_blue_whirlpool
@@ -50,9 +50,9 @@ show_player:
     riple_target_g:
       speed: 40
       loops: 2
-      events_when_completed: start_bottom_top
-  start_bottom_top:
-    bottom_top:
+      events_when_completed: start_all_lights_bottom_top
+  start_all_lights_bottom_top:
+    all_lights_bottom_top:
       speed: 40
       loops: 2
       events_when_completed: start_mansion_chase
