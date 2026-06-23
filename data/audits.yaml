@@ -1,52 +1,77 @@
 events:
   game_ended: 0
-  game_started: 68
+  game_started: 110
 missing_switches:
-  s_eject_hole: 68
-  s_left_ramp_entry: 23
-  s_ramp_top: 8
-  s_right_ramp_entry: 3
-  s_startButton: 24
-  s_top_loop_entry: 33
-  s_upper_left_loop: 11
+  s_eject_hole: 110
+  s_eject_lane: 19
+  s_it_hole: 84
+  s_left_flipper: 84
+  s_left_outlane: 84
+  s_left_ramp_entry: 27
+  s_left_slingshot: 5
+  s_pop1: 23
+  s_pop2: 5
+  s_pop3: 5
+  s_pop4: 5
+  s_pop5: 8
+  s_right_flipper: 84
+  s_right_scoop: 7
+  s_right_slingshot: 5
+  s_startButton: 22
+  s_swamp_feed: 26
+  s_target_a: 5
+  s_target_g: 5
+  s_target_r: 5
+  s_top_loop_entry: 75
+  s_trough1: 19
+  s_upper_left_loop: 7
+  s_upper_right_loop: 7
+  s_vault_subway: 26
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  shot_center_scoop: 29
+  shot_center_scoop: 63
+  shot_grave_a: 1
+  shot_grave_e: 1
+  shot_grave_g: 5
+  shot_grave_r: 7
+  shot_grave_v: 6
   shot_ramp_alternate_jump: 41
   shot_ramp_alternate_ramp: 100
   shot_right_ramp: 89
-  shot_right_scoop: 54
-  shot_target_a: 51
-  shot_target_g: 42
-  shot_target_r: 66
+  shot_right_scoop: 46
+  shot_target_a: 47
+  shot_target_g: 41
+  shot_target_r: 57
 switches:
-  s_center_scoop: 80
+  s_center_scoop: 114
   s_eject_hole: 0
-  s_eject_lane: 42
-  s_it_hole: 39
-  s_left_flipper: 217
-  s_left_outlane: 39
-  s_left_ramp_entry: 35
-  s_left_slingshot: 174
-  s_pop1: 140
-  s_pop2: 150
-  s_pop3: 128
-  s_pop4: 108
-  s_pop5: 76
-  s_ramp_top: 101
-  s_right_flipper: 461
-  s_right_ramp_entry: 125
-  s_right_scoop: 59
-  s_right_slingshot: 152
-  s_startButton: 7
-  s_target_a: 55
-  s_target_g: 45
-  s_target_r: 73
+  s_eject_lane: 44
+  s_it_hole: 33
+  s_left_flipper: 181
+  s_left_outlane: 32
+  s_left_ramp_entry: 41
+  s_left_slingshot: 157
+  s_pop1: 139
+  s_pop2: 174
+  s_pop3: 138
+  s_pop4: 141
+  s_pop5: 89
+  s_ramp_top: 150
+  s_right_flipper: 410
+  s_right_ramp_entry: 161
+  s_right_scoop: 61
+  s_right_slingshot: 151
+  s_startButton: 8
+  s_swamp_feed: 11
+  s_target_a: 67
+  s_target_g: 73
+  s_target_r: 119
   s_top_loop_entry: 2
-  s_trough1: 27
-  s_upper_left_loop: 16
-  s_upper_right_loop: 47
+  s_trough1: 30
+  s_upper_left_loop: 50
+  s_upper_right_loop: 84
+  s_vault_subway: 2

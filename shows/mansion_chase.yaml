@@ -1,0 +1,64 @@
+#show_version=6
+# Single-light chaser across all 14 mansion lights.
+# Light 1 holds for 5s, then advances one light per second (only one lit at a
+# time). Total length 19s; play it with loops: 1 to run the loop twice in attract.
+
+- time: 0
+  lights:
+    led_mansion_1: white
+- time: 5
+  lights:
+    led_mansion_1: 'off'
+    led_mansion_2: white
+- time: '+1'
+  lights:
+    led_mansion_2: 'off'
+    led_mansion_3: white
+- time: '+1'
+  lights:
+    led_mansion_3: 'off'
+    led_mansion_4: white
+- time: '+1'
+  lights:
+    led_mansion_4: 'off'
+    led_mansion_5: white
+- time: '+1'
+  lights:
+    led_mansion_5: 'off'
+    led_mansion_6: white
+- time: '+1'
+  lights:
+    led_mansion_6: 'off'
+    led_mansion_7: white
+- time: '+1'
+  lights:
+    led_mansion_7: 'off'
+    led_mansion_8: white
+- time: '+1'
+  lights:
+    led_mansion_8: 'off'
+    led_mansion_9: white
+- time: '+1'
+  lights:
+    led_mansion_9: 'off'
+    led_mansion_10: white
+- time: '+1'
+  lights:
+    led_mansion_10: 'off'
+    led_mansion_11: white
+- time: '+1'
+  lights:
+    led_mansion_11: 'off'
+    led_mansion_12: white
+- time: '+1'
+  lights:
+    led_mansion_12: 'off'
+    led_mansion_13: white
+- time: '+1'
+  lights:
+    led_mansion_13: 'off'
+    led_mansion_14: white
+# Hold light 14 for 1s, then turn it off so the loop restarts cleanly on light 1.
+- time: '+1'
+  lights:
+    led_mansion_14: 'off'

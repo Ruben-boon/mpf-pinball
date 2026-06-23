@@ -1,14 +1,150 @@
 #config_version=6
 
 ##! mode: inlanes
-# DEFAULT RULE (active by default; disabled during multiball / focus modes).
-# STUB -- no inlane switches exist in hardware yet.
+# DEFAULT RULE (active by default; disabled during multiball / focus modes via the
+# disable_default_modes / enable_default_modes contract used by the other default rules).
 #
-# Planned behavior once switches exist:
-#   - Near Left Inlane (always lit): lights "2 Bear Kicks" on the center ramp
-#     (sets bear_kick_lit; award times out after a few seconds).
-#   - Right Inlane: temporarily lights the Electric Chair for a mansion room.
+# All four lower lanes live here. The lit-lane LEDs are always on; pressing a lane
+# arms a short (5s) award window.
+#
+# NOTE ON SWITCHES: the inlane/outlane switches are not mapped in hardware yet
+# (see switches.yaml -- the s_*_inlane / s_*_outlane entries are commented out and
+# their placeholder addresses collide with live switches). So each lane action is
+# driven off a NAMED REQUEST EVENT instead of a switch number. The logic is complete
+# and testable now; when a real switch is mapped, just route its *_active event to
+# the matching request event below:
+#
+#   right inlane   -> right_inlane_hit
+#   left inlane 1  -> left_inlane_1_hit
+#   left inlane 2  -> left_inlane_2_hit
+#
+# RIGHT INLANE (always lit): arms AdvX (led_advance blinks, 5s window). While AdvX
+#   is lit, the LEFT ORBIT shot (shot_left_orbit_hit) advances the bonus multiplier
+#   to the next step (1x at ball start, 2x after the first qualifying orbit, etc.).
+#   The bonus multiplier is applied to the end-of-ball bonus.
+# LEFT INLANE 1 (always lit): lights "2 Bear Kicks" -- sets bear_kick_lit (5s window);
+#   while lit the center ramp scores 2 bear kicks instead of 1 (logic owned by the
+#   bear_kick mode, which already guards on current_player.bear_kick_lit).
+# LEFT INLANE 2 (always lit): placeholder -- does nothing yet.
 mode:
-  start_events: ball_starting, enable_default_modes
-  stop_events: disable_default_modes
-  priority: 500
+  # Always runs the whole ball. Suppression is via current_player.default_rules_off,
+  # consistent with the other default-rule modes.
+  start_events: ball_starting
+  stop_events: ball_will_end
+  # Just below the other default rules (500) so that on shot_right_ramp_hit the
+  # bear_kick mode reads current_player.bear_kick_lit and scores BEFORE this mode
+  # clears the flag. Same reasoning for any other shared-event ordering here.
+  priority: 490
+
+variable_player:
+  # Per-ball reset: multiplier starts at 1x, lit flags clear.
+  mode_inlanes_started:
+    bonus_multiplier: {int: 1, action: set}
+    advx_lit: {int: 0, action: set}
+
+  # Right inlane arms the AdvX window.
+  right_inlane_hit{not current_player.default_rules_off}:
+    advx_lit: {int: 1, action: set}
+
+  # Left orbit during the AdvX window advances the bonus multiplier (no cap), then
+  # consumes the window.
+  shot_left_orbit_hit{not current_player.default_rules_off and current_player.advx_lit == 1}:
+    bonus_multiplier: {int: 1, action: add}
+    advx_lit: {int: 0, action: set}
+
+  # AdvX window timed out without an orbit -- clear the flag.
+  timer_advx_window_complete:
+    advx_lit: {int: 0, action: set}
+
+  # Left inlane 1 lights "2 Bear Kicks" for the next ramp shot (5s window). The
+  # bear_kick mode consumes current_player.bear_kick_lit on shot_right_ramp_hit.
+  left_inlane_1_hit{not current_player.default_rules_off}:
+    bear_kick_lit: {int: 1, action: set}
+
+  # Bear-kick-lit window timed out, or the ramp was hit -- clear the flag.
+  timer_bear_kick_window_complete:
+    bear_kick_lit: {int: 0, action: set}
+  shot_right_ramp_hit:
+    bear_kick_lit: {int: 0, action: set}
+
+  # End-of-ball bonus: apply the multiplier to the accumulated grave bonus.
+  # grave_bonus_level is owned by the grave_letters mode. Award once at ball end.
+  ball_will_end{current_player.bonus_multiplier > 1}:
+    score: (current_player.grave_bonus_level * (current_player.bonus_multiplier - 1))
+
+timers:
+  # 5s AdvX window opened by the right inlane.
+  advx_window:
+    start_value: 5
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    control_events:
+      - event: right_inlane_hit{not current_player.default_rules_off}
+        action: restart
+      - event: shot_left_orbit_hit{current_player.advx_lit == 1}
+        action: stop
+
+  # 5s "2 Bear Kicks" window opened by left inlane 1.
+  bear_kick_window:
+    start_value: 5
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    control_events:
+      - event: left_inlane_1_hit{not current_player.default_rules_off}
+        action: restart
+      - event: shot_right_ramp_hit
+        action: stop
+
+light_player:
+  # Always-lit lane LEDs.
+  mode_inlanes_started:
+    led_right_inlane: ffffff
+    led_left_inlane_1: ffffff
+    led_left_inlane_2: ffffff
+
+  # AdvX cleared (timed out or consumed by the orbit) -> back off.
+  timer_advx_window_complete:
+    led_advance: off
+  shot_left_orbit_hit{current_player.advx_lit == 1}:
+    led_advance: off
+
+  # Bear-kick-lit cleared (timed out or ramp hit) -> back to always-lit white.
+  timer_bear_kick_window_complete:
+    led_left_inlane_1: ffffff
+  shot_right_ramp_hit:
+    led_left_inlane_1: ffffff
+
+show_player:
+  # Blink AdvX while the window is open (show_blink is parametrized on (led)).
+  right_inlane_hit{not current_player.default_rules_off}:
+    show_blink:
+      key: advx_blink
+      loops: -1
+      show_tokens:
+        led: led_advance
+  timer_advx_window_complete:
+    show_blink:
+      key: advx_blink
+      action: stop
+  shot_left_orbit_hit{current_player.advx_lit == 1}:
+    show_blink:
+      key: advx_blink
+      action: stop
+
+  # Blink left inlane 1 while "2 Bear Kicks" is lit.
+  left_inlane_1_hit{not current_player.default_rules_off}:
+    show_blink:
+      key: bk_blink
+      loops: -1
+      show_tokens:
+        led: led_left_inlane_1
+  timer_bear_kick_window_complete:
+    show_blink:
+      key: bk_blink
+      action: stop
+  shot_right_ramp_hit:
+    show_blink:
+      key: bk_blink
+      action: stop

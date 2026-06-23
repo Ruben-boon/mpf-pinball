@@ -63,9 +63,10 @@ ball_devices:
   bd_center_scoop:
     ball_switches: s_center_scoop
     eject_coil: c_center_scoop
-    eject_timeouts: 3s
-    # Hold the ball in the scoop 3s before ejecting (delayed eject)
-    eject_events: s_center_scoop_active:3s
+    eject_timeouts: 4s
+    # Eject is driven by center_scoop_lit (eject_center_scoop), which delays it by
+    # 4s when PLUGGED (a mansion mode is starting) or 2s when UNPLUGGED.
+    eject_events: eject_center_scoop
   bd_right_scoop:
     ball_switches: s_right_scoop
     eject_coil: c_right_scoop

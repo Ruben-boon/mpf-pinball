@@ -10,10 +10,14 @@
 #                                   simply means the player drained before finishing.
 #
 # A "next pointer" (player var next_mode) selects the next UNMARKED window, which
-# blinks. Slingshots rotate the pointer between unmarked windows. The center scoop
-# starts whatever window the pointer is on (see center_scoop_lit mode).
+# blinks. Slingshots/jets rotate the pointer between unmarked windows. The center
+# scoop starts whatever window the pointer is on (see center_scoop_lit mode).
 #
-# Windows:  led_mansion_1 = grave,  led_mansion_2 = left orbit
+# Windows (cyclic pointer order three -> six -> nine -> orbit):
+#   led_mansion_10 = three_million   (instant 3M)
+#   led_mansion_6  = six_million     (instant 6M)
+#   led_mansion_2  = nine_million    (instant 9M)
+#   led_mansion_1  = left orbit
 mode:
   start_events: ball_starting
   stop_events: ball_will_end
@@ -22,28 +26,44 @@ mode:
 variable_player:
   # Fresh state every ball — nothing carries over.
   mode_mansion_started:
-    grave_marked: {int: 0, action: set}
+    three_marked: {int: 0, action: set}
+    six_marked: {int: 0, action: set}
+    nine_marked: {int: 0, action: set}
     orbit_marked: {int: 0, action: set}
-    grave_done: {int: 0, action: set}
+    three_done: {int: 0, action: set}
+    six_done: {int: 0, action: set}
+    nine_done: {int: 0, action: set}
     orbit_done: {int: 0, action: set}
 
   # Mark a window the instant its mode starts (posted by center_scoop_lit).
-  start_mode_grave:
-    grave_marked: {int: 1, action: set}
+  start_mode_three_million:
+    three_marked: {int: 1, action: set}
+  start_mode_six_million:
+    six_marked: {int: 1, action: set}
+  start_mode_nine_million:
+    nine_marked: {int: 1, action: set}
   start_mode_orbit:
     orbit_marked: {int: 1, action: set}
 
   # Objective completed → record DONE (reward scoring lives in each objective mode).
-  five_million_complete:
-    grave_done: {int: 1, action: set}
+  three_million_complete:
+    three_done: {int: 1, action: set}
+  six_million_complete:
+    six_done: {int: 1, action: set}
+  nine_million_complete:
+    nine_done: {int: 1, action: set}
   left_orbit_complete:
     orbit_done: {int: 1, action: set}
 
   # store the pointer as a string so guards can read it. The "nothing left"
   # sentinel is "idle" (NOT "none" — MPF's YAML loader coerces none/null to
   # null and the variable_player then rejects it).
-  next_is_grave:
-    next_mode: {string: grave, action: set}
+  next_is_three:
+    next_mode: {string: three, action: set}
+  next_is_six:
+    next_mode: {string: six, action: set}
+  next_is_nine:
+    next_mode: {string: nine, action: set}
   next_is_orbit:
     next_mode: {string: orbit, action: set}
   next_is_none:
@@ -52,19 +72,23 @@ variable_player:
 event_player:
   # Recompute the pointer + lights at start and after every mark change.
   mode_mansion_started: recompute_next_mode
-  start_mode_grave: recompute_next_mode
+  start_mode_three_million: recompute_next_mode
+  start_mode_six_million: recompute_next_mode
+  start_mode_nine_million: recompute_next_mode
   start_mode_orbit: recompute_next_mode
 
   # --- pointer resolution -------------------------------------------------
-  # First unmarked window in order grave -> orbit; else none.
-  recompute_next_mode{current_player.grave_marked==0}: next_is_grave
-  recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==0}: next_is_orbit
-  recompute_next_mode{current_player.grave_marked==1 and current_player.orbit_marked==1}: next_is_none
+  # First unmarked window in cyclic order three -> six -> nine -> orbit; else none.
+  recompute_next_mode{current_player.three_marked==0}: next_is_three
+  recompute_next_mode{current_player.three_marked==1 and current_player.six_marked==0}: next_is_six
+  recompute_next_mode{current_player.three_marked==1 and current_player.six_marked==1 and current_player.nine_marked==0}: next_is_nine
+  recompute_next_mode{current_player.three_marked==1 and current_player.six_marked==1 and current_player.nine_marked==1 and current_player.orbit_marked==0}: next_is_orbit
+  recompute_next_mode{current_player.three_marked==1 and current_player.six_marked==1 and current_player.nine_marked==1 and current_player.orbit_marked==1}: next_is_none
 
   # --- slingshot + jet rotation -------------------------------------------
-  # Toggle the pointer to the OTHER unmarked window. With one unmarked window
-  # left the target is marked, the guard fails, and the pointer stays put.
-  # Jet bumpers cycle the pointer just like the slingshots do.
+  # Advance the pointer to the NEXT UNMARKED window in cyclic order. Each rotate
+  # walks forward from the current window, skipping marked ones; with a single
+  # unmarked window left every candidate guard fails and the pointer stays put.
   s_left_slingshot_active: rotate_next_mode
   s_right_slingshot_active: rotate_next_mode
   s_pop1_active: rotate_next_mode
@@ -72,37 +96,76 @@ event_player:
   s_pop3_active: rotate_next_mode
   s_pop4_active: rotate_next_mode
   s_pop5_active: rotate_next_mode
-  rotate_next_mode{current_player.next_mode=="grave" and current_player.orbit_marked==0}: next_is_orbit
-  rotate_next_mode{current_player.next_mode=="orbit" and current_player.grave_marked==0}: next_is_grave
+
+  # From THREE → next unmarked of six / nine / orbit.
+  rotate_next_mode{current_player.next_mode=="three" and current_player.six_marked==0}: next_is_six
+  rotate_next_mode{current_player.next_mode=="three" and current_player.six_marked==1 and current_player.nine_marked==0}: next_is_nine
+  rotate_next_mode{current_player.next_mode=="three" and current_player.six_marked==1 and current_player.nine_marked==1 and current_player.orbit_marked==0}: next_is_orbit
+  # From SIX → next unmarked of nine / orbit / three.
+  rotate_next_mode{current_player.next_mode=="six" and current_player.nine_marked==0}: next_is_nine
+  rotate_next_mode{current_player.next_mode=="six" and current_player.nine_marked==1 and current_player.orbit_marked==0}: next_is_orbit
+  rotate_next_mode{current_player.next_mode=="six" and current_player.nine_marked==1 and current_player.orbit_marked==1 and current_player.three_marked==0}: next_is_three
+  # From NINE → next unmarked of orbit / three / six.
+  rotate_next_mode{current_player.next_mode=="nine" and current_player.orbit_marked==0}: next_is_orbit
+  rotate_next_mode{current_player.next_mode=="nine" and current_player.orbit_marked==1 and current_player.three_marked==0}: next_is_three
+  rotate_next_mode{current_player.next_mode=="nine" and current_player.orbit_marked==1 and current_player.three_marked==1 and current_player.six_marked==0}: next_is_six
+  # From ORBIT → next unmarked of three / six / nine.
+  rotate_next_mode{current_player.next_mode=="orbit" and current_player.three_marked==0}: next_is_three
+  rotate_next_mode{current_player.next_mode=="orbit" and current_player.three_marked==1 and current_player.six_marked==0}: next_is_six
+  rotate_next_mode{current_player.next_mode=="orbit" and current_player.three_marked==1 and current_player.six_marked==1 and current_player.nine_marked==0}: next_is_nine
 
 show_player:
-  # Blink the pointed window (shared key so the solid hold can replace it).
-  next_is_grave:
+  # Blink the pointed window (shared key per LED so the solid hold can replace it).
+  next_is_three:
     mansion_blink:
       show_tokens:
-        led: led_mansion_1
+        led: led_mansion_10
       loops: -1
-      key: mansion_1_show
+      key: mansion_10_show
+  next_is_six:
+    mansion_blink:
+      show_tokens:
+        led: led_mansion_6
+      loops: -1
+      key: mansion_6_show
+  next_is_nine:
+    mansion_blink:
+      show_tokens:
+        led: led_mansion_2
+      loops: -1
+      key: mansion_2_show
   next_is_orbit:
     mansion_blink:
       show_tokens:
+        led: led_mansion_1
+      loops: -1
+      key: mansion_1_show
+
+  # When a window is MARKED (mode started): replace its blink with a solid hold.
+  start_mode_three_million:
+    led_mansion_solid:
+      show_tokens:
+        led: led_mansion_10
+      loops: -1
+      key: mansion_10_show
+  start_mode_six_million:
+    led_mansion_solid:
+      show_tokens:
+        led: led_mansion_6
+      loops: -1
+      key: mansion_6_show
+  start_mode_nine_million:
+    led_mansion_solid:
+      show_tokens:
         led: led_mansion_2
       loops: -1
       key: mansion_2_show
-
-  # When a window is MARKED (mode started): replace its blink with a solid hold.
-  start_mode_grave:
+  start_mode_orbit:
     led_mansion_solid:
       show_tokens:
         led: led_mansion_1
       loops: -1
       key: mansion_1_show
-  start_mode_orbit:
-    led_mansion_solid:
-      show_tokens:
-        led: led_mansion_2
-      loops: -1
-      key: mansion_2_show
 
   # big ship-mode collect celebration
   ship_mode_complete_bonus:

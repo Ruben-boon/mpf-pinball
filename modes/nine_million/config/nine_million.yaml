@@ -1,0 +1,21 @@
+#config_version=6
+
+##! mode: nine_million
+# Mansion window (led_mansion_2). No objective: on start, wait 3s then auto-complete
+# (nine_million_complete) -> scores 9,000,000 and mansion records the room DONE.
+# The completion CALLOUT (taf_9_million) is played from the always-on base mode, NOT
+# here (this mode stops on nine_million_complete; an in-mode sound would be cut off).
+mode:
+  start_events: start_mode_nine_million
+  stop_events: nine_million_complete, ball_will_end
+  priority: 200
+
+event_player:
+  # Auto-complete 3s after the scoop starts the mode.
+  mode_nine_million_started:
+    nine_million_complete:
+      delay: 3s
+
+variable_player:
+  nine_million_complete:
+    score: 9000000

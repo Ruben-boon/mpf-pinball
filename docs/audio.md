@@ -91,12 +91,15 @@ No sound is shared across element types. Each type has its own pool/sound:
   events that the scoring/shows actually use, then switched from the ting pool to `taf_pop`.
 
 ### Center scoop (CONFIRMED working)
-- On capture (`s_center_scoop_active`, played from base mode), `taf_mansion_1` (`0x00d1`)
-  plays and **ducks the music** until the callout finishes — see ducking below.
-- `bd_center_scoop` holds the ball before ejecting via
-  `eject_events: s_center_scoop_active:3s` in `config/devices.yaml`. NOTE: the 3s hold is a
-  real-hardware behavior; in smart-virtual (`-X`) the "unexpected ball" path ejects after the
-  ~0.5s virtual confirm and ignores the delay, so verify the hold length on the machine.
+- The capture callout `taf_mansion_1` (`0x00d1`) plays **only when PLUGGED**, gated
+  `s_center_scoop_active{current_player.scoop_plugged==1}` in the **center_scoop_lit** mode
+  (it used to be on the bare switch in `base`, which fired on every hit including unplugged).
+  It **ducks the music** until the callout finishes — see ducking below.
+- Eject is **event-driven**, not the device timer: `bd_center_scoop` ejects on the custom
+  event `eject_center_scoop`, and `center_scoop_lit` posts it with **`delay: 4s` when plugged**
+  (covers the 3s million-award) or **`delay: 2s` when unplugged** (just the not-plugged callout).
+  NOTE: in smart-virtual (`-X`) the "unexpected ball" path ejects after the ~0.5s virtual
+  confirm and ignores the delay, so verify the hold length on the machine.
 
 ## Ducking (pause music under a callout)
 
@@ -118,7 +121,11 @@ ducking:
 - **A sound played from a mode that is stopping gets cut off.** Game-start callouts must be
   played from a long-lived mode (`base`, on `mode_base_started`), **not** from `attract` on
   `mode_attract_will_stop` — attract tears down its sound context immediately and kills the
-  just-started sound before it's audible. Event order at game start:
+  just-started sound before it's audible. **Same trap with the X-million windows:** the
+  `three/six/nine_million` modes *stop* on their own `<name>_complete`, so their completion
+  callouts (`taf_3/6/9_million`) are played from **base** (`*_complete` handlers there), not
+  from the million modes — otherwise they're cut off the instant the mode tears down.
+  Event order at game start:
   `mode_game_will_start` → `mode_attract_will_stop` → `mode_attract_stopped` →
   `mode_game_started` → `game_started` → `ball_will_start` → `ball_starting` →
   `mode_base_started`.

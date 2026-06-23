@@ -65,7 +65,9 @@ event_player:
   playfield_active{not current_player.themes_started}: start_gameplay_music
 
   # Any mansion mode started off the lit Electric Chair fires the celebration.
-  start_mode_grave: mode_start_sequence
+  start_mode_three_million: mode_start_sequence
+  start_mode_six_million: mode_start_sequence
+  start_mode_nine_million: mode_start_sequence
   start_mode_orbit: mode_start_sequence
 
 variable_player:
@@ -286,9 +288,18 @@ sound_player:
   shot_right_scoop_hit:
     taf_scoop:
       action: play
-  # center scoop capture
-  s_center_scoop_active:
-    taf_mansion_1:
+  # center scoop capture sound moved to center_scoop_lit (plays only when PLUGGED).
+  # X-million mansion-window completion callouts. Played here (always-on base) and
+  # NOT in the three/six/nine_million modes, because each of those modes STOPS on
+  # its *_complete event -- a sound started by the stopping mode is cut off at once.
+  three_million_complete:
+    taf_3_million:
+      action: play
+  six_million_complete:
+    taf_6_million:
+      action: play
+  nine_million_complete:
+    taf_9_million:
       action: play
   # main ramp entry switch — bear roar
   s_right_ramp_entry_active:

@@ -21,7 +21,11 @@ variable_player:
   mode_center_scoop_lit_started:
     scoop_plugged: {int: 1, action: set}
   # Starting a mode unplugs the scoop.
-  start_mode_grave:
+  start_mode_three_million:
+    scoop_plugged: {int: 0, action: set}
+  start_mode_six_million:
+    scoop_plugged: {int: 0, action: set}
+  start_mode_nine_million:
     scoop_plugged: {int: 0, action: set}
   start_mode_orbit:
     scoop_plugged: {int: 0, action: set}
@@ -34,10 +38,25 @@ event_player:
   s_right_ramp_entry_active{current_player.scoop_plugged==0}:
     - scoop_replugged
 
+  # --- delayed eject ------------------------------------------------------
+  # The ball lands in the scoop -> eject after a delay that depends on plugged
+  # state: 4s when PLUGGED (a mansion mode starts and runs its 3s award), 2s when
+  # UNPLUGGED (just the "not plugged in" callout, then kick it back out).
+  s_center_scoop_active{current_player.scoop_plugged==1}:
+    eject_center_scoop:
+      delay: 4s
+  s_center_scoop_active{current_player.scoop_plugged==0}:
+    eject_center_scoop:
+      delay: 2s
+
   # --- scoop hit arbitration ---------------------------------------------
   # PLUGGED + a mode is pending → start that mode.
-  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="grave"}:
-    - start_mode_grave
+  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="three"}:
+    - start_mode_three_million
+  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="six"}:
+    - start_mode_six_million
+  shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="nine"}:
+    - start_mode_nine_million
   shot_center_scoop_hit{current_player.scoop_plugged==1 and current_player.next_mode=="orbit"}:
     - start_mode_orbit
   # PLUGGED but nothing left to start → nothing happens (all windows marked).
@@ -51,12 +70,20 @@ light_player:
     led_center_scoop: red
   scoop_replugged:
     led_center_scoop: red
-  start_mode_grave:
+  start_mode_three_million:
+    led_center_scoop: off
+  start_mode_six_million:
+    led_center_scoop: off
+  start_mode_nine_million:
     led_center_scoop: off
   start_mode_orbit:
     led_center_scoop: off
 
 sound_player:
+  # Capture sound only when PLUGGED (a mansion mode is actually being started).
+  s_center_scoop_active{current_player.scoop_plugged==1}:
+    taf_mansion_1:
+      action: play
   center_scoop_not_plugged:
     taf_not_plugged_in:
       action: play

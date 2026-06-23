@@ -55,6 +55,11 @@ show_player:
     bottom_top:
       speed: 40
       loops: 2
+      events_when_completed: start_mansion_chase
+  start_mansion_chase:
+    mansion_chase:
+      # loops: 1 -> plays the chaser loop twice, then closes the attract cycle.
+      loops: 1
       events_when_completed: start_blue_whirlpool
 
 #     # show_lanes_bottom_top:

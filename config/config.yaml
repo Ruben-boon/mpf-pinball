@@ -17,7 +17,9 @@ config:
 modes:
   - base
   - attract
-  - five_million
+  - three_million
+  - six_million
+  - nine_million
   - left_orbit
   - mansion
   - center_scoop_lit

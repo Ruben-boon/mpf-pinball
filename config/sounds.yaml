@@ -248,6 +248,17 @@ sounds:
     file: 0x7a1d-straight_to_the_vault.wav
     track: voice
 
+  # X-million mansion windows — value callouts played on completion.
+  taf_3_million:
+    file: 0x7a28-3_millions.wav
+    track: voice
+  taf_6_million:
+    file: 0x7a2b-6_millions.wav
+    track: voice
+  taf_9_million:
+    file: 0x7a2e-9_millions.wav
+    track: voice
+
 sound_pools:
   # Picks one of the welcome callouts at random each time it's played
   taf_welcome:
